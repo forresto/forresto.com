@@ -1,0 +1,29 @@
+---
+layout: post
+title: Flash Mandala 0.2
+date: 2003-10-31 14:54:00.000000000 -05:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  lj_itemid: '322'
+  lj_permalink: http://forresto.livejournal.com/82597.html
+  dsq_thread_id: '956200508'
+author:
+  login: forresto
+---
+<p><center><a title="mandala_0_2.swf (611 bytes)" href="http://folktunes.org/forresto/galleries/flashMandala/mandala_0_2.swf"><img class="picture" src="{{ site.baseurl }}/assets/mandala_0_2_still.thumb.png" alt="mandala_0_2_still.thumb.png" /></a></center>So I set out to solve whatever mistake I had made before, but ended up turning it into something else neat. Now it really is more like a spirograph. I guess the eventual goal with this will be to be able to switch between styles and input a number to which to skip. This version turns into a ring after awhile, so it is less interesting than the other after around 500. It might open up again though, but I didn't let it go that long. I didn't change the code much at all: <!--more code--></p>
+<pre>// reset spiral movie
+this.firstMandala.clear();
+this.firstMandala.moveTo (250, 0);
+// draw lines
+with (this.firstMandala) {
+	lineStyle(0, 0x000000, 50);
+	for (i=0; i != points_count; i++) {
+		next_x = radius*Math.cos(360/points_count*i);
+		next_y = radius*Math.sin(360/points_count*i);
+		lineTo(next_x, next_y);
+	}
+}</pre>

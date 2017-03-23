@@ -1,0 +1,48 @@
+---
+layout: post
+title: 'Release Early / Release Often: Wiggle Goes Beta'
+date: 2004-05-26 20:29:00.000000000 -04:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  lj_itemid: '438'
+  lj_permalink: http://forresto.livejournal.com/112366.html
+  dsq_thread_id: '956199242'
+author:
+  login: forresto
+---
+<p>There is a new example up on the <a href="http://wiggle.sourceforge.net/">Wiggle</a> page and a new version (0.1.0) for downloading.  Now, when you move the mouse up on the applet window it will focus on the far point, and when you move it down it will focus on the near point.  In this <a href="http://wiggle.sourceforge.net/release/0.1.0/example.html">new example</a>, from an old stereoscopic card, if you move to the top of the photo it will focus on the back of the Zepp, towards the middle it will be focused on the front of the Zepp, and at the bottom of the photo it will be focused on the button on the jarhead's shoulder.  To see a visualization of the math going on in the background, click on the photo and then the "X" icon in the control panel that pops up.</p>
+<p>Any bugs?</p>
+<p><!--more nerdout-->When I did the Alpha Wiggle release yesterday I had given up on getting depth scrolling to work for the time being.  Turns out, I had thought the solution through several times, but just couldn't put my mind to it.  It was as easy as replacing
+<pre>mc._x = 0-nearxdifference;
+mc._y = 0-nearydifference;</pre>
+<p>with
+<pre>mc._x = 0-(nearpercentage*nearxdifference+farpercentage*farxdifference);
+mc._y = 0-(nearpercentage*nearydifference+farpercentage*farydifference);</pre>
+<p>where
+<pre>farpercentage = 1-nearpercentage;</pre>
+<p>.</p>
+<p><!-- Creative Commons License --><br />
+<a href="http://creativecommons.org/licenses/GPL/2.0/"><img alt="CC-GNU GPL" border="0" src="{{ site.baseurl }}/assets/cc-GPL-a.png" /></a><br />This software is licensed under the <a href="http://creativecommons.org/licenses/GPL/2.0/">CC-GNU GPL</a>.<br />
+<!-- /Creative Commons License --></p>
+<p><!--</p>
+<p><rdf:RDF xmlns="http://web.resource.org/cc/"<br />
+    xmlns:dc="http://purl.org/dc/elements/1.1/"<br />
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><br />
+<work rdf:about=""></p>
+<license rdf:resource="http://creativecommons.org/licenses/GPL/2.0/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Software" /><br />
+</work></p>
+<license rdf:about="http://creativecommons.org/licenses/GPL/2.0/">
+<permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+<permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" /></p>
+<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" /><br />
+   <requires rdf:resource="http://web.resource.org/cc/SourceCode" />
+</license>
+<p></rdf:RDF></p>
+<p>--></p>

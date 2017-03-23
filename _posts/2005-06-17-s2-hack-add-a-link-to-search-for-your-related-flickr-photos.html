@@ -1,0 +1,71 @@
+---
+layout: post
+title: 'S2 hack : Add a link to search for your related flickr photos.'
+date: 2005-06-17 18:06:00.000000000 -04:00
+type: post
+published: true
+status: publish
+categories: []
+tags:
+- flickr
+- hacks
+- livejournal
+- tags
+- code
+meta:
+  lj_itemid: '562'
+  lj_permalink: http://forresto.livejournal.com/143983.html
+  dsq_thread_id: '960301167'
+author:
+  login: forresto
+---
+<p>Now that <a href="http://www.livejournal.com/users/news/86492.html">LJ is taggerific</a> my entries will have links to my related flickr photos.  Depending on how you use LJ and Flickr tags this might or might not be of use to you.  I imagine the linkage will shape how I tag things in the future.</p>
+<p><!--more S2 CODE--></p>
+<p>The following goes into your theme layer.  It should be compatible with other hacks, as long as they don't use <code style="font-size:smaller;background-color:white;">function Entry::print_metadata()</code>.  If <code style="font-size:smaller;background-color:white;">function Entry::print_metadata(){...}</code> is already in your theme layer, you can probably replace it with this.  Be sure to change <strong>flickr_url_name</strong>.</p>
+<div style="overflow:auto;background-color:white;height:300px;">
+<pre><code /></pre>
+<p><small>#<br />
+# forresto's flickr photo search link hack<br />
+#<br />
+function Entry::print_metadata() {<br />
+    var string caption;<br />
+    var string val;<br />
+    var Image i;<br />
+    if (size $.metadata == 0 and size $.tags == 0) { return; }<br />
+    println """&lt;div class="metadata"&gt;""";<br />
+    if ($this.tags) {<br />
+        var int tcount = 0;<br />
+        var string tlist = "";<br />
+        "&lt;div class='ljtags'&gt;&lt;strong&gt;Tags:&lt;/strong&gt; ";<br />
+        foreach var Tag t ($this.tags) {<br />
+            """&lt;a rel="tag" href="$t.url"&gt;$t.name&lt;/a&gt;""";<br />
+            $tcount++;<br />
+            if ($tcount != size $this.tags) { ", "; $tlist = $tlist + $t.name + ",";}<br />
+            else { $tlist = $tlist + $t.name;}<br />
+        }<br />
+        """&lt;br&gt;&lt;strong&gt;Flickr:&lt;/strong&gt; &lt;a href="http://flickr.com/photos/<strong>flickr_url_name</strong>/search/tags:$tlist/tagmode:any/"&gt;related photos&lt;/a&gt;""";<br />
+        "&lt;/div&gt;";<br />
+    }<br />
+    if (size $.metadata != 0) {<br />
+        foreach var string k ($.metadata) {<br />
+            $caption = $k;<br />
+            $val = $.metadata{$k};<br />
+            if ($k == "music") {<br />
+                $caption = $*text_meta_music;<br />
+            }<br />
+            elseif ($k == "mood") {<br />
+                $caption = $*text_meta_mood;<br />
+                if (defined $.mood_icon) {<br />
+                    $i = $.mood_icon;<br />
+                    $val = """&lt;img src="$i.url" width="$i.width" height="$i.height" align="absmiddle"&gt; $val""";<br />
+                }<br />
+            }<br />
+            println """&lt;div class="metadata-$k"&gt;&lt;span style="font-weight: bold;"&gt;$caption:&lt;/span&gt; $val&lt;/div&gt;""";<br />
+        }<br />
+    }<br />
+    println "&lt;/div&gt;";<br />
+}<br />
+#<br />
+# end of forresto's flickr photo search link hack<br />
+#</small></div>
+<p>(hacked from <a href="http://www.livejournal.com/customize/advanced/layerbrowse.bml?id=19871">A Sturdy Gesture</a>'s method of showing tags)</p>

@@ -1,0 +1,33 @@
+---
+layout: post
+title: covert seconds to minutes:seconds in actionscript
+date: 2007-06-19 12:00:00.000000000 -04:00
+type: post
+published: true
+status: publish
+categories: []
+tags:
+- actionscript
+- as2
+- code
+- flash
+- time
+meta:
+  lj_itemid: '649'
+  lj_permalink: http://forresto.livejournal.com/166344.html
+  lj_current_mood: nerdy
+  dsq_thread_id: '958469118'
+author:
+  login: forresto
+---
+<pre>function seconds2time(seconds:Number):String {
+	minutes = Math.floor(seconds/60);
+	seconds = Math.floor(seconds - (minutes * 60));
+	minutes = minutes < 10 ? "0" + minutes : minutes;
+	seconds = seconds < 10 ? "0" + seconds : seconds;
+	return minutes + ":" + seconds;
+}
+
+trace(seconds2time(123));
+// returns "02:03"</pre>
+<p>fun!</p>

@@ -1,0 +1,26 @@
+---
+layout: post
+title: NoFlo clock demo
+date: 2013-09-08 15:59:33.000000000 -04:00
+type: post
+published: true
+status: publish
+categories:
+- Meemoo
+- NoFlo
+tags:
+- clock
+- graph
+- meemoo
+- noflo
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '1734826807'
+author:
+  login: forresto
+---
+<p>I have been working on the <a href="http://www.kickstarter.com/projects/noflo/noflo-development-environment">NoFlo</a> graph editor, building on my experience making <a href="http://meemoo.org/">Meemoo</a>.</p>
+<p><a href="http://noflojs.org/noflo-ui/#example/6699161"><img src="{{ site.baseurl }}/assets/uzD9pKO.png" alt="noflo clock demo" /><br /><em>press play on the iframe to start the clock</em></a></p>
+<p>This graph runs the analog clock in the corner. We're discussing a few ways that the graph might be simpler. For example, most of the components could be encapsulated into one subgraph, which would output just the numbers and rotation percentages needed to draw the clock. </p>
+<p>Also, we're <a href="https://github.com/noflo/dataflow-noflo/issues/22">talking about allowing equations</a> like "=x/(60*1000)" in input ports that expect numbers. When the date is x, that equation will give you the correct rotation of the second hand (60 seconds * 1000 milliseconds). This will be a powerful feature, and reduce the number of nodes in the graph. </p>
+<p>If you have ideas for the graph editor or future demos, please chime in.</p>
