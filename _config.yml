@@ -1,4 +1,18 @@
 permalink: /blog/:year/:title/
+collections:
+  projects:
+    output: true
+    layout: post
+    permalink: /project/:title/
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+  - scope:
+      type: projects
+    values:
+      layout: project
 gems:
   - jekyll-archives
 jekyll-archives:
