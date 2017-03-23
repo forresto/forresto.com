@@ -1,0 +1,15 @@
+permalink: /:year/:month/:title/
+gems:
+  - jekyll-archives
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - tags
+    - categories
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'

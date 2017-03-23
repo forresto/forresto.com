@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{% assign author = site.authors[page.author] %}
+
+<div class="post clear">
+  <h1><a href="{{ page.url }}" style="text-decoration:none;">{{ page.title }}</a></h1>
+  <p>{{ page.date | date_to_string }} by <i><a href="{{ author.web }}">{{ author.display_name }}</a></i></p>
+  {{ content }}
+</div>
+
+<div id="page-navigation"> 
+  <div class="clear">&nbsp;</div> 
+    <div class="left"> 
+      {% if page.previous.url %} 
+        <a href="{{page.previous.url}}" title="Previous Post: 
+        {{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+      {% endif %} 
+    </div> 
+    <div class="right"> 
+      {% if page.next.url %} 
+         <a href="{{page.next.url}}" title="next Post: 
+         {{page.next.title}}">{{page.next.title}} &raquo; </a> 
+      {% endif %} 
+    </div> 
+  <div class="clear">&nbsp;</div> 
+</div>
+
+{% if page.tags %} 
+<ul class="tags">
+  {% for tag in page.tags %}
+  <li class="tag">{{ tag }}</li>
+  {% endfor %}
+</ul>
+<div class="clear">&nbsp;</div> 
+{% endif %}
