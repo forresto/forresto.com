@@ -1,0 +1,22 @@
+---
+title: home
+layout: default
+---
+
+<div>
+  <h2>Web coder for hire: sites and apps</h2>
+  <blockquote>Because I believe that the computer revolution is still in the early stages, I build open web tools for creativity and community, so that more people may take part. Keep _ weird. 👽</blockquote>
+</div>
+
+<h1>Featured Projects</h1>
+<div>
+  {% for item in site.projects %}
+    <section>
+      <h1><a href="{{ item.url }}">{{ item.title }}</a></h1>
+      <div class="mb2">
+        <a class="mr2">demo</a>
+        <a class="mr2">source</a>
+      </div>
+    </section>
+  {% endfor %}
+</div>
