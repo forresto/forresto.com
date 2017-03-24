@@ -3,11 +3,7 @@ title: blog index
 layout: default
 ---
 
-{% for item in site.posts limit:5  %}
-  <h1><a href="{{ item.url }}">{{ item.title }}</a></h1>
-  <p>{{ page.date | date_to_string }}</p>
-{% endfor %}
-
+{% include recent-posts.html %}
 
 * 2017
 * 2016

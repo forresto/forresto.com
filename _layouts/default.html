@@ -3,17 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <title>{{ page.title }} | Forrest Oliphant</title>
-  <link rel="alternate" type="application/rss+xml" title="Forrest O. feed" href="http://feeds.feedburner.com/forresto" />  
+  <link rel="alternate" type="application/rss+xml" title="Forrest O. feed" href="http://feeds.feedburner.com/forresto" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css"/>
+  <style>
+    footer a { color: white; }
+  </style>
 </head>
-<body>
+<body class="sans-serif">
 
 <header>
-  <h1><a href="/"><img src="/images/forresto-com-logo.svg" width="72" height="72">Forrest Oliphant</a></h1>
+  <h1>
+    <a href="/" class="near-black no-underline">
+      <img src="/images/forresto-com-logo.svg" width="72" height="72" class="v-mid">
+      Forrest Oliphant
+    </a>
+  </h1>
 </header>
 
 {{ content }}
 
-<footer>
+<footer class="mt2 pt2 pb5 bg-near-black white">
+  <h1>Elsewhere</h1>
   <ul>
     <li>
       Twitter: <a href="https://twitter.com/forresto">@forresto</a>
@@ -27,8 +37,22 @@
     <li>
       <a href="https://stackoverflow.com/story/fo">StackOverflow</a>
     </li>
+    <li id="writeme">
+      forrest (ätt) sembiki (døt) com
+    </li>
   </ul>
 </footer>
+
+<script type="text/javascript">
+  (function() {
+    var s = "=b!isfg>#nbjmup;gpssftuAtfncjlj/dpn@tvckfdu>tjuf&31jorvjsz#?gpssftuAtfncjlj/dpn=0b?";
+    var link = "";
+    for (i=0; i<s.length; i++) {
+      link += String.fromCharCode(s.charCodeAt(i)-1); 
+    }
+    document.getElementById('writeme').innerHTML = link;
+  })();
+</script>
 
 </body>
 </html>

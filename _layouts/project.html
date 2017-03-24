@@ -2,8 +2,13 @@
 layout: default
 ---
 
-<div class="post clear">
-  <h1><a href="{{ page.url }}" style="text-decoration:none;">{{ page.title }}</a></h1>
-  <p>{{ page.date | date_to_string }}</p>
+<h1><a href="{{ page.url }}" style="text-decoration:none;">{{ page.title }}</a></h1>
+<div class="cf w-100">
+  {% for image in item.images limit:1 %}
+    {% include img.html %}
+  {% endfor %}
+</div>
+<p>{{ page.date | date: "%Y-%m-%d" }}</p>
+<div class="mw7">
   {{ content }}
 </div>

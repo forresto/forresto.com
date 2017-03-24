@@ -1,0 +1,6 @@
+<img
+  class="db"
+  alt="{{image.alt}}"
+  src="{% for src in image.srcset limit:1 %}{{src[1]}}{% endfor %}"
+  srcset="{% for src in image.srcset %}{{src[1]}} {{src[0]}}{% unless forloop.last %}, {% endunless %}{% endfor %}"
+/>
