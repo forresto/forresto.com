@@ -4,15 +4,16 @@
   <meta charset="utf-8" />
   <title>{{ page.title }} | Forrest Oliphant</title>
   <link rel="alternate" type="application/rss+xml" title="Forrest O. feed" href="http://feeds.feedburner.com/forresto" />
-  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css"/>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/tachyons.min.css"/>
   <style>
+    html { line-height: 1.5; }
     footer a { color: white; }
   </style>
 </head>
 <body class="sans-serif">
 
-<header>
-  <h1>
+<header class="ph2">
+  <h1 class="ma0">
     <a href="/" class="near-black no-underline">
       <img src="/images/forresto-com-logo.svg" width="72" height="72" class="v-mid">
       Forrest Oliphant
@@ -20,10 +21,12 @@
   </h1>
 </header>
 
+<div class="ph2">
 {{ content }}
+</div>
 
-<footer class="mt2 pt2 pb5 bg-near-black white">
-  <h1>Elsewhere</h1>
+<footer class="mt2 ph2 pt2 pb5 bg-near-black white">
+  <h1 id="contact">Elsewhere</h1>
   <ul>
     <li>
       Twitter: <a href="https://twitter.com/forresto">@forresto</a>

@@ -2,34 +2,26 @@
 layout: default
 ---
 
-<div class="post clear">
-  <h1><a href="{{ page.url }}" style="text-decoration:none;">{{ page.title }}</a></h1>
+<article class="mw7">
+  <h1><a href="{{ page.url }}" class="link dim near-black">{{ page.title }}</a></h1>
   <p>{{ page.date | date: "%Y-%m-%d" }}</p>
+
   {{ content }}
-</div>
 
-<div id="page-navigation"> 
-  <div class="clear">&nbsp;</div> 
-    <div class="left"> 
-      {% if page.previous.url %} 
-        <a href="{{page.previous.url}}" title="Previous Post: 
-        {{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
-      {% endif %} 
-    </div> 
-    <div class="right"> 
-      {% if page.next.url %} 
-         <a href="{{page.next.url}}" title="next Post: 
-         {{page.next.title}}">{{page.next.title}} &raquo; </a> 
-      {% endif %} 
-    </div> 
-  <div class="clear">&nbsp;</div> 
-</div>
+  <nav class="cf"> 
+    {% if page.previous.url %}
+      <a class="fl" href="{{page.previous.url}}" title="previous">&laquo; {{page.previous.title}}</a>
+    {% endif %}
+    {% if page.next.url %}
+      <a class="fr" href="{{page.next.url}}" title="next">{{page.next.title}} &raquo;</a>
+    {% endif %} 
+  </nav>
 
-{% if page.tags %} 
-<ul class="tags">
-  {% for tag in page.tags %}
-  <li class="tag"><a href="/blog/tag/{{ tag }}">{{ tag }}</a></li>
-  {% endfor %}
-</ul>
-<div class="clear">&nbsp;</div> 
-{% endif %}
+  {% if page.tags %} 
+  <ul class="tags">
+    {% for tag in page.tags %}
+    <li class="tag"><a href="/blog/tag/{{ tag }}">{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</article>
