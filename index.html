@@ -7,10 +7,10 @@ layout: default
 <blockquote>Because I believe that the computer revolution is still in the early stages, I build open web tools for creativity and community, so that more people may take part. Keep _ weird. 👽</blockquote>
 
 <h1>Featured Projects</h1>
-<section class="cf w-100">
+<section class="cf" style="margin: 0 -0.25em;">
   {% for item in site.projects %}
     <article class="fl w-100 w-50-m w-third-ns">
-      <div class="ba bw3 mr2 mb2">
+      <div class="ba bw3 mh1 mb2">
         <a class="link dim near-black" href="{{ item.url }}">
           {% if item.images %}
             {% for image in item.images limit:1 %}
