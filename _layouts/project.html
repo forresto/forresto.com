@@ -3,7 +3,13 @@ layout: default
 ---
 
 <h1 class="mw7">
-  <a href="{{ page.url }}" class="link dim near-black">{{ page.title }}</a>
+  <a href="{{ page.url }}" class="link dim near-black">
+    {% if page.display_title %}
+      {{ page.display_title }}
+    {% else %}
+      {{ page.title }}
+    {% endif %}
+  </a>
 </h1>
 <div>
   {% for image in page.images %}

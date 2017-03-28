@@ -1,8 +1,8 @@
 ---
 title: softfab
+display_title: '#softfab'
 date: 2017-01-01
 tags:
-- webapp
 - svg
 - fashion
 - wip
@@ -18,8 +18,10 @@ links:
   source: https://github.com/softfab/tshirt
 ---
 
-## Web-based tool for making clothing patterns that change with body measurement constraints. Uses SVG and Verlet physics.
+Web-based tool for making clothing patterns that change with body measurements.
 
-passion project with my partner, whose studio is [friendsday.fi](http://friendsday.fi/)
+This is a unique method to solve this challenge, using Verlet physics to alter the shapes with the measurement constraints. Graphics are rendered with SVG.
 
-manifesto and related thoughts at [seamster.club](http://seamster.club/)
+This is a passion project with my partner, whose studio is [friendsday.fi](http://friendsday.fi/)
+
+Manifesto and related thoughts at [seamster.club](http://seamster.club/)

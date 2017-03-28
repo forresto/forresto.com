@@ -7,25 +7,33 @@ layout: default
 <blockquote>Because I believe that the computer revolution is still in the early stages, I build open web tools for creativity and community, so that more people may take part. Keep _ weird. 👽</blockquote>
 
 <h1>Featured Projects</h1>
-<section class="cf" style="margin: 0 -0.25em;">
-  {% for item in site.projects %}
-    <article class="fl w-100 w-50-m w-third-ns">
-      <div class="ba bw3 mh1 mb2">
+<section class="flex flex-wrap justify-center" style="margin: 0 -0.25em;">
+  {% for item in site.projects reversed %}
+    <article class="flex-auto w-100 w-50-m w-third-ns mw6 ph1 mb2">
+      <div class="">
         <a class="link dim near-black" href="{{ item.url }}">
           {% if item.images %}
             {% for image in item.images limit:1 %}
               {% include img.html %}
             {% endfor %}
           {% endif %}
-          <h1 class="mv0 ml1">{{ item.title }}</h1>
+          <h1 class="f3 mv0">
+            {% if item.display_title %}
+              {{ item.display_title }}
+            {% else %}
+              {{ item.title }}
+            {% endif %}
+          </h1>
         </a>
-        {% if item.links %}
-          <ul class="pa0 mb2">
-            {% for link in item.links %}
-              <li class="dib mr2"><a href="{{link[1]}}">{{link[0]}}</a>
-            {% endfor %}
-          </ul>
-        {% endif %}
+        <ul class="ma0 pa0 mb2">
+          <li class="dib mr2"><a href="{{ item.url }}">info</a></li>
+          {% for link in item.links %}
+            <li class="dib mr2"><a href="{{link[1]}}">{{link[0]}}</a>
+          {% endfor %}
+        </ul>
+        <p class="mv0">
+          {{ item.excerpt | strip_html }}
+        </p>
       </div>
     </article>
   {% endfor %}
