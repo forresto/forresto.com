@@ -18,10 +18,10 @@ layout: default
   </nav>
 
   {% if page.tags %} 
-  <ul class="tags">
-    {% for tag in page.tags %}
-    <li class="tag"><a href="/blog/tag/{{ tag }}">{{ tag }}</a></li>
-    {% endfor %}
-  </ul>
+    <ul class="tags">
+      {% for tag in page.tags %}
+      <li class="tag"><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
   {% endif %}
 </article>

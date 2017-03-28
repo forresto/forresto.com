@@ -4,18 +4,21 @@ layout: default
 
 <h1 class="mw7">
   <a href="{{ page.url }}" class="link dim near-black">
-    {% if page.display_title %}
-      {{ page.display_title }}
-    {% else %}
-      {{ page.title }}
-    {% endif %}
+    {{ page.display_title | default: page.title }}
   </a>
 </h1>
 <div>
   {% for image in page.images %}
-    {% include img.html %}
+    <div class="mw8">
+      {% include img.html %}
+    </div>
   {% endfor %}
 </div>
+<h1 class="mw7 f3">
+  <a href="{{ page.url }}" class="link dim near-black">
+    {{ page.display_title | default: page.title }}
+  </a>
+</h1>
 <div class="mw7">
   <p>{{ page.date | date: "%Y" }}</p>
   {% if page.links %}
@@ -26,4 +29,11 @@ layout: default
     </ul>
   {% endif %}
   {{ content }}
+  {% if page.tags %} 
+    <ul class="tags">
+      {% for tag in page.tags %}
+      <li class="tag">{{ tag }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 </div>
