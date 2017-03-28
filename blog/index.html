@@ -1,0 +1,12 @@
+---
+title: blog index
+layout: default
+---
+
+{% include recent-posts.html %}
+
+<ul>
+{% for yyyy in (1997..2017) %}
+  <li><a href="/{{ yyyy }}">{{ yyyy }}</a></li>
+{% endfor %}
+</ul>

@@ -1,4 +1,4 @@
-permalink: /blog/:year/:title/
+permalink: /:year/:month/:title/
 collections:
   projects:
     output: true
@@ -22,6 +22,6 @@ jekyll-archives:
     - categories
   layout: archive
   permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
+    year: '/:year/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
