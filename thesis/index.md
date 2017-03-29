@@ -1,7 +1,7 @@
 ---
-title: thesis
+title: Meemoo Thesis
 date: 2012-03-20
-layout: default
+layout: mw7
 ---
 
 # Meemoo Thesis
@@ -12,4 +12,4 @@ layout: default
 
 * [Read online](http://issuu.com/forresto.com/docs/forrestoliphant-meemoothesis?e=9748257/5445934)
 * Download PDF: [screen](https://github.com/forresto/thesis-design-for-hackability/releases/download/1.0.0/ForrestOliphant-MeemooThesis-web.pdf) (1.6 MB) or [print](https://github.com/forresto/thesis-design-for-hackability/releases/download/1.0.0/ForrestOliphant-MeemooThesis.pdf) (18.2 MB)
-* National Library of Finland identifier: URN:NBN:fi:aalto-201206102286](http://urn.fi/URN:NBN:fi:aalto-201206102286)
+* National Library of Finland identifier: [URN:NBN:fi:aalto-201206102286](http://urn.fi/URN:NBN:fi:aalto-201206102286)
