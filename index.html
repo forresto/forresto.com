@@ -10,15 +10,13 @@ layout: default
 <section class="flex flex-wrap" style="margin: 0 -0.25em;">
   {% for item in site.projects reversed %}
     <article class="flex-auto w-100 w-50-m w-third-ns mw6 ph1 mb2">
-      <div class="grow">
-        <a href="{{ item.url }}">
-          {% if item.images %}
-            {% for image in item.images limit:1 %}
-              {% include img.html %}
-            {% endfor %}
-          {% endif %}
-        </a>
-      </div>
+      <a href="{{ item.url }}">
+        {% if item.images %}
+          {% for image in item.images limit:1 %}
+            {% include img.html %}
+          {% endfor %}
+        {% endif %}
+      </a>
       <h1 class="f3 mv0">
         <a class="link dim near-black" href="{{ item.url }}">
           {{ item.display_title | default: item.title }}
@@ -38,3 +36,4 @@ layout: default
 </section>
 
 {% include recent-posts.html %}
+<p><a href="/blog">more...</a></p>
