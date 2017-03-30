@@ -8,6 +8,16 @@ layout: default
 
   {{ content }}
 
+  <hr />
+
+  {% if page.tags %} 
+    <ul class="tags">
+      {% for tag in page.tags %}
+      <li class="tag"><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
   <nav class="cf"> 
     {% if page.previous.url %}
       <a class="fl" href="{{page.previous.url}}" title="previous">&laquo; {{page.previous.title}}</a>
@@ -17,11 +27,4 @@ layout: default
     {% endif %} 
   </nav>
 
-  {% if page.tags %} 
-    <ul class="tags">
-      {% for tag in page.tags %}
-      <li class="tag"><a href="/tag/{{ tag }}">{{ tag }}</a></li>
-      {% endfor %}
-    </ul>
-  {% endif %}
 </article>
