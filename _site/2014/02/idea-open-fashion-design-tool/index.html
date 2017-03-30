@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>idea: open fashion design tool | Forrest Oliphant</title>
+  <link rel="alternate" type="application/rss+xml" title="Forrest O. feed" href="http://feeds.feedburner.com/forresto" />
+  <link rel="stylesheet" href="/assets/tachyons.min.css"/>
+  <style>
+    html { line-height: 1.5; }
+    footer {
+      background: url("/images/bg-footer.svg") right center / cover no-repeat;
+    }
+    footer a { color: white; }
+  </style>
+</head>
+<body class="sans-serif">
+
+<header class="ph2 cf">
+  <h1 class="ma0 f3 fl">
+    <a href="/" class="near-black no-underline">
+      <img src="/images/forresto-com-logo.svg" width="72" height="72" class="grow-large v-mid">
+      <span class="dib v-mid">
+        Forrest Oliphant
+      </span>
+    </a>
+  </h1>
+  <nav class="fr ml2">
+    <a class="dib ma1 link dim near-black underline" href="/">Home</a>
+    <a class="dib ma1 link dim near-black underline" href="/thesis">Thesis</a>
+    <a class="dib ma1 mr0 link dim near-black underline" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="ph2">
+<article class="mw7">
+  <h1><a href="/2014/02/idea-open-fashion-design-tool/" class="link dim near-black">idea: open fashion design tool</a></h1>
+  <p>2014-02-16</p>
+
+  <p><a href="http://tasapainokokoelma.blogspot.fi/">My partner</a> is showing me the ropes (threads) of designing and making clothes. I'm not a fan of shopping for clothes; I don't think I've ever seen something in a store and thought "this is so me." The things that I design and make for myself quickly become my favorites.</p>
+<p><a href="http://www.flickr.com/photos/forresto/12564082014/"><img src="/assets/12564082014_eb77ebd6c1_z.jpg" alt="3d fab" /></a><br />
+<em>The most practical, economical, and accessible machines for 3D fabrication.</em></p>
+<p>As a bonus, sustainable/recycled materials to feed into the machine are really easy to find. Designs can be easily ripped and remixed from anything that you have that fits well. The design and fabrication process is tactile, and quite forgiving.</p>
+<blockquote><p>Fashion pattern design is essentially low-polygon 3D modeling, with constraints for body measurements.</p></blockquote>
+<p>There are <a href="http://clo3d.com/">general purpose tools for pattern design</a> that look cool, but they wouldn't even tell me the price. They are not interested in the DIY community.</p>
+<p>Continuum Fashion's <a href="http://www.continuumfashion.com/D.php">D.dress</a> is impressive, drawing shapes to generate the triangles needed to sew that 3D form. But the output is more of a New Aesthetic experiment than practical clothing. Their <a href="http://www.continuumfashion.com/constrvct.php">Constrvct</a> project outputs more everyday-friendly designs, but only for women, and they keep control of the pattern and production steps.</p>
+<p>I'd really like to use a design tool that lets you:</p>
+<ul>
+<li>start with time-tested standard patterns, and customize from there</li>
+<li>tweak any of the pieces or constraints</li>
+<li>see a live-updating 3d preview</li>
+<li>specify fabric type / weight / stretchiness</li>
+<li>use a projector to transfer your pattern directly onto cloth (printing paper patterns is annoying)</li>
+<li>add colors, photos, or <a href="http://meemooapp.tumblr.com/post/50180347881/some-more-patterns-made-with-meemoo-org-im-going">patterns</a> (these could be printed with the lines to cut directly on the cloth with services like Spoonflower)</li>
+</ul>
+<p>Getting measurements and building on a Kinect-scanned 3D model of yourself would be a fun stretch goal. (Though taking measurements might be a little less invasive than stripping down for a Microsoft camera.)</p>
+<blockquote><p>It should obviously be Free, open-source, and available to anybody with a web browser.</p></blockquote>
+<p>What are the technical pieces that I need to put together to make this tool?</p>
+<ol>
+<li>Bret Victor's <a href="http://worrydream.com/DrawingDynamicVisualizationsTalkAddendum/">Drawing Dynamic Visualizations</a> shows a well-considered UX for constraint-based vector design. This line = 1/2 (waist circumference + breathing space).</li>
+<li>Then we need some way to specify which lines are sewn together, and in which order. (Order of sewing is really important and still somewhat magical to me. But I'm starting to see the logic in it.) The live 3D visualization will help there.</li>
+<li>To turn the polygons into a cloth-like 3D shape, we'll need to triangulate and subdivide them into many smaller triangles. Each line in this mesh will want to keep it's length, but will stretch as much as cloth allows.</li>
+<li>When we "sew" those polygons together, we need some way to inflate the model. This demo of a <a href="http://christophermanning.org/projects/building-cubic-hamiltonian-graphs-from-lcf-notation/">force-directed graph layout algorithm</a> illustrates how this might work.</li>
+<li>3D rendering the calculated meshes, probably with Three.js.</li>
+</ol>
+<p>The implications of <a href="http://www.madeonjupiter.com/about/">reimagining production chains</a> have been explored by the folks behind Matter Machine. I'll expand on those ideas in a future post, but I'll just say that I think it could be a good thing.</p>
+<p>So far, this project is only a collection of conversations, sketches, and this blog post. If you're interested in joining, or have some pointers, please leave a comment or get in touch.</p>
+<hr />
+<p><em>Edit 02/23:</em> Trying to express the low-level question of designing a UI for constraint-based vector drawing, I made this diagram for a friend:</p>
+<p><a href="http://www.flickr.com/photos/forresto/12715891074/sizes/o/"><img src="/assets/12715891074_03cc481cfd_o.png" /></a></p>
+
+
+  <nav class="cf"> 
+    
+      <a class="fl" href="/2013/12/noflo-hackathon-mid-week-update/" title="previous">&laquo; NoFlo hackathon mid-week update</a>
+    
+    
+      <a class="fr" href="/2014/02/visual-spatial-tangible-programming/" title="next">visual / spatial / tangible programming &raquo;</a>
+     
+  </nav>
+
+   
+    <ul class="tags">
+      
+      <li class="tag"><a href="/tag/idea">idea</a></li>
+      
+      <li class="tag"><a href="/tag/sewing">sewing</a></li>
+      
+      <li class="tag"><a href="/tag/tool">tool</a></li>
+      
+    </ul>
+  
+</article>
+
+</div>
+
+<footer class="mt4 ph2 pt4 pb5 bg-near-black white">
+  <h1 id="contact" class="mv0">Elsewhere</h1>
+  <div class="cf">
+    <ul class="w-50 fl">
+      <li id="writeme">
+        forrest (ätt) sembiki (døt) com
+      </li>
+      <li>
+        <a href="https://github.com/forresto">GitHub</a>
+      </li>
+      <li>
+        <a href="https://stackoverflow.com/story/fo">StackOverflow Resume</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/forrestoliphant">LinkedIn</a>
+      </li>
+    </ul>
+    <ul class="w-50 fl">
+      <li>
+        <a href="https://twitter.com/forresto">Twitter</a>
+      </li>
+      <li>
+        <a href="https://youtube.com/forresto">YouTube</a>
+      </li>
+      <li>
+        <a href="https://flickr.com/forresto">Flickr</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  (function() {
+    var s = "=b!isfg>#nbjmup;gpssftuAtfncjlj/dpn@tvckfdu>tjuf&31jorvjsz#?gpssftuAtfncjlj/dpn=0b?";
+    var link = "";
+    for (i=0; i<s.length; i++) {
+      link += String.fromCharCode(s.charCodeAt(i)-1); 
+    }
+    document.getElementById('writeme').innerHTML = link;
+  })();
+</script>
+
+</body>
+</html>

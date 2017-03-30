@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Slithering: trading dimensions in video | Forrest Oliphant</title>
+  <link rel="alternate" type="application/rss+xml" title="Forrest O. feed" href="http://feeds.feedburner.com/forresto" />
+  <link rel="stylesheet" href="/assets/tachyons.min.css"/>
+  <style>
+    html { line-height: 1.5; }
+    footer {
+      background: url("/images/bg-footer.svg") right center / cover no-repeat;
+    }
+    footer a { color: white; }
+  </style>
+</head>
+<body class="sans-serif">
+
+<header class="ph2 cf">
+  <h1 class="ma0 f3 fl">
+    <a href="/" class="near-black no-underline">
+      <img src="/images/forresto-com-logo.svg" width="72" height="72" class="grow-large v-mid">
+      <span class="dib v-mid">
+        Forrest Oliphant
+      </span>
+    </a>
+  </h1>
+  <nav class="fr ml2">
+    <a class="dib ma1 link dim near-black underline" href="/">Home</a>
+    <a class="dib ma1 link dim near-black underline" href="/thesis">Thesis</a>
+    <a class="dib ma1 mr0 link dim near-black underline" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="ph2">
+<article class="mw7">
+  <h1><a href="/2011/04/slithering-trading-dimensions-in-video/" class="link dim near-black">Slithering: trading dimensions in video</a></h1>
+  <p>2011-04-10</p>
+
+  <p>Computational photography is a wide concept with many possible interpretations and directions. I couldn't choose one project for the course, so I made two, and showed them with my classmates at <a href="http://www.pixelache.ac/helsinki/festival-2011/">Pixelache</a> in Augusta Gallery. One project was an extension of some earlier computational photography experiments with Flash+webcam, called <a href="http://forresto.com/2011/03/introducing-paintcam/">PaintCam</a>. The other was a collaboration with <a href="http://www.timowright.com/">Timo Wright</a> called Slithering.</p>
+<p>http://vimeo.com/21025283</p>
+<p>http://vimeo.com/21029662</p>
+<p>We shot two dance scenes, one with Anna Mustonen and the other with Lucía Merlo, Charlotte Lovera, Elise Giordano and myself. Thanks to Lume studio for helping us set up the lights.</p>
+<p>We shot HD video with the Canon 5D Mark III. We thought that it would be important for the dancers to have a preview image to see how different movements would affect the final image, so I made a Processing sketch that would approximate the aspect ratio of the 5D's output. </p>
+<p>http://www.flickr.com/photos/forresto/5477489713/in/set-72157625009263195</p>
+<p>We used Kinect for the preview, with the idea that the depth data might interesting to use somehow in the final. The slitscan video (three dimensions shuffled) ended up interesting enough that I left the depth data for future experiments. What could four shuffled dimensions look like?</p>
+<p>This is the description that Timo came up with for our piece when we were thinking that the final product of our piece would be still images:</p>
+<blockquote><p>Slithering is a alternative dance documentation where the dancer dances and reacts with the Slithering program. The program scans from a camera a one pixel wide segment and orders these segments to become one long picture in time.  In this project the dancer has to find a completely new kind of movement, if she wants to control the visual end result. It also changes the documentation of dance in time and space to now happen only in time. What is dance minus space?</p></blockquote>
+<p>http://www.flickr.com/photos/forresto/5606760468/in/set-72157625009263195/</p>
+<p>http://www.flickr.com/photos/forresto/5606176277/in/set-72157625009263195/</p>
+<p>http://www.flickr.com/photos/forresto/5606761828/in/set-72157625009263195/</p>
+<p>http://www.flickr.com/photos/forresto/5606762016/in/set-72157625009263195/</p>
+<p>To make the first still images, I wrote a Photoshop script that would take one column of pixels from each frame of video. It took ages. I noticed that changing the column variable ended up with a very different image. What would they look like animated? I managed to write my first C++ application, with the help of <a href="http://libcinder.org/">Cinder</a>, to shuffle the billions of pixels from one video to an output video. The <a href="https://github.com/forresto/Redimensionator">source for Redimensionator</a> is available freely, without warranty. Here are some experiments with the software, Redimensionating some videos found on YouTube: <a href="http://www.youtube.com/view_play_list?p=B2540182DE868E85">http://www.youtube.com/view_play_list?p=B2540182DE868E85</a></p>
+<p>Redimensionator wasn't written until after the dances were filmed. We had the still-image preview while dancing, but had no idea what it would look like in Redimensionated video form. In the future, it would be fun to choreograph a dance piece or music video with the output in mind. Putting some planning into costumes, props, and choreography could make for very interesting output.</p>
+<p><em>(Cross-posted to the new <a href="http://mlab.taik.fi/students/blog/2011/04/10/slithering-trading-dimensions-in-video/">Media Lab Helsinki students blog</a>.)</em></p>
+
+
+  <nav class="cf"> 
+    
+      <a class="fl" href="/2011/03/introducing-paintcam/" title="previous">&laquo; Introducing PaintCam</a>
+    
+    
+      <a class="fr" href="/2012/01/swing-thing-playful-interaction/" title="next">Swing Thing: playful interaction &raquo;</a>
+     
+  </nav>
+
+   
+    <ul class="tags">
+      
+      <li class="tag"><a href="/tag/project">project</a></li>
+      
+      <li class="tag"><a href="/tag/slitscan">slitscan</a></li>
+      
+      <li class="tag"><a href="/tag/video">video</a></li>
+      
+    </ul>
+  
+</article>
+
+</div>
+
+<footer class="mt4 ph2 pt4 pb5 bg-near-black white">
+  <h1 id="contact" class="mv0">Elsewhere</h1>
+  <div class="cf">
+    <ul class="w-50 fl">
+      <li id="writeme">
+        forrest (ätt) sembiki (døt) com
+      </li>
+      <li>
+        <a href="https://github.com/forresto">GitHub</a>
+      </li>
+      <li>
+        <a href="https://stackoverflow.com/story/fo">StackOverflow Resume</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/forrestoliphant">LinkedIn</a>
+      </li>
+    </ul>
+    <ul class="w-50 fl">
+      <li>
+        <a href="https://twitter.com/forresto">Twitter</a>
+      </li>
+      <li>
+        <a href="https://youtube.com/forresto">YouTube</a>
+      </li>
+      <li>
+        <a href="https://flickr.com/forresto">Flickr</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  (function() {
+    var s = "=b!isfg>#nbjmup;gpssftuAtfncjlj/dpn@tvckfdu>tjuf&31jorvjsz#?gpssftuAtfncjlj/dpn=0b?";
+    var link = "";
+    for (i=0; i<s.length; i++) {
+      link += String.fromCharCode(s.charCodeAt(i)-1); 
+    }
+    document.getElementById('writeme').innerHTML = link;
+  })();
+</script>
+
+</body>
+</html>

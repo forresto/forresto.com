@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>fibonacci actionscript code (gruntwork frame) | Forrest Oliphant</title>
+  <link rel="alternate" type="application/rss+xml" title="Forrest O. feed" href="http://feeds.feedburner.com/forresto" />
+  <link rel="stylesheet" href="/assets/tachyons.min.css"/>
+  <style>
+    html { line-height: 1.5; }
+    footer {
+      background: url("/images/bg-footer.svg") right center / cover no-repeat;
+    }
+    footer a { color: white; }
+  </style>
+</head>
+<body class="sans-serif">
+
+<header class="ph2 cf">
+  <h1 class="ma0 f3 fl">
+    <a href="/" class="near-black no-underline">
+      <img src="/images/forresto-com-logo.svg" width="72" height="72" class="grow-large v-mid">
+      <span class="dib v-mid">
+        Forrest Oliphant
+      </span>
+    </a>
+  </h1>
+  <nav class="fr ml2">
+    <a class="dib ma1 link dim near-black underline" href="/">Home</a>
+    <a class="dib ma1 link dim near-black underline" href="/thesis">Thesis</a>
+    <a class="dib ma1 mr0 link dim near-black underline" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="ph2">
+<article class="mw7">
+  <h1><a href="/2003/10/fibonacci-actionscript-code-gruntwork-frame/" class="link dim near-black">fibonacci actionscript code (gruntwork frame)</a></h1>
+  <p>2003-10-22</p>
+
+  <p><!--more code--><code>
+<pre>
+//change fibonacci sequence variables
+lastlast_radius_r = last_radius_r;
+last_radius_r = radius_r;
+radius_r = lastlast_radius_r+last_radius_r;
+//draw the square for this itteration
+if (radius_r<110000) {
+	if (next_direction == "right") {
+		//set this starting point as the one defined last "up" time
+		radius_x = nextRight_radius_x;
+		radius_y = nextRight_radius_y;
+		//draw and fill the square
+		with (this.spiral) {
+			lineStyle(0, 0x000000, 100);
+			beginFill(0xCCCCFF);
+			moveTo(radius_x, radius_y);
+			lineTo(radius_x+radius_r, radius_y);
+			lineTo(radius_x+radius_r, radius_y+radius_r);
+			lineTo(radius_x, radius_y+radius_r);
+			lineTo(radius_x, radius_y);
+			endFill();
+		}
+		//draw spiral
+		with (this.spiral) {
+			lineStyle(0, 0x000000, 100);
+			moveTo(radius_x, radius_y+radius_r);
+			curveTo(radius_x+radius_r, radius_y+radius_r, radius_x+radius_r, radius_y);
+			moveTo(radius_x, radius_y);
+		}
+		//set the next down starting point
+		nextDown_radius_x = radius_x+radius_r;
+		nextDown_radius_y = radius_y+radius_r;
+		//scale and move
+		spiral_right_width = spiral_right_width+radius_r;
+		with (this.spiral) {
+			_xscale = 500/Number(spiral_left_width+spiral_right_width)*100;
+			_yscale = _xscale;
+			_x = Number(500-Number(_xscale*Number(spiral_left_width+spiral_right_width)/100))/2+_xscale*spiral_left_width/100;
+			_y = Number(500-Number(_yscale*Number(spiral_up_height+spiral_down_height)/100))/2+_yscale*spiral_up_height/100;
+		}
+		//set the next iteration's direction
+		next_direction = "up";
+	} else if (next_direction == "up") {
+		radius_x = nextUp_radius_x;
+		radius_y = nextUp_radius_y;
+		with (this.spiral) {
+			lineStyle(0, 0x000000, 100);
+			beginFill(0xFFCCFF);
+			moveTo(radius_x, radius_y);
+			lineTo(radius_x+radius_r, radius_y);
+			lineTo(radius_x+radius_r, radius_y-radius_r);
+			lineTo(radius_x, radius_y-radius_r);
+			lineTo(radius_x, radius_y);
+			endFill();
+		}
+		with (this.spiral) {
+			lineStyle(0, 0x000000, 100);
+			moveTo(radius_x+radius_r, radius_y);
+			curveTo(radius_x+radius_r, radius_y-radius_r, radius_x, radius_y-radius_r);
+			moveTo(radius_x, radius_y);
+		}
+		nextRight_radius_x = radius_x+radius_r;
+		nextRight_radius_y = radius_y-radius_r;
+		//scale and move
+		spiral_up_height = spiral_up_height+radius_r;
+		with (this.spiral) {
+			_yscale = 500/Number(spiral_up_height+spiral_down_height)*100;
+			_xscale = _yscale;
+			_x = Number(500-Number(_xscale*Number(spiral_left_width+spiral_right_width)/100))/2+_xscale*spiral_left_width/100;
+			_y = Number(500-Number(_yscale*Number(spiral_up_height+spiral_down_height)/100))/2+_yscale*spiral_up_height/100;
+		}
+		next_direction = "left";
+	} else if (next_direction == "left") {
+		radius_x = nextLeft_radius_x;
+		radius_y = nextLeft_radius_y;
+		with (this.spiral) {
+			lineStyle(0, 0x000000, 100);
+			beginFill(0xFFCCCC);
+			moveTo(radius_x, radius_y);
+			lineTo(radius_x-radius_r, radius_y);
+			lineTo(radius_x-radius_r, radius_y-radius_r);
+			lineTo(radius_x, radius_y-radius_r);
+			lineTo(radius_x, radius_y);
+			endFill();
+		}
+		with (this.spiral) {
+			lineStyle(0, 0x000000, 100);
+			moveTo(radius_x, radius_y-radius_r);
+			curveTo(radius_x-radius_r, radius_y-radius_r, radius_x-radius_r, radius_y);
+			moveTo(radius_x, radius_y);
+		}
+		nextUp_radius_x = radius_x-radius_r;
+		nextUp_radius_y = radius_y-radius_r;
+		//scale and move
+		spiral_left_width = spiral_left_width+radius_r;
+		with (this.spiral) {
+			_xscale = 500/Number(spiral_left_width+spiral_right_width)*100;
+			_yscale = _xscale;
+			_x = Number(500-Number(_xscale*Number(spiral_left_width+spiral_right_width)/100))/2+_xscale*spiral_left_width/100;
+			_y = Number(500-Number(_yscale*Number(spiral_up_height+spiral_down_height)/100))/2+_yscale*spiral_up_height/100;
+		}
+		next_direction = "down";
+	} else if (next_direction == "down") {
+		radius_x = nextDown_radius_x;
+		radius_y = nextDown_radius_y;
+		with (this.spiral) {
+			lineStyle(0, 0x000000, 100);
+			beginFill(0xCCFFCC);
+			moveTo(radius_x, radius_y);
+			lineTo(radius_x-radius_r, radius_y);
+			lineTo(radius_x-radius_r, radius_y+radius_r);
+			lineTo(radius_x, radius_y+radius_r);
+			lineTo(radius_x, radius_y);
+			endFill();
+		}
+		with (this.spiral) {
+			lineStyle(0, 0x000000, 100);
+			moveTo(radius_x-radius_r, radius_y);
+			curveTo(radius_x-radius_r, radius_y+radius_r, radius_x, radius_y+radius_r);
+			moveTo(radius_x, radius_y);
+		}
+		nextLeft_radius_x = radius_x-radius_r;
+		nextLeft_radius_y = radius_y+radius_r;
+		//scale and move
+		spiral_down_height = spiral_down_height+radius_r;
+		with (this.spiral) {
+			_yscale = 500/Number(spiral_up_height+spiral_down_height)*100;
+			_xscale = _yscale;
+			_x = Number(500-Number(_xscale*Number(spiral_left_width+spiral_right_width)/100))/2+_xscale*spiral_left_width/100;
+			_y = Number(500-Number(_yscale*Number(spiral_up_height+spiral_down_height)/100))/2+_yscale*spiral_up_height/100;
+		}
+		next_direction = "right";
+	}
+	//end scripts
+	trace(radius_r);
+	nextFrame();
+} else {
+	//end scripts
+	trace(radius_r);
+	gotoAndPlay(1);
+}</pre>
+<p></code></p>
+
+
+  <nav class="cf"> 
+    
+      <a class="fl" href="/2003/10/itunes-for-windows/" title="previous">&laquo; iTunes for Windows</a>
+    
+    
+      <a class="fr" href="/2003/10/hear-ye-witness-i-am-going-to-participate-in-national-novel-writing-month/" title="next">Hear ye witness, I am going to participate in National Novel Writing Month! &raquo;</a>
+     
+  </nav>
+
+   
+    <ul class="tags">
+      
+    </ul>
+  
+</article>
+
+</div>
+
+<footer class="mt4 ph2 pt4 pb5 bg-near-black white">
+  <h1 id="contact" class="mv0">Elsewhere</h1>
+  <div class="cf">
+    <ul class="w-50 fl">
+      <li id="writeme">
+        forrest (ätt) sembiki (døt) com
+      </li>
+      <li>
+        <a href="https://github.com/forresto">GitHub</a>
+      </li>
+      <li>
+        <a href="https://stackoverflow.com/story/fo">StackOverflow Resume</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/forrestoliphant">LinkedIn</a>
+      </li>
+    </ul>
+    <ul class="w-50 fl">
+      <li>
+        <a href="https://twitter.com/forresto">Twitter</a>
+      </li>
+      <li>
+        <a href="https://youtube.com/forresto">YouTube</a>
+      </li>
+      <li>
+        <a href="https://flickr.com/forresto">Flickr</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  (function() {
+    var s = "=b!isfg>#nbjmup;gpssftuAtfncjlj/dpn@tvckfdu>tjuf&31jorvjsz#?gpssftuAtfncjlj/dpn=0b?";
+    var link = "";
+    for (i=0; i<s.length; i++) {
+      link += String.fromCharCode(s.charCodeAt(i)-1); 
+    }
+    document.getElementById('writeme').innerHTML = link;
+  })();
+</script>
+
+</body>
+</html>

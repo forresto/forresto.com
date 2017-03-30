@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>NoFlo clock demo | Forrest Oliphant</title>
+  <link rel="alternate" type="application/rss+xml" title="Forrest O. feed" href="http://feeds.feedburner.com/forresto" />
+  <link rel="stylesheet" href="/assets/tachyons.min.css"/>
+  <style>
+    html { line-height: 1.5; }
+    footer {
+      background: url("/images/bg-footer.svg") right center / cover no-repeat;
+    }
+    footer a { color: white; }
+  </style>
+</head>
+<body class="sans-serif">
+
+<header class="ph2 cf">
+  <h1 class="ma0 f3 fl">
+    <a href="/" class="near-black no-underline">
+      <img src="/images/forresto-com-logo.svg" width="72" height="72" class="grow-large v-mid">
+      <span class="dib v-mid">
+        Forrest Oliphant
+      </span>
+    </a>
+  </h1>
+  <nav class="fr ml2">
+    <a class="dib ma1 link dim near-black underline" href="/">Home</a>
+    <a class="dib ma1 link dim near-black underline" href="/thesis">Thesis</a>
+    <a class="dib ma1 mr0 link dim near-black underline" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="ph2">
+<article class="mw7">
+  <h1><a href="/2013/09/noflo-clock-demo/" class="link dim near-black">NoFlo clock demo</a></h1>
+  <p>2013-09-08</p>
+
+  <p>I have been working on the <a href="http://www.kickstarter.com/projects/noflo/noflo-development-environment">NoFlo</a> graph editor, building on my experience making <a href="http://meemoo.org/">Meemoo</a>.</p>
+<p><a href="http://noflojs.org/noflo-ui/#example/6699161"><img src="/assets/uzD9pKO.png" alt="noflo clock demo" /><br /><em>press play on the iframe to start the clock</em></a></p>
+<p>This graph runs the analog clock in the corner. We're discussing a few ways that the graph might be simpler. For example, most of the components could be encapsulated into one subgraph, which would output just the numbers and rotation percentages needed to draw the clock. </p>
+<p>Also, we're <a href="https://github.com/noflo/dataflow-noflo/issues/22">talking about allowing equations</a> like "=x/(60*1000)" in input ports that expect numbers. When the date is x, that equation will give you the correct rotation of the second hand (60 seconds * 1000 milliseconds). This will be a powerful feature, and reduce the number of nodes in the graph. </p>
+<p>If you have ideas for the graph editor or future demos, please chime in.</p>
+
+
+  <nav class="cf"> 
+    
+      <a class="fl" href="/2013/08/web-manifesto/" title="previous">&laquo; Web Manifesto</a>
+    
+    
+      <a class="fr" href="/2013/10/the-long-tail-of-tool-design-and-transformative-programming/" title="next">The long-tail of tool design and transformative programming &raquo;</a>
+     
+  </nav>
+
+   
+    <ul class="tags">
+      
+      <li class="tag"><a href="/tag/clock">clock</a></li>
+      
+      <li class="tag"><a href="/tag/graph">graph</a></li>
+      
+      <li class="tag"><a href="/tag/meemoo">meemoo</a></li>
+      
+      <li class="tag"><a href="/tag/noflo">noflo</a></li>
+      
+    </ul>
+  
+</article>
+
+</div>
+
+<footer class="mt4 ph2 pt4 pb5 bg-near-black white">
+  <h1 id="contact" class="mv0">Elsewhere</h1>
+  <div class="cf">
+    <ul class="w-50 fl">
+      <li id="writeme">
+        forrest (ätt) sembiki (døt) com
+      </li>
+      <li>
+        <a href="https://github.com/forresto">GitHub</a>
+      </li>
+      <li>
+        <a href="https://stackoverflow.com/story/fo">StackOverflow Resume</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/forrestoliphant">LinkedIn</a>
+      </li>
+    </ul>
+    <ul class="w-50 fl">
+      <li>
+        <a href="https://twitter.com/forresto">Twitter</a>
+      </li>
+      <li>
+        <a href="https://youtube.com/forresto">YouTube</a>
+      </li>
+      <li>
+        <a href="https://flickr.com/forresto">Flickr</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  (function() {
+    var s = "=b!isfg>#nbjmup;gpssftuAtfncjlj/dpn@tvckfdu>tjuf&31jorvjsz#?gpssftuAtfncjlj/dpn=0b?";
+    var link = "";
+    for (i=0; i<s.length; i++) {
+      link += String.fromCharCode(s.charCodeAt(i)-1); 
+    }
+    document.getElementById('writeme').innerHTML = link;
+  })();
+</script>
+
+</body>
+</html>

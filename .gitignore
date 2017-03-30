@@ -37,6 +37,6 @@ jspm_packages
 .node_repl_history
 
 assets/
-_site/
-webflow/
 images/
+_site/assets/
+_site/images/
