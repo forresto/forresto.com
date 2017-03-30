@@ -35,5 +35,12 @@ layout: default
   {% endfor %}
 </section>
 
-{% include recent-posts.html %}
-<p><a href="/blog">more...</a></p>
+<h1>Recent Posts</h1>
+{% for item in site.posts limit:7  %}
+  <p>
+    <a href="{{ item.url }}">{{ item.title }}</a>
+    {{ item.date | date: "%Y-%m-%d" }}
+  </p>
+{% endfor %}
+
+<p><a href="/blog/">more...</a></p>
