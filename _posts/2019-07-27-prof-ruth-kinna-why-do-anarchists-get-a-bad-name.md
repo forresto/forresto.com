@@ -3,8 +3,8 @@
 Prof. Ruth Kinna:
 
 <blockquote>
-I think it’s partly because of the ways in which anarchists expressed their critique. 
- 
+I think it’s partly because of the ways in which anarchists expressed their critique.
+
 But the people that they most upset were those that they had something in common with. And they were talking really to republicans and liberals who they accused of failing to deliver on revolutionary goals.
 
 So the standard historic goals of equality, liberty, fraternity. And what they were saying was that, y’know, if you’re serious about those goals then you can’t organise in the way that you’re organising, you can’t defend the constitutions that you’ve set up. Because fundamentally what those constitutions do is structure inequality and bring enmity between people by protecting their right to private property. And as long as you use the law to uphold that relationship you’re forever going to have masters and slaves.
