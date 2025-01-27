@@ -9,10 +9,10 @@ const numberOfLatestPostsToShow = 3;
 const layout = "layouts/home.njk";
 
 const eleventyComputed = {
-	postsCount: (data) => data.collections.posts.length,
-	latestPostsCount: (data) => Math.min(data.collections.posts.length, numberOfLatestPostsToShow),
-	postslist: (data) => data.collections.posts.slice(-numberOfLatestPostsToShow),
-  morePostsCount: (data) => Math.max(0, data.collections.posts.length - numberOfLatestPostsToShow)
+	postsCount: (data) => data.collections["my-posts"].length,
+	latestPostsCount: (data) => Math.min(data.collections["my-posts"].length, numberOfLatestPostsToShow),
+	postslist: (data) => data.collections["my-posts"].slice(-numberOfLatestPostsToShow),
+  morePostsCount: (data) => Math.max(0, data.collections["my-posts"].length - numberOfLatestPostsToShow)
 };
 ---
 
