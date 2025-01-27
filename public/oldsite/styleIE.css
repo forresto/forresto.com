@@ -1,0 +1,7 @@
+body {
+	overflow: hidden;
+	}
+div.content {
+	height: 100%;
+	overflow: auto;
+	}

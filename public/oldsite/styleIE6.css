@@ -1,0 +1,13 @@
+html {
+	overflow: hidden;
+}
+body {
+	height: 100%;
+	overflow: auto;
+}
+#flickrbadge {
+	position: absolute;
+}
+#toc {
+	position: absolute;
+}

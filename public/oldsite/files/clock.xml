@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="Clock" render_inline="optional" description="experimental calendar and clock" screenshot="http://forresto.com/files/clock_ss.png" thumbnail="http://forresto.com/files/clock_tn.png" author="Forrest Oliphant" author_email="null@gmail.com" author_affiliation="forresto.com" author_location="Carrboro, NC" title_url="http://forresto.com/flash/clock" height="305">
+	<Require feature="analytics"/>
+	<Require feature="flash" />
+</ModulePrefs>
+<Content type="html">
+<![CDATA[
+	<div id="clockflashcontainer" style="text-align: center;"></div> 
+	<script>
+		_IG_Analytics("UA-274009-10", "/clock/ig");
+		_IG_EmbedFlash("http://forresto.com/files/clock.swf", "clockflashcontainer", {
+			swf_version: 8,
+			id: "clockflash",
+			height: 300
+		})
+	</script>
+]]>
+</Content>
+</Module>

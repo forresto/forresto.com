@@ -1,0 +1,13 @@
+---js
+const eleventyNavigation = {
+	key: "Archive",
+	order: 2
+};
+---
+<h1>Archive</h1>
+
+<ul>
+{% for dir in collections.directories %}
+	<li><a class="postlist-link" href="{{ dir.path }}">{{ dir.name }}</a> {{ dir.posts.length }} posts</li>
+{% endfor %}
+</ul>

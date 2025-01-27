@@ -1,20 +1,18 @@
 # forresto.com
 
-    $ jekyll build
-    # => The current folder will be generated into ./_site
+## Eleventy SSG
 
-    $ jekyll build --destination <destination>
-    # => The current folder will be generated into <destination>
+* [Eleventy Docs](https://www.11ty.dev/docs/)
+* [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog)
 
-    $ jekyll build --source <source> --destination <destination>
-    # => The <source> folder will be generated into <destination>
+Generate a production-ready build to the `_site` folder: `npm run build`
 
-    $ jekyll build --watch
-    # => The current folder will be generated into ./_site,
-    #    watched for changes, and regenerated automatically.
+```
+npx @11ty/eleventy
+```
 
-    $ jekyll serve
-    # => A development server will run at http://localhost:4000/
-    # Auto-regeneration: enabled. Use `--no-watch` to disable.
+Or build and host on a local development server: `npm run dev`
 
-https://jekyllrb.com/docs/usage/
+```
+npx @11ty/eleventy --serve
+```

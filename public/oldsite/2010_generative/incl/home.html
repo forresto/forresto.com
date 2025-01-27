@@ -1,0 +1,339 @@
+<style type="text/css">
+	body {
+		min-height: 525px;
+	}
+	textarea {
+		display: none;
+		width: 22em;
+		height: 22em;
+		white-space: nowrap;
+		
+		font-family: Monaco, monospace;
+		font-size: 10px;
+	}
+	#canvasHolder { 
+		position: fixed; 
+		top: 0;
+		left: 0;
+		
+		z-index: 0;
+	}
+	#canvasControl {
+		position: fixed;
+		bottom: 20px;
+		left: 20px;
+		
+		background-color: rgba(255, 255, 255, 0.75);
+		padding: 10px 10px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+	}
+</style>
+
+
+
+<!-- Background canvas -->
+
+<div id="canvasHolder"></div>
+
+
+
+<!-- Code editor and chooser -->
+<div id="canvasControl">
+	<div id="editor" style="display:none;">
+		<h2 id="codeTitle" style="font-weight:100;"></h2>
+		<textarea id="code" style="display:block;">
+		</textarea>
+		<a title="Render or rerender the above code." href="#" onclick="display('code',false); return false;">Render</a> 
+		(<a title="About the Context Free language and concept." href="http://www.contextfreeart.org/mediawiki/index.php/CFDG_HOWTO" target="_blank">about</a>)
+	</div>
+	<div id="chooser">
+		<a id="previousLink" href="#" onclick="displayPrevious(); return false;">&laquo; Previous</a>
+		<a id="editLink" title="View and edit background sourcecode." href="#" onclick="toggle_visibility('editor'); return false;">Edit</a>
+		<a id="nextLink" href="#" onclick="displayNext(); return false;">Next &raquo;</a>
+	</div>
+</div>
+
+
+
+<!-- My compositions -->
+
+<textarea id="cf1" title="Quads">
+startshape WHOLE
+
+rule WHOLE {
+  QUAD { x -0.5 y -0.5 }
+  QUAD { x  0.5 y -0.5 }
+  QUAD { x  0.5 y  0.5 }
+  QUAD { x -0.5 y  0.5 }
+}
+
+rule QUAD {
+  SQUARE{hue 174 sat 1 b .1}
+}
+rule QUAD 4 {
+  WHOLE{s .5 b 0.15}
+}
+</textarea>
+
+<textarea id="cf2" title="Wood Shaving">
+startshape start
+
+rule start {
+  wisp {x 1 y -1 s .06}
+}
+
+rule wisp {
+  SQUARE{}
+  wisp{y 1 s .99 r 1.5}
+  branch{}
+}
+
+rule branch 3 {
+  wisp{y .01 s .5 r 5}
+}
+rule branch 100 {
+}
+</textarea>
+
+<textarea id="cf3" title="Spiral In">
+startshape start
+
+rule start {
+  one { x 1.5 y 0 s .25 }
+}
+
+rule one {
+  CIRCLE{ h 0 sat .5 b .5 }
+  one { y 2 s .995 r 10.15 h .5}
+}
+</textarea>
+
+<textarea id="cf4" title="Stocking Flake">
+startshape SNOWFLAKE
+
+rule SNOWFLAKE {
+  SPIKE {s .05}
+  SPIKE {s .05 r 60}
+  SPIKE {s .05 r 120}
+  SPIKE {s .05 r 180}
+  SPIKE {s .05 r 240}
+  SPIKE {s .05 r 300}
+}
+
+rule SPIKE 50{
+  SQUARE {h 30 sat 1 b .5 a -.5}
+  SPIKE { y 1 s 0.97 r 1 h 180}
+}
+rule SPIKE {
+  SQUARE {h 30 sat 1 b .5 a -.5}
+  SPIKE { r 60 }
+  SPIKE { r -60 }
+  SPIKE { y 1 s 0.97 h 180 }
+}
+</textarea>
+
+<textarea id="cf5" title="Vines">
+startshape grow
+
+rule grow {
+  walk_cw {s .075}
+  walk_cw {s .075 r 90}
+  walk_cw {s .075 r 180}
+  walk_cw {s .075 r 240}
+}
+
+rule walk_cw {
+  dot { } 
+  walk_cw { x .25 r 5 s .99} 
+}
+rule walk_cw 0.1 { 
+  walk_ccw { } 
+}
+rule walk_cw 0.01 { 
+  walk_cw { } 
+  walk_ccw { r -10 } 
+}
+ 
+rule walk_ccw { 
+  dot { } 
+  walk_ccw { x .25 r -5 s .99 } 
+}
+rule walk_ccw 0.1 { 
+  walk_cw { } 
+}
+rule walk_ccw 0.01 { 
+  walk_ccw { } 
+  walk_cw { r 10 } 
+}
+ 
+rule dot { 
+  CIRCLE { h 100 sat .75 b .2 } 
+  CIRCLE { s .9 sat -1 b 1} 
+}
+</textarea>
+
+<textarea id="cf6" title="Punchy">
+startshape start
+
+rule start {
+  go {x 1.5 s .2}
+}
+
+rule go {
+  one{}
+  go{s .999 r 5.49 y 1.16 h 180.2}
+}
+
+rule one {
+  SQUARE{r 54 h 0 sat 1 b .75}
+  CIRCLE{s .5 h 180 sat 1 b .75}
+}
+</textarea>
+
+<textarea id="cf7" title="Brocc. Deconst.">
+startshape brocc
+
+rule brocc {
+  stalk {s .75 y -1}
+}
+
+rule stalk { 
+  SQUARE { h 100 sat .75 b .2 } 
+  SQUARE { s .95 b 1} 
+  CIRCLE { s 1 h 100 sat .75 b .2 y 1} 
+  CIRCLE { s .95 b 1 y 1} 
+  stalk{s .5 x -.5 y 1 r 90}
+  stalk{s .5 y 1.5 h 50}
+  stalk{s .5 x .5 y 1 r -90}
+}
+</textarea>
+
+<textarea id="cf8" title="Broccoli">
+startshape broccoli
+
+rule broccoli {
+  stalk {y -1.25 s 2}
+}
+
+rule stalk { 
+  SQUARE { h 100 sat .75 b .75 s .5 2.5} 
+  CIRCLE { h 100 sat .75 b .25 y 1} 
+  stalk{s .5 y .45 x -.45 r 30 h 30}
+  stalk{s .5 y .6 h 50}
+  stalk{s .5 y .45 x .45 r -30 h 70}
+}
+</textarea>
+
+<textarea id="cf9" title="RGB Quilt">
+startshape quilt
+
+rule quilt {
+  one {s 2.5 x -.625}
+  one {s 2.5 h 120}
+  one {s 2.5 x .625 h 240}
+}
+
+rule one {
+  SQUARE{ a -.9 h 10 sat 1 b .25}
+  one {s .5 x .25 y -.25}
+  one {s .5 x -.25 y .25}
+}
+</textarea>
+
+<textarea id="cf10" title="Venn'd">
+startshape venn
+
+rule venn {
+  one {s 1.75 x -.3 h 180}
+  one {s 1.75 x .3 r 180}
+}
+
+rule one {
+  CIRCLE{ a -.5 h 0 sat 1 b .25}
+  one {s .5 x -.5 y -.2 r 10}
+  one {s .5 x -.5 y .2 r -10 h 20}
+}
+</textarea>
+
+
+
+
+<!-- Context Free Art in-browser rendering thanks to: http://www.azarask.in/blog/post/contextfreejs-algorithm-ink-making-art-with-javascript/ -->
+<script type="text/javascript" src="js/contextfree.js"></script>
+<script type="text/javascript">
+
+	function createCanvas(){
+		var c = document.createElement( "canvas" );
+		c.id = "canvas";
+		c.width = document.width;
+		c.height = document.height;
+		
+		document.getElementById("canvasHolder").appendChild( c );
+	}
+	
+	function removeCanvas(){
+		var c = document.getElementById("canvas");
+		if( c ){
+			document.getElementById("canvasHolder").removeChild( c );
+		}
+	}
+
+	function display( id, linkComposition ){
+	
+		var composition = document.getElementById(id);
+		if (id!="code") {
+			document.getElementById("editLink").innerHTML = "Edit #" + compositionNumber;
+			document.getElementById("codeTitle").innerHTML = composition.title;
+			document.getElementById("code").value = composition.value;
+		}
+		if (linkComposition) {
+			//window.location.hash = composition.title;
+		}
+		
+		var t = new Tokenizer();
+		var tokens = t.tokenize( "code" );
+		
+		var c = new Compiler();
+		var compiled = c.compile( tokens );
+		
+		if( compiled.background ){
+			var back = compiled.background;
+			//var backcolor = hsl2rgb( back.h|.001, back.sat|.01, back.b|1, back.a|1 );
+			var backcolor = hsl2rgb( back.h, back.sat, back.b, back.a );
+			document.body.style.backgroundColor = backcolor;
+		}
+
+		removeCanvas();
+		createCanvas();
+				
+		var r = Renderer;
+		r.queue = [];
+		r.render( compiled, "canvas" );
+	}
+	
+	// Show a random one on start
+	var compositionCount = 10;
+	var compositionNumber = Math.floor(Math.random()*compositionCount)+1;
+	display("cf"+compositionNumber, false);
+	
+	function displayNext() {
+		compositionNumber = compositionNumber>=compositionCount ? 1 : compositionNumber+1;
+		display("cf"+compositionNumber, true);
+	}
+	
+	function displayPrevious() {
+		compositionNumber = compositionNumber<=1 ? compositionCount : compositionNumber-1;
+		display("cf"+compositionNumber, true);
+	}
+	
+	function toggle_visibility(id) {
+		var e = document.getElementById(id);
+		if(e.style.display == 'block')
+			e.style.display = 'none';
+		else
+			e.style.display = 'block';
+	}
+
+		
+</script>

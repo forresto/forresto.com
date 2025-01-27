@@ -1,0 +1,53 @@
+body {
+	margin:5px 0px 0px 5px;
+	}
+#content {
+	margin:0px 0px 0px 10em;
+	z-index:2;
+	}
+.section {
+	font-size:small;
+	color: #666;
+	float: left;
+	margin: .4em;
+	padding:.4em;
+	border: 1px #666 dotted;
+	-moz-border-radius:.4em 0em .4em .4em;
+	white-space: nowrap;
+	font-size:small;
+}
+.pin { color:#666; font-family:Verdana; font-size:10px; font-weight:bold; text-decoration:none; vertical-align:middle; }
+#toc {
+	position:fixed;
+	z-index:1;
+	background-color:#FFF;
+	top:5px;
+	left:5px;
+	width:8em;
+	float: left;
+	margin: 5px;
+	padding:.4em;
+	-moz-border-radius:0em .4em .4em .4em;
+	border: 1px solid black;
+	white-space: nowrap;
+	font-size:small;
+}
+#toc a { 
+	color:#0000FF; 
+	text-decoration:none;
+}
+#flickrbadge {
+	position:fixed;
+	z-index:0;
+	bottom:5px;
+	left:5px;
+	width:8em;
+	margin: 5px;
+	padding:.4em;
+	-moz-border-radius:.4em .4em .4em 0em;
+	border: 1px solid black;
+	white-space: nowrap;
+	font-size:small;
+}
+h1, h2, h3, h4, h5, h6, p { margin-top:0px; margin-bottom:.4em; padding:0px;}
+img{border-width:0px;}

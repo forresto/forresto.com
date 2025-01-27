@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+---
+
+{% set directory = collections.directories.getByName(page.filePathStem.split('/')[1]) %}
+
+<nav><a href="/notes/">Archive</a> | {{ directory.name }}</nav>
+
+<h1>{{ title }}</h1>
+
+<main class="directory-content">
+{{ content | safe }}
+</main>
+
+<h2>Posts</h2>
+{% set postslist = directory.posts %}
+{% include "postslist.njk" %}

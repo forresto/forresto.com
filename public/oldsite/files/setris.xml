@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="Setris" render_inline="optional" description="solitaire game; click sets with color, shading, number, and shape either all alike or all different" screenshot="http://forresto.com/files/setris_ss.png" thumbnail="http://forresto.com/files/setris_tn.png" author="Forrest Oliphant" author_email="null@gmail.com" author_affiliation="forresto.com" author_location="Carrboro, NC" title_url="http://forresto.com/flash/setris" height="320">
+	<Require feature="analytics"/>
+	<Require feature="flash" />
+</ModulePrefs>
+<Content type="html">
+<![CDATA[
+	<div id="setrisflashcontainer" style="text-align: center;"></div> 
+	<script>		_IG_Analytics("UA-274009-10", "/setris/ig");
+		_IG_EmbedFlash("http://forresto.com/files/setris.swf", "setrisflashcontainer", {			swf_version: 8,			id: "setrisflash",			width: 240,			height: 320		})
+	</script>
+	<div id="setrisrestart" style="text-align: center;"><a href='javascript:_IG_EmbedFlash("http://forresto.com/files/setris.swf", "setrisflashcontainer", {swf_version: 8, id: "setrisflash", width: 240, height: 320})'>[restart game]</a></div> 
+]]>
+</Content>
+</Module>

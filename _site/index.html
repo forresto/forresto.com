@@ -1,261 +1,379 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>home | Forrest Oliphant</title>
-  <link rel="alternate" type="application/rss+xml" title="Forrest O. feed" href="http://feeds.feedburner.com/forresto" />
-  <link rel="stylesheet" href="/assets/tachyons.min.css"/>
-  <style>
-    html { line-height: 1.5; }
-    iframe { max-width: 100%; }
-    footer {
-      background: url("/images/bg-footer.svg") right center / cover no-repeat;
-    }
-    footer a { color: white; }
-  </style>
-</head>
-<body class="sans-serif">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Forrest O. Interactive</title>
+		<meta name="description" content="Helsinki-Brasstown Friendship Association, a design and craft coop in my dreams.">
+		<link rel="alternate" href="feed.xml" type="application/atom+xml" title="Forrest O. Interactive">
+		<meta name="generator" content="Eleventy v3.0.0">
+		<style>.postlist { counter-reset: start-from 4 }
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono,
+		Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
+		Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
+		Courier, monospace;
+}
 
-<header class="ph2 cf">
-  <h1 class="ma0 f3 fl">
-    <a href="/" class="near-black no-underline">
-      <img src="/images/forresto-com-logo.svg" width="72" height="72" class="grow-large v-mid">
-      <span class="dib v-mid">
-        Forrest Oliphant
-      </span>
-    </a>
-  </h1>
-  <nav class="fr ml2">
-    <a class="dib ma1 link dim near-black underline" href="/">Home</a>
-    <a class="dib ma1 link dim near-black underline" href="/thesis">Thesis</a>
-    <a class="dib ma1 mr0 link dim near-black underline" href="#contact">Contact</a>
-  </nav>
-</header>
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #c0c0c0;
+	--color-gray-90: #333;
 
-<div class="ph2">
-<h2>Web coder for hire: sites and apps</h2>
-<blockquote class="mw7">Because I believe that the computer revolution is still in the early stages, I build open web tools for creativity and community, so that more people may take part. Keep _ weird. 👽</blockquote>
+	--background-color: #fff;
 
-<h1>Featured Projects</h1>
-<section class="flex flex-wrap" style="margin: 0 -0.25em;">
-  
-    <article class="flex-auto w-100 w-50-m w-third-ns mw6 ph1 mb2">
-      <a href="/project/softfab/">
-        
-          
-            <img
-  alt="magenta purple black sweatshirt and nonagon shape"
-  src="/images/softfab-org-256w.jpg"
-  srcset="/images/softfab-org-256w.jpg 256w, /images/softfab-org-512w.jpg 512w, /images/softfab-org-1024w.jpg 1024w"
-/>
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050f;
 
-          
-        
-      </a>
-      <h1 class="f3 mv0">
-        <a class="link dim near-black" href="/project/softfab/">
-          #softfab
-        </a>
-      </h1>
-      <ul class="ma0 pa0 mb2">
-        <li class="dib mr2"><a href="/project/softfab/">info</a></li>
-        
-          <li class="dib mr2"><a href="https://softfab.org/">demo</a>
-        
-          <li class="dib mr2"><a href="https://github.com/softfab/tshirt">source</a>
-        
-      </ul>
-      <p class="mv0 mr2">
-        Web-based tool for making clothing patterns that change with body measurements.
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #c0c0c0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img {
+	max-width: 100%;
+}
+img[width][height] {
+	height: auto;
+}
+img[src$=".svg"] {
+	width: 100%;
+	height: auto;
+	max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: 0.5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: 0.5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em 0.5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: 0.25em;
+	padding-right: 0.5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+ul.task-list {
+	list-style-type: none;
+	padding-left: 1.5em;
+	/* text-indent: -1.7em; */
+}
+
+li.task-list-item {
+	display: flex;
+	aligh-items: flex-start;
+	align-items: first baseline;
+	gap: 0.25em;
+}
+
+blockquote {
+	margin-left: 2em;
+	padding-left: 1em;
+	border-left: 0.25em solid #ced7c2;
+}
+
+footer {
+	margin-top: 2em;
+	padding-top: 0;
+	border-top: 0.25em solid #ced7c2;
+	background-color: #f2f9e9;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Forrest O. Interactive</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/notes/">Archive</a></li>
+					<li class="nav-item"><a href="/about/">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+
+<h1 id="latest-3-posts">Latest 3 Posts</h1>
 
 
-      </p>
-    </article>
-  
-    <article class="flex-auto w-100 w-50-m w-third-ns mw6 ph1 mb2">
-      <a href="/project/ed/">
-        
-          
-            <img
-  alt="Ed post editor screenshot"
-  src="/images/softfab-org-256w.jpg"
-  srcset="/images/softfab-org-256w.jpg 256w, /images/softfab-org-512w.jpg 512w, /images/softfab-org-1024w.jpg 1024w"
-/>
 
-          
-        
-      </a>
-      <h1 class="f3 mv0">
-        <a class="link dim near-black" href="/project/ed/">
-          Ed post editor
-        </a>
-      </h1>
-      <ul class="ma0 pa0 mb2">
-        <li class="dib mr2"><a href="/project/ed/">info</a></li>
-        
-          <li class="dib mr2"><a href="https://softfab.org/">demo</a>
-        
-          <li class="dib mr2"><a href="https://github.com/softfab/tshirt">source</a>
-        
-      </ul>
-      <p class="mv0 mr2">
-        Post editor with formatting and rich media embeds.
+<ol reversed="" class="postlist">
+	<li class="postlist-item">
+		<a href="/meemoo/2025-01-25-meemoo-video-transition-loop/" class="postlist-link">Meemoo Video Transition Loop</a>
+		<time class="postlist-date" datetime="2025-01-25">2025, January 25</time>
+	</li>
+	<li class="postlist-item">
+		<a href="/meemoo/" class="postlist-link">Meemoo Web Media Wiring</a>
+		<time class="postlist-date" datetime="2025-01-21">2025, January 21</time>
+	</li>
+	<li class="postlist-item">
+		<a href="/meemoo/thesis/" class="postlist-link">Meemoo Thesis</a>
+		<time class="postlist-date" datetime="2012-04-23">2012, April 23</time>
+	</li>
+</ol>
 
 
-      </p>
-    </article>
-  
-    <article class="flex-auto w-100 w-50-m w-third-ns mw6 ph1 mb2">
-      <a href="/project/the-graph/">
-        
-          
-            <img
-  alt="magenta purple black sweatshirt and nonagon shape"
-  src="/images/softfab-org-256w.jpg"
-  srcset="/images/softfab-org-256w.jpg 256w, /images/softfab-org-512w.jpg 512w, /images/softfab-org-1024w.jpg 1024w"
-/>
-
-          
-        
-      </a>
-      <h1 class="f3 mv0">
-        <a class="link dim near-black" href="/project/the-graph/">
-          the-graph
-        </a>
-      </h1>
-      <ul class="ma0 pa0 mb2">
-        <li class="dib mr2"><a href="/project/the-graph/">info</a></li>
-        
-          <li class="dib mr2"><a href="https://softfab.org/">demo</a>
-        
-          <li class="dib mr2"><a href="https://github.com/softfab/tshirt">source</a>
-        
-      </ul>
-      <p class="mv0 mr2">
-        SVG component for viewing and editing dataflow graphs.
 
 
-      </p>
-    </article>
-  
-    <article class="flex-auto w-100 w-50-m w-third-ns mw6 ph1 mb2">
-      <a href="/project/meemoo/">
-        
-          
-            <img
-  alt="meemoo screenshot"
-  src="/images/softfab-org-256w.jpg"
-  srcset="/images/softfab-org-256w.jpg 256w, /images/softfab-org-512w.jpg 512w, /images/softfab-org-1024w.jpg 1024w"
-/>
-
-          
-        
-      </a>
-      <h1 class="f3 mv0">
-        <a class="link dim near-black" href="/project/meemoo/">
-          Meemoo
-        </a>
-      </h1>
-      <ul class="ma0 pa0 mb2">
-        <li class="dib mr2"><a href="/project/meemoo/">info</a></li>
-        
-          <li class="dib mr2"><a href="https://softfab.org/">demo</a>
-        
-          <li class="dib mr2"><a href="https://github.com/softfab/tshirt">source</a>
-        
-      </ul>
-      <p class="mv0 mr2">
-        Design for hackability: remixable tools for making and remixing web media.
 
 
-      </p>
-    </article>
-  
-</section>
-
-<h1>Recent Posts</h1>
-
-  <p>
-    <a href="/2015/01/karma-and-the-multiverse/">karma and the multiverse</a>
-    2015-01-13
-  </p>
-
-  <p>
-    <a href="/2014/08/the-toybox-and-the-toolbox/">the toybox and the toolbox</a>
-    2014-08-01
-  </p>
-
-  <p>
-    <a href="/2014/02/visual-spatial-tangible-programming/">visual / spatial / tangible programming</a>
-    2014-02-21
-  </p>
-
-  <p>
-    <a href="/2014/02/idea-open-fashion-design-tool/">idea: open fashion design tool</a>
-    2014-02-16
-  </p>
-
-  <p>
-    <a href="/2013/12/noflo-hackathon-mid-week-update/">NoFlo hackathon mid-week update</a>
-    2013-12-04
-  </p>
-
-  <p>
-    <a href="/2013/11/quitting-fb/">quitting fb</a>
-    2013-11-05
-  </p>
-
-  <p>
-    <a href="/2013/10/design-for-hackability-talk-at-jsconf-eu/">Design for Hackability talk at JSConf.eu</a>
-    2013-10-30
-  </p>
 
 
-<p><a href="/blog/">more...</a></p>
+			</heading-anchors>
+		</main>
 
-</div>
+		<footer>
+			<p>Forrest O. Interactive is my WIP web blog wiki garden, built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
 
-<footer class="mt4 ph2 pt4 pb5 bg-near-black white">
-  <h1 id="contact" class="mv0">Elsewhere</h1>
-  <div class="cf">
-    <ul class="w-50 fl">
-      <li id="writeme">
-        forrest (ätt) sembiki (døt) com
-      </li>
-      <li>
-        <a href="https://github.com/forresto">GitHub</a>
-      </li>
-      <li>
-        <a href="https://stackoverflow.com/story/fo">StackOverflow Resume</a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/forrestoliphant">LinkedIn</a>
-      </li>
-    </ul>
-    <ul class="w-50 fl">
-      <li>
-        <a href="https://twitter.com/forresto">Twitter</a>
-      </li>
-      <li>
-        <a href="https://youtube.com/forresto">YouTube</a>
-      </li>
-      <li>
-        <a href="https://flickr.com/forresto">Flickr</a>
-      </li>
-    </ul>
-  </div>
-</footer>
+			<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless otherwise noted, <span property="dct:title">Forrest O. Interactive</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<picture><source type="image/avif" srcset="/img/FRC2GTPyJx-44.avif 44w"><source type="image/webp" srcset="/img/FRC2GTPyJx-44.webp 44w"><img loading="lazy" decoding="async" src="/img/FRC2GTPyJx-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture><picture><source type="image/avif" srcset="/img/R3XBmYTpOG-44.avif 44w"><source type="image/webp" srcset="/img/R3XBmYTpOG-44.webp 44w"><img loading="lazy" decoding="async" src="/img/R3XBmYTpOG-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture></a></p>
 
-<script type="text/javascript">
-  (function() {
-    var s = "=b!isfg>#nbjmup;gpssftuAtfncjlj/dpn@tvckfdu>tjuf&31jorvjsz#?gpssftuAtfncjlj/dpn=0b?";
-    var link = "";
-    for (i=0; i<s.length; i++) {
-      link += String.fromCharCode(s.charCodeAt(i)-1); 
-    }
-    document.getElementById('writeme').innerHTML = link;
-  })();
-</script>
+		</footer>
 
-</body>
+		<!-- This page `/` was built on 2025-01-26T17:50:25.986Z -->
+		<script type="module" src="/dist/PQuipxb2GV.js"></script>
+	</body>
 </html>
