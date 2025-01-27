@@ -2,67 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 		
 		<url>
-			<loc>https://forresto.com/eleventy-base-blog/meemoo/thesis/</loc>
+			<loc>https://forresto.com/meemoo/thesis/</loc>
 			<lastmod>2012-04-23</lastmod>
 		</url>
 		
 		<url>
-			<loc>https://forresto.com/eleventy-base-blog/2020s/</loc>
+			<loc>https://forresto.com/2020s/</loc>
 			<lastmod>2020-01-01</lastmod>
 		</url>
 		
 		<url>
-			<loc>https://forresto.com/eleventy-base-blog/2020s/2023-studio-wall/</loc>
+			<loc>https://forresto.com/2020s/2023-studio-wall/</loc>
 			<lastmod>2023-05-03</lastmod>
 		</url>
 		
 		<url>
-			<loc>https://forresto.com/eleventy-base-blog/fab-academy/01-project-management/</loc>
+			<loc>https://forresto.com/fab-academy/01-project-management/</loc>
 			<lastmod>2025-01-22</lastmod>
 		</url>
 		
 		<url>
-			<loc>https://forresto.com/eleventy-base-blog/fab-academy/01-potential-final-project/</loc>
+			<loc>https://forresto.com/fab-academy/01-potential-final-project/</loc>
 			<lastmod>2025-01-24</lastmod>
 		</url>
 		
 		<url>
-			<loc>https://forresto.com/eleventy-base-blog/meemoo/2025-01-25-meemoo-video-transition-loop/</loc>
+			<loc>https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop/</loc>
 			<lastmod>2025-01-25</lastmod>
 		</url>
 		
 		<url>
-			<loc>https://forresto.com/eleventy-base-blog/about/</loc>
+			<loc>https://forresto.com/about/</loc>
 			<lastmod>2025-01-27</lastmod>
 		</url>
 		
 		<url>
-			<loc>https://forresto.com/eleventy-base-blog/fab-academy/</loc>
+			<loc>https://forresto.com/fab-academy/</loc>
 			<lastmod>2025-01-27</lastmod>
 		</url>
 		
 		<url>
-			<loc>https://forresto.com/eleventy-base-blog/</loc>
+			<loc>https://forresto.com/</loc>
 			<lastmod>2025-01-27</lastmod>
 		</url>
 		
 		<url>
-			<loc>https://forresto.com/eleventy-base-blog/meemoo/</loc>
+			<loc>https://forresto.com/meemoo/</loc>
 			<lastmod>2025-01-27</lastmod>
 		</url>
 		
 		<url>
-			<loc>https://forresto.com/eleventy-base-blog/notes/</loc>
+			<loc>https://forresto.com/notes/</loc>
 			<lastmod>2025-01-27</lastmod>
 		</url>
 		
 		<url>
-			<loc>https://forresto.com/eleventy-base-blog/tags/</loc>
+			<loc>https://forresto.com/tags/</loc>
 			<lastmod>2025-01-27</lastmod>
 		</url>
 		
 		<url>
-			<loc>https://forresto.com/eleventy-base-blog/feed.xml</loc>
+			<loc>https://forresto.com/feed.xml</loc>
 			<lastmod>2025-01-27</lastmod>
 		</url>
 </urlset>

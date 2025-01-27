@@ -3,20 +3,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>Forrest O. Interactive</title>
   <subtitle>Forrest O.&#39;s web blog wiki garden home</subtitle>
-  <link href="https://forresto.com/eleventy-base-blog/feed.xml" rel="self" />
-  <link href="https://forresto.com/eleventy-base-blog/" />
+  <link href="https://forresto.com/feed.xml" rel="self" />
+  <link href="https://forresto.com/" />
   <updated>2025-01-25T00:00:00Z</updated>
-  <id>https://forresto.com/eleventy-base-blog/</id>
+  <id>https://forresto.com/</id>
   <author>
     <name>Forrest O.</name>
   </author>
   <entry>
     <title>Meemoo Video Transition Loop</title>
-    <link href="https://forresto.com/eleventy-base-blog/meemoo/2025-01-25-meemoo-video-transition-loop/" />
+    <link href="https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop/" />
     <updated>2025-01-25T00:00:00Z</updated>
-    <id>https://forresto.com/eleventy-base-blog/meemoo/2025-01-25-meemoo-video-transition-loop/</id>
+    <id>https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop/</id>
     <content type="html">&lt;p&gt;Meemoo jam...&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/eleventy-base-blog/meemoo/2025-01-25-meemoo-video-transition-loop/JnK-o6CZ7Z-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/eleventy-base-blog/meemoo/2025-01-25-meemoo-video-transition-loop/JnK-o6CZ7Z-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/eleventy-base-blog/meemoo/2025-01-25-meemoo-video-transition-loop/JnK-o6CZ7Z-1280.png&quot; alt=&quot;Meemoo.org nodes and wires interface with tweens driving an endlessly looping video&quot; width=&quot;1280&quot; height=&quot;896&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop/JnK-o6CZ7Z-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop/JnK-o6CZ7Z-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop/JnK-o6CZ7Z-1280.png&quot; alt=&quot;Meemoo.org nodes and wires interface with tweens driving an endlessly looping video&quot; width=&quot;1280&quot; height=&quot;896&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;https://app.meemoo.org/#gist/35e3b45b5fb0ab1e0625c4410da841050
 (I need to make a URL for the video file.)
 (I should make an auto-embedder for Meemoo URLs.)&lt;/p&gt;
@@ -28,9 +28,9 @@
   </entry>
   <entry>
     <title>Week 01. Potential Final Project (draft)</title>
-    <link href="https://forresto.com/eleventy-base-blog/fab-academy/01-potential-final-project/" />
+    <link href="https://forresto.com/fab-academy/01-potential-final-project/" />
     <updated>2025-01-24T00:00:00Z</updated>
-    <id>https://forresto.com/eleventy-base-blog/fab-academy/01-potential-final-project/</id>
+    <id>https://forresto.com/fab-academy/01-potential-final-project/</id>
     <content type="html">&lt;p&gt;I&#39;ve been floating the idea for friends and family to imagine the project that I&#39;m going to be making this year, and tell me their thoughts on it. It&#39;s a half joke, but wouldn&#39;t it be neat if you could do that? I imagine people with a big audience can do that, but there&#39;s a fine line between having no replies and having too many.&lt;/p&gt;
 &lt;p&gt;In the real world, I have to share some sketches, and get more specific when asking for feedback.&lt;/p&gt;
 &lt;p&gt;I have three concepts now.&lt;/p&gt;
@@ -39,13 +39,13 @@
   </entry>
   <entry>
     <title>Week 01. Project Management</title>
-    <link href="https://forresto.com/eleventy-base-blog/fab-academy/01-project-management/" />
+    <link href="https://forresto.com/fab-academy/01-project-management/" />
     <updated>2025-01-22T00:00:00Z</updated>
-    <id>https://forresto.com/eleventy-base-blog/fab-academy/01-project-management/</id>
+    <id>https://forresto.com/fab-academy/01-project-management/</id>
     <content type="html">&lt;p&gt;&lt;a href=&quot;https://fabacademy.org/2025/nueval/principles_and_practices,_project_management.html&quot;&gt;This week&#39;s goals&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;principles-and-practices&quot;&gt;Principles and Practices&lt;/h1&gt;
 &lt;ul class=&quot;task-list&quot;&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_0&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_0&quot;&gt; Plan and sketch a &lt;a href=&quot;https://forresto.com/eleventy-base-blog/fab-academy/01-potential-final-project/&quot;&gt;potential final project&lt;/a&gt;&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_0&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_0&quot;&gt; Plan and sketch a &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final-project/&quot;&gt;potential final project&lt;/a&gt;&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&quot;project-management&quot;&gt;Project Management&lt;/h1&gt;
 &lt;ul class=&quot;task-list&quot;&gt;
@@ -70,7 +70,7 @@
   |_ ...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Posts that don&#39;t have an obvious collection go in a &amp;quot;2020s&amp;quot; directory. I have old blog posts and letters back to the 90s that can fit with this structure.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://forresto.com/eleventy-base-blog/tags&quot;&gt;Tags&lt;/a&gt; bridge posts across collections.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://forresto.com/tags&quot;&gt;Tags&lt;/a&gt; bridge posts across collections.&lt;/p&gt;
 &lt;h2 id=&quot;copyright&quot;&gt;Copyright&lt;/h2&gt;
 &lt;p&gt;Kris suggested that I look into&lt;/p&gt;
 &lt;ul&gt;
@@ -124,17 +124,17 @@
 &lt;p&gt;On each directory page, I want the content of index.md (optional) and a list of the posts.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;While writing this post, I noticed that the inline code completions know about Fab Academy&#39;s weeks.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/eleventy-base-blog/fab-academy/01-project-management/o-OZyJdOnz-765.avif 765w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/eleventy-base-blog/fab-academy/01-project-management/o-OZyJdOnz-765.webp 765w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/eleventy-base-blog/fab-academy/01-project-management/o-OZyJdOnz-765.png&quot; alt=&quot;code completion knows that week 3 is computer controlled cutting&quot; width=&quot;765&quot; height=&quot;275&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;Did it surmise this from the text checklist in &lt;a href=&quot;https://forresto.com/eleventy-base-blog/fab-academy/&quot;&gt;index.md&lt;/a&gt;? Either that or it knows this from training, which seems possible, given how much documentation exists over the years for Fab Academy.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/01-project-management/o-OZyJdOnz-765.avif 765w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/01-project-management/o-OZyJdOnz-765.webp 765w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/01-project-management/o-OZyJdOnz-765.png&quot; alt=&quot;code completion knows that week 3 is computer controlled cutting&quot; width=&quot;765&quot; height=&quot;275&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;Did it surmise this from the text checklist in &lt;a href=&quot;https://forresto.com/fab-academy/&quot;&gt;index.md&lt;/a&gt;? Either that or it knows this from training, which seems possible, given how much documentation exists over the years for Fab Academy.&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>2023 Studio Wall (annotated)</title>
-    <link href="https://forresto.com/eleventy-base-blog/2020s/2023-studio-wall/" />
+    <link href="https://forresto.com/2020s/2023-studio-wall/" />
     <updated>2023-05-03T00:00:00Z</updated>
-    <id>https://forresto.com/eleventy-base-blog/2020s/2023-studio-wall/</id>
+    <id>https://forresto.com/2020s/2023-studio-wall/</id>
     <content type="html">&lt;p&gt;Before we moved, I captured the state of my corner &amp;quot;studio&amp;quot; wall. I had set it up with tape-backed steel strips to be able to attach things with magnets, which worked fairly well. It was full of paper art and experiments from me and other other folks.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/eleventy-base-blog/2020s/2023-studio-wall/98AX_o3E0x-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/eleventy-base-blog/2020s/2023-studio-wall/98AX_o3E0x-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/eleventy-base-blog/2020s/2023-studio-wall/98AX_o3E0x-1280.jpeg&quot; alt=&quot;studio wall&quot; width=&quot;1280&quot; height=&quot;1100&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/2020s/2023-studio-wall/98AX_o3E0x-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/2020s/2023-studio-wall/98AX_o3E0x-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/2020s/2023-studio-wall/98AX_o3E0x-1280.jpeg&quot; alt=&quot;studio wall&quot; width=&quot;1280&quot; height=&quot;1100&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;I then made an interactive version with videos, notes, and links.&lt;/p&gt;
 &lt;iframe src=&quot;https://www.tldraw.com/v/v6A_c_7v_-jVmHBfdM7qeoZeJR?d=v-1122.-737.3656.2689.BypPvkT29lod8hatRpQON&quot; width=&quot;1280&quot; height=&quot;720&quot;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.tldraw.com/v/v6A_c_7v_-jVmHBfdM7qeoZeJR?d=v-1122.-737.3656.2689.BypPvkT29lod8hatRpQON&quot;&gt;Made with Tldraw&lt;/a&gt;.&lt;/p&gt;
@@ -143,11 +143,11 @@
   </entry>
   <entry>
     <title>Meemoo Thesis</title>
-    <link href="https://forresto.com/eleventy-base-blog/meemoo/thesis/" />
+    <link href="https://forresto.com/meemoo/thesis/" />
     <updated>2012-04-23T00:00:00Z</updated>
-    <id>https://forresto.com/eleventy-base-blog/meemoo/thesis/</id>
+    <id>https://forresto.com/meemoo/thesis/</id>
     <content type="html">&lt;p&gt;Link to the thesis:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://forresto.com/eleventy-base-blog/meemoo/thesis/ForrestOliphant-MeemooThesis-web.pdf&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/eleventy-base-blog/meemoo/thesis/trcJG4pH_L-1240.avif 1240w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/eleventy-base-blog/meemoo/thesis/trcJG4pH_L-1240.webp 1240w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/eleventy-base-blog/meemoo/thesis/trcJG4pH_L-1240.png&quot; alt=&quot;Meemoo: Hackable Web App Framework&quot; width=&quot;1240&quot; height=&quot;1753&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://forresto.com/meemoo/thesis/ForrestOliphant-MeemooThesis-web.pdf&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/meemoo/thesis/trcJG4pH_L-1240.avif 1240w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/meemoo/thesis/trcJG4pH_L-1240.webp 1240w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/meemoo/thesis/trcJG4pH_L-1240.png&quot; alt=&quot;Meemoo: Hackable Web App Framework&quot; width=&quot;1240&quot; height=&quot;1753&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Meemoo blog entry &lt;a href=&quot;https://meemoo.org/blog/2012-04-23-finished-writing-back-to-code&quot;&gt;on finishing the thesis&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.finna.fi/Record/aaltodoc.123456789_3944&quot;&gt;Finna library record&lt;/a&gt;&lt;/li&gt;
