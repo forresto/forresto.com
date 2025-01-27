@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<travels>
+
+<location arrival="1981-10-10">
+
+    <name>The South</name>
+
+    <latitude>35.1N</latitude>
+
+    <longitude>83.95W</longitude>
+
+    <url>http://forresto.sixbit.org/</url>
+
+    <note>Homebase set as Peachtree, NC. (Click for home)</note>
+
+</location>
+
+<location arrival="1986-10-11">
+
+    <name>New Zealand</name>
+
+    <latitude>43.533S</latitude>
+
+    <longitude>172.633E</longitude>
+
+    <url>#</url>
+
+    <note>Family trek</note>
+
+</location>
+
+<location arrival="1988-01-10">
+
+    <name>Alaska</name>
+
+    <latitude>61.1728N</latitude>
+
+    <longitude>149.9168W</longitude>
+
+    <note>Family vacation</note>
+
+</location>
+
+<location arrival="1994-01-10">
+
+    <name>Hawaii</name>
+
+    <latitude>21.4168N</latitude>
+
+    <longitude>158.1793W</longitude>
+
+    <url>#</url>
+
+    <note>Family vacation</note>
+
+</location>
+
+<location arrival="1996-01-10">
+
+    <name>Guatemala</name>
+
+    <latitude>14.8411N</latitude>
+
+    <longitude>91.519W</longitude>
+
+    <url>#</url>
+
+    <note>2 month family trek</note>
+
+</location>
+
+<location arrival="1997-10-10">
+
+    <name>European Vacation</name>
+
+    <latitude>47.1107N</latitude>
+
+    <longitude>4.1104E</longitude>
+
+    <note>6 month family trek (Click for letters)</note>
+
+    <url>http://www.livejournal.com/users/forrestino/31280.html</url>
+
+</location>
+
+<location arrival="1999-08-10">
+
+    <name>Hiroshima, JP</name>
+
+    <latitude>34.3858N</latitude>
+
+    <longitude>132.4465E</longitude>
+
+    <note>9 months as exchange student (Click for letters)</note>
+
+    <url>http://www.livejournal.com/users/forrestino/27455.html</url>
+
+</location>
+
+
+
+<location arrival="2002-03-10">
+
+    <name>Merida, MX</name>
+
+    <latitude>20.9192N</latitude>
+
+    <longitude>89.6817W</longitude>
+
+    <url>#</url>
+
+    <note>Family spring break</note>
+
+</location>
+
+<location arrival="2002-06-28">
+
+    <name>London, UK</name>
+
+    <latitude>51.5063N</latitude>
+
+    <longitude>0.1271E</longitude>
+
+    <note>UK film studies (Click for letters)</note>
+
+    <url>http://www.livejournal.com/users/forrestino/9187.html</url>
+
+</location>
+
+<location arrival="2002-07-28">
+
+    <name>Trondheim, NO</name>
+
+    <latitude>63.4248N</latitude>
+
+    <longitude>10.3816E</longitude>
+
+    <note>Scandinavian film studies (Click for letters)</note>
+
+    <url>http://www.livejournal.com/users/forrestino/50926.html</url>
+
+</location>
+
+<location arrival="2002-12-20">
+
+    <name>Chapel Hill, NC</name>
+
+    <latitude>35.9146N</latitude>
+
+    <longitude>79.0566W</longitude>
+
+    <url>http://flickr.com/photos/forresto/sets/91249/</url>
+
+    <note>Finished up school at UNC (Click for photos)</note>
+
+</location>
+
+<location arrival="2003-06-19">
+
+    <name>Taneichi, JP</name>
+
+    <latitude>40.4401N</latitude>
+
+    <longitude>141.6864E</longitude>
+
+    <note>14 month contract teaching English (Click for letters)</note>
+
+    <url>http://www.livejournal.com/users/forrestino/51814.html</url>
+
+</location>
+
+<location arrival="2005-08-07">
+
+    <name>Broenderslev, DK</name>
+
+    <latitude>57.2683N</latitude>
+
+    <longitude>9.9570E</longitude>
+
+    <note>19 weeks at Nordjyllands Idraetshoejskole</note>
+
+    <url>http://www.livejournal.com/users/forresto/tag/nih</url>
+
+</location>
+						
+
+</travels>

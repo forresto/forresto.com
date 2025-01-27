@@ -1,0 +1,348 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Forrest O. - Indexed</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="ICBM" content="40.4401, 141.6864">
+<meta name="DC.title" content="forresto.com - index">
+<link href="http://forresto.sixbit.org/fool.ico" rel="shortcut icon">
+<link rel="alternate" type="application/rss+xml" title="fo's livejournal+flickr" href="http://feeds.feedburner.com/forresto">
+<base target="_top">
+<style type="text/css">
+@import "style2005.css";
+</style>
+<!--[if IE 5]>
+<link
+ href="styleIE5.css"
+ rel="stylesheet"
+ type="text/css"
+ media="screen">
+<![endif]-->
+<!--[if IE 6]>
+<link
+ href="styleIE6.css"
+ rel="stylesheet"
+ type="text/css"
+ media="screen">
+<![endif]-->
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+// Dreamweaver functions that my functions call
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_changeProp(objName,x,theProp,theValue) { //v6.0
+  var obj = MM_findObj(objName);
+  if (obj && (theProp.indexOf("style.")==-1 || obj.style)){
+    if (theValue == true || theValue == false)
+      eval("obj."+theProp+"="+theValue);
+    else eval("obj."+theProp+"='"+theValue+"'");
+  }
+}
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+
+// color and size changing
+function lock(section){
+	var divid = section;
+	size_3(section);
+	MM_changeProp(divid,'','style.backgroundColor','#FFFFCC','DIV');
+}
+function size_3(section){
+	var divid = section;
+	MM_changeProp(divid,'','style.fontSize','large','DIV');
+	MM_changeProp(divid,'','style.color','black','DIV')
+	MM_changeProp(divid,'','style.borderWidth','1px','DIV')
+	MM_changeProp(divid,'','style.borderStyle','solid','DIV')
+	MM_changeProp(divid,'','style.borderColor','black','DIV')
+	MM_changeProp(divid,'','style.backgroundColor','white','DIV')
+}
+function size_2(section){
+	var divid = section;
+	MM_changeProp(divid,'','style.fontSize','small','DIV');
+	MM_changeProp(divid,'','style.color','#666','DIV')
+	MM_changeProp(divid,'','style.borderWidth','1px','DIV')
+	MM_changeProp(divid,'','style.borderStyle','dotted','DIV')
+	MM_changeProp(divid,'','style.borderColor','#666','DIV')
+	MM_changeProp(divid,'','style.backgroundColor','white','DIV')
+}
+function size_1(section){
+	var divid = section;
+	MM_changeProp(divid,'','style.fontSize','xx-small','DIV');
+	MM_changeProp(divid,'','style.color','silver','DIV')
+	MM_changeProp(divid,'','style.borderWidth','1px','DIV')
+	MM_changeProp(divid,'','style.borderStyle','dotted','DIV')
+	MM_changeProp(divid,'','style.borderColor','silver','DIV')
+	MM_changeProp(divid,'','style.backgroundColor','white','DIV')
+}
+
+// so that onMouseOver can jump to #anchors on the page
+function jump(jumpurl) {
+	var url = jumpurl;
+	MM_goToURL('self',url)
+	document.title = 'Forrest O. (' + url + ')';
+}
+
+// toggle section with given id
+function showhide(id) {
+	el = document.getElementById(id);
+	var display = el.style.display ? '' : 'none';
+	el.style.display = display;
+}
+
+// find section
+function findsection(){
+	if (/#.+$/.test(location.href)) {
+		var arr = location.href.split("#");
+		var section = arr[1];
+		if (section == 'photography'){
+			size_3('pho');size_2('wri');size_1('fil');size_1('mus');size_1('int');size_1('gra');size_1('mat');size_1('lin');size_1('abo');
+			lock('pho');
+		} else if (section == 'writing'){
+			size_2('pho');size_3('wri');size_2('fil');size_1('mus');size_1('int');size_1('gra');size_1('mat');size_1('lin');size_1('abo');
+			lock('wri');
+		} else if (section == 'film'){
+			size_1('pho');size_2('wri');size_3('fil');size_2('mus');size_1('int');size_1('gra');size_1('mat');size_1('lin');size_1('abo');
+			lock('fil');
+		} else if (section == 'music'){
+			size_1('pho');size_1('wri');size_2('fil');size_3('mus');size_2('int');size_1('gra');size_1('mat');size_1('lin');size_1('abo');
+			lock('mus');
+		} else if (section == 'interactive'){
+			size_1('pho');size_1('wri');size_1('fil');size_2('mus');size_3('int');size_2('gra');size_1('mat');size_1('lin');size_1('abo');
+			lock('int');
+		} else if (section == 'graphical'){
+			size_1('pho');size_1('wri');size_1('fil');size_1('mus');size_2('int');size_3('gra');size_2('mat');size_1('lin');size_1('abo');
+			lock('gra');
+		} else if (section == 'math'){
+			size_1('pho');size_1('wri');size_1('fil');size_1('mus');size_1('int');size_2('gra');size_3('mat');size_2('lin');size_1('abo');
+			lock('mat');
+		} else if (section == 'links'){
+			size_1('pho');size_1('wri');size_1('fil');size_1('mus');size_1('int');size_1('gra');size_2('mat');size_3('lin');size_2('abo');
+			lock('lin');
+		} else if (section == 'about'){
+			size_1('pho');size_1('wri');size_1('fil');size_1('mus');size_1('int');size_1('gra');size_1('mat');size_2('lin');size_3('abo');
+			lock('abo');
+		} else {
+			alert("this section might not be defined: " + arr[1]);
+		}
+	jump('#' + section);
+	}
+}
+
+//-->
+</script>
+</head>
+<body>
+<div id="toc" style="font-size:medium;">
+	<div style="border:1px solid gray;">
+		<div style="border:1px solid silver; padding:0.4em;">
+			<h1><a name="top"></a>forresto</h1>
+			<p align="right"><a href="#photography" target="_self" onMouseOver="size_3('pho');size_2('wri');size_1('fil');size_1('mus');size_1('int');size_1('gra');size_1('mat');size_1('lin');size_1('abo');jump('#photography');" onClick="lock('pho')">photography</a><br>
+				<a href="#writing" target="_self" onMouseOver="size_2('pho');size_3('wri');size_2('fil');size_1('mus');size_1('int');size_1('gra');size_1('mat');size_1('lin');size_1('abo');jump('#writing');" onClick="lock('wri')">writing</a><br>
+				<a href="#film" target="_self" onMouseOver="size_1('pho');size_2('wri');size_3('fil');size_2('mus');size_1('int');size_1('gra');size_1('mat');size_1('lin');size_1('abo');jump('#film');" onClick="lock('fil')">film</a><br>
+				<a href="#music" target="_self" onMouseOver="size_1('pho');size_1('wri');size_2('fil');size_3('mus');size_2('int');size_1('gra');size_1('mat');size_1('lin');size_1('abo');jump('#music');" onClick="lock('mus')">music</a><br>
+				<a href="#interactive" target="_self" onMouseOver="size_1('pho');size_1('wri');size_1('fil');size_1('fil');size_2('mus');size_3('int');size_2('gra');size_1('mat');size_1('lin');size_1('abo');jump('#interactive');" onClick="lock('int')">interactive</a><br>
+				<a href="#graphical" target="_self" onMouseOver="size_1('pho');size_1('wri');size_1('fil');size_1('fil');size_1('mus');size_2('int');size_3('gra');size_2('mat');size_1('lin');size_1('abo');jump('#graphical');" onClick="lock('gra')">graphical</a><br>
+				<a href="#math" target="_self" onMouseOver="size_1('pho');size_1('wri');size_1('fil');size_1('fil');size_1('mus');size_1('int');size_2('gra');size_3('mat');size_2('lin');size_1('abo');jump('#math');" onClick="lock('mat')">math</a><br>
+				<a href="#links" target="_self" onMouseOver="size_1('pho');size_1('wri');size_1('fil');size_1('fil');size_1('mus');size_1('int');size_1('gra');size_2('mat');size_3('lin');size_2('abo');jump('#links');" onClick="lock('lin')">links</a><br>
+				<a href="#about" target="_self" onMouseOver="size_1('pho');size_1('wri');size_1('fil');size_1('fil');size_1('mus');size_1('int');size_1('gra');size_1('mat');size_2('lin');size_3('abo');jump('#about');" onClick="lock('abo')">about/contact</a></p>
+			<p style="text-align:right; font-style:italic; font-size:small; "><a href="http://forresto.sixbit.org/" target="_self" onMouseOver="jump('#');size_2('pho');size_2('wri');size_2('fil');size_2('fil');size_2('mus');size_2('int');size_2('gra');size_2('mat');size_2('lin');size_2('abo');">reset page </a></p>
+		</div>
+	</div>
+</div>
+<div id="content">
+	<div id="pho" class="section">
+		<h2><a name="photography"></a>photography <a href="#photography" target="_self" class="pin" onClick="size_3('pho');size_2('wri');size_1('fil');size_1('mus');size_1('int');size_1('gra');size_1('mat');size_1('lin');size_1('abo');jump('#photography');lock('pho')">&curren;</a></h2>
+		<p><a href="http://flickr.com/photos/forresto/">flickr photos</a><br>
+			the semidaily image</p>
+		<p><a href="http://flickr.com/photos/forresto/sets/">albums</a> <br>
+			flickr sets </p>
+		<p><a href="http://flickr.com/photos/forresto/sets/91576/">taneichi</a> <br>
+			two years teaching in northern japan </p>
+		<p><a href="http://flickr.com/photos/forresto/sets/91249/">chapel hill </a> <br>
+			party pics gallery </p>
+		<!--
+	<p><a href="photography/terror/index.html">terro&reg;</a> <br>
+		photoshop project commentary made one year <br>
+		after nine-eleven </p>
+	<p><a href="gallery/forrestojp">hiroshima</a><br>
+		my year as an exchange student in hiroshima </p>
+-->
+		<p><a href="http://flickr.com/photos/forresto/sets/91668/">high school</a><br>
+			photos from my hhs photo class</p>
+	</div>
+	<div id="wri" class="section">
+		<h2><a name="writing"></a>writing <a href="#writing" target="_self" class="pin" onClick="size_2('pho');size_3('wri');size_2('fil');size_1('mus');size_1('int');size_1('gra');size_1('mat');size_1('lin');size_1('abo');jump('#writing');lock('wri')">&curren;</a></h2>
+		<p><a href="http://forresto.livejournal.com/">livejournal</a><br>
+			( ._.) user name = forresto </p>
+		<p><a href="http://forresto.livejournal.com/51814.html">letters from taneichi, iwate, japan</a><br>
+			June 2003 to present </p>
+		<p><a href="http://forresto.livejournal.com/9187.html">letters from london and norway</a><br>
+			June and July 2002 </p>
+		<p><a href="http://forresto.livejournal.com/27455.html">letters from hiroshima, japan</a><br>
+			August 1999 to May 2000 </p>
+		<p><a href="http://forresto.livejournal.com/31280.html">letters from europe</a><br>
+			October 1997 to April 1998 </p>
+	</div>
+	<div id="fil" class="section">
+		<h2><a name="film"></a>film <a href="#film" target="_self" class="pin" onClick="size_1('pho');size_2('wri');size_3('fil');size_2('mus');size_1('int');size_1('gra');size_1('mat');size_1('lin');size_1('abo');jump('#film');lock('fil')">&curren;</a></h2>
+		<!--	<p><a href="gallery/pixelation">pixelation</a> and <a href="gallery/rotoscoping">rotoscoping</a><br>
+			mixed media pixelation and rotoscoping experiments </p>
+-->
+		<p><a href="http://forresto.livejournal.com/79847.html">phase five</a><br>
+			completed spring 2002 - 16mm b&amp;w </p>
+		<p><a href="http://forresto.livejournal.com/79886.html">two dementia</a><br>
+			completed spring 2002 - 2dcg animation and dv </p>
+		<p><a href="film/stopmotion/archive.html">random</a><br>
+			archive of my old stop-motion animations (&amp; other old stuff) </p>
+	</div>
+	<div id="mus" class="section">
+		<h2><a name="music"></a>music <a href="#music" target="_self" class="pin" onClick="size_1('pho');size_1('wri');size_2('fil');size_3('mus');size_2('int');size_1('gra');size_1('mat');size_1('lin');size_1('abo');jump('#music');lock('mus')">&curren;</a></h2>
+		<p><a href="http://folktunes.org/">folktunes.org</a><br>
+			for teaching and learning, folk-internet style:<br>
+			a collection of folk tunes from across the spectrum </p>
+		<p><a href="http://www.folktunes.org/wiki/Help:The_XSPF_function">Playlist Extension</a><br>
+			to MediaWiki: formats a simple list of tunes</p>
+		<p><a href="music/gary/index.html">deconstructing gary</a><br>
+			an aural deconstruction, not exactly music (Fall 2002)<br>
+			a bit painful </p>
+		<p><a href="music/martain/index.html">the martain embassy</a><br>
+			Dimension X + Primal Scream (Spring 1998) </p>
+		<p><a href="music/randomocity">randomocity</a><br>
+			other things in a directory </p>
+	</div>
+	<div id="int" class="section">
+		<h2><a name="interactive"></a>interactive <a href="#interactive" target="_self" class="pin" onClick="size_1('pho');size_1('wri');size_1('fil');size_1('fil');size_2('mus');size_3('int');size_2('gra');size_1('mat');size_1('lin');size_1('abo');jump('#interactive');lock('int')">&curren;</a></h2>
+		<p><a href="http://wiggle.sourceforge.net/">wiggle</a><br>
+			time for space stereoscopic visualization</p>
+		<p><a href="interactive/mbx/">text-to-speech flash application</a><br>
+			mediabix: united we stand distracted </p>
+		<p><a href="interactive/maps/">maps</a><br>
+			mapping out my travels and life <br>
+			(powered by <a href="http://bryanboyer.com/indyjunior/">indyjunior</a>)</p>
+		<p><a onClick="window.open('http://folktunes.org/forresto/interactive/sociograph/sociograph.html','sociograph','toolbar=no,menubar=no,resizable=yes,scrollbars=no,addressbar=no,height=500,width=700')" onMouseOut="window.status='';  return true;" onMouseOver="window.status='sociograph will popup';  return true;" href="interactive/">sociograph</a><br>
+			people I knew at unc and how they knew one another <br>
+			(powered by <a href="http://touchgraph.com">touchgraph</a>)</p>
+	</div>
+	<div id="gra" class="section">
+		<h2><a name="graphical"></a>graphical <a href="#graphical" target="_self" class="pin" onClick="size_1('pho');size_1('wri');size_1('fil');size_1('fil');size_1('mus');size_2('int');size_3('gra');size_2('mat');size_1('lin');size_1('abo');jump('#graphical');lock('gra')">&curren;</a></h2>
+		<p><a href="flash/mandala/mandala_0_3.swf">flash mandala</a> <br>
+			a math mistake of sorts </p>
+		<p><a href="flash/ladderGame.html">flash ladder game</a><br>
+			connect the rungs and press play </p>
+		<!--		<p><a href="#">graphical design album</a></p>
+-->
+	</div>
+	<div id="mat" class="section">
+		<h2><a name="math"></a>math <a href="#math" target="_self" class="pin" onClick="size_1('pho');size_1('wri');size_1('fil');size_1('fil');size_1('mus');size_1('int');size_2('gra');size_3('mat');size_2('lin');size_1('abo');jump('#math');lock('mat')">&curren;</a></h2>
+		<p><a href="math/flashFibonacci/fibonacci_0_4.swf">flash fibonacci</a><br>
+			it draws spirals</p>
+		<!--		<p><a href="index.php?dir=math&amp;page=fibonacci">php fibonacci</a><br>
+			a quick practice script</p>
+-->
+		<p><a href="math/seashell/">seashell</a><br>
+			i had this concept of 3d fibonacci in my head, <br>
+			abandoned for now</p>
+		<p><a href="math/symmetry/">symmetry</a> <br>
+			assignments for and things inspired by my <br>
+			freshman seminar with <a href="http://www.math.unc.edu/Faculty/seg/">Sue Goodman</a></p>
+	</div>
+	<div id="lin" class="section">
+		<h2><a name="links"></a>links <a href="#links" target="_self" class="pin" onClick="size_1('pho');size_1('wri');size_1('fil');size_1('fil');size_1('mus');size_1('int');size_1('gra');size_2('mat');size_3('lin');size_2('abo');jump('#links');lock('lin')">&curren;</a></h2>
+		<p><a href="#links" onClick="showhide('jpeople')" target="_self">people in japan</a></p>
+		<div id="jpeople" style="margin-left:1em;font-size:smaller;display:none;">
+			<script language="JavaScript" type="text/JavaScript" src="http://rpc.bloglines.com/blogroll?id=nonbearded&amp;folder=People%20in%20Japan"></script>
+		</div>
+		<noscript>
+			<p style="margin-left:1em;"><a href="http://rpc.bloglines.com/blogroll?html=1&amp;id=nonbearded&amp;folder=People%20in%20Japan">list</a></p>
+		</noscript>
+		<p><a href="#links" onClick="showhide('epeople')" target="_self">people elsewhere</a></p>
+		<div id="epeople" style="margin-left:1em;font-size:smaller;display:none;">
+			<script language="JavaScript" type="text/JavaScript" src="http://rpc.bloglines.com/blogroll?id=nonbearded&amp;folder=People%20elsewhere"></script>
+		</div>
+		<noscript>
+			<p style="margin-left:1em;"><a href="http://rpc.bloglines.com/blogroll?html=1&amp;id=nonbearded&amp;folder=People%20elsewhere">list</a></p>
+		</noscript>
+		<p><a href="http://forresto.livejournal.com/friends/">livejournal people</a></p>
+		<p><a href="http://flickr.com/photos/forresto/friends/">flickr people</a></p>
+		<p><a href="http://readme.forresto.com/">bloglines public reads</a></p>
+	</div>
+	<div id="abo" class="section" style="-moz-border-radius:.4em .4em 0em .4em;">
+		<h2><a name="about"></a>about <a href="#about" target="_self" class="pin" onClick="size_1('pho');size_1('wri');size_1('fil');size_1('fil');size_1('mus');size_1('int');size_1('gra');size_1('mat');size_2('lin');size_3('abo');jump('#about');lock('abo')">&curren;</a></h2>
+		<p><a href="http://feeds.feedburner.com/forresto" title="lj+flickr//rss+atom" style="text-decoration:none;"><span style="border-width:1px;border-style:solid;border-color:#FC9 #630 #330 #F96;padding:0 3px;font-weight:bold;font-family:verdana,sans-serif;color:#FFF;background:#F60;text-decoration:none;margin:0;font-size:smaller;">XML</span></a><br>
+			my <a href="http://forresto.livejournal.com/">lj posts</a> and <a href="http://flickr.com/photos/forresto/tags/journal/">select</a> flickr photos in one feed</p>
+		<noscript>
+			<p>itsdotcom -(at) forresto -(dot) com</p>
+		</noscript>
+		<p>
+			<!-- start of email code -->
+			<script type="text/javascript" language="JavaScript">
+<!--
+var x="function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
+"harAt(i);}catch(e){}}return o;}f(\")\\\"function f(x,y){var i,o=\\\"\\\\\\\""+
+"\\\\,l=x.length;for(i=0;i<l;i++){if(i==122)y+=i;y%=127;o+=String.fromCharCo" +
+"de(x.charCodeAt(i)^(y++));}return o;}f(\\\"\\\\\\\\\\\\036\\\\\\\\024\\\\\\" +
+"\\037\\\\\\\\010\\\\\\\\023eov-swosmed#.1o/xcwu)I4zypvos'wkSEMWGJKgNFXYI^Z@" +
+"\\\\\\\\036R]^\\\\\\\\013FCUR\\\\\\\\\\\\\\\\YO\\\\\\\\001XS^)-b%6*+g?,(8%9" +
+"+\\\\\\\\023rq&: 93j\\\\\\\\004{\\\\\\\\006yb83>\\\\\\\\t\\\\\\\\r^L\\\\\\\\"+
+"005[DNSYQ\\\"\\\\,122)\\\"(f};)lo,0(rtsbus.o nruter};)i(tArahc.x=+o{)--i;0=" +
+">i;1-l=i(rof}}{)e(hctac};l=+l;x=+x{yrt{)26=!)31/l(tAedoCrahc.x(elihw;lo=l,h" +
+"tgnel.x=lo,\\\"\\\"=o,i rav{)x(f noitcnuf\")"                                ;
+while(x=eval(x));
+//-->
+</script>
+			<!-- end of email code -->
+			<br>
+			send me an email </p>
+		<!-- Start of StatCounter Code -->
+		<script type="text/javascript" language="javascript">
+			var sc_project=676675; 
+			var sc_partition=5; 
+			var sc_security="b96b7d00"; 
+			var sc_invisible=1; 
+		</script>
+		<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/frames.js"></script>
+			<noscript>
+				<a href="http://www.statcounter.com/" target="_blank"><img alt="." src="http://c6.statcounter.com/counter.php?sc_project=676675&amp;java=0&amp;security=b96b7d00&amp;invisible=1" width="1" height="1" border="0"></a>
+			</noscript>
+		<!-- End of StatCounter Code -->
+		<p><a href="http://sdf.lonestar.org/">hosted by sdf</a><br>
+			The Super Dimension Fortress</p>
+<!--	<p><a href="http://folktunes.org/forresto/gallery/moblog/QR">qr</a><br>
+			for those of you with implanted qr scanners <br>
+			to add me to your membanks</p>
+-->
+		<p><a href="http://forresto.livejournal.com/140540.html">about this design</a><br>
+			goals, motivations, and wtf??? </p>
+		<p><a href="designarchive/">homepage archive</a><br>
+			phuzo to forresto, 1998 to 2005</p>
+		<script language="JavaScript" type="text/JavaScript">
+			findsection();
+		</script>
+	</div>
+</div>
+<div id="flickrbadge" style="font-size:medium;">
+	<div style="border:1px solid gray;">
+		<div style="border:1px solid silver; padding:0.4em;text-align:center; float:none; ">
+			<script type="text/javascript" src="http://www.flickr.com/badge_code.gne?nsid=37996589754@N01&amp;count=1&amp;display=latest&amp;name=0&amp;size=square&amp;raw=1"></script>
+			<noscript>
+				<a title="flickr is fun" href="http://flickr.com/photos/forresto/"><img alt="flickr" src="http://photos8.flickr.com/11172614_87dd5374a5_s.jpg" width="75" height="75"></a>
+			</noscript>
+		</div>
+	</div>
+</div>
+</body>
+</html>

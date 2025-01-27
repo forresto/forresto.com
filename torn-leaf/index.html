@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="icon" href="https://glitch.com/favicon.ico" /> -->
+    <title>Torn Leaf – MacBasil – forresto</title>
+
+    <style>
+      @font-face {
+        font-family: "ChicagoFLF";
+        src: url(./ChicagoFLF.ttf);
+      }
+
+      body {
+        margin: 0;
+        margin-bottom: 24px;
+        text-align: center;
+        font-family: "ChicagoFLF", sans-serif;
+        font-smooth: never;
+      }
+
+      h1,
+      h2,
+      p {
+        font-weight: 400;
+      }
+
+      .video-wrap {
+        background-color: #000;
+        padding: 24px 0;
+        text-align: center;
+      }
+
+      video {
+        width: 100%;
+        max-width: 1024px;
+        /* width: 512px; */
+        /* image-rendering: pixelated; */
+      }
+
+      .me {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .face {
+        position: relative;
+        width: 384px;
+        height: 384px;
+      }
+      .face img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 384px;
+        height: 384px;
+      }
+      .face img:hover {
+        mix-blend-mode: screen;
+      }
+
+      @media screen and (min-width: 1024px) {
+        .me {
+          flex-direction: row;
+        }
+        .voice {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Torn Leaf – MacBasil</h1>
+    <h2>forresto</h2>
+
+    <div class="video-wrap">
+      <video src="./forresto-torn-leaf.mp4" autoplay mute controls />
+    </div>
+
+    <p>
+      Mac System 2.1 and Mac Paint 1.5, via
+      <a href="https://infinitemac.org">Infinite Mac</a>
+    </p>
+
+    <div class="me">
+      <div class="face">
+        <img src="./forresto-face-color.jpg" alt="forresto facing towards sun with eyes closed, wearing waffle weave hoodie" />
+        <img src="./forresto-face-1bit.png" alt="same photo, but cropped to a circle with 1-bit atkinson dithering" />
+      </div>
+      <div class="voice">
+        <audio src="./forresto-torn-leaf.aac" controls ></audio>
+        <p>
+          (i could have said “entropy” at the end there)
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

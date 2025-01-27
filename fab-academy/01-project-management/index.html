@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Week 01. Project Management</title>
+		<meta name="description" content="Helsinki-Brasstown Friendship Association, a design and craft coop in my dreams.">
+		<link rel="alternate" href="feed.xml" type="application/atom+xml" title="Forrest O. Interactive">
+		<meta name="generator" content="Eleventy v3.0.0">
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono,
+		Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
+		Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
+		Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #c0c0c0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050f;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #c0c0c0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img {
+	max-width: 100%;
+}
+img[width][height] {
+	height: auto;
+}
+img[src$=".svg"] {
+	width: 100%;
+	height: auto;
+	max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: 0.5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: 0.5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em 0.5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: 0.25em;
+	padding-right: 0.5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+ul.task-list {
+	list-style-type: none;
+	padding-left: 1.5em;
+	/* text-indent: -1.7em; */
+}
+
+li.task-list-item {
+	display: flex;
+	aligh-items: flex-start;
+	align-items: first baseline;
+	gap: 0.25em;
+}
+
+blockquote {
+	margin-left: 2em;
+	padding-left: 1em;
+	border-left: 0.25em solid #ced7c2;
+}
+
+footer {
+	margin-top: 2em;
+	padding-top: 0;
+	border-top: 0.25em solid #ced7c2;
+	background-color: #f2f9e9;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/eleventy-base-blog/" class="home-link">Forrest O. Interactive</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/eleventy-base-blog/">Home</a></li>
+					<li class="nav-item"><a href="/eleventy-base-blog/notes/">Archive</a></li>
+					<li class="nav-item"><a href="/eleventy-base-blog/about/">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+
+
+	<nav><a href="../notes/">Archive</a> | <a href="..">fab-academy</a></nav>
+
+
+<h1 id="week-01-project-management">Week 01. Project Management</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2025-01-22">2025, January 22</time></li>
+	<li><a href="/eleventy-base-blog/tags/site/" class="post-tag">site</a></li>
+</ul>
+
+<p><a href="https://fabacademy.org/2025/nueval/principles_and_practices,_project_management.html">This week's goals</a></p>
+<h1 id="principles-and-practices">Principles and Practices</h1>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> Plan and sketch a <a href="/eleventy-base-blog/fab-academy/01-potential-final-project/">potential final project</a></label></li>
+</ul>
+<h1 id="project-management">Project Management</h1>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_1" checked="true" disabled="true"><label for="cbx_1"> Read, sign (add your name to) the student agreement and commit it to your repo</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_2" checked="true" disabled="true"><label for="cbx_2"> Work through a git tutorial.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_3" checked="true" disabled="true"><label for="cbx_3"> Build a personal website in the class archive describing yourself and your final project.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_4" disabled="true"><label for="cbx_4"> Upload parts 1 and 2, to the class archive.</label></li>
+</ul>
+<p>I've done enough git in <a href="https://cuttle.xyz/about-us">my day job</a> to stay out of trouble. So I took this assignment as an opportunity to restructure my personal website, which I have neglected for some years.</p>
+<p>I have a few concepts for how I'd like this site to work.</p>
+<h2 id="file-layout">File Layout</h2>
+<p>The source of the site has a simple directory structure, that gets directly translated to the built site's structure. Top level directories are collections, where each post can go. Media for related posts can be named with the same prefix. The prefix can be a number, date, or a bare name, depending on the kind of post.</p>
+<pre><code>|_ content/
+  |_ fab-academy/
+    |_ index.md
+    |_ 01-project-management.md
+    |_ 01-related-image.png
+    |_ 02-computer-aided-design.md
+    |_ ...
+  |_ meemoo/
+  |_ 2020s/
+  |_ ...
+</code></pre>
+<p>Posts that don't have an obvious collection go in a &quot;2020s&quot; directory. I have old blog posts and letters back to the 90s that can fit with this structure.</p>
+<p><a href="../../tags">Tags</a> bridge posts across collections.</p>
+<h2 id="copyright">Copyright</h2>
+<p>Kris suggested that I look into</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Robots.txt">robots.txt</a> for search engines and web crawlers like the <a href="https://web.archive.org/web/*/forresto.com">Internet Archive</a></li>
+<li><a href="https://github.com/ai-robots-txt/ai.robots.txt">AI list for robots.txt</a> to prevent AI scraping and training</li>
+<li><a href="https://creativecommons.org/">Creative Commons</a> for choosing a license</li>
+</ul>
+<p>The lines between these are blurry to me. If my posts get scraped, archived, and trained on, is that not a (very fuzzy statistical) form of immortality? Can my weird ideas bend the weights of models that will be used to make decisions in the future?</p>
+<p>I've admired Creative Commons for a long time, and it would make me happy for humans to use and remix my work. I appreciate attribution, so encoding that into my copyright notice makes sense. If people or AI companies ignore that request, then there's not much I can do about it, other than not publish.</p>
+<h2 id="publishing">Publishing</h2>
+<p>My plan is to copy the HTML output of my own site's &quot;fab-academy&quot; output directory to my Fab Academy repo. (I could simlink just this directory, in order to build a partial version of the site there. I'll decide if that's worth it later.)</p>
+<h1 id="credit">Credit</h1>
+<h2 id="eleventy-static-site-generator">Eleventy static site generator</h2>
+<p>To build this new site, I started with the <a href="https://github.com/11ty/eleventy-base-blog">Eleventy Base Blog v9</a>. I considered other static site generators, but I ended up having more opinions than the simpler &quot;opinionated&quot; options allow.</p>
+<p>I like that the base blog comes with the <a href="https://www.11ty.dev/docs/plugins/image/">eleventy-img</a> plugin set up and configured. With that my source Markdown can be simply:</p>
+<pre class="language-markdown" tabindex="0"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">studio wall</span>](<span class="token url">studio-wall.jpg</span>)</span></code></pre>
+<p>Which becomes fancy HTML:</p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>picture</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>image/avif<span class="token punctuation">"</span></span> <span class="token attr-name">srcset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>studio-wall-1280-1100.avif<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>image/webp<span class="token punctuation">"</span></span> <span class="token attr-name">srcset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>studio-wall-1280-1100.webp<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>studio wall<span class="token punctuation">"</span></span> <span class="token attr-name">loading</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>lazy<span class="token punctuation">"</span></span> <span class="token attr-name">decoding</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>async<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>studio-wall-1280-1100.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1280<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1100<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>picture</span><span class="token punctuation">></span></span></code></pre>
+<p>While the site is building, the plugin measures the source image and makes variants with different file types. By including the <code>width</code> and <code>height</code> attributes, the layout will not shift as the page content loads. By including alternate file types, the browser can choose the best one for the user's device and network conditions.</p>
+<p>This seems like a perfect division.</p>
+<ul>
+<li>the &quot;source of truth&quot; that I take care of</li>
+<li>the &quot;published artifact&quot; that the build process takes care of</li>
+</ul>
+<p>I have not seen the same flow for videos, but it should be possible.</p>
+<p>There was a bug with how I set up the &quot;posts&quot; collection, so <a href="https://github.com/11ty/eleventy/issues/3630">I reported the bug to Eleventy</a>, and hopefully that will help, at least to clarify the docs as to what might be going on.</p>
+<h2 id="ai-use">AI Use</h2>
+<p>I like that Fab Academy is stressing that use of AI should be documented. To give credit to the model and prompt that you use to generate work seems like a good practice.</p>
+<p>I use <a href="https://zed.dev">Zed editor</a> to write posts and hack on the site templates and configuration. It comes with a version of Claude 3.5 Sonnet that you can chat with. The user experience is between chat and collaborative document. You have to choose which open tabs go into the chat context. I like that the control that this gives, and I like that I can roll back in the chat and delete some back and forth if we're going off the rails.</p>
+<p>And it does go off the rails. Hallucination is how it works, so the text that it generates can't ever be fully trusted. Eleventy is a long-lived project, which is good because Calude knows about it. It can also be annoying, when it repeats suggestions that I've learned are from earlier versions, that can use broken or deprecated features.</p>
+<blockquote>
+<p>(I haven't tried downloading the <a href="https://github.com/11ty/11ty-website/tree/main/src/docs">Eleventy documentation source Markdown files</a> for the version that I'm using and putting that in the context. That might be too many tokens. Could be worth trying.)</p>
+</blockquote>
+<p>Ultimately, I think it's a good <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">rubber duck</a> partner. Except a talkative BS-ing confident rubber duck. That can sometimes be helpful.</p>
+<p>Here is an example of one of the prompts that I reused to provide context in several sessions.</p>
+<blockquote>
+<p>here is the structure of my 11ty site content:</p>
+<pre><code>/dir-1/
+|_ index.md
+|_ post-1.md
+|_ post-2.md
+/dir-2/
+|_ post-3.md
+|_ post-4.md
+</code></pre>
+<p>On the &quot;archive&quot; page, I want a list of the directories, and count of posts per directory.</p>
+<p>On each directory page, I want the content of index.md (optional) and a list of the posts.</p>
+</blockquote>
+<p>While writing this post, I noticed that the inline code completions know about Fab Academy's weeks.</p>
+<p><picture><source type="image/avif" srcset="/eleventy-base-blog/fab-academy/01-project-management/o-OZyJdOnz-765.avif 765w"><source type="image/webp" srcset="/eleventy-base-blog/fab-academy/01-project-management/o-OZyJdOnz-765.webp 765w"><img loading="lazy" decoding="async" src="/eleventy-base-blog/fab-academy/01-project-management/o-OZyJdOnz-765.png" alt="code completion knows that week 3 is computer controlled cutting" width="765" height="275"></picture></p>
+<p>Did it surmise this from the text checklist in <a href="../">index.md</a>? Either that or it knows this from training, which seems possible, given how much documentation exists over the years for Fab Academy.</p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/eleventy-base-blog/2020s/2023-studio-wall/">2023 Studio Wall (annotated)</a></li><li class="links-nextprev-next">Next →<br><a href="/eleventy-base-blog/fab-academy/01-potential-final-project/">Week 01. Potential Final Project (draft)</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<p>Forrest O. Interactive is my WIP web blog wiki garden, built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
+
+			<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless otherwise noted, <span property="dct:title">Forrest O. Interactive</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<picture><source type="image/avif" srcset="/eleventy-base-blog/img/FRC2GTPyJx-44.avif 44w"><source type="image/webp" srcset="/eleventy-base-blog/img/FRC2GTPyJx-44.webp 44w"><img loading="lazy" decoding="async" src="/eleventy-base-blog/img/FRC2GTPyJx-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture><picture><source type="image/avif" srcset="/eleventy-base-blog/img/R3XBmYTpOG-44.avif 44w"><source type="image/webp" srcset="/eleventy-base-blog/img/R3XBmYTpOG-44.webp 44w"><img loading="lazy" decoding="async" src="/eleventy-base-blog/img/R3XBmYTpOG-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture></a></p>
+
+		</footer>
+
+		<!-- This page `/fab-academy/01-project-management/` was built on 2025-01-27T12:16:17.025Z -->
+		<script type="module" src="/eleventy-base-blog/dist/PQuipxb2GV.js"></script>
+	</body>
+</html>

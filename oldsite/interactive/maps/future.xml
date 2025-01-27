@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<travels>
+<location arrival="1991-10-10">
+  <name>Hendersonville, NC</name>
+  <latitude>35.317N</latitude>
+  <longitude>82.467W</longitude>
+  <note>Here packing.</note>
+  <url>?dir=news&amp;page=current</url>
+</location>
+<location arrival="2003-06-12">
+  <name>Taneichi, JP</name>
+  <latitude>40.4401N</latitude>
+  <longitude>141.6864E</longitude>
+  <note>Job here.</note>
+  <url>?dir=news&amp;page=current</url>
+</location>
+
+</travels>

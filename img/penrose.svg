@@ -1,0 +1,170 @@
+<svg width="1196" height="1200" viewBox="0 0 1196 1200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>penrose masked</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(2 0 0 2 720 -704)">
+<g id="penrose masked">
+<mask id="mask0_alpha" mask-type="alpha">
+<g id="Ellipse">
+<use xlink:href="#path0_fill" transform="translate(-362 352)" fill="#C4C4C4"/>
+</g>
+</mask>
+<g id="penrose" mask="url(#mask0_alpha)">
+<g id="unit - r1">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 -0.866025 0.866025 0.5 -208 630)" fill="#61B584"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 -0.866025 0.866025 0.5 -208 630)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit - l3">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 0.866025 -0.866025 0.5 31 537)" fill="#D14D4D"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 0.866025 -0.866025 0.5 31 537)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit - l2">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 0.866025 -0.866025 0.5 -49 491)" fill="#EB5757"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 0.866025 -0.866025 0.5 -49 491)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit - l1">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 0.866025 -0.866025 0.5 -129 445)" fill="#EB5757"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 0.866025 -0.866025 0.5 -129 445)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit - t3">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-9 606)" fill="#2D9CDB"/>
+<use xlink:href="#path2_stroke" transform="translate(-9 606)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit - t2">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-89 652)" fill="#2D9CDB"/>
+<use xlink:href="#path2_stroke" transform="translate(-89 652)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit - t1">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-169 698)" fill="#2685BA"/>
+<use xlink:href="#path2_stroke" transform="translate(-169 698)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit - r3">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 -0.866025 0.866025 0.5 -208 814)" fill="#6FCF97"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 -0.866025 0.866025 0.5 -208 814)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit - r2">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 -0.866025 0.866025 0.5 -208 722)" fill="#6FCF97"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 -0.866025 0.866025 0.5 -208 722)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="5unit - top">
+<g id="unit">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(-1 -5.16191e-08 5.16191e-08 -1 -8.02301 514.282)" fill="#2D9CDB"/>
+<use xlink:href="#path2_stroke" transform="matrix(-1 -5.16191e-08 5.16191e-08 -1 -8.02301 514.282)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(-1 -5.16191e-08 5.16191e-08 -1 -87.6973 468.282)" fill="#2D9CDB"/>
+<use xlink:href="#path2_stroke" transform="matrix(-1 -5.16191e-08 5.16191e-08 -1 -87.6973 468.282)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(-1 -5.16191e-08 5.16191e-08 -1 71.6513 560.282)" fill="#2D9CDB"/>
+<use xlink:href="#path2_stroke" transform="matrix(-1 -5.16191e-08 5.16191e-08 -1 71.6513 560.282)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(-1 -1.07231e-07 1.07231e-07 -1 151.326 606.282)" fill="#2D9CDB"/>
+<use xlink:href="#path2_stroke" transform="matrix(-1 -1.07231e-07 1.07231e-07 -1 151.326 606.282)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(-1 -1.07231e-07 1.07231e-07 -1 231 652.282)" fill="#2D9CDB"/>
+<use xlink:href="#path2_stroke" transform="matrix(-1 -1.07231e-07 1.07231e-07 -1 231 652.282)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<g id="5unit - left">
+<g id="unit">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 0.866025 -0.866025 0.5 -208 675)" fill="#EB5757"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 0.866025 -0.866025 0.5 -208 675)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 0.866025 -0.866025 0.5 -208 767)" fill="#EB5757"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 0.866025 -0.866025 0.5 -208 767)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 0.866025 -0.866025 0.5 -208 583)" fill="#EB5757"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 0.866025 -0.866025 0.5 -208 583)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 0.866025 -0.866025 0.5 -208 491)" fill="#EB5757"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 0.866025 -0.866025 0.5 -208 491)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 0.866025 -0.866025 0.5 -208 399)" fill="#EB5757"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 0.866025 -0.866025 0.5 -208 399)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<g id="5unit - right">
+<g id="unit">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 -0.866025 0.866025 0.5 31.023 767.718)" fill="#6FCF97"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 -0.866025 0.866025 0.5 31.023 767.718)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 -0.866025 0.866025 0.5 110.697 721.718)" fill="#6FCF97"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 -0.866025 0.866025 0.5 110.697 721.718)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 -0.866025 0.866025 0.5 -48.6513 813.718)" fill="#6FCF97"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 -0.866025 0.866025 0.5 -48.6513 813.718)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 -0.866025 0.866025 0.5 -128.326 859.718)" fill="#6FCF97"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 -0.866025 0.866025 0.5 -128.326 859.718)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="unit">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(0.5 -0.866025 0.866025 0.5 -208 905.718)" fill="#6FCF97"/>
+<use xlink:href="#path2_stroke" transform="matrix(0.5 -0.866025 0.866025 0.5 -208 905.718)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 600 300C 600 465.685 465.685 600 300 600C 134.315 600 0 465.685 0 300C 0 134.315 134.315 0 300 0C 465.685 0 600 134.315 600 300Z"/>
+<path id="path1_fill" d="M 160 46L 80 92L 0 46L 80 0L 160 46Z"/>
+<path id="path2_stroke" d="M 160 46L 160.249 46.4335C 160.404 46.3443 160.5 46.1789 160.5 46C 160.5 45.8211 160.404 45.6557 160.249 45.5665L 160 46ZM 80 92L 79.7508 92.4335C 79.9051 92.5222 80.0949 92.5222 80.2492 92.4335L 80 92ZM 0 46L -0.249236 45.5665C -0.404367 45.6557 -0.5 45.8211 -0.5 46C -0.5 46.1789 -0.404367 46.3443 -0.249236 46.4335L 0 46ZM 80 0L 80.2492 -0.433453C 80.0949 -0.522182 79.9051 -0.522182 79.7508 -0.433453L 80 0ZM 159.751 45.5665L 79.7508 91.5665L 80.2492 92.4335L 160.249 46.4335L 159.751 45.5665ZM 80.2492 91.5665L 0.249236 45.5665L -0.249236 46.4335L 79.7508 92.4335L 80.2492 91.5665ZM 0.249236 46.4335L 80.2492 0.433453L 79.7508 -0.433453L -0.249236 45.5665L 0.249236 46.4335ZM 79.7508 0.433453L 159.751 46.4335L 160.249 45.5665L 80.2492 -0.433453L 79.7508 0.433453Z"/>
+</defs>
+</svg>
