@@ -59,6 +59,11 @@ I've admired Creative Commons for a long time, and it would make me happy for hu
 
 My plan is to copy the HTML output of my own site's "fab-academy" output directory to my Fab Academy repo. (I could simlink just this directory, in order to build a partial version of the site there. I'll decide if that's worth it later.)
 
+## To do
+
+- [ ] Move more recent projects to the personal site collections.
+- [ ] Render home and archive post lists with thumbnail images. Make it more visual.
+
 # Credit
 
 ## Eleventy static site generator
@@ -88,8 +93,6 @@ This seems like a perfect division.
 * the "published artifact" that the build process takes care of
 
 I have not seen the same flow for videos, but it should be possible.
-
-> Aside: I think the amount of oxygen that fablab spends on reducing image sizes before committing is a bit antiquated. If we have to decide between time spent documenting, vs time spent wrangling media files... Let the machines do this busy work!
 
 There was a bug with how I set up the "posts" collection, so [I reported the bug to Eleventy](https://github.com/11ty/eleventy/issues/3630), and hopefully that will help, at least to clarify the docs as to what might be going on.
 
@@ -132,3 +135,9 @@ While writing this post, I noticed that the inline code completions know about F
 ![code completion knows that week 3 is computer controlled cutting](01-ai-knows-fab-academy.png)
 
 Did it surmise this from the text checklist in [index.md](../)? Either that or it knows this from training, which seems possible, given how much documentation exists over the years for Fab Academy.
+
+# Fab Academy Feedback
+
+The importance of resizing images before committing has been stressed a bunch, taking up time in the lectures and spaces in the chat. But I think that concern is a bit outdated. If we have to decide between time spent documenting, and time spent wrangling media files... Let the machines do the media busy work!
+
+My new website setup isn't ideal. There is more friction to doing documentation than my Notion [Blender Learning jounal](https://fopub.notion.site/2942db42f3d14348b382696c0296971d?v=ccfdc55d9fc347f4bf8661aa22f43c8c). But I think it's a step in right direction that I only need to manage Markdown and media files, and the build process takes care of indexing and image sizing and formats. And the static HTML output loads and renders quickly. ⚡️
