@@ -3,18 +3,140 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>About</title>
+		<title>Meemoo Thesis</title>
 		<meta name="description" content="Helsinki-Brasstown Friendship Association, a design and craft coop in my dreams.">
 		<link rel="alternate" href="feed.xml" type="application/atom+xml" title="Forrest O. Interactive">
 		<meta name="generator" content="Eleventy v3.0.0">
-		<style>/* This is an arbitrary CSS string added to the bundle */
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
-	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono,
-		Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
-		Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
-		Courier, monospace;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console,
+		Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono,
+		Nimbus Mono L, Courier New, Courier, monospace;
 }
 
 /* Theme colors */
@@ -291,6 +413,16 @@ header {
 .post-metadata time {
 	margin-right: 1em;
 }
+:root {
+	--footer-background-color: #f2f9e9;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--footer-background-color: #363a31;
+	}
+}
+
 ul.task-list {
 	list-style-type: none;
 	padding-left: 1.5em;
@@ -314,7 +446,20 @@ footer {
 	margin-top: 2em;
 	padding-top: 0;
 	border-top: 0.25em solid #ced7c2;
-	background-color: #f2f9e9;
+	background-color: var(--footer-background-color);
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
 }</style>
 	</head>
 	<body>
@@ -326,17 +471,39 @@ footer {
 				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Home</a></li>
-					<li class="nav-item"><a href="/notes/">Archive</a></li>
-					<li class="nav-item"><a href="/about/" aria-current="page">About</a></li>
-					<li class="nav-item"><a href="/feeds/">Feeds</a></li>
+					<li class="nav-item"><a href="/archive.html">Archive</a></li>
+					<li class="nav-item"><a href="/about.html">About</a></li>
+					<li class="nav-item"><a href="/feeds.html">Feeds</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<main id="skip">
 			<heading-anchors>
-				<h1 id="about">About</h1>
-<p>I am a person that likes making media &amp; craft &amp; creative tools, and combining those ideas with other folks.</p>
+				
+
+
+
+	<nav><a href="../notes/">Archive</a> | <a href="..">meemoo</a></nav>
+
+
+<h1 id="meemoo-thesis">Meemoo Thesis</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2012-04-23">2012, April 23</time></li>
+	<li><a href="/tags/meemoo/" class="post-tag">meemoo</a></li>
+</ul>
+
+<p>Link to the thesis:</p>
+<p><a href="ForrestOliphant-MeemooThesis-web.pdf"><picture><source type="image/avif" srcset="/meemoo/content/meemoo/meemoo-thesis-cover.png-trcJG4pH_L-1240.avif 1240w"><source type="image/webp" srcset="/meemoo/content/meemoo/meemoo-thesis-cover.png-trcJG4pH_L-1240.webp 1240w"><img loading="lazy" decoding="async" src="/meemoo/content/meemoo/meemoo-thesis-cover.png-trcJG4pH_L-1240.png" alt="Meemoo: Hackable Web App Framework" width="1240" height="1753"></picture></a></p>
+<ul>
+<li>Meemoo blog entry <a href="https://meemoo.org/blog/2012-04-23-finished-writing-back-to-code">on finishing the thesis</a></li>
+<li><a href="https://www.finna.fi/Record/aaltodoc.123456789_3944">Finna library record</a></li>
+<li><a href="http://www.urn.fi/URN:NBN:fi:aalto-201206102286">URN:NBN:fi:aalto-201206102286</a></li>
+</ul>
+
+<ul class="links-nextprev"><li class="links-nextprev-next">Next →<br><a href="/2020s/2023-studio-wall.html">2023 Studio Wall (annotated)</a></li>
+</ul>
 
 			</heading-anchors>
 		</main>
@@ -344,11 +511,11 @@ footer {
 		<footer>
 			<p>Forrest O. Interactive is my WIP web blog wiki garden, built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
 
-			<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless otherwise noted, <span property="dct:title">Forrest O. Interactive</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<picture><source type="image/avif" srcset="/img/FRC2GTPyJx-44.avif 44w"><source type="image/webp" srcset="/img/FRC2GTPyJx-44.webp 44w"><img loading="lazy" decoding="async" src="/img/FRC2GTPyJx-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture><picture><source type="image/avif" srcset="/img/R3XBmYTpOG-44.avif 44w"><source type="image/webp" srcset="/img/R3XBmYTpOG-44.webp 44w"><img loading="lazy" decoding="async" src="/img/R3XBmYTpOG-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture></a></p>
+			<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless otherwise noted, <span property="dct:title">Forrest O. Interactive</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<picture><source type="image/avif" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1-FRC2GTPyJx-44.avif 44w"><source type="image/webp" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1-FRC2GTPyJx-44.webp 44w"><img loading="lazy" decoding="async" src="/img/https:/mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1-FRC2GTPyJx-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture><picture><source type="image/avif" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1-R3XBmYTpOG-44.avif 44w"><source type="image/webp" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1-R3XBmYTpOG-44.webp 44w"><img loading="lazy" decoding="async" src="/img/https:/mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1-R3XBmYTpOG-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture></a></p>
 
 		</footer>
 
-		<!-- This page `/about/` was built on 2025-01-27T13:20:09.427Z -->
+		<!-- This page `/meemoo/thesis.html` was built on 2025-01-28T12:44:08.991Z -->
 		<script type="module" src="/dist/PQuipxb2GV.js"></script>
 	</body>
 </html>

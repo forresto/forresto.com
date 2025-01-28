@@ -134,10 +134,9 @@ pre[class*="language-"] {
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
-	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono,
-		Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
-		Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
-		Courier, monospace;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console,
+		Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono,
+		Nimbus Mono L, Courier New, Courier, monospace;
 }
 
 /* Theme colors */
@@ -414,6 +413,16 @@ header {
 .post-metadata time {
 	margin-right: 1em;
 }
+:root {
+	--footer-background-color: #f2f9e9;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--footer-background-color: #363a31;
+	}
+}
+
 ul.task-list {
 	list-style-type: none;
 	padding-left: 1.5em;
@@ -437,7 +446,20 @@ footer {
 	margin-top: 2em;
 	padding-top: 0;
 	border-top: 0.25em solid #ced7c2;
-	background-color: #f2f9e9;
+	background-color: var(--footer-background-color);
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
 }</style>
 	</head>
 	<body>
@@ -449,9 +471,9 @@ footer {
 				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Home</a></li>
-					<li class="nav-item"><a href="/notes/">Archive</a></li>
-					<li class="nav-item"><a href="/about/">About</a></li>
-					<li class="nav-item"><a href="/feeds/">Feeds</a></li>
+					<li class="nav-item"><a href="/archive.html">Archive</a></li>
+					<li class="nav-item"><a href="/about.html">About</a></li>
+					<li class="nav-item"><a href="/feeds.html">Feeds</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -475,7 +497,7 @@ footer {
 <p><a href="https://fabacademy.org/2025/nueval/principles_and_practices,_project_management.html">This week's goals</a></p>
 <h1 id="principles-and-practices">Principles and Practices</h1>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> Plan and sketch a <a href="/fab-academy/01-potential-final-project/">potential final project</a></label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> Plan and sketch a <a href="/fab-academy/01-potential-final-project.html">potential final project</a></label></li>
 </ul>
 <h1 id="project-management">Project Management</h1>
 <ul class="task-list">
@@ -530,6 +552,9 @@ footer {
 <li>the &quot;published artifact&quot; that the build process takes care of</li>
 </ul>
 <p>I have not seen the same flow for videos, but it should be possible.</p>
+<blockquote>
+<p>Aside: I think the amount of oxygen that fablab spends on reducing image sizes before committing is a bit antiquated. If we have to decide between time spent documenting, vs time spent wrangling media files... Let the machines do this busy work!</p>
+</blockquote>
 <p>There was a bug with how I set up the &quot;posts&quot; collection, so <a href="https://github.com/11ty/eleventy/issues/3630">I reported the bug to Eleventy</a>, and hopefully that will help, at least to clarify the docs as to what might be going on.</p>
 <h2 id="ai-use">AI Use</h2>
 <p>I like that Fab Academy is stressing that use of AI should be documented. To give credit to the model and prompt that you use to generate work seems like a good practice.</p>
@@ -554,10 +579,10 @@ footer {
 <p>On each directory page, I want the content of index.md (optional) and a list of the posts.</p>
 </blockquote>
 <p>While writing this post, I noticed that the inline code completions know about Fab Academy's weeks.</p>
-<p><picture><source type="image/avif" srcset="/fab-academy/01-project-management/o-OZyJdOnz-765.avif 765w"><source type="image/webp" srcset="/fab-academy/01-project-management/o-OZyJdOnz-765.webp 765w"><img loading="lazy" decoding="async" src="/fab-academy/01-project-management/o-OZyJdOnz-765.png" alt="code completion knows that week 3 is computer controlled cutting" width="765" height="275"></picture></p>
+<p><picture><source type="image/avif" srcset="/fab-academy/content/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.avif 765w"><source type="image/webp" srcset="/fab-academy/content/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.webp 765w"><img loading="lazy" decoding="async" src="/fab-academy/content/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.png" alt="code completion knows that week 3 is computer controlled cutting" width="765" height="275"></picture></p>
 <p>Did it surmise this from the text checklist in <a href="../">index.md</a>? Either that or it knows this from training, which seems possible, given how much documentation exists over the years for Fab Academy.</p>
 
-<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/2020s/2023-studio-wall/">2023 Studio Wall (annotated)</a></li><li class="links-nextprev-next">Next →<br><a href="/fab-academy/01-potential-final-project/">Week 01. Potential Final Project (draft)</a></li>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/2020s/2023-studio-wall.html">2023 Studio Wall (annotated)</a></li><li class="links-nextprev-next">Next →<br><a href="/fab-academy/01-potential-final-project.html">Week 01. Potential Final Project (draft)</a></li>
 </ul>
 
 			</heading-anchors>
@@ -566,11 +591,11 @@ footer {
 		<footer>
 			<p>Forrest O. Interactive is my WIP web blog wiki garden, built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
 
-			<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless otherwise noted, <span property="dct:title">Forrest O. Interactive</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<picture><source type="image/avif" srcset="/img/FRC2GTPyJx-44.avif 44w"><source type="image/webp" srcset="/img/FRC2GTPyJx-44.webp 44w"><img loading="lazy" decoding="async" src="/img/FRC2GTPyJx-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture><picture><source type="image/avif" srcset="/img/R3XBmYTpOG-44.avif 44w"><source type="image/webp" srcset="/img/R3XBmYTpOG-44.webp 44w"><img loading="lazy" decoding="async" src="/img/R3XBmYTpOG-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture></a></p>
+			<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless otherwise noted, <span property="dct:title">Forrest O. Interactive</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<picture><source type="image/avif" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1-FRC2GTPyJx-44.avif 44w"><source type="image/webp" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1-FRC2GTPyJx-44.webp 44w"><img loading="lazy" decoding="async" src="/img/https:/mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1-FRC2GTPyJx-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture><picture><source type="image/avif" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1-R3XBmYTpOG-44.avif 44w"><source type="image/webp" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1-R3XBmYTpOG-44.webp 44w"><img loading="lazy" decoding="async" src="/img/https:/mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1-R3XBmYTpOG-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture></a></p>
 
 		</footer>
 
-		<!-- This page `/fab-academy/01-project-management/` was built on 2025-01-27T13:20:09.435Z -->
+		<!-- This page `/fab-academy/01-project-management.html` was built on 2025-01-28T12:44:08.991Z -->
 		<script type="module" src="/dist/PQuipxb2GV.js"></script>
 	</body>
 </html>

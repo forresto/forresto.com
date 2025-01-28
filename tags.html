@@ -134,10 +134,9 @@ pre[class*="language-"] {
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
-	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono,
-		Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
-		Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
-		Courier, monospace;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console,
+		Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono,
+		Nimbus Mono L, Courier New, Courier, monospace;
 }
 
 /* Theme colors */
@@ -414,6 +413,16 @@ header {
 .post-metadata time {
 	margin-right: 1em;
 }
+:root {
+	--footer-background-color: #f2f9e9;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--footer-background-color: #363a31;
+	}
+}
+
 ul.task-list {
 	list-style-type: none;
 	padding-left: 1.5em;
@@ -437,7 +446,20 @@ footer {
 	margin-top: 2em;
 	padding-top: 0;
 	border-top: 0.25em solid #ced7c2;
-	background-color: #f2f9e9;
+	background-color: var(--footer-background-color);
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
 }</style>
 	</head>
 	<body>
@@ -449,9 +471,9 @@ footer {
 				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Home</a></li>
-					<li class="nav-item"><a href="/notes/" aria-current="page">Archive</a></li>
-					<li class="nav-item"><a href="/about/">About</a></li>
-					<li class="nav-item"><a href="/feeds/">Feeds</a></li>
+					<li class="nav-item"><a href="/archive.html">Archive</a></li>
+					<li class="nav-item"><a href="/about.html">About</a></li>
+					<li class="nav-item"><a href="/feeds.html">Feeds</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -466,18 +488,24 @@ footer {
 <h1></h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2025-01-27">2025, January 27</time></li>
+	<li><time datetime="2025-01-28">2025, January 28</time></li>
 </ul>
 
-<h1 id="archive">Archive</h1>
+<h1 id="tags">Tags</h1>
 
 <ul>
 
-	<li><a class="postlist-link" href="/fab-academy/">fab-academy</a> 2 posts</li>
+	
+	<li><a href="/tags/my-posts/" class="post-tag">my-posts</a> (5 posts)</li>
 
-	<li><a class="postlist-link" href="/2020s/">2020s</a> 1 posts</li>
+	
+	<li><a href="/tags/site/" class="post-tag">site</a> (1 posts)</li>
 
-	<li><a class="postlist-link" href="/meemoo/">meemoo</a> 2 posts</li>
+	
+	<li><a href="/tags/meemoo/" class="post-tag">meemoo</a> (3 posts)</li>
+
+	
+	<li><a href="/tags/directories/" class="post-tag">directories</a> (3 posts)</li>
 
 </ul>
 
@@ -488,11 +516,11 @@ footer {
 		<footer>
 			<p>Forrest O. Interactive is my WIP web blog wiki garden, built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
 
-			<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless otherwise noted, <span property="dct:title">Forrest O. Interactive</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<picture><source type="image/avif" srcset="/img/FRC2GTPyJx-44.avif 44w"><source type="image/webp" srcset="/img/FRC2GTPyJx-44.webp 44w"><img loading="lazy" decoding="async" src="/img/FRC2GTPyJx-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture><picture><source type="image/avif" srcset="/img/R3XBmYTpOG-44.avif 44w"><source type="image/webp" srcset="/img/R3XBmYTpOG-44.webp 44w"><img loading="lazy" decoding="async" src="/img/R3XBmYTpOG-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture></a></p>
+			<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless otherwise noted, <span property="dct:title">Forrest O. Interactive</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<picture><source type="image/avif" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1-FRC2GTPyJx-44.avif 44w"><source type="image/webp" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1-FRC2GTPyJx-44.webp 44w"><img loading="lazy" decoding="async" src="/img/https:/mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1-FRC2GTPyJx-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture><picture><source type="image/avif" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1-R3XBmYTpOG-44.avif 44w"><source type="image/webp" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1-R3XBmYTpOG-44.webp 44w"><img loading="lazy" decoding="async" src="/img/https:/mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1-R3XBmYTpOG-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture></a></p>
 
 		</footer>
 
-		<!-- This page `/notes/` was built on 2025-01-27T13:20:09.434Z -->
+		<!-- This page `/tags.html` was built on 2025-01-28T12:44:08.990Z -->
 		<script type="module" src="/dist/PQuipxb2GV.js"></script>
 	</body>
 </html>
