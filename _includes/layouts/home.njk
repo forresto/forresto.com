@@ -1,5 +1,32 @@
+---js
+const numberOfLatestPostsToShow = 15;
+
+const layout = "layouts/base.njk";
+
+const eleventyComputed = {
+	postsCount: (data) => data.collections["my-posts"].length,
+	latestPostsCount: (data) => Math.min(data.collections["my-posts"].length, numberOfLatestPostsToShow),
+	postslist: (data) => data.collections["my-posts"].slice(-numberOfLatestPostsToShow),
+  morePostsCount: (data) => Math.max(0, data.collections["my-posts"].length - numberOfLatestPostsToShow)
+};
 ---
-layout: layouts/base.njk
----
+
+<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+
+{% set postslistCounter = postsCount %}
+{% include "postslist.njk" %}
+
+{% if morePostsCount > 0 %}
+<p>{{ morePostsCount }} more post{% if morePostsCount != 1 %}s{% endif %} can be found in <a href="notes">the archive</a>.</p>
+{% endif %}
+
+{# List every content page in the project #}
+{#
+<ul>
+	{%- for entry in collections.all %}
+	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
+	{%- endfor %}
+</ul>
+#}
 
 {{ content | safe }}

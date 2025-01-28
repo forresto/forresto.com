@@ -23,8 +23,10 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/",
 	});
-	eleventyConfig.addPassthroughCopy("**/*.mp4");
-	eleventyConfig.addPassthroughCopy("**/*.blend");
+	// Media that might be linked from posts
+	eleventyConfig.addPassthroughCopy("./content/**/*.mp4");
+	eleventyConfig.addPassthroughCopy("./content/**/*.blend");
+	eleventyConfig.addPassthroughCopy("./content/**/*.pdf");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
@@ -82,6 +84,9 @@ export default async function (eleventyConfig) {
 		svgShortCircuit: "size",
 
 		widths: [1280],
+		filenameFormat: function (id, src, width, format, options) {
+			return `${src}-${id}-${width}.${format}`;
+		},
 
 		failOnError: false,
 		htmlOptions: {
@@ -129,6 +134,11 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(embedYouTube);
 
 	eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItTaskCheckbox));
+
+	// Set global permalinks to resource.html style
+	eleventyConfig.addGlobalData("permalink", () => {
+		return (data) => `${data.page.filePathStem}.${data.page.outputFileExtension}`;
+	});
 
 	eleventyConfig.addCollection("my-posts", function (collectionsApi) {
 		const isPost = (item) => {

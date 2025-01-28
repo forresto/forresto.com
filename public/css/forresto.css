@@ -1,3 +1,13 @@
+:root {
+	--footer-background-color: #f2f9e9;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--footer-background-color: #363a31;
+	}
+}
+
 ul.task-list {
 	list-style-type: none;
 	padding-left: 1.5em;
@@ -21,5 +31,18 @@ footer {
 	margin-top: 2em;
 	padding-top: 0;
 	border-top: 0.25em solid #ced7c2;
-	background-color: #f2f9e9;
+	background-color: var(--footer-background-color);
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
 }

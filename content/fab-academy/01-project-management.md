@@ -89,6 +89,8 @@ This seems like a perfect division.
 
 I have not seen the same flow for videos, but it should be possible.
 
+> Aside: I think the amount of oxygen that fablab spends on reducing image sizes before committing is a bit antiquated. If we have to decide between time spent documenting, vs time spent wrangling media files... Let the machines do this busy work!
+
 There was a bug with how I set up the "posts" collection, so [I reported the bug to Eleventy](https://github.com/11ty/eleventy/issues/3630), and hopefully that will help, at least to clarify the docs as to what might be going on.
 
 ## AI Use

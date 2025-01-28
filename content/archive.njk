@@ -1,0 +1,27 @@
+---js
+const eleventyNavigation = {
+	key: "Archive",
+	order: 2
+};
+
+const layout = "layouts/base.njk";
+
+const eleventyComputed = {
+	postsCount: (data) => data.collections["my-posts"].length,
+	latestPostsCount: (data) => Math.min(data.collections["my-posts"].length, numberOfLatestPostsToShow),
+	postslist: (data) => data.collections["my-posts"].slice(-numberOfLatestPostsToShow),
+  morePostsCount: (data) => Math.max(0, data.collections["my-posts"].length - numberOfLatestPostsToShow)
+};
+---
+<h1>Collections</h1>
+
+<ul>
+{% for dir in collections.directories %}
+	<li><a class="postlist-link" href="{{ dir.path }}">{{ dir.name }}</a> {{ dir.posts.length }} posts</li>
+{% endfor %}
+</ul>
+
+<h1>Posts</h1>
+
+{% set postslistCounter = postsCount %}
+{% include "postslist.njk" %}
