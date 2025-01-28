@@ -85,7 +85,9 @@ export default async function (eleventyConfig) {
 
 		widths: [1280],
 		filenameFormat: function (id, src, width, format, options) {
-			return `${src}-${id}-${width}.${format}`;
+			// Should be in equivalent directory as original image
+			const fileName = src.split("/").pop();
+			return `${fileName}-${id}-${width}.${format}`;
 		},
 
 		failOnError: false,
