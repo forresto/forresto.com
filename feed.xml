@@ -16,7 +16,7 @@
     <updated>2025-01-25T00:00:00Z</updated>
     <id>https://forresto.com/meemoo/meemoo-video-transition-loop.html</id>
     <content type="html">&lt;p&gt;Meemoo jam...&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://app.meemoo.org/#gist/35e3b45b5fb0ab1e0625c4410da84105&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/meemoo/content/meemoo/2025-01-25-meemoo-video-transition-loop.png-JnK-o6CZ7Z-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/meemoo/content/meemoo/2025-01-25-meemoo-video-transition-loop.png-JnK-o6CZ7Z-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/meemoo/content/meemoo/2025-01-25-meemoo-video-transition-loop.png-JnK-o6CZ7Z-1280.png&quot; alt=&quot;Meemoo.org nodes and wires interface with tweens driving an endlessly looping video&quot; width=&quot;1280&quot; height=&quot;896&quot;&gt;&lt;/picture&gt; Meemoo app&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://app.meemoo.org/#gist/35e3b45b5fb0ab1e0625c4410da84105&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop.png-JnK-o6CZ7Z-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop.png-JnK-o6CZ7Z-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop.png-JnK-o6CZ7Z-1280.png&quot; alt=&quot;Meemoo.org nodes and wires interface with tweens driving an endlessly looping video&quot; width=&quot;1280&quot; height=&quot;896&quot;&gt;&lt;/picture&gt; Meemoo app&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;(I should make an auto-embedder for Meemoo URLs.)&lt;/p&gt;
 &lt;p&gt;I made this in &amp;quot;IX2&amp;quot; the interaction system in Webflow, c. 2019. Today I remade the composition in Meemoo, and I liked tweaking the numbers like this, with stacked tweens. The video loop and the scale and translation loops are independent.&lt;/p&gt;
 &lt;p&gt;All of my recent practice in Blender Geometry Nodes has helped me to understand Meemoo&#39;s data flow in a deeper way. I wish Blender&#39;s interface had more debug views like Meemoo. You can drag any of the tweens to scrub the values, or leave it looping and tweak stuff as you go. You can do some of that in Blender, but the debug views are limited, and the node view is mostly static.&lt;/p&gt;
@@ -80,6 +80,11 @@
 &lt;p&gt;I&#39;ve admired Creative Commons for a long time, and it would make me happy for humans to use and remix my work. I appreciate attribution, so encoding that into my copyright notice makes sense. If people or AI companies ignore that request, then there&#39;s not much I can do about it, other than not publish.&lt;/p&gt;
 &lt;h2 id=&quot;publishing&quot;&gt;Publishing&lt;/h2&gt;
 &lt;p&gt;My plan is to copy the HTML output of my own site&#39;s &amp;quot;fab-academy&amp;quot; output directory to my Fab Academy repo. (I could simlink just this directory, in order to build a partial version of the site there. I&#39;ll decide if that&#39;s worth it later.)&lt;/p&gt;
+&lt;h2 id=&quot;to-do&quot;&gt;To do&lt;/h2&gt;
+&lt;ul class=&quot;task-list&quot;&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_5&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_5&quot;&gt; Move more recent projects to the personal site collections.&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_6&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_6&quot;&gt; Render home and archive post lists with thumbnail images. Make it more visual.&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h1 id=&quot;credit&quot;&gt;Credit&lt;/h1&gt;
 &lt;h2 id=&quot;eleventy-static-site-generator&quot;&gt;Eleventy static site generator&lt;/h2&gt;
 &lt;p&gt;To build this new site, I started with the &lt;a href=&quot;https://github.com/11ty/eleventy-base-blog&quot;&gt;Eleventy Base Blog v9&lt;/a&gt;. I considered other static site generators, but I ended up having more opinions than the simpler &amp;quot;opinionated&amp;quot; options allow.&lt;/p&gt;
@@ -98,9 +103,6 @@
 &lt;li&gt;the &amp;quot;published artifact&amp;quot; that the build process takes care of&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I have not seen the same flow for videos, but it should be possible.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Aside: I think the amount of oxygen that fablab spends on reducing image sizes before committing is a bit antiquated. If we have to decide between time spent documenting, vs time spent wrangling media files... Let the machines do this busy work!&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;p&gt;There was a bug with how I set up the &amp;quot;posts&amp;quot; collection, so &lt;a href=&quot;https://github.com/11ty/eleventy/issues/3630&quot;&gt;I reported the bug to Eleventy&lt;/a&gt;, and hopefully that will help, at least to clarify the docs as to what might be going on.&lt;/p&gt;
 &lt;h2 id=&quot;ai-use&quot;&gt;AI Use&lt;/h2&gt;
 &lt;p&gt;I like that Fab Academy is stressing that use of AI should be documented. To give credit to the model and prompt that you use to generate work seems like a good practice.&lt;/p&gt;
@@ -125,8 +127,11 @@
 &lt;p&gt;On each directory page, I want the content of index.md (optional) and a list of the posts.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;While writing this post, I noticed that the inline code completions know about Fab Academy&#39;s weeks.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/content/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.avif 765w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/content/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.webp 765w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/content/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.png&quot; alt=&quot;code completion knows that week 3 is computer controlled cutting&quot; width=&quot;765&quot; height=&quot;275&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.avif 765w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.webp 765w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.png&quot; alt=&quot;code completion knows that week 3 is computer controlled cutting&quot; width=&quot;765&quot; height=&quot;275&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;Did it surmise this from the text checklist in &lt;a href=&quot;https://forresto.com/&quot;&gt;index.md&lt;/a&gt;? Either that or it knows this from training, which seems possible, given how much documentation exists over the years for Fab Academy.&lt;/p&gt;
+&lt;h1 id=&quot;fab-academy-feedback&quot;&gt;Fab Academy Feedback&lt;/h1&gt;
+&lt;p&gt;The importance of resizing images before committing has been stressed a bunch, taking up time in the lectures and spaces in the chat. But I think that concern is a bit outdated. If we have to decide between time spent documenting, and time spent wrangling media files... Let the machines do the media busy work!&lt;/p&gt;
+&lt;p&gt;My new website setup isn&#39;t ideal. There is more friction to doing documentation than my Notion &lt;a href=&quot;https://fopub.notion.site/2942db42f3d14348b382696c0296971d?v=ccfdc55d9fc347f4bf8661aa22f43c8c&quot;&gt;Blender Learning jounal&lt;/a&gt;. But I think it&#39;s a step in right direction that I only need to manage Markdown and media files, and the build process takes care of indexing and image sizing and formats. And the static HTML output loads and renders quickly. ⚡️&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -135,7 +140,7 @@
     <updated>2023-05-03T00:00:00Z</updated>
     <id>https://forresto.com/2020s/2023-studio-wall.html</id>
     <content type="html">&lt;p&gt;Before we moved, I captured the state of my corner &amp;quot;studio&amp;quot; wall. I had set it up with tape-backed steel strips to be able to attach things with magnets, which worked fairly well. It was full of paper art and experiments from me and other other folks.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/2020s/content/2020s/2023-studio-wall.jpg-98AX_o3E0x-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/2020s/content/2020s/2023-studio-wall.jpg-98AX_o3E0x-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/2020s/content/2020s/2023-studio-wall.jpg-98AX_o3E0x-1280.jpeg&quot; alt=&quot;studio wall&quot; width=&quot;1280&quot; height=&quot;1100&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/2020s/2023-studio-wall.jpg-98AX_o3E0x-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/2020s/2023-studio-wall.jpg-98AX_o3E0x-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/2020s/2023-studio-wall.jpg-98AX_o3E0x-1280.jpeg&quot; alt=&quot;studio wall&quot; width=&quot;1280&quot; height=&quot;1100&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;I then made an interactive version with videos, notes, and links.&lt;/p&gt;
 &lt;iframe src=&quot;https://www.tldraw.com/v/v6A_c_7v_-jVmHBfdM7qeoZeJR?d=v-1122.-737.3656.2689.BypPvkT29lod8hatRpQON&quot; width=&quot;1280&quot; height=&quot;720&quot;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.tldraw.com/v/v6A_c_7v_-jVmHBfdM7qeoZeJR?d=v-1122.-737.3656.2689.BypPvkT29lod8hatRpQON&quot;&gt;Made with Tldraw&lt;/a&gt;.&lt;/p&gt;
@@ -148,7 +153,7 @@
     <updated>2012-04-23T00:00:00Z</updated>
     <id>https://forresto.com/meemoo/thesis.html</id>
     <content type="html">&lt;p&gt;Link to the thesis:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://forresto.com/meemoo/ForrestOliphant-MeemooThesis-web.pdf&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/meemoo/content/meemoo/meemoo-thesis-cover.png-trcJG4pH_L-1240.avif 1240w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/meemoo/content/meemoo/meemoo-thesis-cover.png-trcJG4pH_L-1240.webp 1240w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/meemoo/content/meemoo/meemoo-thesis-cover.png-trcJG4pH_L-1240.png&quot; alt=&quot;Meemoo: Hackable Web App Framework&quot; width=&quot;1240&quot; height=&quot;1753&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://forresto.com/meemoo/ForrestOliphant-MeemooThesis-web.pdf&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/meemoo/meemoo-thesis-cover.png-trcJG4pH_L-1240.avif 1240w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/meemoo/meemoo-thesis-cover.png-trcJG4pH_L-1240.webp 1240w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/meemoo/meemoo-thesis-cover.png-trcJG4pH_L-1240.png&quot; alt=&quot;Meemoo: Hackable Web App Framework&quot; width=&quot;1240&quot; height=&quot;1753&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Meemoo blog entry &lt;a href=&quot;https://meemoo.org/blog/2012-04-23-finished-writing-back-to-code&quot;&gt;on finishing the thesis&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.finna.fi/Record/aaltodoc.123456789_3944&quot;&gt;Finna library record&lt;/a&gt;&lt;/li&gt;

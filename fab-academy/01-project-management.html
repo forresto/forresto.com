@@ -534,6 +534,11 @@ main {
 <p>I've admired Creative Commons for a long time, and it would make me happy for humans to use and remix my work. I appreciate attribution, so encoding that into my copyright notice makes sense. If people or AI companies ignore that request, then there's not much I can do about it, other than not publish.</p>
 <h2 id="publishing">Publishing</h2>
 <p>My plan is to copy the HTML output of my own site's &quot;fab-academy&quot; output directory to my Fab Academy repo. (I could simlink just this directory, in order to build a partial version of the site there. I'll decide if that's worth it later.)</p>
+<h2 id="to-do">To do</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_5" disabled="true"><label for="cbx_5"> Move more recent projects to the personal site collections.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_6" disabled="true"><label for="cbx_6"> Render home and archive post lists with thumbnail images. Make it more visual.</label></li>
+</ul>
 <h1 id="credit">Credit</h1>
 <h2 id="eleventy-static-site-generator">Eleventy static site generator</h2>
 <p>To build this new site, I started with the <a href="https://github.com/11ty/eleventy-base-blog">Eleventy Base Blog v9</a>. I considered other static site generators, but I ended up having more opinions than the simpler &quot;opinionated&quot; options allow.</p>
@@ -552,9 +557,6 @@ main {
 <li>the &quot;published artifact&quot; that the build process takes care of</li>
 </ul>
 <p>I have not seen the same flow for videos, but it should be possible.</p>
-<blockquote>
-<p>Aside: I think the amount of oxygen that fablab spends on reducing image sizes before committing is a bit antiquated. If we have to decide between time spent documenting, vs time spent wrangling media files... Let the machines do this busy work!</p>
-</blockquote>
 <p>There was a bug with how I set up the &quot;posts&quot; collection, so <a href="https://github.com/11ty/eleventy/issues/3630">I reported the bug to Eleventy</a>, and hopefully that will help, at least to clarify the docs as to what might be going on.</p>
 <h2 id="ai-use">AI Use</h2>
 <p>I like that Fab Academy is stressing that use of AI should be documented. To give credit to the model and prompt that you use to generate work seems like a good practice.</p>
@@ -579,8 +581,11 @@ main {
 <p>On each directory page, I want the content of index.md (optional) and a list of the posts.</p>
 </blockquote>
 <p>While writing this post, I noticed that the inline code completions know about Fab Academy's weeks.</p>
-<p><picture><source type="image/avif" srcset="/fab-academy/content/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.avif 765w"><source type="image/webp" srcset="/fab-academy/content/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.webp 765w"><img loading="lazy" decoding="async" src="/fab-academy/content/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.png" alt="code completion knows that week 3 is computer controlled cutting" width="765" height="275"></picture></p>
+<p><picture><source type="image/avif" srcset="/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.avif 765w"><source type="image/webp" srcset="/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.webp 765w"><img loading="lazy" decoding="async" src="/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.png" alt="code completion knows that week 3 is computer controlled cutting" width="765" height="275"></picture></p>
 <p>Did it surmise this from the text checklist in <a href="../">index.md</a>? Either that or it knows this from training, which seems possible, given how much documentation exists over the years for Fab Academy.</p>
+<h1 id="fab-academy-feedback">Fab Academy Feedback</h1>
+<p>The importance of resizing images before committing has been stressed a bunch, taking up time in the lectures and spaces in the chat. But I think that concern is a bit outdated. If we have to decide between time spent documenting, and time spent wrangling media files... Let the machines do the media busy work!</p>
+<p>My new website setup isn't ideal. There is more friction to doing documentation than my Notion <a href="https://fopub.notion.site/2942db42f3d14348b382696c0296971d?v=ccfdc55d9fc347f4bf8661aa22f43c8c">Blender Learning jounal</a>. But I think it's a step in right direction that I only need to manage Markdown and media files, and the build process takes care of indexing and image sizing and formats. And the static HTML output loads and renders quickly. ⚡️</p>
 
 <ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/2020s/2023-studio-wall.html">2023 Studio Wall (annotated)</a></li><li class="links-nextprev-next">Next →<br><a href="/fab-academy/01-potential-final-project.html">Week 01. Potential Final Project (draft)</a></li>
 </ul>
@@ -591,11 +596,11 @@ main {
 		<footer>
 			<p>Forrest O. Interactive is my WIP web blog wiki garden, built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
 
-			<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless otherwise noted, <span property="dct:title">Forrest O. Interactive</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<picture><source type="image/avif" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1-FRC2GTPyJx-44.avif 44w"><source type="image/webp" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1-FRC2GTPyJx-44.webp 44w"><img loading="lazy" decoding="async" src="/img/https:/mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1-FRC2GTPyJx-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture><picture><source type="image/avif" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1-R3XBmYTpOG-44.avif 44w"><source type="image/webp" srcset="/img/https:/mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1-R3XBmYTpOG-44.webp 44w"><img loading="lazy" decoding="async" src="/img/https:/mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1-R3XBmYTpOG-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture></a></p>
+			<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless otherwise noted, <span property="dct:title">Forrest O. Interactive</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<picture><source type="image/avif" srcset="/img/cc.svg?ref=chooser-v1-FRC2GTPyJx-44.avif 44w"><source type="image/webp" srcset="/img/cc.svg?ref=chooser-v1-FRC2GTPyJx-44.webp 44w"><img loading="lazy" decoding="async" src="/img/cc.svg?ref=chooser-v1-FRC2GTPyJx-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture><picture><source type="image/avif" srcset="/img/by.svg?ref=chooser-v1-R3XBmYTpOG-44.avif 44w"><source type="image/webp" srcset="/img/by.svg?ref=chooser-v1-R3XBmYTpOG-44.webp 44w"><img loading="lazy" decoding="async" src="/img/by.svg?ref=chooser-v1-R3XBmYTpOG-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture></a></p>
 
 		</footer>
 
-		<!-- This page `/fab-academy/01-project-management.html` was built on 2025-01-28T12:44:08.991Z -->
+		<!-- This page `/fab-academy/01-project-management.html` was built on 2025-01-28T13:38:00.659Z -->
 		<script type="module" src="/dist/PQuipxb2GV.js"></script>
 	</body>
 </html>
