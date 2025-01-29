@@ -8,6 +8,7 @@ import embedYouTube from "eleventy-plugin-youtube-embed";
 import markdownItTaskCheckbox from "markdown-it-task-checkbox";
 
 import pluginFilters from "./_config/filters.js";
+import relativeLinks from "./_config/relative-links.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
@@ -188,6 +189,9 @@ export default async function (eleventyConfig) {
 
 		return directoriesArray.reverse();
 	});
+
+	// Relative links
+	eleventyConfig.addPlugin(relativeLinks);
 }
 
 export const config = {
