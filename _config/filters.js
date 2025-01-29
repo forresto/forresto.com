@@ -1,4 +1,5 @@
 import { DateTime } from "luxon";
+import path from "path";
 
 export default function (eleventyConfig) {
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
@@ -36,6 +37,16 @@ export default function (eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-		return (tags || []).filter((tag) => ["all", "posts"].indexOf(tag) === -1);
+		return (tags || []).filter(
+			(tag) => ["all", "posts", "my-posts", "directories"].indexOf(tag) === -1,
+		);
+	});
+
+	eleventyConfig.addFilter("relativeUrl", function relativeUrl(url) {
+		if (!url || !this?.page?.url) {
+			return url;
+		}
+		const relativePath = path.relative(this.page.url, url);
+		return relativePath;
 	});
 }

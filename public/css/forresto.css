@@ -1,11 +1,29 @@
 :root {
 	--footer-background-color: #f2f9e9;
+	--button-background-color: #f2f9e9;
+	--solid-border-color: #ced7c2;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--footer-background-color: #363a31;
+		--button-background-color: #363a31;
 	}
+}
+/* Repeated for theme-switch */
+[data-theme="dark"] {
+	--footer-background-color: #363a31;
+	--button-background-color: #363a31;
+}
+
+header nav {
+	flex-grow: 1;
+}
+
+button {
+	background-color: var(--button-background-color);
+	border: 1px solid var(--solid-border-color);
+	border-radius: 0.25em;
 }
 
 ul.task-list {
@@ -24,13 +42,13 @@ li.task-list-item {
 blockquote {
 	margin-left: 2em;
 	padding-left: 1em;
-	border-left: 0.25em solid #ced7c2;
+	border-left: 0.25em solid var(--solid-border-color);
 }
 
 footer {
 	margin-top: 2em;
 	padding-top: 0;
-	border-top: 0.25em solid #ced7c2;
+	border-top: 0.25em solid var(--solid-border-color);
 	background-color: var(--footer-background-color);
 }
 
@@ -41,6 +59,7 @@ html {
 body {
 	display: flex;
 	flex-direction: column;
+	min-height: 100%;
 }
 
 main {

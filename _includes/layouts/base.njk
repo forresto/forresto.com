@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
-		<link rel="alternate" href="feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+		<link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
 		<meta name="generator" content="{{ eleventy.generator }}">
@@ -34,6 +34,7 @@
 
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
 		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
+		{%- js %}{% include "public/js/theme-switch.js" %}{% endjs %}
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
@@ -50,6 +51,8 @@
 				{%- endfor %}
 				</ul>
 			</nav>
+
+			<theme-switch></theme-switch>
 		</header>
 
 		<main id="skip">

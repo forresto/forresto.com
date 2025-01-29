@@ -17,7 +17,7 @@ const eleventyComputed = {
 
 <ul>
 {% for dir in collections.directories %}
-	<li><a class="postlist-link" href="{{ dir.path }}">{{ dir.name }}</a> {{ dir.posts.length }} posts</li>
+	<li><a class="postlist-link" href="{{ dir.path | relativeUrl }}/">{{ dir.name }}</a> {{ dir.posts.length }} posts</li>
 {% endfor %}
 </ul>
 

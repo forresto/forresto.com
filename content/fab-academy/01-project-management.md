@@ -26,7 +26,7 @@ I have a few concepts for how I'd like this site to work.
 
 The source of the site has a simple directory structure, that gets directly translated to the built site's structure. Top level directories are collections, where each post can go. Media for related posts can be named with the same prefix. The prefix can be a number, date, or a bare name, depending on the kind of post.
 
-```
+```txt
 |_ content/
   |_ fab-academy/
     |_ index.md
@@ -41,7 +41,7 @@ The source of the site has a simple directory structure, that gets directly tran
 
 Posts that don't have an obvious collection go in a "2020s" directory. I have old blog posts and letters back to the 90s that can fit with this structure.
 
-[Tags](../../tags) bridge posts across collections.
+[Tags](/tags) bridge posts across collections.
 
 ## Copyright
 

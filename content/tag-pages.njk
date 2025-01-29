@@ -13,13 +13,16 @@ const eleventyExcludeFromCollections = true;
 const eleventyComputed = {
 	title: "Tagged '{{ tag }}'",
 	permalink: function(data) {
-		return `/tags/${this.slugify(data.tag)}/`;
+		return `/tags/${this.slugify(data.tag)}.html`;
 	}
 };
+
+const layout = "layouts/base.njk";
 ---
+
+<nav><a href="{{ '/tags.html' | relativeUrl }}">Tags</a> | {{ tag }} </nav>
+
 <h1>Tagged “{{ tag }}”</h1>
 
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}
-
-<p>See <a href="tags.njk">all tags</a>.</p>

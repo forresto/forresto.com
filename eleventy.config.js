@@ -11,6 +11,9 @@ import pluginFilters from "./_config/filters.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
+	// Filters
+	eleventyConfig.addPlugin(pluginFilters);
+
 	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
@@ -85,8 +88,7 @@ export default async function (eleventyConfig) {
 
 		widths: [1280],
 		filenameFormat: function (id, src, width, format, options) {
-			// Should be in equivalent directory as original image
-			const fileName = src.split("/").pop();
+			const fileName = src.split("/").pop().split("?").shift();
 			return `${fileName}-${id}-${width}.${format}`;
 		},
 
@@ -103,9 +105,6 @@ export default async function (eleventyConfig) {
 			animated: true,
 		},
 	});
-
-	// Filters
-	eleventyConfig.addPlugin(pluginFilters);
 
 	eleventyConfig.addPlugin(IdAttributePlugin, {
 		// by default we use Eleventy’s built-in `slugify` filter:
@@ -139,7 +138,10 @@ export default async function (eleventyConfig) {
 
 	// Set global permalinks to resource.html style
 	eleventyConfig.addGlobalData("permalink", () => {
-		return (data) => `${data.page.filePathStem}.${data.page.outputFileExtension}`;
+		return (data) => {
+			const path = data.page.filePathStem.split("/").slice(1).join("/");
+			return `${path}.${data.page.outputFileExtension}`;
+		};
 	});
 
 	eleventyConfig.addCollection("my-posts", function (collectionsApi) {
@@ -218,5 +220,5 @@ export const config = {
 	// it will transform any absolute URLs in your HTML to include this
 	// folder name and does **not** affect where things go in the output folder.
 
-	// pathPrefix: "/",
+	// pathPrefix: "",
 };
