@@ -6,7 +6,7 @@ layout: layouts/base.njk
 
 {% set directory = collections.directories.getByName(page.filePathStem.split('/')[1]) %}
 {% if directory %}
-	<nav><a href="{{ '/notes.html' | relativeUrl }}">Archive</a> | <a href="./">{{ directory.name }}</a></nav>
+	<nav><a href="{{ '/notes.html' }}">Archive</a> | <a href="./">{{ directory.name }}</a></nav>
 {% endif %}
 
 <h1>{{ title }}</h1>
@@ -15,7 +15,7 @@ layout: layouts/base.njk
 	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
 	{%- for tag in tags | filterTagList %}
 	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl | relativeUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
+	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
 	{%- endfor %}
 </ul>
 
