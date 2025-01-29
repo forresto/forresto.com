@@ -67,6 +67,10 @@ class ThemeSwitch extends HTMLElement {
 		document.firstElementChild.setAttribute("data-theme", this.theme.value);
 		this.button.setAttribute("aria-label", this.theme.value);
 		this.button.innerHTML = this.theme.value === "light" ? "☀️" : "🌙";
+		this.button.setAttribute(
+			"title",
+			"Toggle theme to " + (this.theme.value === "light" ? "dark" : "light"),
+		);
 	}
 }
 

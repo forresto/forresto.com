@@ -16,7 +16,7 @@ tags:
 - [x] Read, sign (add your name to) the student agreement and commit it to your repo
 - [x] Work through a git tutorial.
 - [x] Build a personal website in the class archive describing yourself and your final project.
-- [ ] Upload parts 1 and 2, to the class archive.
+- [x] Upload parts 1 and 2, to the class archive.
 
 I've done enough git in [my day job](https://cuttle.xyz/about-us) to stay out of trouble. So I took this assignment as an opportunity to restructure my personal website, which I have neglected for some years.
 
@@ -80,9 +80,9 @@ Which becomes fancy HTML:
 
 ```html
 <picture>
-	<source type="image/avif" srcset="studio-wall-1280-1100.avif">
-	<source type="image/webp" srcset="studio-wall-1280-1100.webp">
-	<img alt="studio wall" loading="lazy" decoding="async" src="studio-wall-1280-1100.jpg" width="1280" height="1100">
+  <source type="image/avif" srcset="studio-wall-1280-1100.avif">
+  <source type="image/webp" srcset="studio-wall-1280-1100.webp">
+  <img alt="studio wall" loading="lazy" decoding="async" src="studio-wall-1280-1100.jpg" width="1280" height="1100">
 </picture>
 ```
 
