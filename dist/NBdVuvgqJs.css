@@ -1,3 +1,126 @@
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
@@ -306,4 +429,78 @@ header {
 }
 .post-metadata time {
 	margin-right: 1em;
+}
+:root {
+	--footer-background-color: #f2f9e9;
+	--button-background-color: #f2f9e9;
+	--solid-border-color: #ced7c2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--footer-background-color: #363a31;
+		--button-background-color: #363a31;
+	}
+}
+/* Repeated for theme-switch */
+[data-theme="light"] {
+	--footer-background-color: #f2f9e9;
+	--button-background-color: #f2f9e9;
+}
+[data-theme="dark"] {
+	--footer-background-color: #363a31;
+	--button-background-color: #363a31;
+}
+
+header nav {
+	flex-grow: 1;
+}
+
+button {
+	background-color: var(--button-background-color);
+	border: 1px solid var(--solid-border-color);
+	border-radius: 0.25em;
+	line-height: 1.5;
+	vertical-align: middle;
+	font-size: 1em;
+}
+
+ul.task-list {
+	list-style-type: none;
+	padding-left: 1.5em;
+	/* text-indent: -1.7em; */
+}
+
+li.task-list-item {
+	display: flex;
+	aligh-items: flex-start;
+	align-items: first baseline;
+	gap: 0.25em;
+}
+
+blockquote {
+	margin-left: 2em;
+	padding-left: 1em;
+	border-left: 0.25em solid var(--solid-border-color);
+}
+
+footer {
+	margin-top: 2em;
+	padding-top: 0;
+	border-top: 0.25em solid var(--solid-border-color);
+	background-color: var(--footer-background-color);
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+main {
+	flex-grow: 1;
 }

@@ -11,6 +11,10 @@
 	}
 }
 /* Repeated for theme-switch */
+[data-theme="light"] {
+	--footer-background-color: #f2f9e9;
+	--button-background-color: #f2f9e9;
+}
 [data-theme="dark"] {
 	--footer-background-color: #363a31;
 	--button-background-color: #363a31;
