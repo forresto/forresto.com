@@ -1,5 +1,5 @@
 ---
-title: Week 01. Potential Final Project (draft)
+title: Week 01. Potential Final Project
 date: 2025-01-24
 ---
 
