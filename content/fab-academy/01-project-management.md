@@ -9,7 +9,7 @@ tags:
 
 # Principles and Practices
 
-- [ ] Plan and sketch a [potential final project](01-potential-final-project.md)
+- [x] Plan and sketch a [potential final project](01-potential-final-project.md)
 
 # Project Management
 
@@ -57,7 +57,9 @@ I've admired Creative Commons for a long time, and it would make me happy for hu
 
 ## Publishing
 
-My plan is to copy the HTML output of my own site's "fab-academy" output directory to my Fab Academy repo. (I could simlink just this directory, in order to build a partial version of the site there. I'll decide if that's worth it later.)
+My plan is to copy the HTML output of my own site's "fab-academy" output directory to my Fab Academy repo. I can also simlink just this `/content/fab-academy` directory, in order to build a partial version of the site with tweaks for Fab Academy.
+
+The source of the full site and commits are visible on Github: [forresto/forresto.com](https://github.com/forresto/forresto.com). I'll use Github Actions for building and gh-pages for hosting.
 
 ## To do
 

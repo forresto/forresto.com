@@ -1,4 +1,7 @@
 ---
+eleventyNavigation:
+  key: "Fab"
+  order: 2
 isIndex: true
 layout: layouts/dir.njk
 ---
