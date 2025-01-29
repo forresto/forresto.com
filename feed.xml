@@ -32,7 +32,29 @@
     <content type="html">&lt;p&gt;I&#39;ve been floating the idea for friends and family to imagine the project that I&#39;m going to be making this year, and tell me their thoughts on it. It&#39;s a half joke, but wouldn&#39;t it be neat if you could do that? I imagine people with a big audience can do that, but there&#39;s a fine line between having no replies and having too many.&lt;/p&gt;
 &lt;p&gt;In the real world, I have to share some sketches, and get more specific when asking for feedback.&lt;/p&gt;
 &lt;p&gt;I have three concepts now.&lt;/p&gt;
-&lt;p&gt;...&lt;/p&gt;
+&lt;h1 id=&quot;calm-timer&quot;&gt;Calm Timer&lt;/h1&gt;
+&lt;p&gt;Plays a nice-sounding chime on the hour, or set intervals with a small screen.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-timer.png-BF2h-TOepz-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-timer.png-BF2h-TOepz-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/01-fo-concept-timer.png-BF2h-TOepz-1280.png&quot; alt=&quot;Concept sketch of a curved wooden stand with a metal chime suspended within it.&quot; width=&quot;1280&quot; height=&quot;861&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h1 id=&quot;tangible-media-player&quot;&gt;Tangible Media Player&lt;/h1&gt;
+&lt;p&gt;A collection of wood tokens start a playlist when set on the player. The tokens bring back some tangibility to the act of choosing and playing music. They can also load internet radio stations.&lt;/p&gt;
+&lt;p&gt;I remember finding a &amp;quot;record player&amp;quot; made in preschool with paper plate, pipe cleaner, buttons. If I choose this project I&#39;ll be honoring my small self that really wanted a cool little tangible music player.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-player.png-qkYt2M088X-1273.avif 1273w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-player.png-qkYt2M088X-1273.webp 1273w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/01-fo-concept-player.png-qkYt2M088X-1273.png&quot; alt=&quot;Concept sketch of a hexagonal media player with hexagonal media tokens.&quot; width=&quot;1273&quot; height=&quot;1794&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h2 id=&quot;prior-art&quot;&gt;Prior art&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Månsteri&#39;s &lt;a href=&quot;https://mansteri.com/works/aanimuseo-v/&quot;&gt;Äänimuseo&lt;/a&gt; tangible sound player.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;closed-eye-vr&quot;&gt;Closed-Eye VR&lt;/h1&gt;
+&lt;p&gt;Closed-eye solar-powered VR visor. With eyes closed, chill in the sun light or with a bright lamp. An array of &lt;em&gt;liquid crystal&lt;/em&gt; (LC) cells are activated at different intervals, giving the illusion of motion.&lt;/p&gt;
+&lt;p&gt;I like how this concept would need a tiny fraction of the energy needed for high-end virtual reality systems. The challenge of programming small low-energy microcontrollers is interesting.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-visor.png-HrUEVM9JV6-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-visor.png-HrUEVM9JV6-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/01-fo-concept-visor.png-HrUEVM9JV6-1280.png&quot; alt=&quot;Concept sketch of a visor for closed-eye visions.&quot; width=&quot;1280&quot; height=&quot;1074&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h2 id=&quot;prior-art-2&quot;&gt;Prior art&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Brion Gysin &lt;a href=&quot;https://en.wikipedia.org/wiki/Dreamachine&quot;&gt;Dreamachine&lt;/a&gt; (1959)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Geordi_La_Forge#VISOR&quot;&gt;Geordi LaForge&#39;s VISOR&lt;/a&gt; is an obvious style inspiration.&lt;/li&gt;
+&lt;li&gt;Mitch Altman&#39;s &lt;a href=&quot;https://cornfieldelectronics.com/neurodreamer/buy.nd.php&quot;&gt;Neuro Dreamer&lt;/a&gt; flashes lights into your dreams to help you lucid dream.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Active_shutter_3D_system&quot;&gt;Active shutter 3D glasses&lt;/a&gt; could be a source of &lt;em&gt;liquid crystal cell&lt;/em&gt; components, though smaller would be better to fit more.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://weldingpros.net/how-do-auto-darkening-welding-helmets-work/&quot;&gt;Auto Darkening Welding Helmet&lt;/a&gt; forehead-sized solar panel is enough to darken this style of welding mask, so I think it&#39;s feasible, if I can keep the electronics efficient enough.&lt;/li&gt;
+&lt;/ul&gt;
 </content>
   </entry>
   <entry>
@@ -43,7 +65,7 @@
     <content type="html">&lt;p&gt;&lt;a href=&quot;https://fabacademy.org/2025/nueval/principles_and_practices,_project_management.html&quot;&gt;This week&#39;s goals&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;principles-and-practices&quot;&gt;Principles and Practices&lt;/h1&gt;
 &lt;ul class=&quot;task-list&quot;&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_0&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_0&quot;&gt; Plan and sketch a &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final-project.html&quot;&gt;potential final project&lt;/a&gt;&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_0&quot; checked=&quot;true&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_0&quot;&gt; Plan and sketch a &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final-project.html&quot;&gt;potential final project&lt;/a&gt;&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&quot;project-management&quot;&gt;Project Management&lt;/h1&gt;
 &lt;ul class=&quot;task-list&quot;&gt;
@@ -78,7 +100,8 @@
 &lt;p&gt;The lines between these are blurry to me. If my posts get scraped, archived, and trained on, is that not a (very fuzzy statistical) form of immortality? Can my weird ideas bend the weights of models that will be used to make decisions in the future?&lt;/p&gt;
 &lt;p&gt;I&#39;ve admired Creative Commons for a long time, and it would make me happy for humans to use and remix my work. I appreciate attribution, so encoding that into my copyright notice makes sense. If people or AI companies ignore that request, then there&#39;s not much I can do about it, other than not publish.&lt;/p&gt;
 &lt;h2 id=&quot;publishing&quot;&gt;Publishing&lt;/h2&gt;
-&lt;p&gt;My plan is to copy the HTML output of my own site&#39;s &amp;quot;fab-academy&amp;quot; output directory to my Fab Academy repo. (I could simlink just this directory, in order to build a partial version of the site there. I&#39;ll decide if that&#39;s worth it later.)&lt;/p&gt;
+&lt;p&gt;My plan is to copy the HTML output of my own site&#39;s &amp;quot;fab-academy&amp;quot; output directory to my Fab Academy repo. I can also simlink just this &lt;code&gt;/content/fab-academy&lt;/code&gt; directory, in order to build a partial version of the site with tweaks for Fab Academy.&lt;/p&gt;
+&lt;p&gt;The source of the full site and commits are visible on Github: &lt;a href=&quot;https://github.com/forresto/forresto.com&quot;&gt;forresto/forresto.com&lt;/a&gt;. I&#39;ll use Github Actions for building and gh-pages for hosting.&lt;/p&gt;
 &lt;h2 id=&quot;to-do&quot;&gt;To do&lt;/h2&gt;
 &lt;ul class=&quot;task-list&quot;&gt;
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_5&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_5&quot;&gt; Move more recent projects to the personal site collections.&lt;/label&gt;&lt;/li&gt;
