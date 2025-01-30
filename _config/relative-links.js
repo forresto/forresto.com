@@ -22,8 +22,13 @@ export default function (eleventyConfig) {
 	eleventyConfig.htmlTransformer.addUrlTransform(
 		"html",
 		function makeUrlRelative(urlInMarkup) {
-			// Skip empty URLs, non-root-relative URLs, and dev server image transform URLs
-			if (!urlInMarkup || !urlInMarkup.startsWith("/") || urlInMarkup.startsWith("/.11ty/")) {
+			// Skip empty, non-root-relative, protocol-relative, and dev server
+			if (
+				!urlInMarkup ||
+				!urlInMarkup.startsWith("/") ||
+				urlInMarkup.startsWith("//") ||
+				urlInMarkup.startsWith("/.11ty/")
+			) {
 				return urlInMarkup;
 			}
 
@@ -46,7 +51,7 @@ export default function (eleventyConfig) {
 			return relativePath;
 		},
 		{
-			priority: -1, // run last last (after PathToUrl, and HTMLBasePlugin?)
+			priority: -1, // run last, after PathToUrl
 		},
 	);
 }

@@ -4,6 +4,7 @@ eleventyNavigation:
   order: 2
 isIndex: true
 layout: layouts/dir.njk
+date: 2025-01-01
 ---
 
 My [Fab Academy](https://fabacademy.org/2025/schedule.html) experience in 2025 at [Aalto Fablab](https://studios.aalto.fi/fablab/).

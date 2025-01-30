@@ -2,7 +2,7 @@
 title: Forrest O. Feeds
 eleventyNavigation:
   key: "Feeds"
-  order: 4
+  order: 5
 layout: layouts/base.njk
 ---
 
