@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 		
 		<url>
+			<loc>https://forresto.com/meemoo/</loc>
+			<lastmod>2012-04-01</lastmod>
+		</url>
+		
+		<url>
 			<loc>https://forresto.com/meemoo/thesis.html</loc>
 			<lastmod>2012-04-23</lastmod>
 		</url>
@@ -14,6 +19,11 @@
 		<url>
 			<loc>https://forresto.com/2020s/2023-studio-wall.html</loc>
 			<lastmod>2023-05-03</lastmod>
+		</url>
+		
+		<url>
+			<loc>https://forresto.com/fab-academy/</loc>
+			<lastmod>2025-01-01</lastmod>
 		</url>
 		
 		<url>
@@ -42,22 +52,12 @@
 		</url>
 		
 		<url>
-			<loc>https://forresto.com/fab-academy/</loc>
-			<lastmod>2025-01-30</lastmod>
-		</url>
-		
-		<url>
 			<loc>https://forresto.com/feeds.html</loc>
 			<lastmod>2025-01-30</lastmod>
 		</url>
 		
 		<url>
 			<loc>https://forresto.com/</loc>
-			<lastmod>2025-01-30</lastmod>
-		</url>
-		
-		<url>
-			<loc>https://forresto.com/meemoo/</loc>
 			<lastmod>2025-01-30</lastmod>
 		</url>
 		
