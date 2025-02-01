@@ -10,7 +10,19 @@ og:
   image: 02-zoo-first-prompt-result.png
 ---
 
-https://zoo.dev/modeling-app
+A wildcard CAD package that I've been wanting to try is [Zoo Modeling App](https://zoo.dev/modeling-app).
+
+# Result
+
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+<model-viewer src="02-zoo.gltf" camera-controls tone-mapping="neutral" shadow-intensity="0.98" camera-orbit="-12.67deg 56.12deg 0.2405m" field-of-view="30deg" exposure="0.63" shadow-softness="0.63" poster="./02-zoo.gltf-poster.webp">
+</model-viewer>
+
+(3D using [`<model-viewer>`](https://modelviewer.dev) and .gltf export.)
+
+This is how far I got with an hour of tinkering, including this documentation.
+
+# Cloud rendering warning
 
 ![Welcome to Modeling App! This is a hardware design tool that lets you edit visually, with code, or both. It's powered by the KittyCAD Design API, the first API created for anyone to build hardware design tools. The 3D view is not running on your computer, but is instead being streamed to you from an instance of our Geometry Engine on a remote GPU as video. This is an alpha release, so you will encounter bugs and missing features. You can read our expectations for alpha users here, and please give us feedback on your experience our Discord! We are trying to release as early as possible to get feedback from users like you. As you go through the onboarding, we'll be changing and resetting your code occasionally, so that we can reference specific code features. So hold off on writing production KCL code until you're done with the onboarding](02-zoo-streaming-warning.png)
 
@@ -36,7 +48,7 @@ Here is the code and image that it came up with. Color me mildly impressed.
 
 ![Interface with "feature tree" "KCL code" and 3d view of first LLM prompt result.](02-zoo-first-prompt-result.png)
 
-The cutouts are on corners, and didn't do the correct Boolean, but the parameters in code do seem like a decent starting place, considering that I have no experience or instruction with the app.
+The cutouts are on corners, and it didn't do the correct Boolean correctly, but the parameters in code do seem like a decent starting place, considering that I have no experience or instruction with the app.
 
 I do have enough design experience to have written a fairly specific prompt for the object that I have sketched. Sketching helped me think about the geometry construction at a high and manual level. Pencil and pen aided design.
 
@@ -148,9 +160,13 @@ The Boolean subtraction (`hole()`) seems like it is done in the wrong place in t
 
 Learning the canvas navigation is not helped by the streaming lag. My mouse wheel zooms too fast and the model escapes behind me. Hovering and selections take moments too long.
 
-I've been enamored with SolveSpace and OpenSCAD, which have small executables and feel very responsive. I can't imagine taking the tradeoff to develop and app to render with Cloud GPUs, but I guess they have reasons.
+I can't imagine taking the tradeoff to develop an app to render with Cloud GPUs, but I guess they have reasons.
 
-I'd encourage the developers of Zoo to try these other apps. Blender isn't small, but it feels very responsive. Local software people!
+> Early on, we knew we wanted to build an API for CAD using cloud GPUs doing the 3D rendering. This meant we needed to stream the video generated on the cloud to our clients. – [Zoo Blog](https://zoo.dev/blog/cad-webrtc)
+
+But why?
+
+I've been enamored with SolveSpace and OpenSCAD, which have small executables and feel very responsive. I'd encourage the developers of Zoo to try these other apps. Blender isn't small, but it feels very responsive. Local software!
 
 (Disclosure: I work on [web-based 2D CAD](https://cuttle.xyz), which is not local. But the rendering is local.)
 
@@ -186,3 +202,9 @@ I also appreciate your comments about local vs cloud CAD. The latency issues you
 </blockquote>
 
 Note: `rotate2d()` for KCL is Claude's hallucination.
+
+# Conclusion
+
+[Subtract](https://github.com/KittyCAD/modeling-app/discussions/510) and other Boolean operations are not available yet, so I would have to rethink my design and prompt to get closer to what I had in mind.
+
+My time is up for evaluating this CAD package. When trying other packages, I'll be able to compare the tradeoffs of cloud rendering and LLM prompting. My impression is that the Zoo has stalled a little bit, based on the [company blog](https://zoo.dev/blog).

@@ -138,8 +138,17 @@ While writing this post, I noticed that the inline code completions know about F
 
 Did it surmise this from the text checklist in [index.md](../)? Either that or it knows this from training, which seems possible, given how much documentation exists over the years for Fab Academy.
 
+# Documentation feature requests
+
+1. It would be nice to paste an image into a Markdown file in Zed. Now, I have to paste a screenshot into Preview.app, then name and save the image file, then make the Markdown image tag. Apparently that's a feature in VSCode now, so [I made a Zed feature request](https://github.com/zed-industries/zed/discussions/24073).
+2. Fab Academy requests relative links in our documentation site, and that goes against the grain of the static site builder that I decided to use. It took a while to find a plugin API to use that helped me solve the problem pretty well. I documented my [11ty relative links plugin on Github](https://github.com/11ty/eleventy/discussions/2516#discussioncomment-11999750) and [Stack Overflow](https://stackoverflow.com/questions/57370564/how-to-have-relative-paths-in-eleventy/79402772#79402772), the top search results for "11ty relative links", where there were only partial fixes posted before. I started a conversation with [Eleventy on Mastodon](https://xoxo.zone/@forresto/113913565699389935).
+
 # Fab Academy Feedback
 
 The importance of resizing images before committing has been stressed a bunch, taking up time in the lectures and spaces in the chat. But I think that concern is a bit outdated. If we have to decide between time spent documenting, and time spent wrangling media files... Let the machines do the media busy work!
 
+# Conclusion
+
 My new website setup isn't ideal. There is more friction to doing documentation than my Notion [Blender Learning jounal](https://fopub.notion.site/2942db42f3d14348b382696c0296971d?v=ccfdc55d9fc347f4bf8661aa22f43c8c). But I think it's a step in right direction that I only need to manage Markdown and media files, and the build process takes care of indexing and image sizing and formats. And the static HTML output loads and renders quickly. ⚡️
+
+I'll keep tinkering with the site, but this setup is good enough for now. If I were designing a system for other people to use I could spend a long time filing off the rough edges. I like that Fab Academy doesn't tell people how to do the assignments, but presents lots of potential options. It will be interesting to see the many different ways that people solve the tasks.
