@@ -15,7 +15,14 @@
     <link href="https://forresto.com/fab-academy/02-zoo-modeling-app.html" />
     <updated>2025-02-01T00:00:00Z</updated>
     <id>https://forresto.com/fab-academy/02-zoo-modeling-app.html</id>
-    <content type="html">&lt;p&gt;https://zoo.dev/modeling-app&lt;/p&gt;
+    <content type="html">&lt;p&gt;A wildcard CAD package that I&#39;ve been wanting to try is &lt;a href=&quot;https://zoo.dev/modeling-app&quot;&gt;Zoo Modeling App&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;result&quot;&gt;Result&lt;/h1&gt;
+&lt;script type=&quot;module&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js&quot;&gt;&lt;/script&gt;
+&lt;model-viewer src=&quot;02-zoo.gltf&quot; camera-controls=&quot;&quot; tone-mapping=&quot;neutral&quot; shadow-intensity=&quot;0.98&quot; camera-orbit=&quot;-12.67deg 56.12deg 0.2405m&quot; field-of-view=&quot;30deg&quot; exposure=&quot;0.63&quot; shadow-softness=&quot;0.63&quot; poster=&quot;./02-zoo.gltf-poster.webp&quot;&gt;
+&lt;/model-viewer&gt;
+&lt;p&gt;(3D using &lt;a href=&quot;https://modelviewer.dev&quot;&gt;&lt;code&gt;&amp;lt;model-viewer&amp;gt;&lt;/code&gt;&lt;/a&gt; and .gltf export.)&lt;/p&gt;
+&lt;p&gt;This is how far I got with an hour of tinkering, including this documentation.&lt;/p&gt;
+&lt;h1 id=&quot;cloud-rendering-warning&quot;&gt;Cloud rendering warning&lt;/h1&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-streaming-warning.png-kC7HEAkrg3-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-streaming-warning.png-kC7HEAkrg3-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-zoo-streaming-warning.png-kC7HEAkrg3-1280.png&quot; alt=&quot;Welcome to Modeling App! This is a hardware design tool that lets you edit visually, with code, or both. It&#39;s powered by the KittyCAD Design API, the first API created for anyone to build hardware design tools. The 3D view is not running on your computer, but is instead being streamed to you from an instance of our Geometry Engine on a remote GPU as video. This is an alpha release, so you will encounter bugs and missing features. You can read our expectations for alpha users here, and please give us feedback on your experience our Discord! We are trying to release as early as possible to get feedback from users like you. As you go through the onboarding, we&#39;ll be changing and resetting your code occasionally, so that we can reference specific code features. So hold off on writing production KCL code until you&#39;re done with the onboarding&quot; width=&quot;1280&quot; height=&quot;895&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;Warning that the view isn&#39;t actually on your computer, it is streaming from a cloud GPU. My first impression is that this is going to need to be really compelling for me to invest too much time into it.&lt;/p&gt;
 &lt;h1 id=&quot;text-to-cad-prompt&quot;&gt;&amp;quot;Text-to-CAD&amp;quot; Prompt&lt;/h1&gt;
@@ -31,10 +38,10 @@
 &lt;p&gt;Starting from nothing, I thought I&#39;d see if the &amp;quot;text-to-CAD&amp;quot; feature can show a good starting place. It is the ✨ icon on the top toolbar.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-text-to-cad-toast.png-FrjT3irm4n-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-text-to-cad-toast.png-FrjT3irm4n-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-zoo-text-to-cad-toast.png-FrjT3irm4n-1280.png&quot; alt=&quot;Small toast message on the bottom that Text-to-CAD has succeeded.&quot; width=&quot;1280&quot; height=&quot;428&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;Let&#39;s see about that. The tiny icon is 50% encouraging, 50% glitchy.&lt;/p&gt;
-&lt;h2 id=&quot;result&quot;&gt;Result&lt;/h2&gt;
+&lt;h2 id=&quot;result-2&quot;&gt;Result&lt;/h2&gt;
 &lt;p&gt;Here is the code and image that it came up with. Color me mildly impressed.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-first-prompt-result.png-Meo1EynFni-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-first-prompt-result.png-Meo1EynFni-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-zoo-first-prompt-result.png-Meo1EynFni-1280.png&quot; alt=&quot;Interface with &amp;quot;feature tree&amp;quot; &amp;quot;KCL code&amp;quot; and 3d view of first LLM prompt result.&quot; width=&quot;1280&quot; height=&quot;779&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;The cutouts are on corners, and didn&#39;t do the correct Boolean, but the parameters in code do seem like a decent starting place, considering that I have no experience or instruction with the app.&lt;/p&gt;
+&lt;p&gt;The cutouts are on corners, and it didn&#39;t do the correct Boolean correctly, but the parameters in code do seem like a decent starting place, considering that I have no experience or instruction with the app.&lt;/p&gt;
 &lt;p&gt;I do have enough design experience to have written a fairly specific prompt for the object that I have sketched. Sketching helped me think about the geometry construction at a high and manual level. Pencil and pen aided design.&lt;/p&gt;
 &lt;h2 id=&quot;generated-code&quot;&gt;Generated code&lt;/h2&gt;
 &lt;pre class=&quot;language-kcl&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-kcl&quot;&gt;/* Generated by Text-to-CAD: hexagon shaped box
@@ -125,8 +132,12 @@ edgeMidpoint = [(vertex1[0] + vertex2[0])/2, (vertex1[1] + vertex2[1])/2]&lt;/co
 &lt;p&gt;The Boolean subtraction (&lt;code&gt;hole()&lt;/code&gt;) seems like it is done in the wrong place in the code.&lt;/p&gt;
 &lt;h1 id=&quot;app-feel&quot;&gt;App feel&lt;/h1&gt;
 &lt;p&gt;Learning the canvas navigation is not helped by the streaming lag. My mouse wheel zooms too fast and the model escapes behind me. Hovering and selections take moments too long.&lt;/p&gt;
-&lt;p&gt;I&#39;ve been enamored with SolveSpace and OpenSCAD, which have small executables and feel very responsive. I can&#39;t imagine taking the tradeoff to develop and app to render with Cloud GPUs, but I guess they have reasons.&lt;/p&gt;
-&lt;p&gt;I&#39;d encourage the developers of Zoo to try these other apps. Blender isn&#39;t small, but it feels very responsive. Local software people!&lt;/p&gt;
+&lt;p&gt;I can&#39;t imagine taking the tradeoff to develop an app to render with Cloud GPUs, but I guess they have reasons.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Early on, we knew we wanted to build an API for CAD using cloud GPUs doing the 3D rendering. This meant we needed to stream the video generated on the cloud to our clients. – &lt;a href=&quot;https://zoo.dev/blog/cad-webrtc&quot;&gt;Zoo Blog&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;But why?&lt;/p&gt;
+&lt;p&gt;I&#39;ve been enamored with SolveSpace and OpenSCAD, which have small executables and feel very responsive. I&#39;d encourage the developers of Zoo to try these other apps. Blender isn&#39;t small, but it feels very responsive. Local software!&lt;/p&gt;
 &lt;p&gt;(Disclosure: I work on &lt;a href=&quot;https://cuttle.xyz&quot;&gt;web-based 2D CAD&lt;/a&gt;, which is not local. But the rendering is local.)&lt;/p&gt;
 &lt;h1 id=&quot;claude-chat-with-this-blog-post&quot;&gt;Claude chat with this blog post.&lt;/h1&gt;
 &lt;p&gt;I&#39;m taking these notes in &lt;a href=&quot;https://zed.dev&quot;&gt;Zed&lt;/a&gt; which has access to Claude 3.5 Sonnet in a sidebar. It&#39;s interesting to feed in my own blog post as I&#39;m figuring stuff out, and see if it can be of help. As always, it hallucinates specifics, but can be helpful for high-level planning.&lt;/p&gt;
@@ -150,6 +161,9 @@ edgeMidpoint = [(vertex1[0] + vertex2[0])/2, (vertex1[1] + vertex2[1])/2]&lt;/co
 &lt;p&gt;I also appreciate your comments about local vs cloud CAD. The latency issues you&#39;re experiencing with navigation and selection are significant usability concerns that don&#39;t exist with local rendering.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Note: &lt;code&gt;rotate2d()&lt;/code&gt; for KCL is Claude&#39;s hallucination.&lt;/p&gt;
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/KittyCAD/modeling-app/discussions/510&quot;&gt;Subtract&lt;/a&gt; and other Boolean operations are not available yet, so I would have to rethink my design and prompt to get closer to what I had in mind.&lt;/p&gt;
+&lt;p&gt;My time is up for evaluating this CAD package. When trying other packages, I&#39;ll be able to compare the tradeoffs of cloud rendering and LLM prompting. My impression is that the Zoo has stalled a little bit, based on the &lt;a href=&quot;https://zoo.dev/blog&quot;&gt;company blog&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -311,9 +325,16 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
 &lt;p&gt;While writing this post, I noticed that the inline code completions know about Fab Academy&#39;s weeks.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.avif 765w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.webp 765w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.png&quot; alt=&quot;code completion knows that week 3 is computer controlled cutting&quot; width=&quot;765&quot; height=&quot;275&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;Did it surmise this from the text checklist in &lt;a href=&quot;https://forresto.com/&quot;&gt;index.md&lt;/a&gt;? Either that or it knows this from training, which seems possible, given how much documentation exists over the years for Fab Academy.&lt;/p&gt;
+&lt;h1 id=&quot;documentation-feature-requests&quot;&gt;Documentation feature requests&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;It would be nice to paste an image into a Markdown file in Zed. Now, I have to paste a screenshot into Preview.app, then name and save the image file, then make the Markdown image tag. Apparently that&#39;s a feature in VSCode now, so &lt;a href=&quot;https://github.com/zed-industries/zed/discussions/24073&quot;&gt;I made a Zed feature request&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fab Academy requests relative links in our documentation site, and that goes against the grain of the static site builder that I decided to use. It took a while to find a plugin API to use that helped me solve the problem pretty well. I documented my &lt;a href=&quot;https://github.com/11ty/eleventy/discussions/2516#discussioncomment-11999750&quot;&gt;11ty relative links plugin on Github&lt;/a&gt; and &lt;a href=&quot;https://stackoverflow.com/questions/57370564/how-to-have-relative-paths-in-eleventy/79402772#79402772&quot;&gt;Stack Overflow&lt;/a&gt;, the top search results for &amp;quot;11ty relative links&amp;quot;, where there were only partial fixes posted before. I started a conversation with &lt;a href=&quot;https://xoxo.zone/@forresto/113913565699389935&quot;&gt;Eleventy on Mastodon&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h1 id=&quot;fab-academy-feedback&quot;&gt;Fab Academy Feedback&lt;/h1&gt;
 &lt;p&gt;The importance of resizing images before committing has been stressed a bunch, taking up time in the lectures and spaces in the chat. But I think that concern is a bit outdated. If we have to decide between time spent documenting, and time spent wrangling media files... Let the machines do the media busy work!&lt;/p&gt;
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
 &lt;p&gt;My new website setup isn&#39;t ideal. There is more friction to doing documentation than my Notion &lt;a href=&quot;https://fopub.notion.site/2942db42f3d14348b382696c0296971d?v=ccfdc55d9fc347f4bf8661aa22f43c8c&quot;&gt;Blender Learning jounal&lt;/a&gt;. But I think it&#39;s a step in right direction that I only need to manage Markdown and media files, and the build process takes care of indexing and image sizing and formats. And the static HTML output loads and renders quickly. ⚡️&lt;/p&gt;
+&lt;p&gt;I&#39;ll keep tinkering with the site, but this setup is good enough for now. If I were designing a system for other people to use I could spend a long time filing off the rough edges. I like that Fab Academy doesn&#39;t tell people how to do the assignments, but presents lots of potential options. It will be interesting to see the many different ways that people solve the tasks.&lt;/p&gt;
 </content>
   </entry>
   <entry>

@@ -33,6 +33,12 @@ button {
 	font-size: 1em;
 }
 
+model-viewer {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16/9;
+}
+
 ul.task-list {
 	list-style-type: none;
 	padding-left: 1.5em;
