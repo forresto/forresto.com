@@ -5,29 +5,175 @@
   <subtitle>Forrest O.&#39;s web blog wiki garden home</subtitle>
   <link href="https://forresto.com/feed.xml" rel="self" />
   <link href="https://forresto.com/" />
-  <updated>2025-01-25T00:00:00Z</updated>
+  <updated>2025-02-01T00:00:00Z</updated>
   <id>https://forresto.com/</id>
   <author>
     <name>Forrest O.</name>
   </author>
   <entry>
-    <title>Meemoo Video Transition Loop</title>
-    <link href="https://forresto.com/meemoo/meemoo-video-transition-loop.html" />
-    <updated>2025-01-25T00:00:00Z</updated>
-    <id>https://forresto.com/meemoo/meemoo-video-transition-loop.html</id>
-    <content type="html">&lt;p&gt;Meemoo jam...&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://app.meemoo.org/#gist/35e3b45b5fb0ab1e0625c4410da84105&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop.png-JnK-o6CZ7Z-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop.png-JnK-o6CZ7Z-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop.png-JnK-o6CZ7Z-1280.png&quot; alt=&quot;Meemoo.org nodes and wires interface with tweens driving an endlessly looping video&quot; width=&quot;1280&quot; height=&quot;896&quot;&gt;&lt;/picture&gt; Meemoo app&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;(I should make an auto-embedder for Meemoo URLs.)&lt;/p&gt;
-&lt;p&gt;I made this in &amp;quot;IX2&amp;quot; the interaction system in Webflow, c. 2019. Today I remade the composition in Meemoo, and I liked tweaking the numbers like this, with stacked tweens. The video loop and the scale and translation loops are independent.&lt;/p&gt;
-&lt;p&gt;All of my recent practice in Blender Geometry Nodes has helped me to understand Meemoo&#39;s data flow in a deeper way. I wish Blender&#39;s interface had more debug views like Meemoo. You can drag any of the tweens to scrub the values, or leave it looping and tweak stuff as you go. You can do some of that in Blender, but the debug views are limited, and the node view is mostly static.&lt;/p&gt;
-&lt;p&gt;I remember @Barrett&#39;s reply to the Webflow build, something like &amp;quot;jeez man.&amp;quot;&lt;/p&gt;
-&lt;p&gt;I agree.&lt;/p&gt;
+    <title>Zoo Modeling App</title>
+    <link href="https://forresto.com/fab-academy/02-zoo-modeling-app.html" />
+    <updated>2025-02-01T00:00:00Z</updated>
+    <id>https://forresto.com/fab-academy/02-zoo-modeling-app.html</id>
+    <content type="html">&lt;p&gt;https://zoo.dev/modeling-app&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-streaming-warning.png-kC7HEAkrg3-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-streaming-warning.png-kC7HEAkrg3-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-zoo-streaming-warning.png-kC7HEAkrg3-1280.png&quot; alt=&quot;Welcome to Modeling App! This is a hardware design tool that lets you edit visually, with code, or both. It&#39;s powered by the KittyCAD Design API, the first API created for anyone to build hardware design tools. The 3D view is not running on your computer, but is instead being streamed to you from an instance of our Geometry Engine on a remote GPU as video. This is an alpha release, so you will encounter bugs and missing features. You can read our expectations for alpha users here, and please give us feedback on your experience our Discord! We are trying to release as early as possible to get feedback from users like you. As you go through the onboarding, we&#39;ll be changing and resetting your code occasionally, so that we can reference specific code features. So hold off on writing production KCL code until you&#39;re done with the onboarding&quot; width=&quot;1280&quot; height=&quot;895&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;Warning that the view isn&#39;t actually on your computer, it is streaming from a cloud GPU. My first impression is that this is going to need to be really compelling for me to invest too much time into it.&lt;/p&gt;
+&lt;h1 id=&quot;text-to-cad-prompt&quot;&gt;&amp;quot;Text-to-CAD&amp;quot; Prompt&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;hexagon shaped box&lt;/li&gt;
+&lt;li&gt;100mm diameter&lt;/li&gt;
+&lt;li&gt;extrude to 40mm height&lt;/li&gt;
+&lt;li&gt;top has inset hexagon with 80mm diameter and 10mm depth&lt;/li&gt;
+&lt;li&gt;two opposing edges have place for fingers subtracted, pills or spheres with 20mm diameter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Starting from nothing, I thought I&#39;d see if the &amp;quot;text-to-CAD&amp;quot; feature can show a good starting place. It is the ✨ icon on the top toolbar.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-text-to-cad-toast.png-FrjT3irm4n-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-text-to-cad-toast.png-FrjT3irm4n-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-zoo-text-to-cad-toast.png-FrjT3irm4n-1280.png&quot; alt=&quot;Small toast message on the bottom that Text-to-CAD has succeeded.&quot; width=&quot;1280&quot; height=&quot;428&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;Let&#39;s see about that. The tiny icon is 50% encouraging, 50% glitchy.&lt;/p&gt;
+&lt;h2 id=&quot;result&quot;&gt;Result&lt;/h2&gt;
+&lt;p&gt;Here is the code and image that it came up with. Color me mildly impressed.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-first-prompt-result.png-Meo1EynFni-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-first-prompt-result.png-Meo1EynFni-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-zoo-first-prompt-result.png-Meo1EynFni-1280.png&quot; alt=&quot;Interface with &amp;quot;feature tree&amp;quot; &amp;quot;KCL code&amp;quot; and 3d view of first LLM prompt result.&quot; width=&quot;1280&quot; height=&quot;779&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;The cutouts are on corners, and didn&#39;t do the correct Boolean, but the parameters in code do seem like a decent starting place, considering that I have no experience or instruction with the app.&lt;/p&gt;
+&lt;p&gt;I do have enough design experience to have written a fairly specific prompt for the object that I have sketched. Sketching helped me think about the geometry construction at a high and manual level. Pencil and pen aided design.&lt;/p&gt;
+&lt;h2 id=&quot;generated-code&quot;&gt;Generated code&lt;/h2&gt;
+&lt;pre class=&quot;language-kcl&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-kcl&quot;&gt;/* Generated by Text-to-CAD: hexagon shaped box
+ * 100mm diameter
+ * extrude to 40mm height
+ * top has inset hexagon with 80mm diameter and 10mm depth
+ * two opposing edges have place for fingers subtracted, pills or spheres with 20mm diameter
+ */
+
+// Set units
+@settings(defaultLengthUnit = mm)
+
+// Define constants
+outerHexDiameter = 100
+outerHexRadius = outerHexDiameter / 2
+outerHexHeight = 40
+
+innerHexDiameter = 80
+innerHexRadius = innerHexDiameter / 2
+innerHexDepth = 10
+
+fingerCutDiameter = 20
+fingerCutRadius = fingerCutDiameter / 2
+
+// Create the outer hexagon box
+outerHexSketch = startSketchOn(&#39;XY&#39;)
+  |&gt; polygon({
+       radius = outerHexRadius,
+       numSides = 6,
+       center = [0, 0],
+       inscribed = true
+     }, %)
+
+// Create the finger cutout sketches
+fingerCutSketch1 = startSketchOn(&#39;XY&#39;)
+  |&gt; circle({ center = [outerHexRadius, 0], radius = fingerCutRadius }, %)
+
+fingerCutSketch2 = startSketchOn(&#39;XY&#39;)
+  |&gt; circle({ center = [-outerHexRadius, 0], radius = fingerCutRadius }, %)
+
+// Subtract the finger cutouts from the outer hexagon sketch
+outerHexWithHolesSketch = outerHexSketch
+  |&gt; hole(fingerCutSketch1, %)
+  |&gt; hole(fingerCutSketch2, %)
+
+// Extrude the outer hexagon with holes
+outerHex = extrude(outerHexHeight, outerHexWithHolesSketch)
+
+// Create the inset hexagon on top
+innerHexSketch = startSketchOn(outerHex, &#39;end&#39;)
+  |&gt; polygon({
+       radius = innerHexRadius,
+       numSides = 6,
+       center = [0, 0],
+       inscribed = true
+     }, %)
+
+innerHex = extrude(-innerHexDepth, innerHexSketch)
+
+// The final box is the outer hexagon with the inner hexagon cutout
+finalBox = outerHex&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;prompt-to-edit&quot;&gt;&amp;quot;Prompt-to-Edit&amp;quot;&lt;/h1&gt;
+&lt;p&gt;Also under the ✨ icon.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Center the fingerCut cylinders on the selected edges. Change the boolean operation to subtract the cylinders from the rest of the box.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-prompt-to-edit.png-x1yCETER-T-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-prompt-to-edit.png-x1yCETER-T-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-zoo-prompt-to-edit.png-x1yCETER-T-1280.png&quot; alt=&quot;Interface for prompt to edit. Correct selected edges.&quot; width=&quot;1280&quot; height=&quot;571&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Failed to edit your KCL code, please try again with a different prompt or selection&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;:sad-trombone:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;move fingerCutSketch1 to midpoint of hexagon edge&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;:sad-trombone:&lt;/p&gt;
+&lt;p&gt;OK that&#39;s not really working with my level of this app.&lt;/p&gt;
+&lt;h1 id=&quot;attempt-to-tinker-with-the-code&quot;&gt;Attempt to tinker with the code&lt;/h1&gt;
+&lt;p&gt;This is the point where I&#39;d love to ask a question of an expert. What&#39;s the first step in this situation?&lt;/p&gt;
+&lt;p&gt;I can add this point definition to get the position of the first hole.&lt;/p&gt;
+&lt;pre class=&quot;language-kcl&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-kcl&quot;&gt;// Define the first two vertices (60° apart)
+vertex1 = [outerHexRadius, 0]
+vertex2 = [outerHexRadius/2, outerHexRadius * sqrt(3)/2]
+// Midpoint of those points is the average
+edgeMidpoint = [(vertex1[0] + vertex2[0])/2, (vertex1[1] + vertex2[1])/2]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Would be better with &lt;a href=&quot;https://xoxo.zone/@forresto/113865294623578977&quot;&gt;vector operator overrides&lt;/a&gt; but I can look into that if this app sticks.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-code-to-move-hole.png-nyS18vU0Yc-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-code-to-move-hole.png-nyS18vU0Yc-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-zoo-code-to-move-hole.png-nyS18vU0Yc-1280.png&quot; alt=&quot;&quot; width=&quot;1280&quot; height=&quot;885&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;It moved to the right place, centered on the edge. 🎉&lt;/p&gt;
+&lt;p&gt;The Boolean subtraction (&lt;code&gt;hole()&lt;/code&gt;) seems like it is done in the wrong place in the code.&lt;/p&gt;
+&lt;h1 id=&quot;app-feel&quot;&gt;App feel&lt;/h1&gt;
+&lt;p&gt;Learning the canvas navigation is not helped by the streaming lag. My mouse wheel zooms too fast and the model escapes behind me. Hovering and selections take moments too long.&lt;/p&gt;
+&lt;p&gt;I&#39;ve been enamored with SolveSpace and OpenSCAD, which have small executables and feel very responsive. I can&#39;t imagine taking the tradeoff to develop and app to render with Cloud GPUs, but I guess they have reasons.&lt;/p&gt;
+&lt;p&gt;I&#39;d encourage the developers of Zoo to try these other apps. Blender isn&#39;t small, but it feels very responsive. Local software people!&lt;/p&gt;
+&lt;p&gt;(Disclosure: I work on &lt;a href=&quot;https://cuttle.xyz&quot;&gt;web-based 2D CAD&lt;/a&gt;, which is not local. But the rendering is local.)&lt;/p&gt;
+&lt;h1 id=&quot;claude-chat-with-this-blog-post&quot;&gt;Claude chat with this blog post.&lt;/h1&gt;
+&lt;p&gt;I&#39;m taking these notes in &lt;a href=&quot;https://zed.dev&quot;&gt;Zed&lt;/a&gt; which has access to Claude 3.5 Sonnet in a sidebar. It&#39;s interesting to feed in my own blog post as I&#39;m figuring stuff out, and see if it can be of help. As always, it hallucinates specifics, but can be helpful for high-level planning.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You&lt;/p&gt;
+&lt;p&gt;See my diff and further comments&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;content/fab-academy/02-zoo-modeling-app.md&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Assitant&lt;/p&gt;
+&lt;p&gt;Yes, after your experiment with moving the holes, &lt;s&gt;I see that &lt;code&gt;rotate2d()&lt;/code&gt; would be cleaner than my previous suggestion. Let me refine the approach:&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;And you&#39;re right about the Boolean operation - looking at the original code, the &lt;code&gt;hole()&lt;/code&gt; operations are being done on the 2D sketch before extrusion, when they should probably be 3D operations. The holes should go all the way through the box, not just cut the base sketch.&lt;/p&gt;
+&lt;p&gt;To fix this, we should:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Extrude the base hexagon first&lt;/li&gt;
+&lt;li&gt;Create and extrude the finger cut cylinders&lt;/li&gt;
+&lt;li&gt;Use 3D Boolean subtraction to remove the cylinders from the box&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Would you like me to show how to restructure the code to do the Boolean operations in 3D instead of 2D?&lt;/p&gt;
+&lt;p&gt;I also appreciate your comments about local vs cloud CAD. The latency issues you&#39;re experiencing with navigation and selection are significant usability concerns that don&#39;t exist with local rendering.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Note: &lt;code&gt;rotate2d()&lt;/code&gt; for KCL is Claude&#39;s hallucination.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>CAD Comparison</title>
+    <link href="https://forresto.com/fab-academy/02-cad-comparison.html" />
+    <updated>2025-01-31T00:00:00Z</updated>
+    <id>https://forresto.com/fab-academy/02-cad-comparison.html</id>
+    <content type="html">&lt;p&gt;My goal for this CAD Comparison week should be to get a very rough model from each system that I try. As possible, it should have ballpark dimensions and features, but only get to the level of rough sketch.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Prompt&amp;quot; for myself, any tutors that I have time with, and any LLMs that I experiment with.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hexagon shaped box&lt;/li&gt;
+&lt;li&gt;100mm diameter&lt;/li&gt;
+&lt;li&gt;extrude to 40mm height&lt;/li&gt;
+&lt;li&gt;top has inset hexagon with 80mm diameter and 10mm depth&lt;/li&gt;
+&lt;li&gt;two opposing edges have place for fingers subtracted, pills or spheres with 20mm diameter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-player.png-qkYt2M088X-1273.avif 1273w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-player.png-qkYt2M088X-1273.webp 1273w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/01-fo-concept-player.png-qkYt2M088X-1273.png&quot; alt=&quot;Concept sketch of media player.&quot; width=&quot;1273&quot; height=&quot;1794&quot;&gt;&lt;/picture&gt;
+Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final-project.html&quot;&gt;Potential Final Project&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>Week 01. Potential Final Project</title>
     <link href="https://forresto.com/fab-academy/01-potential-final-project.html" />
-    <updated>2025-01-24T00:00:00Z</updated>
+    <updated>2025-01-29T00:00:00Z</updated>
     <id>https://forresto.com/fab-academy/01-potential-final-project.html</id>
     <content type="html">&lt;p&gt;I&#39;ve been floating the idea for friends and family to imagine the project that I&#39;m going to be making this year, and tell me their thoughts on it. It&#39;s a half joke, but wouldn&#39;t it be neat if you could do that? I imagine people with a big audience can do that, but there&#39;s a fine line between having no replies and having too many.&lt;/p&gt;
 &lt;p&gt;In the real world, I have to share some sketches, and get more specific when asking for feedback.&lt;/p&gt;
@@ -55,6 +201,20 @@
 &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Active_shutter_3D_system&quot;&gt;Active shutter 3D glasses&lt;/a&gt; could be a source of &lt;em&gt;liquid crystal cell&lt;/em&gt; components, though smaller would be better to fit more.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://weldingpros.net/how-do-auto-darkening-welding-helmets-work/&quot;&gt;Auto Darkening Welding Helmet&lt;/a&gt; forehead-sized solar panel is enough to darken this style of welding mask, so I think it&#39;s feasible, if I can keep the electronics efficient enough.&lt;/li&gt;
 &lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Meemoo Video Transition Loop</title>
+    <link href="https://forresto.com/meemoo/meemoo-video-transition-loop.html" />
+    <updated>2025-01-25T00:00:00Z</updated>
+    <id>https://forresto.com/meemoo/meemoo-video-transition-loop.html</id>
+    <content type="html">&lt;p&gt;Meemoo jam...&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://app.meemoo.org/#gist/35e3b45b5fb0ab1e0625c4410da84105&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop.png-JnK-o6CZ7Z-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop.png-JnK-o6CZ7Z-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop.png-JnK-o6CZ7Z-1280.png&quot; alt=&quot;Meemoo.org nodes and wires interface with tweens driving an endlessly looping video&quot; width=&quot;1280&quot; height=&quot;896&quot;&gt;&lt;/picture&gt; Meemoo app&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(I should make an auto-embedder for Meemoo URLs.)&lt;/p&gt;
+&lt;p&gt;I made this in &amp;quot;IX2&amp;quot; the interaction system in Webflow, c. 2019. Today I remade the composition in Meemoo, and I liked tweaking the numbers like this, with stacked tweens. The video loop and the scale and translation loops are independent.&lt;/p&gt;
+&lt;p&gt;All of my recent practice in Blender Geometry Nodes has helped me to understand Meemoo&#39;s data flow in a deeper way. I wish Blender&#39;s interface had more debug views like Meemoo. You can drag any of the tweens to scrub the values, or leave it looping and tweak stuff as you go. You can do some of that in Blender, but the debug views are limited, and the node view is mostly static.&lt;/p&gt;
+&lt;p&gt;I remember @Barrett&#39;s reply to the Webflow build, something like &amp;quot;jeez man.&amp;quot;&lt;/p&gt;
+&lt;p&gt;I agree.&lt;/p&gt;
 </content>
   </entry>
   <entry>
