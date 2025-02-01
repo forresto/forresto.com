@@ -42,11 +42,11 @@ export default function (eleventyConfig) {
 		);
 	});
 
-	// eleventyConfig.addFilter("relativeUrl", function relativeUrl(url) {
-	// 	if (!url || !this?.page?.url) {
-	// 		return url;
-	// 	}
-	// 	const relativePath = path.relative(this.page.url, url);
-	// 	return relativePath;
-	// });
+	eleventyConfig.addFilter("dirpath", function (url) {
+		return url.split("/").slice(0, -1).join("/");
+	});
+
+	eleventyConfig.addFilter("encodeURIComponent", function (string) {
+		return encodeURIComponent(string);
+	});
 }

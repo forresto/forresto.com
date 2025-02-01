@@ -14,7 +14,7 @@ https://zoo.dev/modeling-app
 
 ![Welcome to Modeling App! This is a hardware design tool that lets you edit visually, with code, or both. It's powered by the KittyCAD Design API, the first API created for anyone to build hardware design tools. The 3D view is not running on your computer, but is instead being streamed to you from an instance of our Geometry Engine on a remote GPU as video. This is an alpha release, so you will encounter bugs and missing features. You can read our expectations for alpha users here, and please give us feedback on your experience our Discord! We are trying to release as early as possible to get feedback from users like you. As you go through the onboarding, we'll be changing and resetting your code occasionally, so that we can reference specific code features. So hold off on writing production KCL code until you're done with the onboarding](02-zoo-streaming-warning.png)
 
-Warning that the view isn't actually on your computer, it is streaming from a cloud GPU. This is going to need to be really compelling for me to invest too much time into leaning.
+Warning that the view isn't actually on your computer, it is streaming from a cloud GPU. My first impression is that this is going to need to be really compelling for me to invest too much time into it.
 
 # "Text-to-CAD" Prompt
 
