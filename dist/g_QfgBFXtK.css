@@ -329,10 +329,6 @@ header {
 	--button-background-color: #363a31;
 }
 
-.post-metadata {
-	margin-bottom: 1em;
-}
-
 header nav {
 	flex-grow: 1;
 }
@@ -344,6 +340,12 @@ button {
 	line-height: 1.5;
 	vertical-align: middle;
 	font-size: 1em;
+}
+
+/* -- */
+
+.post-metadata {
+	margin-bottom: 1em;
 }
 
 model-viewer {

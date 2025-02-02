@@ -403,14 +403,19 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
     <link href="https://forresto.com/fab-academy/02-solvespace.html" />
     <updated>2021-03-02T00:00:00Z</updated>
     <id>https://forresto.com/fab-academy/02-solvespace.html</id>
-    <content type="html">&lt;p&gt;Kris introduced SolveSpace on Friday, and it started to click today after tinkering for a while.&lt;/p&gt;
+    <content type="html">&lt;p&gt;Kris introduced &lt;a href=&quot;https://solvespace.com/&quot;&gt;SolveSpace&lt;/a&gt; on Friday, and it started to click today after tinkering for a while.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-solvespace-box.png-ZJRn3GYduG-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-solvespace-box.png-ZJRn3GYduG-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-solvespace-box.png-ZJRn3GYduG-1280.png&quot; alt=&quot;SolveSpace interface, modeling a green hexagon box, inset top, and slots for fingers to pick up the music token.&quot; width=&quot;1280&quot; height=&quot;777&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;h1 id=&quot;ux&quot; tabindex=&quot;-1&quot;&gt;UX&lt;/h1&gt;
-&lt;p&gt;Using it feels a kind of geometry game, where you sketch a shape, then add constraints until the &amp;quot;degrees of freedom&amp;quot; goes to 0 (dof ok) and the part is fully constrained. But look out, because if you add too many you&#39;ll end up with redundant constraints. (I&#39;m not sure why this is treated as an error.)&lt;/p&gt;
+&lt;h1 id=&quot;result&quot; tabindex=&quot;-1&quot;&gt;Result&lt;/h1&gt;
+&lt;script type=&quot;module&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js&quot;&gt;&lt;/script&gt;
+&lt;model-viewer src=&quot;02-solvespace-box.glb&quot; ar=&quot;&quot; ar-modes=&quot;webxr scene-viewer quick-look&quot; camera-controls=&quot;&quot; tone-mapping=&quot;neutral&quot; poster=&quot;02-solvespace-box.glb-poster.webp&quot; shadow-intensity=&quot;1&quot;&gt;
+&lt;/model-viewer&gt;
+&lt;h1 id=&quot;constraints&quot; tabindex=&quot;-1&quot;&gt;Constraints&lt;/h1&gt;
+&lt;p&gt;Using SolveSpace feels like a kind of geometry game, where you sketch a shape, then add constraints until the &amp;quot;degrees of freedom&amp;quot; goes to 0 (dof ok) and the part is fully constrained. But look out, because if you add too many you&#39;ll end up with redundant constraints. (I&#39;m not sure why this is treated as an error.)&lt;/p&gt;
 &lt;div id=&quot;wPk5TVY0cVo&quot; class=&quot;eleventy-plugin-youtube-embed&quot; style=&quot;position:relative;width:100%;padding-top: 56.25%;&quot;&gt;&lt;iframe style=&quot;position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;&quot; width=&quot;100%&quot; height=&quot;100%&quot; frameborder=&quot;0&quot; title=&quot;Embedded YouTube video&quot; src=&quot;https://www.youtube-nocookie.com/embed/wPk5TVY0cVo&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 &lt;p&gt;This video shows the sketches and groups build up the part.&lt;/p&gt;
 &lt;p&gt;Keyboard shortcuts are a big part of the UX of SolveSpace.&lt;/p&gt;
 &lt;p&gt;My first challenge was to make a hexagon.&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
 </content>
   </entry>
   <entry>
