@@ -42,7 +42,9 @@ Sketching some views on paper seems like a good way to start the CAD process. âœ
 
 ## SolveSpace
 
-...
+![SolveSpace interface.](02-solvespace-box.png)
+
+[SolveSpace](02-solvespace.md)
 
 ## Blender
 
