@@ -1,5 +1,5 @@
 import {
-	IdAttributePlugin,
+	// IdAttributePlugin,
 	InputPathToUrlTransformPlugin,
 	//HtmlBasePlugin
 } from "@11ty/eleventy";
@@ -9,7 +9,9 @@ import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 import embedYouTube from "eleventy-plugin-youtube-embed";
+import markdownItAnchor from "markdown-it-anchor";
 import markdownItTaskCheckbox from "markdown-it-task-checkbox";
+import pluginTOC from "@uncenter/eleventy-plugin-toc";
 
 import pluginFilters from "./_config/filters.js";
 import relativeLinks from "./_config/relative-links.js";
@@ -113,11 +115,7 @@ export default async function (eleventyConfig) {
 		},
 	});
 
-	eleventyConfig.addPlugin(IdAttributePlugin, {
-		// by default we use Eleventy’s built-in `slugify` filter:
-		// slugify: eleventyConfig.getFilter("slugify"),
-		// selector: "h1,h2,h3,h4,h5,h6", // default
-	});
+	// eleventyConfig.addPlugin(IdAttributePlugin, {});
 
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return new Date().toISOString();
@@ -140,8 +138,9 @@ export default async function (eleventyConfig) {
 	*/
 
 	eleventyConfig.addPlugin(embedYouTube);
-
 	eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItTaskCheckbox));
+	eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAnchor));
+	eleventyConfig.addPlugin(pluginTOC, { tags: ["h1", "h2", "h3", "h4", "h5", "h6"] });
 
 	// Set global permalinks to resource.html style
 	eleventyConfig.addGlobalData("permalink", () => {

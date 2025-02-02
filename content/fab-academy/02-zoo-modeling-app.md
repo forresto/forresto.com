@@ -156,20 +156,6 @@ It moved to the right place, centered on the edge. 🎉
 
 The Boolean subtraction (`hole()`) seems like it is done in the wrong place in the code.
 
-# App feel
-
-Learning the canvas navigation is not helped by the streaming lag. My mouse wheel zooms too fast and the model escapes behind me. Hovering and selections take moments too long.
-
-I can't imagine taking the tradeoff to develop an app to render with Cloud GPUs, but I guess they have reasons.
-
-> Early on, we knew we wanted to build an API for CAD using cloud GPUs doing the 3D rendering. This meant we needed to stream the video generated on the cloud to our clients. – [Zoo Blog](https://zoo.dev/blog/cad-webrtc)
-
-But why?
-
-I've been enamored with SolveSpace and OpenSCAD, which have small executables and feel very responsive. I'd encourage the developers of Zoo to try these other apps. Blender isn't small, but it feels very responsive. Local software!
-
-(Disclosure: I work on [web-based 2D CAD](https://cuttle.xyz), which is not local. But the rendering is local.)
-
 # Claude chat with this blog post.
 
 I'm taking these notes in [Zed](https://zed.dev) which has access to Claude 3.5 Sonnet in a sidebar. It's interesting to feed in my own blog post as I'm figuring stuff out, and see if it can be of help. As always, it hallucinates specifics, but can be helpful for high-level planning.
@@ -203,8 +189,24 @@ I also appreciate your comments about local vs cloud CAD. The latency issues you
 
 Note: `rotate2d()` for KCL is Claude's hallucination.
 
-# Conclusion
+# Wrapping up
+
+## App feel
+
+Learning the canvas navigation is not helped by the streaming lag. My mouse wheel zooms too fast and the model escapes behind me. Hovering and selections take moments too long.
+
+I can't imagine taking the tradeoff to develop an app to render with Cloud GPUs, but I guess they have reasons.
+
+> Early on, we knew we wanted to build an API for CAD using cloud GPUs doing the 3D rendering. This meant we needed to stream the video generated on the cloud to our clients. – [Zoo Blog](https://zoo.dev/blog/cad-webrtc)
+
+But why?
+
+I've been enamored with SolveSpace and OpenSCAD, which have small executables and feel very responsive. I'd encourage the developers of Zoo to try these other apps. Blender isn't small, but it feels very responsive. Local software!
+
+(Disclosure: I work on [web-based 2D CAD](https://cuttle.xyz), which is not local. But the rendering is local.)
+
+## Conclusion
 
 [Subtract](https://github.com/KittyCAD/modeling-app/discussions/510) and other Boolean operations are not available yet, so I would have to rethink my design and prompt to get closer to what I had in mind.
 
-My time is up for evaluating this CAD package. When trying other packages, I'll be able to compare the tradeoffs of cloud rendering and LLM prompting. My impression is that the Zoo has stalled a little bit, based on the [company blog](https://zoo.dev/blog).
+My time is up for evaluating this CAD package. When trying other packages, I'll be able to compare the tradeoffs of cloud rendering and LLM prompting. My impression is that the Zoo has stalled, based on the [company blog](https://zoo.dev/blog) and age of the Github feature discussions.
