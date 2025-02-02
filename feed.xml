@@ -15,7 +15,8 @@
     <link href="https://forresto.com/fab-academy/02-picocad.html" />
     <updated>2025-02-02T00:00:00Z</updated>
     <id>https://forresto.com/fab-academy/02-picocad.html</id>
-    <content type="html">&lt;p&gt;OK, one more wildcard. &lt;a href=&quot;https://www.picocad.net&quot;&gt;picoCAD&lt;/a&gt; is built on the &lt;a href=&quot;https://www.lexaloffle.com/pico-8.php&quot;&gt;PICO-8 fantasy console&lt;/a&gt;. What is a fantasy console? It&#39;s an answer to the question &amp;quot;what if Nintendo had integrated developer tools and BBS?&amp;quot;&lt;/p&gt;
+    <content type="html">&lt;p&gt;One more wildcard. &lt;a href=&quot;https://www.picocad.net&quot;&gt;picoCAD&lt;/a&gt; is built on the &lt;a href=&quot;https://www.lexaloffle.com/pico-8.php&quot;&gt;PICO-8 fantasy console&lt;/a&gt;. What is a fantasy console? It&#39;s an answer to the question &amp;quot;what if NES had integrated developer tools and BBS?&amp;quot;&lt;/p&gt;
+&lt;h1 id=&quot;interface&quot; tabindex=&quot;-1&quot;&gt;Interface&lt;/h1&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-picocad.png-tYxW_HgIYy-512.avif 512w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-picocad.png-tYxW_HgIYy-512.webp 512w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-picocad.png-tYxW_HgIYy-512.png&quot; alt=&quot;picoCAD interface with top, perspective, front, and side views.&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;The modeling experience is very manual. The options for adding geometry are limited to:&lt;/p&gt;
 &lt;ul&gt;
@@ -29,12 +30,13 @@
 &lt;/ul&gt;
 &lt;p&gt;The options to modify a mesh:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Grow / shrink mesh&lt;/li&gt;
+&lt;li&gt;Grow, shrink, rotate whole mesh&lt;/li&gt;
 &lt;li&gt;Extrude face&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;There is no subdivision, or adding a vertex to an edge. All vertex positions are locked to a grid. My simple model required a sequence of extruding, scaling, and moving the top face of the hexagonal box. I tried making the finger cuts, but that went beyond my 8-bit CAD skills for today.&lt;/p&gt;
+&lt;h1 id=&quot;result&quot; tabindex=&quot;-1&quot;&gt;Result&lt;/h1&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-picocad-hexbox-spin.gif-VALTQ70Drc-384.webp 384w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-picocad-hexbox-spin.gif-VALTQ70Drc-384.gif&quot; alt=&quot;Sweet pixel wireframe render of spinning hexagonal box with inset hexagon on top.&quot; width=&quot;384&quot; height=&quot;384&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;I knew going into this that this will not have enough features to be the tool for my final project. I like experimenting with limited interfaces though. And I might try using it with &lt;a href=&quot;https://www.unfolder.app&quot;&gt;Unfolder.app&lt;/a&gt; for papercraft during computer controlled cutting week.&lt;/p&gt;
+&lt;p&gt;I like experimenting with this limited interface. The design is fully committed to authoring a specific kind of 3D pixel art. I might try using it with &lt;a href=&quot;https://www.unfolder.app&quot;&gt;Unfolder.app&lt;/a&gt; for papercraft design during computer controlled cutting week.&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -43,16 +45,16 @@
     <updated>2025-02-01T00:00:00Z</updated>
     <id>https://forresto.com/fab-academy/02-zoo-modeling-app.html</id>
     <content type="html">&lt;p&gt;A wildcard CAD package that I&#39;ve been wanting to try is &lt;a href=&quot;https://zoo.dev/modeling-app&quot;&gt;Zoo Modeling App&lt;/a&gt;.&lt;/p&gt;
-&lt;h1 id=&quot;result&quot;&gt;Result&lt;/h1&gt;
+&lt;h1 id=&quot;result&quot; tabindex=&quot;-1&quot;&gt;Result&lt;/h1&gt;
 &lt;script type=&quot;module&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js&quot;&gt;&lt;/script&gt;
 &lt;model-viewer src=&quot;02-zoo.gltf&quot; camera-controls=&quot;&quot; tone-mapping=&quot;neutral&quot; shadow-intensity=&quot;0.98&quot; camera-orbit=&quot;-12.67deg 56.12deg 0.2405m&quot; field-of-view=&quot;30deg&quot; exposure=&quot;0.63&quot; shadow-softness=&quot;0.63&quot; poster=&quot;./02-zoo.gltf-poster.webp&quot;&gt;
 &lt;/model-viewer&gt;
 &lt;p&gt;(3D using &lt;a href=&quot;https://modelviewer.dev&quot;&gt;&lt;code&gt;&amp;lt;model-viewer&amp;gt;&lt;/code&gt;&lt;/a&gt; and .gltf export.)&lt;/p&gt;
 &lt;p&gt;This is how far I got with an hour of tinkering, including this documentation.&lt;/p&gt;
-&lt;h1 id=&quot;cloud-rendering-warning&quot;&gt;Cloud rendering warning&lt;/h1&gt;
+&lt;h1 id=&quot;cloud-rendering-warning&quot; tabindex=&quot;-1&quot;&gt;Cloud rendering warning&lt;/h1&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-streaming-warning.png-kC7HEAkrg3-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-streaming-warning.png-kC7HEAkrg3-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-zoo-streaming-warning.png-kC7HEAkrg3-1280.png&quot; alt=&quot;Welcome to Modeling App! This is a hardware design tool that lets you edit visually, with code, or both. It&#39;s powered by the KittyCAD Design API, the first API created for anyone to build hardware design tools. The 3D view is not running on your computer, but is instead being streamed to you from an instance of our Geometry Engine on a remote GPU as video. This is an alpha release, so you will encounter bugs and missing features. You can read our expectations for alpha users here, and please give us feedback on your experience our Discord! We are trying to release as early as possible to get feedback from users like you. As you go through the onboarding, we&#39;ll be changing and resetting your code occasionally, so that we can reference specific code features. So hold off on writing production KCL code until you&#39;re done with the onboarding&quot; width=&quot;1280&quot; height=&quot;895&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;Warning that the view isn&#39;t actually on your computer, it is streaming from a cloud GPU. My first impression is that this is going to need to be really compelling for me to invest too much time into it.&lt;/p&gt;
-&lt;h1 id=&quot;text-to-cad-prompt&quot;&gt;&amp;quot;Text-to-CAD&amp;quot; Prompt&lt;/h1&gt;
+&lt;h1 id=&quot;%22text-to-cad%22-prompt&quot; tabindex=&quot;-1&quot;&gt;&amp;quot;Text-to-CAD&amp;quot; Prompt&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;hexagon shaped box&lt;/li&gt;
@@ -65,12 +67,12 @@
 &lt;p&gt;Starting from nothing, I thought I&#39;d see if the &amp;quot;text-to-CAD&amp;quot; feature can show a good starting place. It is the ✨ icon on the top toolbar.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-text-to-cad-toast.png-FrjT3irm4n-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-text-to-cad-toast.png-FrjT3irm4n-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-zoo-text-to-cad-toast.png-FrjT3irm4n-1280.png&quot; alt=&quot;Small toast message on the bottom that Text-to-CAD has succeeded.&quot; width=&quot;1280&quot; height=&quot;428&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;Let&#39;s see about that. The tiny icon is 50% encouraging, 50% glitchy.&lt;/p&gt;
-&lt;h2 id=&quot;result-2&quot;&gt;Result&lt;/h2&gt;
+&lt;h2 id=&quot;result-1&quot; tabindex=&quot;-1&quot;&gt;Result&lt;/h2&gt;
 &lt;p&gt;Here is the code and image that it came up with. Color me mildly impressed.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-first-prompt-result.png-Meo1EynFni-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-first-prompt-result.png-Meo1EynFni-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-zoo-first-prompt-result.png-Meo1EynFni-1280.png&quot; alt=&quot;Interface with &amp;quot;feature tree&amp;quot; &amp;quot;KCL code&amp;quot; and 3d view of first LLM prompt result.&quot; width=&quot;1280&quot; height=&quot;779&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;The cutouts are on corners, and it didn&#39;t do the correct Boolean correctly, but the parameters in code do seem like a decent starting place, considering that I have no experience or instruction with the app.&lt;/p&gt;
 &lt;p&gt;I do have enough design experience to have written a fairly specific prompt for the object that I have sketched. Sketching helped me think about the geometry construction at a high and manual level. Pencil and pen aided design.&lt;/p&gt;
-&lt;h2 id=&quot;generated-code&quot;&gt;Generated code&lt;/h2&gt;
+&lt;h2 id=&quot;generated-code&quot; tabindex=&quot;-1&quot;&gt;Generated code&lt;/h2&gt;
 &lt;pre class=&quot;language-kcl&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-kcl&quot;&gt;/* Generated by Text-to-CAD: hexagon shaped box
  * 100mm diameter
  * extrude to 40mm height
@@ -130,7 +132,7 @@ innerHex = extrude(-innerHexDepth, innerHexSketch)
 
 // The final box is the outer hexagon with the inner hexagon cutout
 finalBox = outerHex&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&quot;prompt-to-edit&quot;&gt;&amp;quot;Prompt-to-Edit&amp;quot;&lt;/h1&gt;
+&lt;h1 id=&quot;%22prompt-to-edit%22&quot; tabindex=&quot;-1&quot;&gt;&amp;quot;Prompt-to-Edit&amp;quot;&lt;/h1&gt;
 &lt;p&gt;Also under the ✨ icon.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Center the fingerCut cylinders on the selected edges. Change the boolean operation to subtract the cylinders from the rest of the box.&lt;/p&gt;
@@ -145,7 +147,7 @@ finalBox = outerHex&lt;/code&gt;&lt;/pre&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;:sad-trombone:&lt;/p&gt;
 &lt;p&gt;OK that&#39;s not really working with my level of this app.&lt;/p&gt;
-&lt;h1 id=&quot;attempt-to-tinker-with-the-code&quot;&gt;Attempt to tinker with the code&lt;/h1&gt;
+&lt;h1 id=&quot;attempt-to-tinker-with-the-code&quot; tabindex=&quot;-1&quot;&gt;Attempt to tinker with the code&lt;/h1&gt;
 &lt;p&gt;This is the point where I&#39;d love to ask a question of an expert. What&#39;s the first step in this situation?&lt;/p&gt;
 &lt;p&gt;I can add this point definition to get the position of the first hole.&lt;/p&gt;
 &lt;pre class=&quot;language-kcl&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-kcl&quot;&gt;// Define the first two vertices (60° apart)
@@ -157,16 +159,7 @@ edgeMidpoint = [(vertex1[0] + vertex2[0])/2, (vertex1[1] + vertex2[1])/2]&lt;/co
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-code-to-move-hole.png-nyS18vU0Yc-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-code-to-move-hole.png-nyS18vU0Yc-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-zoo-code-to-move-hole.png-nyS18vU0Yc-1280.png&quot; alt=&quot;&quot; width=&quot;1280&quot; height=&quot;885&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;It moved to the right place, centered on the edge. 🎉&lt;/p&gt;
 &lt;p&gt;The Boolean subtraction (&lt;code&gt;hole()&lt;/code&gt;) seems like it is done in the wrong place in the code.&lt;/p&gt;
-&lt;h1 id=&quot;app-feel&quot;&gt;App feel&lt;/h1&gt;
-&lt;p&gt;Learning the canvas navigation is not helped by the streaming lag. My mouse wheel zooms too fast and the model escapes behind me. Hovering and selections take moments too long.&lt;/p&gt;
-&lt;p&gt;I can&#39;t imagine taking the tradeoff to develop an app to render with Cloud GPUs, but I guess they have reasons.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Early on, we knew we wanted to build an API for CAD using cloud GPUs doing the 3D rendering. This meant we needed to stream the video generated on the cloud to our clients. – &lt;a href=&quot;https://zoo.dev/blog/cad-webrtc&quot;&gt;Zoo Blog&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;But why?&lt;/p&gt;
-&lt;p&gt;I&#39;ve been enamored with SolveSpace and OpenSCAD, which have small executables and feel very responsive. I&#39;d encourage the developers of Zoo to try these other apps. Blender isn&#39;t small, but it feels very responsive. Local software!&lt;/p&gt;
-&lt;p&gt;(Disclosure: I work on &lt;a href=&quot;https://cuttle.xyz&quot;&gt;web-based 2D CAD&lt;/a&gt;, which is not local. But the rendering is local.)&lt;/p&gt;
-&lt;h1 id=&quot;claude-chat-with-this-blog-post&quot;&gt;Claude chat with this blog post.&lt;/h1&gt;
+&lt;h1 id=&quot;claude-chat-with-this-blog-post.&quot; tabindex=&quot;-1&quot;&gt;Claude chat with this blog post.&lt;/h1&gt;
 &lt;p&gt;I&#39;m taking these notes in &lt;a href=&quot;https://zed.dev&quot;&gt;Zed&lt;/a&gt; which has access to Claude 3.5 Sonnet in a sidebar. It&#39;s interesting to feed in my own blog post as I&#39;m figuring stuff out, and see if it can be of help. As always, it hallucinates specifics, but can be helpful for high-level planning.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You&lt;/p&gt;
@@ -188,9 +181,19 @@ edgeMidpoint = [(vertex1[0] + vertex2[0])/2, (vertex1[1] + vertex2[1])/2]&lt;/co
 &lt;p&gt;I also appreciate your comments about local vs cloud CAD. The latency issues you&#39;re experiencing with navigation and selection are significant usability concerns that don&#39;t exist with local rendering.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Note: &lt;code&gt;rotate2d()&lt;/code&gt; for KCL is Claude&#39;s hallucination.&lt;/p&gt;
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;h1 id=&quot;wrapping-up&quot; tabindex=&quot;-1&quot;&gt;Wrapping up&lt;/h1&gt;
+&lt;h2 id=&quot;app-feel&quot; tabindex=&quot;-1&quot;&gt;App feel&lt;/h2&gt;
+&lt;p&gt;Learning the canvas navigation is not helped by the streaming lag. My mouse wheel zooms too fast and the model escapes behind me. Hovering and selections take moments too long.&lt;/p&gt;
+&lt;p&gt;I can&#39;t imagine taking the tradeoff to develop an app to render with Cloud GPUs, but I guess they have reasons.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Early on, we knew we wanted to build an API for CAD using cloud GPUs doing the 3D rendering. This meant we needed to stream the video generated on the cloud to our clients. – &lt;a href=&quot;https://zoo.dev/blog/cad-webrtc&quot;&gt;Zoo Blog&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;But why?&lt;/p&gt;
+&lt;p&gt;I&#39;ve been enamored with SolveSpace and OpenSCAD, which have small executables and feel very responsive. I&#39;d encourage the developers of Zoo to try these other apps. Blender isn&#39;t small, but it feels very responsive. Local software!&lt;/p&gt;
+&lt;p&gt;(Disclosure: I work on &lt;a href=&quot;https://cuttle.xyz&quot;&gt;web-based 2D CAD&lt;/a&gt;, which is not local. But the rendering is local.)&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/KittyCAD/modeling-app/discussions/510&quot;&gt;Subtract&lt;/a&gt; and other Boolean operations are not available yet, so I would have to rethink my design and prompt to get closer to what I had in mind.&lt;/p&gt;
-&lt;p&gt;My time is up for evaluating this CAD package. When trying other packages, I&#39;ll be able to compare the tradeoffs of cloud rendering and LLM prompting. My impression is that the Zoo has stalled a little bit, based on the &lt;a href=&quot;https://zoo.dev/blog&quot;&gt;company blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My time is up for evaluating this CAD package. When trying other packages, I&#39;ll be able to compare the tradeoffs of cloud rendering and LLM prompting. My impression is that the Zoo has stalled, based on the &lt;a href=&quot;https://zoo.dev/blog&quot;&gt;company blog&lt;/a&gt; and age of the Github feature discussions.&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -199,6 +202,7 @@ edgeMidpoint = [(vertex1[0] + vertex2[0])/2, (vertex1[1] + vertex2[1])/2]&lt;/co
     <updated>2025-01-31T00:00:00Z</updated>
     <id>https://forresto.com/fab-academy/02-cad-comparison.html</id>
     <content type="html">&lt;p&gt;My goal for this CAD Comparison week should be to get a very rough model from each system that I try. As possible, it should have ballpark dimensions and features, but only get to the level of rough sketch.&lt;/p&gt;
+&lt;h1 id=&quot;prompt&quot; tabindex=&quot;-1&quot;&gt;Prompt&lt;/h1&gt;
 &lt;p&gt;&amp;quot;Prompt&amp;quot; for myself, any tutors that I have time with, and any LLMs that I experiment with.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;hexagon shaped box&lt;/li&gt;
@@ -207,8 +211,24 @@ edgeMidpoint = [(vertex1[0] + vertex2[0])/2, (vertex1[1] + vertex2[1])/2]&lt;/co
 &lt;li&gt;top has inset hexagon with 80mm diameter and 10mm depth&lt;/li&gt;
 &lt;li&gt;two opposing edges have place for fingers subtracted, pills or spheres with 20mm diameter&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h1 id=&quot;sketch&quot; tabindex=&quot;-1&quot;&gt;Sketch&lt;/h1&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-player.png-qkYt2M088X-1273.avif 1273w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-player.png-qkYt2M088X-1273.webp 1273w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/01-fo-concept-player.png-qkYt2M088X-1273.png&quot; alt=&quot;Concept sketch of media player.&quot; width=&quot;1273&quot; height=&quot;1794&quot;&gt;&lt;/picture&gt;
 Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final-project.html&quot;&gt;Potential Final Project&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sketching some views on paper seems like a good way to start the CAD process. ✍️&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-music-box-pen-paper.png-c9Np4_3gaP-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-music-box-pen-paper.png-c9Np4_3gaP-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-music-box-pen-paper.png-c9Np4_3gaP-1280.png&quot; alt=&quot;Hand drawn sketch, top and front views of a hexagonal music box.&quot; width=&quot;1280&quot; height=&quot;1668&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h1 id=&quot;cad-software&quot; tabindex=&quot;-1&quot;&gt;CAD software&lt;/h1&gt;
+&lt;h2 id=&quot;zoo&quot; tabindex=&quot;-1&quot;&gt;Zoo&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-first-prompt-result.png-Meo1EynFni-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-first-prompt-result.png-Meo1EynFni-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-zoo-first-prompt-result.png-Meo1EynFni-1280.png&quot; alt=&quot;Zoo interface.&quot; width=&quot;1280&quot; height=&quot;779&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://forresto.com/fab-academy/02-zoo-modeling-app.html&quot;&gt;Zoo Modeling App&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;picocad&quot; tabindex=&quot;-1&quot;&gt;picoCAD&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-picocad.png-tYxW_HgIYy-512.avif 512w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-picocad.png-tYxW_HgIYy-512.webp 512w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-picocad.png-tYxW_HgIYy-512.png&quot; alt=&quot;picoCAD interface.&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://forresto.com/fab-academy/02-picocad.html&quot;&gt;picoCAD&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;solvespace&quot; tabindex=&quot;-1&quot;&gt;SolveSpace&lt;/h2&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;h2 id=&quot;blender&quot; tabindex=&quot;-1&quot;&gt;Blender&lt;/h2&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;h2 id=&quot;freecad&quot; tabindex=&quot;-1&quot;&gt;FreeCAD&lt;/h2&gt;
+&lt;p&gt;...&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -219,22 +239,22 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
     <content type="html">&lt;p&gt;I&#39;ve been floating the idea for friends and family to imagine the project that I&#39;m going to be making this year, and tell me their thoughts on it. It&#39;s a half joke, but wouldn&#39;t it be neat if you could do that? I imagine people with a big audience can do that, but there&#39;s a fine line between having no replies and having too many.&lt;/p&gt;
 &lt;p&gt;In the real world, I have to share some sketches, and get more specific when asking for feedback.&lt;/p&gt;
 &lt;p&gt;I have three concepts now.&lt;/p&gt;
-&lt;h1 id=&quot;calm-timer&quot;&gt;Calm Timer&lt;/h1&gt;
+&lt;h1 id=&quot;calm-timer&quot; tabindex=&quot;-1&quot;&gt;Calm Timer&lt;/h1&gt;
 &lt;p&gt;Plays a nice-sounding chime on the hour, or set intervals with a small screen.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-timer.png-BF2h-TOepz-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-timer.png-BF2h-TOepz-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/01-fo-concept-timer.png-BF2h-TOepz-1280.png&quot; alt=&quot;Concept sketch of a curved wooden stand with a metal chime suspended within it.&quot; width=&quot;1280&quot; height=&quot;861&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;h1 id=&quot;tangible-media-player&quot;&gt;Tangible Media Player&lt;/h1&gt;
+&lt;h1 id=&quot;tangible-media-player&quot; tabindex=&quot;-1&quot;&gt;Tangible Media Player&lt;/h1&gt;
 &lt;p&gt;A collection of wood tokens start a playlist when set on the player. The tokens bring back some tangibility to the act of choosing and playing music. They can also load internet radio stations.&lt;/p&gt;
 &lt;p&gt;I remember finding a &amp;quot;record player&amp;quot; made in preschool with paper plate, pipe cleaner, buttons. If I choose this project I&#39;ll be honoring my small self that really wanted a cool little tangible music player.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-player.png-qkYt2M088X-1273.avif 1273w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-player.png-qkYt2M088X-1273.webp 1273w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/01-fo-concept-player.png-qkYt2M088X-1273.png&quot; alt=&quot;Concept sketch of a hexagonal media player with hexagonal media tokens.&quot; width=&quot;1273&quot; height=&quot;1794&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;h2 id=&quot;prior-art&quot;&gt;Prior art&lt;/h2&gt;
+&lt;h2 id=&quot;prior-art&quot; tabindex=&quot;-1&quot;&gt;Prior art&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Månsteri&#39;s &lt;a href=&quot;https://mansteri.com/works/aanimuseo-v/&quot;&gt;Äänimuseo&lt;/a&gt; tangible sound player.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;closed-eye-vr&quot;&gt;Closed-Eye VR&lt;/h1&gt;
+&lt;h1 id=&quot;closed-eye-vr&quot; tabindex=&quot;-1&quot;&gt;Closed-Eye VR&lt;/h1&gt;
 &lt;p&gt;Closed-eye solar-powered VR visor. With eyes closed, chill in the sun light or with a bright lamp. An array of &lt;em&gt;liquid crystal&lt;/em&gt; (LC) cells are activated at different intervals, giving the illusion of motion.&lt;/p&gt;
 &lt;p&gt;I like how this concept would need a tiny fraction of the energy needed for high-end virtual reality systems. The challenge of programming small low-energy microcontrollers is interesting.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-visor.png-HrUEVM9JV6-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/01-fo-concept-visor.png-HrUEVM9JV6-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/01-fo-concept-visor.png-HrUEVM9JV6-1280.png&quot; alt=&quot;Concept sketch of a visor for closed-eye visions.&quot; width=&quot;1280&quot; height=&quot;1074&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;h2 id=&quot;prior-art-2&quot;&gt;Prior art&lt;/h2&gt;
+&lt;h2 id=&quot;prior-art-1&quot; tabindex=&quot;-1&quot;&gt;Prior art&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Brion Gysin &lt;a href=&quot;https://en.wikipedia.org/wiki/Dreamachine&quot;&gt;Dreamachine&lt;/a&gt; (1959)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Geordi_La_Forge#VISOR&quot;&gt;Geordi LaForge&#39;s VISOR&lt;/a&gt; is an obvious style inspiration.&lt;/li&gt;
@@ -264,11 +284,11 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
     <updated>2025-01-22T00:00:00Z</updated>
     <id>https://forresto.com/fab-academy/01-project-management.html</id>
     <content type="html">&lt;p&gt;&lt;a href=&quot;https://fabacademy.org/2025/nueval/principles_and_practices,_project_management.html&quot;&gt;This week&#39;s goals&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;principles-and-practices&quot;&gt;Principles and Practices&lt;/h1&gt;
+&lt;h1 id=&quot;principles-and-practices&quot; tabindex=&quot;-1&quot;&gt;Principles and Practices&lt;/h1&gt;
 &lt;ul class=&quot;task-list&quot;&gt;
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_0&quot; checked=&quot;true&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_0&quot;&gt; Plan and sketch a &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final-project.html&quot;&gt;potential final project&lt;/a&gt;&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;project-management&quot;&gt;Project Management&lt;/h1&gt;
+&lt;h1 id=&quot;project-management&quot; tabindex=&quot;-1&quot;&gt;Project Management&lt;/h1&gt;
 &lt;ul class=&quot;task-list&quot;&gt;
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_1&quot; checked=&quot;true&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_1&quot;&gt; Read, sign (add your name to) the student agreement and commit it to your repo&lt;/label&gt;&lt;/li&gt;
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_2&quot; checked=&quot;true&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_2&quot;&gt; Work through a git tutorial.&lt;/label&gt;&lt;/li&gt;
@@ -277,7 +297,7 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
 &lt;/ul&gt;
 &lt;p&gt;I&#39;ve done enough git in &lt;a href=&quot;https://cuttle.xyz/about-us&quot;&gt;my day job&lt;/a&gt; to stay out of trouble. So I took this assignment as an opportunity to restructure my personal website, which I have neglected for some years.&lt;/p&gt;
 &lt;p&gt;I have a few concepts for how I&#39;d like this site to work.&lt;/p&gt;
-&lt;h2 id=&quot;file-layout&quot;&gt;File Layout&lt;/h2&gt;
+&lt;h2 id=&quot;file-layout&quot; tabindex=&quot;-1&quot;&gt;File Layout&lt;/h2&gt;
 &lt;p&gt;The source of the site has a simple directory structure, that gets directly translated to the built site&#39;s structure. Top level directories are collections, where each post can go. Media for related posts can be named with the same prefix. The prefix can be a number, date, or a bare name, depending on the kind of post.&lt;/p&gt;
 &lt;pre class=&quot;language-txt&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-txt&quot;&gt;|_ content/
   |_ fab-academy/
@@ -291,7 +311,7 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
   |_ ...&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Posts that don&#39;t have an obvious collection go in a &amp;quot;2020s&amp;quot; directory. I have old blog posts and letters back to the 90s that can fit with this structure.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://forresto.com/tags&quot;&gt;Tags&lt;/a&gt; bridge posts across collections.&lt;/p&gt;
-&lt;h2 id=&quot;copyright&quot;&gt;Copyright&lt;/h2&gt;
+&lt;h2 id=&quot;copyright&quot; tabindex=&quot;-1&quot;&gt;Copyright&lt;/h2&gt;
 &lt;p&gt;Kris suggested that I look into&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Robots.txt&quot;&gt;robots.txt&lt;/a&gt; for search engines and web crawlers like the &lt;a href=&quot;https://web.archive.org/web/*/forresto.com&quot;&gt;Internet Archive&lt;/a&gt;&lt;/li&gt;
@@ -300,16 +320,16 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
 &lt;/ul&gt;
 &lt;p&gt;The lines between these are blurry to me. If my posts get scraped, archived, and trained on, is that not a (very fuzzy statistical) form of immortality? Can my weird ideas bend the weights of models that will be used to make decisions in the future?&lt;/p&gt;
 &lt;p&gt;I&#39;ve admired Creative Commons for a long time, and it would make me happy for humans to use and remix my work. I appreciate attribution, so encoding that into my copyright notice makes sense. If people or AI companies ignore that request, then there&#39;s not much I can do about it, other than not publish.&lt;/p&gt;
-&lt;h2 id=&quot;publishing&quot;&gt;Publishing&lt;/h2&gt;
+&lt;h2 id=&quot;publishing&quot; tabindex=&quot;-1&quot;&gt;Publishing&lt;/h2&gt;
 &lt;p&gt;My plan is to copy the HTML output of my own site&#39;s &amp;quot;fab-academy&amp;quot; output directory to my Fab Academy repo. I can also simlink just this &lt;code&gt;/content/fab-academy&lt;/code&gt; directory, in order to build a partial version of the site with tweaks for Fab Academy.&lt;/p&gt;
 &lt;p&gt;The source of the full site and commits are visible on Github: &lt;a href=&quot;https://github.com/forresto/forresto.com&quot;&gt;forresto/forresto.com&lt;/a&gt;. I&#39;ll use Github Actions for building and gh-pages for hosting.&lt;/p&gt;
-&lt;h2 id=&quot;to-do&quot;&gt;To do&lt;/h2&gt;
+&lt;h2 id=&quot;to-do&quot; tabindex=&quot;-1&quot;&gt;To do&lt;/h2&gt;
 &lt;ul class=&quot;task-list&quot;&gt;
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_5&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_5&quot;&gt; Move more recent projects to the personal site collections.&lt;/label&gt;&lt;/li&gt;
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_6&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_6&quot;&gt; Render home and archive post lists with thumbnail images. Make it more visual.&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;credit&quot;&gt;Credit&lt;/h1&gt;
-&lt;h2 id=&quot;eleventy-static-site-generator&quot;&gt;Eleventy static site generator&lt;/h2&gt;
+&lt;h1 id=&quot;credit&quot; tabindex=&quot;-1&quot;&gt;Credit&lt;/h1&gt;
+&lt;h2 id=&quot;eleventy-static-site-generator&quot; tabindex=&quot;-1&quot;&gt;Eleventy static site generator&lt;/h2&gt;
 &lt;p&gt;To build this new site, I started with the &lt;a href=&quot;https://github.com/11ty/eleventy-base-blog&quot;&gt;Eleventy Base Blog v9&lt;/a&gt;. I considered other static site generators, but I ended up having more opinions than the simpler &amp;quot;opinionated&amp;quot; options allow.&lt;/p&gt;
 &lt;p&gt;I like that the base blog comes with the &lt;a href=&quot;https://www.11ty.dev/docs/plugins/image/&quot;&gt;eleventy-img&lt;/a&gt; plugin set up and configured. With that my source Markdown can be simply:&lt;/p&gt;
 &lt;pre class=&quot;language-markdown&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token url&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;[&lt;span class=&quot;token content&quot;&gt;studio wall&lt;/span&gt;](&lt;span class=&quot;token url&quot;&gt;studio-wall.jpg&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -327,7 +347,7 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
 &lt;/ul&gt;
 &lt;p&gt;I have not seen the same flow for videos, but it should be possible.&lt;/p&gt;
 &lt;p&gt;There was a bug with how I set up the &amp;quot;posts&amp;quot; collection, so &lt;a href=&quot;https://github.com/11ty/eleventy/issues/3630&quot;&gt;I reported the bug to Eleventy&lt;/a&gt;, and hopefully that will help, at least to clarify the docs as to what might be going on.&lt;/p&gt;
-&lt;h2 id=&quot;ai-use&quot;&gt;AI Use&lt;/h2&gt;
+&lt;h2 id=&quot;ai-use&quot; tabindex=&quot;-1&quot;&gt;AI Use&lt;/h2&gt;
 &lt;p&gt;I like that Fab Academy is stressing that use of AI should be documented. To give credit to the model and prompt that you use to generate work seems like a good practice.&lt;/p&gt;
 &lt;p&gt;I use &lt;a href=&quot;https://zed.dev&quot;&gt;Zed editor&lt;/a&gt; to write posts and hack on the site templates and configuration. It comes with a version of Claude 3.5 Sonnet that you can chat with. The user experience is between chat and collaborative document. You have to choose which open tabs go into the chat context. I like that the control that this gives, and I like that I can roll back in the chat and delete some back and forth if we&#39;re going off the rails.&lt;/p&gt;
 &lt;p&gt;And it does go off the rails. Hallucination is how it works, so the text that it generates can&#39;t ever be fully trusted. Eleventy is a long-lived project, which is good because Calude knows about it. It can also be annoying, when it repeats suggestions that I&#39;ve learned are from earlier versions, that can use broken or deprecated features.&lt;/p&gt;
@@ -352,14 +372,14 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
 &lt;p&gt;While writing this post, I noticed that the inline code completions know about Fab Academy&#39;s weeks.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.avif 765w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.webp 765w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.png&quot; alt=&quot;code completion knows that week 3 is computer controlled cutting&quot; width=&quot;765&quot; height=&quot;275&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;Did it surmise this from the text checklist in &lt;a href=&quot;https://forresto.com/&quot;&gt;index.md&lt;/a&gt;? Either that or it knows this from training, which seems possible, given how much documentation exists over the years for Fab Academy.&lt;/p&gt;
-&lt;h1 id=&quot;documentation-feature-requests&quot;&gt;Documentation feature requests&lt;/h1&gt;
+&lt;h1 id=&quot;documentation-feature-requests&quot; tabindex=&quot;-1&quot;&gt;Documentation feature requests&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;It would be nice to paste an image into a Markdown file in Zed. Now, I have to paste a screenshot into Preview.app, then name and save the image file, then make the Markdown image tag. Apparently that&#39;s a feature in VSCode now, so &lt;a href=&quot;https://github.com/zed-industries/zed/discussions/24073&quot;&gt;I made a Zed feature request&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Fab Academy requests relative links in our documentation site, and that goes against the grain of the static site builder that I decided to use. It took a while to find a plugin API to use that helped me solve the problem pretty well. I documented my &lt;a href=&quot;https://github.com/11ty/eleventy/discussions/2516#discussioncomment-11999750&quot;&gt;11ty relative links plugin on Github&lt;/a&gt; and &lt;a href=&quot;https://stackoverflow.com/questions/57370564/how-to-have-relative-paths-in-eleventy/79402772#79402772&quot;&gt;Stack Overflow&lt;/a&gt;, the top search results for &amp;quot;11ty relative links&amp;quot;, where there were only partial fixes posted before. I started a conversation with &lt;a href=&quot;https://xoxo.zone/@forresto/113913565699389935&quot;&gt;Eleventy on Mastodon&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1 id=&quot;fab-academy-feedback&quot;&gt;Fab Academy Feedback&lt;/h1&gt;
+&lt;h1 id=&quot;fab-academy-feedback&quot; tabindex=&quot;-1&quot;&gt;Fab Academy Feedback&lt;/h1&gt;
 &lt;p&gt;The importance of resizing images before committing has been stressed a bunch, taking up time in the lectures and spaces in the chat. But I think that concern is a bit outdated. If we have to decide between time spent documenting, and time spent wrangling media files... Let the machines do the media busy work!&lt;/p&gt;
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;h1 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion&lt;/h1&gt;
 &lt;p&gt;My new website setup isn&#39;t ideal. There is more friction to doing documentation than my Notion &lt;a href=&quot;https://fopub.notion.site/2942db42f3d14348b382696c0296971d?v=ccfdc55d9fc347f4bf8661aa22f43c8c&quot;&gt;Blender Learning jounal&lt;/a&gt;. But I think it&#39;s a step in right direction that I only need to manage Markdown and media files, and the build process takes care of indexing and image sizing and formats. And the static HTML output loads and renders quickly. ⚡️&lt;/p&gt;
 &lt;p&gt;I&#39;ll keep tinkering with the site, but this setup is good enough for now. If I were designing a system for other people to use I could spend a long time filing off the rough edges. I like that Fab Academy doesn&#39;t tell people how to do the assignments, but presents lots of potential options. It will be interesting to see the many different ways that people solve the tasks.&lt;/p&gt;
 </content>

@@ -20,6 +20,10 @@
 	--button-background-color: #363a31;
 }
 
+.post-metadata {
+	margin-bottom: 1em;
+}
+
 header nav {
 	flex-grow: 1;
 }
@@ -73,8 +77,45 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	max-width: 40em;
 }
 
 main {
 	flex-grow: 1;
+}
+
+nav.toc {
+	padding: 0.5em 0;
+	border-left: 0.25em solid var(--solid-border-color);
+	margin-bottom: 1em;
+}
+nav.toc ol {
+	margin: 0;
+}
+
+.columns {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	body {
+		max-width: 55em;
+	}
+	.columns {
+		flex-direction: row-reverse;
+		gap: 1em;
+	}
+	article {
+		flex-grow: 1;
+		min-width: 0;
+	}
+	aside {
+		flex: 0 0 12em;
+	}
+	nav.toc {
+		position: sticky;
+		top: 0;
+	}
 }

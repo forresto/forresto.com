@@ -12,7 +12,7 @@
 
 		<link rel="icon" type="image/png" href="../favicon.png">
 		
-		<link rel="stylesheet" href="../dist/Ukm7BPYm-Q.css">
+		<link rel="stylesheet" href="../dist/E3aq9SB0XE.css">
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
@@ -20,7 +20,7 @@
 		<header>
 			<a href="../" class="home-link">Forrest O. Interactive</a>
 			<nav>
-				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
 					<li class="nav-item"><a href="../">Home</a></li>
 					<li class="nav-item"><a href="./">Fab</a></li>
@@ -34,27 +34,42 @@
 		</header>
 
 		<main id="skip">
-			<heading-anchors>
-				
+			
 
 
 
 	<nav><a href="../archive.html">Archive</a> | <a href="./">fab-academy</a></nav>
 
 
-<h1 id="week-01-project-management">Week 01. Project Management</h1>
+<h1>Week 01. Project Management</h1>
 
 <ul class="post-metadata">
 	<li><time datetime="2025-01-22">2025, January 22</time></li>
 	<li><a href="../tags/site.html" class="post-tag">site</a></li>
 </ul>
 
-<p><a href="https://fabacademy.org/2025/nueval/principles_and_practices,_project_management.html">This week's goals</a></p>
-<h1 id="principles-and-practices">Principles and Practices</h1>
+<div class="columns">
+
+<aside>
+  <nav class="toc"><ol><li><a href="#principles-and-practices">Principles and Practices</a></li>
+<li><a href="#project-management">Project Management</a><ol><li><a href="#file-layout">File Layout</a></li>
+<li><a href="#copyright">Copyright</a></li>
+<li><a href="#publishing">Publishing</a></li>
+<li><a href="#to-do">To do</a></li></ol></li>
+<li><a href="#credit">Credit</a><ol><li><a href="#eleventy-static-site-generator">Eleventy static site generator</a></li>
+<li><a href="#ai-use">AI Use</a></li></ol></li>
+<li><a href="#documentation-feature-requests">Documentation feature requests</a></li>
+<li><a href="#fab-academy-feedback">Fab Academy Feedback</a></li>
+<li><a href="#conclusion">Conclusion</a></li></ol></nav>
+</aside>
+
+<article>
+	<p><a href="https://fabacademy.org/2025/nueval/principles_and_practices,_project_management.html">This week's goals</a></p>
+<h1 id="principles-and-practices" tabindex="-1">Principles and Practices</h1>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox" id="cbx_0" checked="true" disabled="true"><label for="cbx_0"> Plan and sketch a <a href="./01-potential-final-project.html">potential final project</a></label></li>
 </ul>
-<h1 id="project-management">Project Management</h1>
+<h1 id="project-management" tabindex="-1">Project Management</h1>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox" id="cbx_1" checked="true" disabled="true"><label for="cbx_1"> Read, sign (add your name to) the student agreement and commit it to your repo</label></li>
 <li class="task-list-item"><input type="checkbox" id="cbx_2" checked="true" disabled="true"><label for="cbx_2"> Work through a git tutorial.</label></li>
@@ -63,7 +78,7 @@
 </ul>
 <p>I've done enough git in <a href="https://cuttle.xyz/about-us">my day job</a> to stay out of trouble. So I took this assignment as an opportunity to restructure my personal website, which I have neglected for some years.</p>
 <p>I have a few concepts for how I'd like this site to work.</p>
-<h2 id="file-layout">File Layout</h2>
+<h2 id="file-layout" tabindex="-1">File Layout</h2>
 <p>The source of the site has a simple directory structure, that gets directly translated to the built site's structure. Top level directories are collections, where each post can go. Media for related posts can be named with the same prefix. The prefix can be a number, date, or a bare name, depending on the kind of post.</p>
 <pre class="language-txt" tabindex="0"><code class="language-txt">|_ content/
   |_ fab-academy/
@@ -77,7 +92,7 @@
   |_ ...</code></pre>
 <p>Posts that don't have an obvious collection go in a &quot;2020s&quot; directory. I have old blog posts and letters back to the 90s that can fit with this structure.</p>
 <p><a href="../tags">Tags</a> bridge posts across collections.</p>
-<h2 id="copyright">Copyright</h2>
+<h2 id="copyright" tabindex="-1">Copyright</h2>
 <p>Kris suggested that I look into</p>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Robots.txt">robots.txt</a> for search engines and web crawlers like the <a href="https://web.archive.org/web/*/forresto.com">Internet Archive</a></li>
@@ -86,16 +101,16 @@
 </ul>
 <p>The lines between these are blurry to me. If my posts get scraped, archived, and trained on, is that not a (very fuzzy statistical) form of immortality? Can my weird ideas bend the weights of models that will be used to make decisions in the future?</p>
 <p>I've admired Creative Commons for a long time, and it would make me happy for humans to use and remix my work. I appreciate attribution, so encoding that into my copyright notice makes sense. If people or AI companies ignore that request, then there's not much I can do about it, other than not publish.</p>
-<h2 id="publishing">Publishing</h2>
+<h2 id="publishing" tabindex="-1">Publishing</h2>
 <p>My plan is to copy the HTML output of my own site's &quot;fab-academy&quot; output directory to my Fab Academy repo. I can also simlink just this <code>/content/fab-academy</code> directory, in order to build a partial version of the site with tweaks for Fab Academy.</p>
 <p>The source of the full site and commits are visible on Github: <a href="https://github.com/forresto/forresto.com">forresto/forresto.com</a>. I'll use Github Actions for building and gh-pages for hosting.</p>
-<h2 id="to-do">To do</h2>
+<h2 id="to-do" tabindex="-1">To do</h2>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox" id="cbx_5" disabled="true"><label for="cbx_5"> Move more recent projects to the personal site collections.</label></li>
 <li class="task-list-item"><input type="checkbox" id="cbx_6" disabled="true"><label for="cbx_6"> Render home and archive post lists with thumbnail images. Make it more visual.</label></li>
 </ul>
-<h1 id="credit">Credit</h1>
-<h2 id="eleventy-static-site-generator">Eleventy static site generator</h2>
+<h1 id="credit" tabindex="-1">Credit</h1>
+<h2 id="eleventy-static-site-generator" tabindex="-1">Eleventy static site generator</h2>
 <p>To build this new site, I started with the <a href="https://github.com/11ty/eleventy-base-blog">Eleventy Base Blog v9</a>. I considered other static site generators, but I ended up having more opinions than the simpler &quot;opinionated&quot; options allow.</p>
 <p>I like that the base blog comes with the <a href="https://www.11ty.dev/docs/plugins/image/">eleventy-img</a> plugin set up and configured. With that my source Markdown can be simply:</p>
 <pre class="language-markdown" tabindex="0"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">studio wall</span>](<span class="token url">studio-wall.jpg</span>)</span></code></pre>
@@ -113,7 +128,7 @@
 </ul>
 <p>I have not seen the same flow for videos, but it should be possible.</p>
 <p>There was a bug with how I set up the &quot;posts&quot; collection, so <a href="https://github.com/11ty/eleventy/issues/3630">I reported the bug to Eleventy</a>, and hopefully that will help, at least to clarify the docs as to what might be going on.</p>
-<h2 id="ai-use">AI Use</h2>
+<h2 id="ai-use" tabindex="-1">AI Use</h2>
 <p>I like that Fab Academy is stressing that use of AI should be documented. To give credit to the model and prompt that you use to generate work seems like a good practice.</p>
 <p>I use <a href="https://zed.dev">Zed editor</a> to write posts and hack on the site templates and configuration. It comes with a version of Claude 3.5 Sonnet that you can chat with. The user experience is between chat and collaborative document. You have to choose which open tabs go into the chat context. I like that the control that this gives, and I like that I can roll back in the chat and delete some back and forth if we're going off the rails.</p>
 <p>And it does go off the rails. Hallucination is how it works, so the text that it generates can't ever be fully trusted. Eleventy is a long-lived project, which is good because Calude knows about it. It can also be annoying, when it repeats suggestions that I've learned are from earlier versions, that can use broken or deprecated features.</p>
@@ -138,21 +153,23 @@
 <p>While writing this post, I noticed that the inline code completions know about Fab Academy's weeks.</p>
 <p><picture><source type="image/avif" srcset="./01-ai-knows-fab-academy.png-o-OZyJdOnz-765.avif 765w"><source type="image/webp" srcset="./01-ai-knows-fab-academy.png-o-OZyJdOnz-765.webp 765w"><img loading="lazy" decoding="async" src="./01-ai-knows-fab-academy.png-o-OZyJdOnz-765.png" alt="code completion knows that week 3 is computer controlled cutting" width="765" height="275"></picture></p>
 <p>Did it surmise this from the text checklist in <a href="../">index.md</a>? Either that or it knows this from training, which seems possible, given how much documentation exists over the years for Fab Academy.</p>
-<h1 id="documentation-feature-requests">Documentation feature requests</h1>
+<h1 id="documentation-feature-requests" tabindex="-1">Documentation feature requests</h1>
 <ol>
 <li>It would be nice to paste an image into a Markdown file in Zed. Now, I have to paste a screenshot into Preview.app, then name and save the image file, then make the Markdown image tag. Apparently that's a feature in VSCode now, so <a href="https://github.com/zed-industries/zed/discussions/24073">I made a Zed feature request</a>.</li>
 <li>Fab Academy requests relative links in our documentation site, and that goes against the grain of the static site builder that I decided to use. It took a while to find a plugin API to use that helped me solve the problem pretty well. I documented my <a href="https://github.com/11ty/eleventy/discussions/2516#discussioncomment-11999750">11ty relative links plugin on Github</a> and <a href="https://stackoverflow.com/questions/57370564/how-to-have-relative-paths-in-eleventy/79402772#79402772">Stack Overflow</a>, the top search results for &quot;11ty relative links&quot;, where there were only partial fixes posted before. I started a conversation with <a href="https://xoxo.zone/@forresto/113913565699389935">Eleventy on Mastodon</a>.</li>
 </ol>
-<h1 id="fab-academy-feedback">Fab Academy Feedback</h1>
+<h1 id="fab-academy-feedback" tabindex="-1">Fab Academy Feedback</h1>
 <p>The importance of resizing images before committing has been stressed a bunch, taking up time in the lectures and spaces in the chat. But I think that concern is a bit outdated. If we have to decide between time spent documenting, and time spent wrangling media files... Let the machines do the media busy work!</p>
-<h1 id="conclusion">Conclusion</h1>
+<h1 id="conclusion" tabindex="-1">Conclusion</h1>
 <p>My new website setup isn't ideal. There is more friction to doing documentation than my Notion <a href="https://fopub.notion.site/2942db42f3d14348b382696c0296971d?v=ccfdc55d9fc347f4bf8661aa22f43c8c">Blender Learning jounal</a>. But I think it's a step in right direction that I only need to manage Markdown and media files, and the build process takes care of indexing and image sizing and formats. And the static HTML output loads and renders quickly. ⚡️</p>
 <p>I'll keep tinkering with the site, but this setup is good enough for now. If I were designing a system for other people to use I could spend a long time filing off the rough edges. I like that Fab Academy doesn't tell people how to do the assignments, but presents lots of potential options. It will be interesting to see the many different ways that people solve the tasks.</p>
 
+</article>
+
+</div>
 <ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="../2020s/2023-studio-wall.html">2023 Studio Wall (annotated)</a></li><li class="links-nextprev-next">Next →<br><a href="../meemoo/meemoo-video-transition-loop.html">Meemoo Video Transition Loop</a></li>
 </ul>
 
-			</heading-anchors>
 		</main>
 
 		<footer>
