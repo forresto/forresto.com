@@ -5,11 +5,38 @@
   <subtitle>Forrest O.&#39;s web blog wiki garden home</subtitle>
   <link href="https://forresto.com/feed.xml" rel="self" />
   <link href="https://forresto.com/" />
-  <updated>2025-02-01T00:00:00Z</updated>
+  <updated>2025-02-02T00:00:00Z</updated>
   <id>https://forresto.com/</id>
   <author>
     <name>Forrest O.</name>
   </author>
+  <entry>
+    <title>picoCAD</title>
+    <link href="https://forresto.com/fab-academy/02-picocad.html" />
+    <updated>2025-02-02T00:00:00Z</updated>
+    <id>https://forresto.com/fab-academy/02-picocad.html</id>
+    <content type="html">&lt;p&gt;OK, one more wildcard. &lt;a href=&quot;https://www.picocad.net&quot;&gt;picoCAD&lt;/a&gt; is built on the &lt;a href=&quot;https://www.lexaloffle.com/pico-8.php&quot;&gt;PICO-8 fantasy console&lt;/a&gt;. What is a fantasy console? It&#39;s an answer to the question &amp;quot;what if Nintendo had integrated developer tools and BBS?&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-picocad.png-tYxW_HgIYy-512.avif 512w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-picocad.png-tYxW_HgIYy-512.webp 512w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-picocad.png-tYxW_HgIYy-512.png&quot; alt=&quot;picoCAD interface with top, perspective, front, and side views.&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;The modeling experience is very manual. The options for adding geometry are limited to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pyramid&lt;/li&gt;
+&lt;li&gt;Prism&lt;/li&gt;
+&lt;li&gt;Cube&lt;/li&gt;
+&lt;li&gt;Pentagonal prism&lt;/li&gt;
+&lt;li&gt;Hexagonal prism&lt;/li&gt;
+&lt;li&gt;Cylinder (octagonal prism)&lt;/li&gt;
+&lt;li&gt;Plane&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The options to modify a mesh:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Grow / shrink mesh&lt;/li&gt;
+&lt;li&gt;Extrude face&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is no subdivision, or adding a vertex to an edge. All vertex positions are locked to a grid. My simple model required a sequence of extruding, scaling, and moving the top face of the hexagonal box. I tried making the finger cuts, but that went beyond my 8-bit CAD skills for today.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-picocad-hexbox-spin.gif-VALTQ70Drc-384.webp 384w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-picocad-hexbox-spin.gif-VALTQ70Drc-384.gif&quot; alt=&quot;Sweet pixel wireframe render of spinning hexagonal box with inset hexagon on top.&quot; width=&quot;384&quot; height=&quot;384&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;I knew going into this that this will not have enough features to be the tool for my final project. I like experimenting with limited interfaces though. And I might try using it with &lt;a href=&quot;https://www.unfolder.app&quot;&gt;Unfolder.app&lt;/a&gt; for papercraft during computer controlled cutting week.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Zoo Modeling App</title>
     <link href="https://forresto.com/fab-academy/02-zoo-modeling-app.html" />
