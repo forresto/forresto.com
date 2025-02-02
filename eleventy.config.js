@@ -38,6 +38,7 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("./content/**/*.blend");
 	eleventyConfig.addPassthroughCopy("./content/**/*.pdf");
 	eleventyConfig.addPassthroughCopy("./content/**/*.gltf");
+	eleventyConfig.addPassthroughCopy("./content/**/*.glb");
 	eleventyConfig.addPassthroughCopy("./content/**/*-poster.webp");
 
 	// Run Eleventy when these files change:
