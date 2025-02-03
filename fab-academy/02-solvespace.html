@@ -12,7 +12,7 @@
 
 		<link rel="icon" type="image/png" href="../favicon.png">
 		
-		<link rel="stylesheet" href="../dist/E0tcMfsjaj.css">
+		<link rel="stylesheet" href="../dist/P92Cm0XJr8.css">
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
@@ -44,7 +44,7 @@
 <h1>SolveSpace</h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2021-03-02">2021, March 02</time></li>
+	<li><time datetime="2025-02-02">2025, February 02</time></li>
 	<li><a href="../tags/cad.html" class="post-tag">cad</a></li>
 </ul>
 
@@ -52,28 +52,39 @@
 
 <aside>
   <nav class="toc"><ol><li><a href="#result">Result</a></li>
-<li><a href="#constraints">Constraints</a></li></ol></nav>
+<li><a href="#geometric-constraints">Geometric constraints</a></li>
+<li><a href="#questions">Questions</a></li>
+<li><a href="#reference">Reference</a></li></ol></nav>
 </aside>
 
 <article>
 	<p>Kris introduced <a href="https://solvespace.com/">SolveSpace</a> on Friday, and it started to click today after tinkering for a while.</p>
 <p><picture><source type="image/avif" srcset="./02-solvespace-box.png-ZJRn3GYduG-1280.avif 1280w"><source type="image/webp" srcset="./02-solvespace-box.png-ZJRn3GYduG-1280.webp 1280w"><img loading="lazy" decoding="async" src="./02-solvespace-box.png-ZJRn3GYduG-1280.png" alt="SolveSpace interface, modeling a green hexagon box, inset top, and slots for fingers to pick up the music token." width="1280" height="777"></picture></p>
 <h1 id="result" tabindex="-1">Result</h1>
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+<script type="module" src="../js/model-viewer.min.js"></script>
 <model-viewer src="02-solvespace-box.glb" ar="" ar-modes="webxr scene-viewer quick-look" camera-controls="" tone-mapping="neutral" poster="02-solvespace-box.glb-poster.webp" shadow-intensity="1">
 </model-viewer>
-<h1 id="constraints" tabindex="-1">Constraints</h1>
-<p>Using SolveSpace feels like a kind of geometry game, where you sketch a shape, then add constraints until the &quot;degrees of freedom&quot; goes to 0 (dof ok) and the part is fully constrained. But look out, because if you add too many you'll end up with redundant constraints. (I'm not sure why this is treated as an error.)</p>
+<h1 id="geometric-constraints" tabindex="-1">Geometric constraints</h1>
+<p>Using SolveSpace feels like a kind of geometry game, where you sketch a shape, then add constraints until the degrees of freedom goes to 0 (&quot;dof ok&quot;) and the part is fully constrained. But look out, because if you add too many you'll end up with redundant constraints.</p>
 <div id="wPk5TVY0cVo" class="eleventy-plugin-youtube-embed" style="position:relative;width:100%;padding-top: 56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" width="100%" height="100%" frameborder="0" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/wPk5TVY0cVo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<p>This video shows the sketches and groups build up the part.</p>
-<p>Keyboard shortcuts are a big part of the UX of SolveSpace.</p>
+<p>This video shows the sketches, groups, and constraints to build up the part.</p>
 <p>My first challenge was to make a hexagon.</p>
 <p>...</p>
+<h1 id="questions" tabindex="-1">Questions</h1>
+<ul>
+<li>Why are redundant constraints treated as an error?</li>
+<li>Is there a way to name specific distance constraints and view them in a list? It seems like I've done all the work to make a parametric model, but have to dive through the layers to change any parameters.</li>
+</ul>
+<h1 id="reference" tabindex="-1">Reference</h1>
+<ul>
+<li><a href="https://solvespace.com/">SolveSpace</a></li>
+<li><a href="https://defkey.com/es/solvespace-3-1-shortcuts">SolveSpace keyboard shortcuts</a></li>
+</ul>
 
 </article>
 
 </div>
-<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="../meemoo/thesis.html">Meemoo Thesis</a></li><li class="links-nextprev-next">Next →<br><a href="../2020s/2023-studio-wall.html">2023 Studio Wall (annotated)</a></li>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="./02-picocad.html">picoCAD</a></li>
 </ul>
 
 		</main>

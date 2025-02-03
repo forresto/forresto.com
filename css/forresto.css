@@ -40,9 +40,11 @@ button {
 }
 
 model-viewer {
-	width: 100%;
+	width: 80%;
 	height: auto;
-	aspect-ratio: 16/9;
+	aspect-ratio: 4/3;
+	margin: auto;
+	border: 1px #c4c4c4 solid;
 }
 
 ul.task-list {
