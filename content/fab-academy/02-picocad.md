@@ -3,6 +3,7 @@ title: picoCAD
 date: 2025-02-02
 tags:
   - cad
+  - retro
 ---
 
 One more wildcard. [picoCAD](https://www.picocad.net) is built on the [PICO-8 fantasy console](https://www.lexaloffle.com/pico-8.php). What is a fantasy console? It's an answer to the question "what if NES had integrated developer tools and BBS?"
@@ -32,4 +33,4 @@ There is no subdivision, or adding a vertex to an edge. All vertex positions are
 
 ![Sweet pixel wireframe render of spinning hexagonal box with inset hexagon on top.](02-picocad-hexbox-spin.gif)
 
-I like experimenting with this limited interface. The design is fully committed to authoring a specific kind of 3D pixel art. I might try using it with [Unfolder.app](https://www.unfolder.app) for papercraft design during computer controlled cutting week.
+I like experimenting with this limited interface. The design is fully committed to authoring a specific kind of 3D pixel art. I might try exporting OBJ models for [Unfolder.app](https://www.unfolder.app) for papercraft design, during computer controlled cutting week.

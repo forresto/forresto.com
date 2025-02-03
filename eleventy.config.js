@@ -141,7 +141,7 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(embedYouTube);
 	eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItTaskCheckbox));
 	eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAnchor));
-	eleventyConfig.addPlugin(pluginTOC, { tags: ["h1", "h2", "h3", "h4", "h5", "h6"] });
+	eleventyConfig.addPlugin(pluginTOC, { tags: ["h1", "h2", "h3", "h4", "h5", "h6"], ul: true });
 
 	// Set global permalinks to resource.html style
 	eleventyConfig.addGlobalData("permalink", () => {

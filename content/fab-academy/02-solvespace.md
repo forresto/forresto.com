@@ -3,6 +3,7 @@ title: SolveSpace
 date: 2025-02-02
 tags:
   - cad
+  - open-source
 ---
 
 Kris introduced [SolveSpace](https://solvespace.com/) on Friday, and it started to click today after tinkering for a while.

@@ -3,7 +3,6 @@ date: 2025-02-01
 title: Zoo Modeling App
 tags:
   - cad
-  - open source
   - cloud
   - llm
 og:
