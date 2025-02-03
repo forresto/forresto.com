@@ -65,7 +65,7 @@
 &lt;p&gt;There is no subdivision, or adding a vertex to an edge. All vertex positions are locked to a grid. My simple model required a sequence of extruding, scaling, and moving the top face of the hexagonal box. I tried making the finger cuts, but that went beyond my 8-bit CAD skills for today.&lt;/p&gt;
 &lt;h1 id=&quot;result&quot; tabindex=&quot;-1&quot;&gt;Result&lt;/h1&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-picocad-hexbox-spin.gif-VALTQ70Drc-384.webp 384w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-picocad-hexbox-spin.gif-VALTQ70Drc-384.gif&quot; alt=&quot;Sweet pixel wireframe render of spinning hexagonal box with inset hexagon on top.&quot; width=&quot;384&quot; height=&quot;384&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;I like experimenting with this limited interface. The design is fully committed to authoring a specific kind of 3D pixel art. I might try using it with &lt;a href=&quot;https://www.unfolder.app&quot;&gt;Unfolder.app&lt;/a&gt; for papercraft design during computer controlled cutting week.&lt;/p&gt;
+&lt;p&gt;I like experimenting with this limited interface. The design is fully committed to authoring a specific kind of 3D pixel art. I might try exporting OBJ models for &lt;a href=&quot;https://www.unfolder.app&quot;&gt;Unfolder.app&lt;/a&gt; for papercraft design, during computer controlled cutting week.&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -259,6 +259,41 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
 &lt;p&gt;...&lt;/p&gt;
 &lt;h2 id=&quot;freecad&quot; tabindex=&quot;-1&quot;&gt;FreeCAD&lt;/h2&gt;
 &lt;p&gt;...&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>&lt;model-viewer&gt; for web 3d</title>
+    <link href="https://forresto.com/fab-academy/model-viewer-web-3d.html" />
+    <updated>2025-01-30T00:00:00Z</updated>
+    <id>https://forresto.com/fab-academy/model-viewer-web-3d.html</id>
+    <content type="html">&lt;p&gt;I&#39;m using the &lt;a href=&quot;https://modelviewer.dev/&quot;&gt;&lt;code&gt;&amp;lt;model-viewer&amp;gt;&lt;/code&gt; web component&lt;/a&gt; to embed 3D models in blog posts. I&#39;m using it to show off &lt;a href=&quot;https://forresto.com/fab-academy/02-cad-comparison.html&quot;&gt;my CAD models from this week&lt;/a&gt;.&lt;/p&gt;
+&lt;script type=&quot;module&quot; src=&quot;https://forresto.com/js/model-viewer.min.js&quot;&gt;&lt;/script&gt;
+&lt;model-viewer src=&quot;model-viewer-example-box.glb&quot; camera-controls=&quot;&quot; poster=&quot;model-viewer-example-box.glb-poster.webp&quot;&gt;
+&lt;/model-viewer&gt;
+&lt;h1 id=&quot;gltf%2Fglb&quot; tabindex=&quot;-1&quot;&gt;glTF/GLB&lt;/h1&gt;
+&lt;p&gt;You need to export your model as GLB (or glTF). If your modeling software doesn&#39;t support GLB export, I have found that FreeCAD can import STEP files and export GLB. I did this for my &lt;a href=&quot;https://forresto.com/fab-academy/02-solvespace.html&quot;&gt;SolveSpace evaluation&lt;/a&gt; post.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;glTF/GLB… is the Khronos standard known as the JPEG of 3D and the first format to standardize Physically-Based Rendering (PBR), making your models look realistic under any lighting, on any renderer. It is also compact, compressible, and loads rapidly into the GPU. – &lt;a href=&quot;https://modelviewer.dev/docs/faq.html#entrydocs-general-questions-formats&quot;&gt;model-viewer FAQ&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;file-size&quot; tabindex=&quot;-1&quot;&gt;File size&lt;/h2&gt;
+&lt;p&gt;glTF files are text-based, while GLB is the binary version. For the same scene, GLB files will be smaller. I noticed that exporting the example on this page with a fillet ended up much larger, 1.3mb vs 16kb. FreeCAD doesn&#39;t have any export options for GLB, but some other software might be able to export it with fewer verticies, good enough for sharing on the web.&lt;/p&gt;
+&lt;h1 id=&quot;html-tags&quot; tabindex=&quot;-1&quot;&gt;HTML tags&lt;/h1&gt;
+&lt;p&gt;You can preview the GLB and make adjustments with &lt;a href=&quot;https://modelviewer.dev/editor/&quot;&gt;Model Viewer Editor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The embed code looks like this, which works in both HTML and Markdown.&lt;/p&gt;
+&lt;pre class=&quot;language-html&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;module&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;model-viewer&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;model-viewer-example-box.glb&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;camera-controls&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;poster&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;model-viewer-example-box.webp&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;model-viewer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you want to avoid loading external resources, you can save the model-viewer script to your own site and reference it with &lt;code&gt;src=&amp;quot;/js/model-viewer.min.js&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You only need the script tag once per page that has &lt;code&gt;&amp;lt;model-viewer&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
+&lt;h1 id=&quot;css-style&quot; tabindex=&quot;-1&quot;&gt;CSS style&lt;/h1&gt;
+&lt;p&gt;It&#39;s important to not fill the screen with the viewer, because it can &amp;quot;steal&amp;quot; pointer gestures and mouse wheel events for 3D camera movement. This can make it annoying to scroll past the viewer to the rest of your page. I styled my embeds with 80% width to be sure that there is margin on both sides that will always be available for scroll gestures.&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;model-viewer&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 80%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token property&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; auto&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token property&quot;&gt;aspect-ratio&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 4/3&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token property&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; auto&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1px #c4c4c4 solid&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 </content>
   </entry>
   <entry>

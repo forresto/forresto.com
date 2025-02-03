@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>&lt;model-viewer&gt; for web 3d</title>
+    <meta property="og:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2Fforresto.com%2Ffab-academy%2Fmodel-viewer-web-3d.html/opengraph/bigger/">
+
+		<link rel="alternate" href="../feed.xml" type="application/atom+xml" title="Forrest O. Interactive">
+
+		<meta name="generator" content="Eleventy v3.0.0">
+
+		<link rel="icon" type="image/png" href="../favicon.png">
+		
+		<link rel="stylesheet" href="../dist/P92Cm0XJr8.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="../" class="home-link">Forrest O. Interactive</a>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="../">Home</a></li>
+					<li class="nav-item"><a href="./">Fab</a></li>
+					<li class="nav-item"><a href="../archive.html">Archive</a></li>
+					<li class="nav-item"><a href="../about.html">About</a></li>
+					<li class="nav-item"><a href="../feeds.html">Feeds</a></li>
+				</ul>
+			</nav>
+
+			<theme-switch></theme-switch>
+		</header>
+
+		<main id="skip">
+			
+
+
+
+	<nav><a href="../archive.html">Archive</a> | <a href="./">fab-academy</a></nav>
+
+
+<h1>&lt;model-viewer&gt; for web 3d</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2025-01-30">2025, January 30</time></li>
+</ul>
+
+<div class="columns">
+
+<aside>
+  <nav class="toc"><ul><li><a href="#gltf%2Fglb">glTF/GLB</a><ul><li><a href="#file-size">File size</a></li></ul></li>
+<li><a href="#html-tags">HTML tags</a></li>
+<li><a href="#css-style">CSS style</a></li></ul></nav>
+</aside>
+
+<article>
+	<p>I'm using the <a href="https://modelviewer.dev/"><code>&lt;model-viewer&gt;</code> web component</a> to embed 3D models in blog posts. I'm using it to show off <a href="./02-cad-comparison.html">my CAD models from this week</a>.</p>
+<script type="module" src="../js/model-viewer.min.js"></script>
+<model-viewer src="model-viewer-example-box.glb" camera-controls="" poster="model-viewer-example-box.glb-poster.webp">
+</model-viewer>
+<h1 id="gltf%2Fglb" tabindex="-1">glTF/GLB</h1>
+<p>You need to export your model as GLB (or glTF). If your modeling software doesn't support GLB export, I have found that FreeCAD can import STEP files and export GLB. I did this for my <a href="./02-solvespace.html">SolveSpace evaluation</a> post.</p>
+<blockquote>
+<p>glTF/GLB… is the Khronos standard known as the JPEG of 3D and the first format to standardize Physically-Based Rendering (PBR), making your models look realistic under any lighting, on any renderer. It is also compact, compressible, and loads rapidly into the GPU. – <a href="https://modelviewer.dev/docs/faq.html#entrydocs-general-questions-formats">model-viewer FAQ</a></p>
+</blockquote>
+<h2 id="file-size" tabindex="-1">File size</h2>
+<p>glTF files are text-based, while GLB is the binary version. For the same scene, GLB files will be smaller. I noticed that exporting the example on this page with a fillet ended up much larger, 1.3mb vs 16kb. FreeCAD doesn't have any export options for GLB, but some other software might be able to export it with fewer verticies, good enough for sharing on the web.</p>
+<h1 id="html-tags" tabindex="-1">HTML tags</h1>
+<p>You can preview the GLB and make adjustments with <a href="https://modelviewer.dev/editor/">Model Viewer Editor</a>.</p>
+<p>The embed code looks like this, which works in both HTML and Markdown.</p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>model-viewer</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>model-viewer-example-box.glb<span class="token punctuation">"</span></span> <span class="token attr-name">camera-controls</span> <span class="token attr-name">poster</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>model-viewer-example-box.webp<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>model-viewer</span><span class="token punctuation">></span></span></code></pre>
+<p>If you want to avoid loading external resources, you can save the model-viewer script to your own site and reference it with <code>src=&quot;/js/model-viewer.min.js&quot;</code>.</p>
+<p>You only need the script tag once per page that has <code>&lt;model-viewer&gt;</code> tags.</p>
+<h1 id="css-style" tabindex="-1">CSS style</h1>
+<p>It's important to not fill the screen with the viewer, because it can &quot;steal&quot; pointer gestures and mouse wheel events for 3D camera movement. This can make it annoying to scroll past the viewer to the rest of your page. I styled my embeds with 80% width to be sure that there is margin on both sides that will always be available for scroll gestures.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">model-viewer</span> <span class="token punctuation">{</span>
+	<span class="token property">width</span><span class="token punctuation">:</span> 80%<span class="token punctuation">;</span>
+	<span class="token property">height</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+	<span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 4/3<span class="token punctuation">;</span>
+	<span class="token property">margin</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+	<span class="token property">border</span><span class="token punctuation">:</span> 1px #c4c4c4 solid<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+
+</article>
+
+</div>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="./01-potential-final-project.html">Week 01. Potential Final Project</a></li><li class="links-nextprev-next">Next →<br><a href="./02-cad-comparison.html">CAD Comparison</a></li>
+</ul>
+
+		</main>
+
+		<footer>
+			<p>Forrest O. Interactive is my WIP web blog wiki garden, built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
+
+			<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless otherwise noted, <span property="dct:title">Forrest O. Interactive</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<picture><source type="image/avif" srcset="../img/cc.svg-FRC2GTPyJx-44.avif 44w"><source type="image/webp" srcset="../img/cc.svg-FRC2GTPyJx-44.webp 44w"><img loading="lazy" decoding="async" src="../img/cc.svg-FRC2GTPyJx-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture><picture><source type="image/avif" srcset="../img/by.svg-R3XBmYTpOG-44.avif 44w"><source type="image/webp" srcset="../img/by.svg-R3XBmYTpOG-44.webp 44w"><img loading="lazy" decoding="async" src="../img/by.svg-R3XBmYTpOG-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture></a></p>
+
+		</footer>
+
+		<script type="module" src="../dist/_t5XYB3gem.js"></script>
+	</body>
+</html>
