@@ -9,6 +9,8 @@ date: 2025-01-01
 
 My [Fab Academy](https://fabacademy.org/2025/schedule.html) experience in 2025 at [Aalto Fablab](https://studios.aalto.fi/fablab/).
 
+This section is mirrored from [my personal site](https://www.forresto.com/fab-academy/) to [Fab Academy's archive](https://fabacademy.org/2025/labs/aalto/students/forrest-oliphant/fab-academy/) as the course progresses.
+
 Overview
 
 - [x] Week 01. Project management
