@@ -14,7 +14,7 @@ A wildcard CAD package that I've been wanting to try is [Zoo Modeling App](https
 
 # Result
 
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+<script type="module" src="/js/model-viewer.min.js"></script>
 <model-viewer src="02-zoo.gltf" camera-controls tone-mapping="neutral" shadow-intensity="0.98" camera-orbit="-12.67deg 56.12deg 0.2405m" field-of-view="30deg" exposure="0.63" shadow-softness="0.63" poster="./02-zoo.gltf-poster.webp">
 </model-viewer>
 
