@@ -1,6 +1,9 @@
 ---
 title: <model-viewer> for web 3d
 date: 2025-01-30
+tags:
+  - site
+  - 3d
 ---
 
 I'm using the [`<model-viewer>` web component](https://modelviewer.dev/) to embed 3D models in blog posts. I'm using it to show off [my CAD models from this week](02-cad-comparison.md).

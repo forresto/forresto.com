@@ -36,6 +36,7 @@ export default async function (eleventyConfig) {
 	// Media that might be linked from posts
 	eleventyConfig.addPassthroughCopy("./content/**/*.mp4");
 	eleventyConfig.addPassthroughCopy("./content/**/*.blend");
+	eleventyConfig.addPassthroughCopy("./content/**/*.slvs");
 	eleventyConfig.addPassthroughCopy("./content/**/*.pdf");
 	eleventyConfig.addPassthroughCopy("./content/**/*.gltf");
 	eleventyConfig.addPassthroughCopy("./content/**/*.glb");
