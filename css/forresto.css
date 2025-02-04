@@ -97,6 +97,15 @@ nav.toc ol {
 	margin: 0;
 }
 
+code {
+	background-color: var(--footer-background-color);
+	padding: 0 0.25em;
+}
+pre code {
+	background-color: transparent;
+	padding: 0;
+}
+
 .columns {
 	display: flex;
 	flex-direction: column;

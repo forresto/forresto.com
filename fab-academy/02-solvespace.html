@@ -12,7 +12,7 @@
 
 		<link rel="icon" type="image/png" href="../favicon.png">
 		
-		<link rel="stylesheet" href="../dist/P92Cm0XJr8.css">
+		<link rel="stylesheet" href="../dist/pkEaAJEeF-.css">
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
@@ -53,8 +53,9 @@
 
 <aside>
   <nav class="toc"><ul><li><a href="#result">Result</a></li>
-<li><a href="#geometric-constraints">Geometric constraints</a></li>
+<li><a href="#constraint-based-design">Constraint-based design</a></li>
 <li><a href="#questions">Questions</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
 <li><a href="#reference">Reference</a></li></ul></nav>
 </aside>
 
@@ -65,17 +66,55 @@
 <script type="module" src="../js/model-viewer.min.js"></script>
 <model-viewer src="02-solvespace-box.glb" ar="" ar-modes="webxr scene-viewer quick-look" camera-controls="" tone-mapping="neutral" poster="02-solvespace-box.glb-poster.webp" shadow-intensity="1">
 </model-viewer>
-<h1 id="geometric-constraints" tabindex="-1">Geometric constraints</h1>
-<p>Using SolveSpace feels like a kind of geometry game, where you sketch a shape, then add constraints until the degrees of freedom goes to 0 (&quot;dof ok&quot;) and the part is fully constrained. But look out, because if you add too many you'll end up with redundant constraints.</p>
+<p>3D model of the <a href="./02-cad-comparison.html#sketch">music player concept</a>.</p>
+<p>Design file: <a href="02-solvespace-box.slvs">02-solvespace-box.slvs</a>.</p>
 <div id="wPk5TVY0cVo" class="eleventy-plugin-youtube-embed" style="position:relative;width:100%;padding-top: 56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" width="100%" height="100%" frameborder="0" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/wPk5TVY0cVo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<p>This video shows the sketches, groups, and constraints to build up the part.</p>
-<p>My first challenge was to make a hexagon.</p>
-<p>...</p>
+<p>This video shows the sketches, groups, and constraints that build up my part.</p>
+<h1 id="constraint-based-design" tabindex="-1">Constraint-based design</h1>
+<p>Using SolveSpace feels like a kind of geometry game, where you sketch a shape, then add constraints until the degrees of freedom goes to 0 (<code>dof ok</code>) and the part is fully constrained. But look out, because if you add too many you'll end up with redundant constraints.</p>
+<p>The first challenge with my design was to make a hexagon. I tried a few ways to construct this, but later saw a tutorial with a straightforward way.</p>
+<ol>
+<li>Sketch circle (shortcut &quot;c&quot;)
+<ul>
+<li><code>dof 1</code> (meaning you can change the diameter)</li>
+<li>Give the circle a diameter (&quot;d&quot;)</li>
+<li><code>dof ok</code> (fully constrained)</li>
+</ul>
+</li>
+<li>Select circle and make it a construction reference (&quot;g&quot;)
+<ul>
+<li>It turns green</li>
+</ul>
+</li>
+<li>Draw a chain of 6 segments around the circle (&quot;s&quot; for each segment)
+<ul>
+<li><code>dof 6</code> (you can drag the ends around the circle)</li>
+</ul>
+</li>
+<li>Select pairs of segments and give them equal length constraints (&quot;q&quot;)
+<ul>
+<li>According to the tutorial video, a future version will allow selecting all of the segments and making them equal at once. This doesn't work with my current version. 👈</li>
+<li><code>dof 1</code> (you can rotate the hexagon around the circle.)</li>
+</ul>
+</li>
+<li>Select a point of the hexagon and the X axis, add &quot;point on plane&quot; constraint (&quot;o&quot;), <code>dof ok</code></li>
+</ol>
+<p>Now the drawing is fully constrained, and you can change the diameter measurement to change the diameter of the hexagon.</p>
+<p><picture><source type="image/avif" srcset="./02-solvespace-heptagon.png-pGSsSOLN_--1280.avif 1280w"><source type="image/webp" srcset="./02-solvespace-heptagon.png-pGSsSOLN_--1280.webp 1280w"><img loading="lazy" decoding="async" src="./02-solvespace-heptagon.png-pGSsSOLN_--1280.png" alt="Seven-sided polygon constructed in SolveSpace." width="1280" height="778"></picture></p>
+<p>To show that these steps generalize to other polygons, a heptagon.</p>
+<div id="vBNAIMiomls" class="eleventy-plugin-youtube-embed" style="position:relative;width:100%;padding-top: 56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" width="100%" height="100%" frameborder="0" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/vBNAIMiomls?start=1827" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>Paul Lutus' tutorial video, skipped to the &quot;threaded bolt&quot; section that starts with the hexagon.</p>
 <h1 id="questions" tabindex="-1">Questions</h1>
 <ul>
+<li>Is there a way to name specific distance constraints and view them in a list?</li>
+<li>Why isn't there a built-in polygon definition? (Even <a href="./02-picocad.html">picoCAD</a> has hex. prism as a built-in shape. 😅)</li>
+<li>Is there a way to define one's own reusable sketches or parts?</li>
 <li>Why are redundant constraints treated as an error?</li>
-<li>Is there a way to name specific distance constraints and view them in a list? It seems like I've done all the work to make a parametric model, but have to dive through the layers to change any parameters.</li>
 </ul>
+<h1 id="conclusion" tabindex="-1">Conclusion</h1>
+<p>I appreciate that SolveSpace.app is small, 29 MB on my machine. It starts and runs fast. I like the minimal vector aesthetic, and the general feel of the app. I can imagine it being useful to design quick, exact parts.</p>
+<p>It doesn't seem to bridge the gap from constraint-based to parametric modeling. It seems like I've done all the work to make a parametric model, but have to dive through the layers to change any of the dimensions. It would be helpful to expose some of the dimensions as parameters. That would be a step towards making a library of reusable parts.</p>
+<p>By getting a feel for different CAD software I'm starting to understand different ways of thinking about geometry. I've been working on <a href="https://cuttle.xyz">Cuttle</a> for 4 years now, and design in that app is limited to the parametric 2d methods that we made it for. Learning other apps is mind-expanding, like parallel universes.</p>
 <h1 id="reference" tabindex="-1">Reference</h1>
 <ul>
 <li><a href="https://solvespace.com/">SolveSpace</a></li>
