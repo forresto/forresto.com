@@ -5,13 +5,39 @@
   <subtitle>Forrest O.&#39;s web blog wiki garden home</subtitle>
   <link href="https://forresto.com/feed.xml" rel="self" />
   <link href="https://forresto.com/" />
-  <updated>2025-02-02T00:00:00Z</updated>
+  <updated>2025-02-04T00:00:00Z</updated>
   <id>https://forresto.com/</id>
   <author>
     <name>Forrest O.</name>
   </author>
   <entry>
-    <title>SolveSpace</title>
+    <title>FreeCAD evaluation</title>
+    <link href="https://forresto.com/fab-academy/02-freecad.html" />
+    <updated>2025-02-04T00:00:00Z</updated>
+    <id>https://forresto.com/fab-academy/02-freecad.html</id>
+    <content type="html">&lt;p&gt;FreeCAD seems to be the OpenOffice of CAD, for better or worse.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-freecad-interface.png-xIjjN0LW5D-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-freecad-interface.png-xIjjN0LW5D-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-freecad-interface.png-xIjjN0LW5D-1280.png&quot; alt=&quot;FreeCAD interface with parameters.&quot; width=&quot;1280&quot; height=&quot;777&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;It helped that I got comfortable with constraint-based modelling in SolveSpace earlier this week.&lt;/p&gt;
+&lt;p&gt;I did make this model parametric, but there are quite a few steps to adding and using a parameter.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-freecad-parametric-workflow.png-BEDHZuNK2P-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-freecad-parametric-workflow.png-BEDHZuNK2P-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-freecad-parametric-workflow.png-BEDHZuNK2P-1280.png&quot; alt=&quot;FreeCAD interface with parameteric workflow.&quot; width=&quot;1280&quot; height=&quot;777&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add a spreadsheet to the project&lt;/li&gt;
+&lt;li&gt;Add label and value columns the the spreadsheet&lt;/li&gt;
+&lt;li&gt;Duplicate labels as &amp;quot;Alias&amp;quot; for each value cell.&lt;/li&gt;
+&lt;li&gt;Open the constraint measurement that you want to set with the parameter.&lt;/li&gt;
+&lt;li&gt;Click the blue &amp;quot;function&amp;quot; icon by the value.&lt;/li&gt;
+&lt;li&gt;Add the parameter, with the format &lt;code&gt;&amp;lt;&amp;lt;SpreadsheetName&amp;gt;&amp;gt;.cell_alias&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;😅&lt;/p&gt;
+&lt;p&gt;It seems like this process could be fewer steps / clicks. Setting up the windows to be able to edit the parameters while seeing the model is also more of chore than it should be. But I&#39;ll save my UX opinions for now.&lt;/p&gt;
+&lt;h1 id=&quot;result&quot; tabindex=&quot;-1&quot;&gt;Result&lt;/h1&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-freecad-techdraw.png-o9I3RAxlvR-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-freecad-techdraw.png-o9I3RAxlvR-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-freecad-techdraw.png-o9I3RAxlvR-1280.png&quot; alt=&quot;FreeCAD TechDraw output as a 1 to 1 drafting of different views of the model.&quot; width=&quot;1280&quot; height=&quot;904&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&amp;quot;TechDraw&amp;quot; is a cool feature. I set this view up with an included ISO template in a few minutes. I might try drawing this with a pen plotter during CNC cutting week.&lt;/p&gt;
+&lt;p&gt;Project file: &lt;a href=&quot;https://forresto.com/fab-academy/02-freecad-hex-box.FCStd&quot;&gt;02-freecad-hex-box.FCStd&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>SolveSpace evaluation</title>
     <link href="https://forresto.com/fab-academy/02-solvespace.html" />
     <updated>2025-02-02T00:00:00Z</updated>
     <id>https://forresto.com/fab-academy/02-solvespace.html</id>
@@ -78,7 +104,7 @@
 </content>
   </entry>
   <entry>
-    <title>picoCAD</title>
+    <title>picoCAD evaluation</title>
     <link href="https://forresto.com/fab-academy/02-picocad.html" />
     <updated>2025-02-02T00:00:00Z</updated>
     <id>https://forresto.com/fab-academy/02-picocad.html</id>
@@ -107,7 +133,7 @@
 </content>
   </entry>
   <entry>
-    <title>Zoo Modeling App</title>
+    <title>Zoo Modeling App evaluation</title>
     <link href="https://forresto.com/fab-academy/02-zoo-modeling-app.html" />
     <updated>2025-02-01T00:00:00Z</updated>
     <id>https://forresto.com/fab-academy/02-zoo-modeling-app.html</id>
@@ -264,7 +290,7 @@ edgeMidpoint = [(vertex1[0] + vertex2[0])/2, (vertex1[1] + vertex2[1])/2]&lt;/co
 </content>
   </entry>
   <entry>
-    <title>CAD Comparison</title>
+    <title>Week 02. CAD Comparison</title>
     <link href="https://forresto.com/fab-academy/02-cad-comparison.html" />
     <updated>2025-01-31T00:00:00Z</updated>
     <id>https://forresto.com/fab-academy/02-cad-comparison.html</id>
@@ -293,10 +319,14 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
 &lt;h2 id=&quot;solvespace&quot; tabindex=&quot;-1&quot;&gt;SolveSpace&lt;/h2&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-solvespace-box.png-ZJRn3GYduG-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-solvespace-box.png-ZJRn3GYduG-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-solvespace-box.png-ZJRn3GYduG-1280.png&quot; alt=&quot;SolveSpace interface.&quot; width=&quot;1280&quot; height=&quot;777&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://forresto.com/fab-academy/02-solvespace.html&quot;&gt;SolveSpace&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;blender&quot; tabindex=&quot;-1&quot;&gt;Blender&lt;/h2&gt;
-&lt;p&gt;...&lt;/p&gt;
 &lt;h2 id=&quot;freecad&quot; tabindex=&quot;-1&quot;&gt;FreeCAD&lt;/h2&gt;
-&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-freecad-interface.png-xIjjN0LW5D-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-freecad-interface.png-xIjjN0LW5D-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-freecad-interface.png-xIjjN0LW5D-1280.png&quot; alt=&quot;FreeCAD interface with parameters.&quot; width=&quot;1280&quot; height=&quot;777&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://forresto.com/fab-academy/02-freecad.html&quot;&gt;FreeCAD&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;result&quot; tabindex=&quot;-1&quot;&gt;Result&lt;/h1&gt;
+&lt;p&gt;FreeCAD and SolveSpace project files: &lt;a href=&quot;https://forresto.com/fab-academy/02-project-files.zip&quot;&gt;02-project-files.zip&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h1&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-cad-comparison-digikey.png-SuD2hsY9Qp-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-cad-comparison-digikey.png-SuD2hsY9Qp-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-cad-comparison-digikey.png-SuD2hsY9Qp-1280.png&quot; alt=&quot;Chart comparing FreeCAD, SolidWorks, Solid Edge, Fusion, Tinkercad, Onshape, Blender, OpenSCAD&quot; width=&quot;1280&quot; height=&quot;704&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;CAD comparison chart from a &lt;a href=&quot;https://www.youtube.com/watch?v=8VPYTTnqmfs&quot;&gt;DigiKey video introducing FreeCAD&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -498,20 +528,6 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
 &lt;iframe src=&quot;https://www.tldraw.com/v/v6A_c_7v_-jVmHBfdM7qeoZeJR?d=v-1122.-737.3656.2689.BypPvkT29lod8hatRpQON&quot; width=&quot;1280&quot; height=&quot;720&quot;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.tldraw.com/v/v6A_c_7v_-jVmHBfdM7qeoZeJR?d=v-1122.-737.3656.2689.BypPvkT29lod8hatRpQON&quot;&gt;Made with Tldraw&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Bring back image maps!&lt;/em&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Meemoo Thesis</title>
-    <link href="https://forresto.com/meemoo/thesis.html" />
-    <updated>2012-04-23T00:00:00Z</updated>
-    <id>https://forresto.com/meemoo/thesis.html</id>
-    <content type="html">&lt;p&gt;Link to the thesis:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://forresto.com/meemoo/ForrestOliphant-MeemooThesis-web.pdf&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/meemoo/meemoo-thesis-cover.png-trcJG4pH_L-1240.avif 1240w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/meemoo/meemoo-thesis-cover.png-trcJG4pH_L-1240.webp 1240w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/meemoo/meemoo-thesis-cover.png-trcJG4pH_L-1240.png&quot; alt=&quot;Meemoo: Hackable Web App Framework&quot; width=&quot;1240&quot; height=&quot;1753&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Meemoo blog entry &lt;a href=&quot;https://meemoo.org/blog/2012-04-23-finished-writing-back-to-code&quot;&gt;on finishing the thesis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.finna.fi/Record/aaltodoc.123456789_3944&quot;&gt;Finna library record&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.urn.fi/URN:NBN:fi:aalto-201206102286&quot;&gt;URN:NBN:fi:aalto-201206102286&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>

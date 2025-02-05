@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FreeCAD evaluation</title>
+    <meta property="og:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2Fforresto.com%2Ffab-academy%2F02-freecad.html/opengraph/bigger/">
+
+		<link rel="alternate" href="../feed.xml" type="application/atom+xml" title="Forrest O. Interactive">
+
+		<meta name="generator" content="Eleventy v3.0.0">
+
+		<link rel="icon" type="image/png" href="../favicon.png">
+		
+		<link rel="stylesheet" href="../dist/pkEaAJEeF-.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="../" class="home-link">Forrest O. Interactive</a>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="../">Home</a></li>
+					<li class="nav-item"><a href="./">Fab</a></li>
+					<li class="nav-item"><a href="../archive.html">Archive</a></li>
+					<li class="nav-item"><a href="../about.html">About</a></li>
+					<li class="nav-item"><a href="../feeds.html">Feeds</a></li>
+				</ul>
+			</nav>
+
+			<theme-switch></theme-switch>
+		</header>
+
+		<main id="skip">
+			
+
+
+
+	<nav><a href="../archive.html">Archive</a> | <a href="./">fab-academy</a></nav>
+
+
+<h1>FreeCAD evaluation</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2025-02-04">2025, February 04</time></li>
+	<li><a href="../tags/cad.html" class="post-tag">cad</a>, </li>
+	<li><a href="../tags/parametric.html" class="post-tag">parametric</a>, </li>
+	<li><a href="../tags/open-source.html" class="post-tag">open-source</a></li>
+</ul>
+
+<div class="columns">
+
+<aside>
+  <nav class="toc"><ul><li><a href="#result">Result</a></li></ul></nav>
+</aside>
+
+<article>
+	<p>FreeCAD seems to be the OpenOffice of CAD, for better or worse.</p>
+<p><picture><source type="image/avif" srcset="./02-freecad-interface.png-xIjjN0LW5D-1280.avif 1280w"><source type="image/webp" srcset="./02-freecad-interface.png-xIjjN0LW5D-1280.webp 1280w"><img loading="lazy" decoding="async" src="./02-freecad-interface.png-xIjjN0LW5D-1280.png" alt="FreeCAD interface with parameters." width="1280" height="777"></picture></p>
+<p>It helped that I got comfortable with constraint-based modelling in SolveSpace earlier this week.</p>
+<p>I did make this model parametric, but there are quite a few steps to adding and using a parameter.</p>
+<p><picture><source type="image/avif" srcset="./02-freecad-parametric-workflow.png-BEDHZuNK2P-1280.avif 1280w"><source type="image/webp" srcset="./02-freecad-parametric-workflow.png-BEDHZuNK2P-1280.webp 1280w"><img loading="lazy" decoding="async" src="./02-freecad-parametric-workflow.png-BEDHZuNK2P-1280.png" alt="FreeCAD interface with parameteric workflow." width="1280" height="777"></picture></p>
+<ol>
+<li>Add a spreadsheet to the project</li>
+<li>Add label and value columns the the spreadsheet</li>
+<li>Duplicate labels as &quot;Alias&quot; for each value cell.</li>
+<li>Open the constraint measurement that you want to set with the parameter.</li>
+<li>Click the blue &quot;function&quot; icon by the value.</li>
+<li>Add the parameter, with the format <code>&lt;&lt;SpreadsheetName&gt;&gt;.cell_alias</code></li>
+</ol>
+<p>😅</p>
+<p>It seems like this process could be fewer steps / clicks. Setting up the windows to be able to edit the parameters while seeing the model is also more of chore than it should be. But I'll save my UX opinions for now.</p>
+<h1 id="result" tabindex="-1">Result</h1>
+<p><picture><source type="image/avif" srcset="./02-freecad-techdraw.png-o9I3RAxlvR-1280.avif 1280w"><source type="image/webp" srcset="./02-freecad-techdraw.png-o9I3RAxlvR-1280.webp 1280w"><img loading="lazy" decoding="async" src="./02-freecad-techdraw.png-o9I3RAxlvR-1280.png" alt="FreeCAD TechDraw output as a 1 to 1 drafting of different views of the model." width="1280" height="904"></picture></p>
+<p>&quot;TechDraw&quot; is a cool feature. I set this view up with an included ISO template in a few minutes. I might try drawing this with a pen plotter during CNC cutting week.</p>
+<p>Project file: <a href="02-freecad-hex-box.FCStd">02-freecad-hex-box.FCStd</a></p>
+
+</article>
+
+</div>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="./02-solvespace.html">SolveSpace evaluation</a></li>
+</ul>
+
+		</main>
+
+		<footer>
+			<p>Forrest O. Interactive is my WIP web blog wiki garden, built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
+
+			<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless otherwise noted, <span property="dct:title">Forrest O. Interactive</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<picture><source type="image/avif" srcset="../img/cc.svg-FRC2GTPyJx-44.avif 44w"><source type="image/webp" srcset="../img/cc.svg-FRC2GTPyJx-44.webp 44w"><img loading="lazy" decoding="async" src="../img/cc.svg-FRC2GTPyJx-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture><picture><source type="image/avif" srcset="../img/by.svg-R3XBmYTpOG-44.avif 44w"><source type="image/webp" srcset="../img/by.svg-R3XBmYTpOG-44.webp 44w"><img loading="lazy" decoding="async" src="../img/by.svg-R3XBmYTpOG-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture></a></p>
+
+		</footer>
+
+		<script type="module" src="../dist/_t5XYB3gem.js"></script>
+	</body>
+</html>
