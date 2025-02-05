@@ -1,6 +1,6 @@
 ---
 date: 2025-02-01
-title: Zoo Modeling App
+title: Zoo Modeling App evaluation
 tags:
   - cad
   - cloud

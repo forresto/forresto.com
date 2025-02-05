@@ -37,10 +37,12 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("./content/**/*.mp4");
 	eleventyConfig.addPassthroughCopy("./content/**/*.blend");
 	eleventyConfig.addPassthroughCopy("./content/**/*.slvs");
+	eleventyConfig.addPassthroughCopy("./content/**/*.FCStd");
 	eleventyConfig.addPassthroughCopy("./content/**/*.pdf");
 	eleventyConfig.addPassthroughCopy("./content/**/*.gltf");
 	eleventyConfig.addPassthroughCopy("./content/**/*.glb");
 	eleventyConfig.addPassthroughCopy("./content/**/*-poster.webp");
+	eleventyConfig.addPassthroughCopy("./content/**/*.zip");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets

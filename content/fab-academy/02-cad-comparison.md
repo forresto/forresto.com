@@ -1,6 +1,6 @@
 ---
 date: 2025-01-31
-title: CAD Comparison
+title: Week 02. CAD Comparison
 tags:
   - cad
 ---
@@ -46,10 +46,18 @@ Sketching some views on paper seems like a good way to start the CAD process. âœ
 
 [SolveSpace](02-solvespace.md)
 
-## Blender
-
-...
-
 ## FreeCAD
 
-...
+![FreeCAD interface with parameters.](02-freecad-interface.png)
+
+[FreeCAD](02-freecad.md)
+
+# Result
+
+FreeCAD and SolveSpace project files: [02-project-files.zip](02-project-files.zip).
+
+# Reference
+
+![Chart comparing FreeCAD, SolidWorks, Solid Edge, Fusion, Tinkercad, Onshape, Blender, OpenSCAD](02-cad-comparison-digikey.png)
+
+CAD comparison chart from a [DigiKey video introducing FreeCAD](https://www.youtube.com/watch?v=8VPYTTnqmfs).

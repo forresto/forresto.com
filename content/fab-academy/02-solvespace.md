@@ -1,5 +1,5 @@
 ---
-title: SolveSpace
+title: SolveSpace evaluation
 date: 2025-02-02
 tags:
   - cad
