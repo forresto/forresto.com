@@ -32,25 +32,31 @@ Sketching some views on paper seems like a good way to start the CAD process. âœ
 
 ![Zoo interface.](02-zoo-first-prompt-result.png)
 
-[Zoo Modeling App](02-zoo-modeling-app.md)
+[Zoo Modeling App evaluation](02-zoo-modeling-app.md)
 
 ## picoCAD
 
 ![picoCAD interface.](02-picocad.png)
 
-[picoCAD](02-picocad.md)
+[picoCAD evaluation](02-picocad.md)
 
 ## SolveSpace
 
 ![SolveSpace interface.](02-solvespace-box.png)
 
-[SolveSpace](02-solvespace.md)
+[SolveSpace evaluation](02-solvespace.md)
 
 ## FreeCAD
 
 ![FreeCAD interface with parameters.](02-freecad-interface.png)
 
-[FreeCAD](02-freecad.md)
+[FreeCAD evaluation](02-freecad.md)
+
+## Cuttle.xyz
+
+...
+
+[Cuttle.xyz 2d remodel](https://cuttle.xyz/@forresto/Hexagon-Box-Parametric-65WPuv1YGPgR)
 
 # Result
 

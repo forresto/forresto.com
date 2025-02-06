@@ -16,7 +16,7 @@ Kris introduced [SolveSpace](https://solvespace.com/) on Friday, and it started 
 <model-viewer src="02-solvespace-box.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="02-solvespace-box.glb-poster.webp" shadow-intensity="1">
 </model-viewer>
 
-3D model of the [music player concept](02-cad-comparison.md#sketch).
+3D model of the [music player concept](02-cad-comparison.md#sketch). Model was exported as STEP from SolveSpace, then imported to FreeCAD, then exported as GLB.
 
 Design file: [02-solvespace-box.slvs](02-solvespace-box.slvs).
 
