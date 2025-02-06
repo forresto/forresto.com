@@ -45,6 +45,10 @@
 
 <ul class="post-metadata">
 	<li><time datetime="2025-02-05">2025, February 05</time></li>
+	<li><a href="../tags/cad.html" class="post-tag">cad</a>, </li>
+	<li><a href="../tags/2d.html" class="post-tag">2d</a>, </li>
+	<li><a href="../tags/parametric.html" class="post-tag">parametric</a>, </li>
+	<li><a href="../tags/cloud.html" class="post-tag">cloud</a></li>
 </ul>
 
 <div class="columns">
@@ -61,6 +65,8 @@
 <p>Using parameters in Cuttle is different than the constraint-based modelling in <a href="./02-solvespace.html">SolveSpace</a> and <a href="./02-freecad.html">FreeCAD</a>. In Cuttle, parameters are emphasized in the interface, and there is not a concept of constraints. This means that to make shapes that a relative to each other, you have to do more math in the scale and position parameters of the shapes. Instead of &quot;attach the left edge of the rectangle to the right edge of the polygon&quot; in Cuttle it is more like &quot;set the position of the rectangle relative to the size of the rectangle and polygon&quot;. Cuttle does feel like it is missing some basic constraint-based modelling features, but there is a tradeoff with the user experience and runtime complexity. Constraint solving is a can of worms, and Cuttle has decided to leave that can closed for now.</p>
 <p><picture><source type="image/avif" srcset="./02-cuttle-xyz-parameters.png-LLtfkNbXDC-1280.avif 1280w"><source type="image/webp" srcset="./02-cuttle-xyz-parameters.png-LLtfkNbXDC-1280.webp 1280w"><img loading="lazy" decoding="async" src="./02-cuttle-xyz-parameters.png-LLtfkNbXDC-1280.png" alt="Cuttle interface with derived parameters labelled in pink." width="1280" height="744"></picture></p>
 <p>Cuttle pro tip: make any reused math expressions into parameters. This screenshot labels these derived parameters where they are used in the design.</p>
+<p><picture><source type="image/avif" srcset="./02-cuttle-xyz-simplified-published-view.png-BmOLvyba7P-1280.avif 1280w"><source type="image/webp" srcset="./02-cuttle-xyz-simplified-published-view.png-BmOLvyba7P-1280.webp 1280w"><img loading="lazy" decoding="async" src="./02-cuttle-xyz-simplified-published-view.png-BmOLvyba7P-1280.png" alt="Cuttle read me simplified view with download button and parameter inputs." width="1280" height="578"></picture></p>
+<p>Cuttle projects have a &quot;read me&quot; section where you can add documentation of your project, and embed certain components. The parameters list in this view is simplified; the derived parameters are hidden.</p>
 <h1 id="result" tabindex="-1">Result</h1>
 <p><picture><source type="image/avif" srcset="./cardboard-aided-design-player.jpg-t0Ba6acwue-1280.avif 1280w"><source type="image/webp" srcset="./cardboard-aided-design-player.jpg-t0Ba6acwue-1280.webp 1280w"><img loading="lazy" decoding="async" src="./cardboard-aided-design-player.jpg-t0Ba6acwue-1280.jpeg" alt="Hex box prototype." width="1280" height="959"></picture></p>
 <p>Scale model, made with lasercut cardstock.</p>
