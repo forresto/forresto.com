@@ -20,7 +20,7 @@ Cardboard, paper, glue, clay... cheap and accessible materials are perfect for p
 
 A design that has only existed on the screen might look good, but feel awkward. By making something physical, we can validate our ideas of how something should take up space and feel in the real world.
 
-<video src="cardboard-aided-design-player-token.mp4" autoplay muted loop>
+<video src="cardboard-aided-design-player-token.mp4" autoplay muted loop></video>
 
 It's also easier to get feedback from friends and family with a physical object, than a 3D model on a screen. I put this in their hands to test that the scale and spacing is usable for folks with smaller hands than me. I said "imagine changing the music by taking this token off and putting another one on," which led to good ideas about the feel and materials.
 

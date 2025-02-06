@@ -21,7 +21,7 @@ Cuttle pro tip: make any reused math expressions into parameters. This screensho
 
 Scale model, made with lasercut cardstock.
 
-<video src="cardboard-aided-design-player-token.mp4" autoplay muted loop>
+<video src="cardboard-aided-design-player-token.mp4" autoplay muted loop></video>
 
 Design share: [Cuttle.xyz 2d remodel](https://cuttle.xyz/@forresto/Hexagon-Box-Parametric-65WPuv1YGPgR)
 
