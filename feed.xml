@@ -21,12 +21,12 @@
 &lt;p&gt;Scale model of music player concept, made with lasercut cardstock.&lt;/p&gt;
 &lt;p&gt;Cardboard, paper, glue, clay... cheap and accessible materials are perfect for physical prototyping as part of this spiral design process. Because the materials are not precious, we can chop, hack, remold, and remake these models as often as needed.&lt;/p&gt;
 &lt;p&gt;A design that has only existed on the screen might look good, but feel awkward. By making something physical, we can validate our ideas of how something should take up space and feel in the real world.&lt;/p&gt;
-&lt;video src=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player-token.mp4&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;p&gt;&lt;video src=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player-token.mp4&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;&lt;/p&gt;
 &lt;p&gt;It&#39;s also easier to get feedback from friends and family with a physical object, than a 3D model on a screen. I put this in their hands to test that the scale and spacing is usable for folks with smaller hands than me. I said &amp;quot;imagine changing the music by taking this token off and putting another one on,&amp;quot; which led to good ideas about the feel and materials.&lt;/p&gt;
 &lt;p&gt;When starting &lt;a href=&quot;https://forresto.com/fab-academy/02-cad-comparison.html&quot;&gt;CAD week&lt;/a&gt; I was excited to jump into 3d modeling, but perhaps I should have started with a quicker cardboard version of my sketches to validate the basic dimensions and feel.&lt;/p&gt;
 &lt;p&gt;I felt strongly enough about this that I put my hand up in the weekly call to show my papercraft and encourage more crafty prototyping.&lt;/p&gt;
 &lt;p&gt;Share your scrappy prototypes!&lt;/p&gt;
-&lt;/video&gt;</content>
+</content>
   </entry>
   <entry>
     <title>Cuttle.xyz evaluation</title>
@@ -42,7 +42,7 @@
 &lt;h1 id=&quot;result&quot; tabindex=&quot;-1&quot;&gt;Result&lt;/h1&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player.jpg-t0Ba6acwue-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player.jpg-t0Ba6acwue-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player.jpg-t0Ba6acwue-1280.jpeg&quot; alt=&quot;Hex box prototype.&quot; width=&quot;1280&quot; height=&quot;959&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;Scale model, made with lasercut cardstock.&lt;/p&gt;
-&lt;video src=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player-token.mp4&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;p&gt;&lt;video src=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player-token.mp4&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;&lt;/p&gt;
 &lt;p&gt;Design share: &lt;a href=&quot;https://cuttle.xyz/@forresto/Hexagon-Box-Parametric-65WPuv1YGPgR&quot;&gt;Cuttle.xyz 2d remodel&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;See my quick &lt;a href=&quot;https://forresto.com/fab-academy/cardboard-aided-design.html&quot;&gt;rant on physical prototyping&lt;/a&gt;.&lt;/p&gt;
 &lt;h1 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h1&gt;
@@ -50,7 +50,7 @@
 &lt;li&gt;&lt;a href=&quot;https://cuttle.xyz/learn/getting-started-with-scripting&quot;&gt;Cuttle.xyz documentation&lt;/a&gt; and &lt;a href=&quot;https://cuttle.xyz/learn/video-tutorials&quot;&gt;videos&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://nordicfablabs.gitlab.io/nordic_fablabs_bootcamp_2024/workshops/cuttlexyz/&quot;&gt;Laser cut cardstock workshop at Nordic Fablab Bootcamp&lt;/a&gt; 2024&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/video&gt;</content>
+</content>
   </entry>
   <entry>
     <title>FreeCAD evaluation</title>
