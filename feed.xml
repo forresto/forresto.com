@@ -31,7 +31,7 @@
   <entry>
     <title>Cuttle.xyz evaluation</title>
     <link href="https://forresto.com/fab-academy/02-cuttle-xyz.html" />
-    <updated>2025-02-06T00:00:00Z</updated>
+    <updated>2025-02-05T00:00:00Z</updated>
     <id>https://forresto.com/fab-academy/02-cuttle-xyz.html</id>
     <content type="html">&lt;p&gt;I&#39;m on the small team building &lt;a href=&quot;https://cuttle.xyz&quot;&gt;Cuttle.xyz CAD for makers&lt;/a&gt;. Because of this, it is the parametric design workflow that I&#39;m most comfortable with. This week I learned to basics of a handful of 3D CAD software, and I wanted to end the week with a &lt;a href=&quot;https://forresto.com/fab-academy/cardboard-aided-design.html&quot;&gt;physical object&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-cuttle-xyz-interface.png-BE_dhztC22-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-cuttle-xyz-interface.png-BE_dhztC22-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-cuttle-xyz-interface.png-BE_dhztC22-1280.png&quot; alt=&quot;Cuttle.xyz interface.&quot; width=&quot;1280&quot; height=&quot;746&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
@@ -43,6 +43,7 @@
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player.jpg-t0Ba6acwue-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player.jpg-t0Ba6acwue-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player.jpg-t0Ba6acwue-1280.jpeg&quot; alt=&quot;Hex box prototype.&quot; width=&quot;1280&quot; height=&quot;959&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;Scale model, made with lasercut cardstock.&lt;/p&gt;
 &lt;video src=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player-token.mp4&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;p&gt;Design share: &lt;a href=&quot;https://cuttle.xyz/@forresto/Hexagon-Box-Parametric-65WPuv1YGPgR&quot;&gt;Cuttle.xyz 2d remodel&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;See my quick &lt;a href=&quot;https://forresto.com/fab-academy/cardboard-aided-design.html&quot;&gt;rant on physical prototyping&lt;/a&gt;.&lt;/p&gt;
 &lt;h1 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h1&gt;
 &lt;ul&gt;
@@ -364,8 +365,8 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-freecad-interface.png-xIjjN0LW5D-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-freecad-interface.png-xIjjN0LW5D-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-freecad-interface.png-xIjjN0LW5D-1280.png&quot; alt=&quot;FreeCAD interface with parameters.&quot; width=&quot;1280&quot; height=&quot;777&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://forresto.com/fab-academy/02-freecad.html&quot;&gt;FreeCAD evaluation&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;cuttle.xyz&quot; tabindex=&quot;-1&quot;&gt;Cuttle.xyz&lt;/h2&gt;
-&lt;p&gt;...&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://cuttle.xyz/@forresto/Hexagon-Box-Parametric-65WPuv1YGPgR&quot;&gt;Cuttle.xyz 2d remodel&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-cuttle-xyz-interface.png-BE_dhztC22-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-cuttle-xyz-interface.png-BE_dhztC22-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-cuttle-xyz-interface.png-BE_dhztC22-1280.png&quot; alt=&quot;Cuttle.xyz interface.&quot; width=&quot;1280&quot; height=&quot;746&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://forresto.com/fab-academy/02-cuttle-xyz.html&quot;&gt;Cuttle.xyz evaluation&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;result&quot; tabindex=&quot;-1&quot;&gt;Result&lt;/h1&gt;
 &lt;p&gt;FreeCAD and SolveSpace project files: &lt;a href=&quot;https://forresto.com/fab-academy/02-project-files.zip&quot;&gt;02-project-files.zip&lt;/a&gt;.&lt;/p&gt;
 &lt;h1 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h1&gt;
