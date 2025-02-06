@@ -5,11 +5,52 @@
   <subtitle>Forrest O.&#39;s web blog wiki garden home</subtitle>
   <link href="https://forresto.com/feed.xml" rel="self" />
   <link href="https://forresto.com/" />
-  <updated>2025-02-04T00:00:00Z</updated>
+  <updated>2025-02-06T00:00:00Z</updated>
   <id>https://forresto.com/</id>
   <author>
     <name>Forrest O.</name>
   </author>
+  <entry>
+    <title>CAD – Cardboard Aided Design</title>
+    <link href="https://forresto.com/fab-academy/cardboard-aided-design.html" />
+    <updated>2025-02-06T00:00:00Z</updated>
+    <id>https://forresto.com/fab-academy/cardboard-aided-design.html</id>
+    <content type="html">&lt;p&gt;A quick rant on the importance of physical prototyping as a part of the spiral design process.&lt;/p&gt;
+&lt;p&gt;The spiral design process encourages us to build on our ideas in cycles. Instead of waiting for the perfect design, we should make a &lt;em&gt;thing&lt;/em&gt; towards that goal every week, so we can build on our previous work.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player.jpg-t0Ba6acwue-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player.jpg-t0Ba6acwue-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player.jpg-t0Ba6acwue-1280.jpeg&quot; alt=&quot;Hex box prototype.&quot; width=&quot;1280&quot; height=&quot;959&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;Scale model of music player concept, made with lasercut cardstock.&lt;/p&gt;
+&lt;p&gt;Cardboard, paper, glue, clay... cheap and accessible materials are perfect for physical prototyping as part of this spiral design process. Because the materials are not precious, we can chop, hack, remold, and remake these models as often as needed.&lt;/p&gt;
+&lt;p&gt;A design that has only existed on the screen might look good, but feel awkward. By making something physical, we can validate our ideas of how something should take up space and feel in the real world.&lt;/p&gt;
+&lt;video src=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player-token.mp4&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;p&gt;It&#39;s also easier to get feedback from friends and family with a physical object, than a 3D model on a screen. I put this in their hands to test that the scale and spacing is usable for folks with smaller hands than me. I said &amp;quot;imagine changing the music by taking this token off and putting another one on,&amp;quot; which led to good ideas about the feel and materials.&lt;/p&gt;
+&lt;p&gt;When starting &lt;a href=&quot;https://forresto.com/fab-academy/02-cad-comparison.html&quot;&gt;CAD week&lt;/a&gt; I was excited to jump into 3d modeling, but perhaps I should have started with a quicker cardboard version of my sketches to validate the basic dimensions and feel.&lt;/p&gt;
+&lt;p&gt;I felt strongly enough about this that I put my hand up in the weekly call to show my papercraft and encourage more crafty prototyping.&lt;/p&gt;
+&lt;p&gt;Share your scrappy prototypes!&lt;/p&gt;
+&lt;/video&gt;</content>
+  </entry>
+  <entry>
+    <title>Cuttle.xyz evaluation</title>
+    <link href="https://forresto.com/fab-academy/02-cuttle-xyz.html" />
+    <updated>2025-02-06T00:00:00Z</updated>
+    <id>https://forresto.com/fab-academy/02-cuttle-xyz.html</id>
+    <content type="html">&lt;p&gt;I&#39;m on the small team building &lt;a href=&quot;https://cuttle.xyz&quot;&gt;Cuttle.xyz CAD for makers&lt;/a&gt;. Because of this, it is the parametric design workflow that I&#39;m most comfortable with. This week I learned to basics of a handful of 3D CAD software, and I wanted to end the week with a &lt;a href=&quot;https://forresto.com/fab-academy/cardboard-aided-design.html&quot;&gt;physical object&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-cuttle-xyz-interface.png-BE_dhztC22-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-cuttle-xyz-interface.png-BE_dhztC22-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-cuttle-xyz-interface.png-BE_dhztC22-1280.png&quot; alt=&quot;Cuttle.xyz interface.&quot; width=&quot;1280&quot; height=&quot;746&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;Cuttle.xyz interface, showing the same component as four instances with different parameters.&lt;/p&gt;
+&lt;p&gt;Using parameters in Cuttle is different than the constraint-based modelling in &lt;a href=&quot;https://forresto.com/fab-academy/02-solvespace.html&quot;&gt;SolveSpace&lt;/a&gt; and &lt;a href=&quot;https://forresto.com/fab-academy/02-freecad.html&quot;&gt;FreeCAD&lt;/a&gt;. In Cuttle, parameters are emphasized in the interface, and there is not a concept of constraints. This means that to make shapes that a relative to each other, you have to do more math in the scale and position parameters of the shapes.&lt;/p&gt;
+&lt;p&gt;![Cuttle interface with derived parameters labelled in pink.](02-cuttle-xyz-parameters.png&lt;/p&gt;
+&lt;p&gt;Cuttle pro tip: make any reused math expressions into parameters. This screenshot labels these derived parameters where they are used in the design.&lt;/p&gt;
+&lt;h1 id=&quot;result&quot; tabindex=&quot;-1&quot;&gt;Result&lt;/h1&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player.jpg-t0Ba6acwue-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player.jpg-t0Ba6acwue-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player.jpg-t0Ba6acwue-1280.jpeg&quot; alt=&quot;Hex box prototype.&quot; width=&quot;1280&quot; height=&quot;959&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;Scale model, made with lasercut cardstock.&lt;/p&gt;
+&lt;video src=&quot;https://forresto.com/fab-academy/cardboard-aided-design-player-token.mp4&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;p&gt;See my quick &lt;a href=&quot;https://forresto.com/fab-academy/cardboard-aided-design.html&quot;&gt;rant on physical prototyping&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://cuttle.xyz/learn/getting-started-with-scripting&quot;&gt;Cuttle.xyz documentation&lt;/a&gt; and &lt;a href=&quot;https://cuttle.xyz/learn/video-tutorials&quot;&gt;videos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://nordicfablabs.gitlab.io/nordic_fablabs_bootcamp_2024/workshops/cuttlexyz/&quot;&gt;Laser cut cardstock workshop at Nordic Fablab Bootcamp&lt;/a&gt; 2024&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/video&gt;</content>
+  </entry>
   <entry>
     <title>FreeCAD evaluation</title>
     <link href="https://forresto.com/fab-academy/02-freecad.html" />
@@ -47,7 +88,7 @@
 &lt;script type=&quot;module&quot; src=&quot;https://forresto.com/js/model-viewer.min.js&quot;&gt;&lt;/script&gt;
 &lt;model-viewer src=&quot;02-solvespace-box.glb&quot; ar=&quot;&quot; ar-modes=&quot;webxr scene-viewer quick-look&quot; camera-controls=&quot;&quot; tone-mapping=&quot;neutral&quot; poster=&quot;02-solvespace-box.glb-poster.webp&quot; shadow-intensity=&quot;1&quot;&gt;
 &lt;/model-viewer&gt;
-&lt;p&gt;3D model of the &lt;a href=&quot;https://forresto.com/fab-academy/02-cad-comparison.html#sketch&quot;&gt;music player concept&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;3D model of the &lt;a href=&quot;https://forresto.com/fab-academy/02-cad-comparison.html#sketch&quot;&gt;music player concept&lt;/a&gt;. Model was exported as STEP from SolveSpace, then imported to FreeCAD, then exported as GLB.&lt;/p&gt;
 &lt;p&gt;Design file: &lt;a href=&quot;https://forresto.com/fab-academy/02-solvespace-box.slvs&quot;&gt;02-solvespace-box.slvs&lt;/a&gt;.&lt;/p&gt;
 &lt;div id=&quot;wPk5TVY0cVo&quot; class=&quot;eleventy-plugin-youtube-embed&quot; style=&quot;position:relative;width:100%;padding-top: 56.25%;&quot;&gt;&lt;iframe style=&quot;position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;&quot; width=&quot;100%&quot; height=&quot;100%&quot; frameborder=&quot;0&quot; title=&quot;Embedded YouTube video&quot; src=&quot;https://www.youtube-nocookie.com/embed/wPk5TVY0cVo&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 &lt;p&gt;This video shows the sketches, groups, and constraints that build up my part.&lt;/p&gt;
@@ -312,16 +353,19 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
 &lt;h1 id=&quot;cad-software&quot; tabindex=&quot;-1&quot;&gt;CAD software&lt;/h1&gt;
 &lt;h2 id=&quot;zoo&quot; tabindex=&quot;-1&quot;&gt;Zoo&lt;/h2&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-first-prompt-result.png-Meo1EynFni-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-zoo-first-prompt-result.png-Meo1EynFni-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-zoo-first-prompt-result.png-Meo1EynFni-1280.png&quot; alt=&quot;Zoo interface.&quot; width=&quot;1280&quot; height=&quot;779&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://forresto.com/fab-academy/02-zoo-modeling-app.html&quot;&gt;Zoo Modeling App&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://forresto.com/fab-academy/02-zoo-modeling-app.html&quot;&gt;Zoo Modeling App evaluation&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;picocad&quot; tabindex=&quot;-1&quot;&gt;picoCAD&lt;/h2&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-picocad.png-tYxW_HgIYy-512.avif 512w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-picocad.png-tYxW_HgIYy-512.webp 512w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-picocad.png-tYxW_HgIYy-512.png&quot; alt=&quot;picoCAD interface.&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://forresto.com/fab-academy/02-picocad.html&quot;&gt;picoCAD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://forresto.com/fab-academy/02-picocad.html&quot;&gt;picoCAD evaluation&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;solvespace&quot; tabindex=&quot;-1&quot;&gt;SolveSpace&lt;/h2&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-solvespace-box.png-ZJRn3GYduG-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-solvespace-box.png-ZJRn3GYduG-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-solvespace-box.png-ZJRn3GYduG-1280.png&quot; alt=&quot;SolveSpace interface.&quot; width=&quot;1280&quot; height=&quot;777&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://forresto.com/fab-academy/02-solvespace.html&quot;&gt;SolveSpace&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://forresto.com/fab-academy/02-solvespace.html&quot;&gt;SolveSpace evaluation&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;freecad&quot; tabindex=&quot;-1&quot;&gt;FreeCAD&lt;/h2&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/02-freecad-interface.png-xIjjN0LW5D-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/02-freecad-interface.png-xIjjN0LW5D-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/02-freecad-interface.png-xIjjN0LW5D-1280.png&quot; alt=&quot;FreeCAD interface with parameters.&quot; width=&quot;1280&quot; height=&quot;777&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://forresto.com/fab-academy/02-freecad.html&quot;&gt;FreeCAD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://forresto.com/fab-academy/02-freecad.html&quot;&gt;FreeCAD evaluation&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;cuttle.xyz&quot; tabindex=&quot;-1&quot;&gt;Cuttle.xyz&lt;/h2&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://cuttle.xyz/@forresto/Hexagon-Box-Parametric-65WPuv1YGPgR&quot;&gt;Cuttle.xyz 2d remodel&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;result&quot; tabindex=&quot;-1&quot;&gt;Result&lt;/h1&gt;
 &lt;p&gt;FreeCAD and SolveSpace project files: &lt;a href=&quot;https://forresto.com/fab-academy/02-project-files.zip&quot;&gt;02-project-files.zip&lt;/a&gt;.&lt;/p&gt;
 &lt;h1 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h1&gt;
@@ -409,125 +453,6 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
 &lt;p&gt;All of my recent practice in Blender Geometry Nodes has helped me to understand Meemoo&#39;s data flow in a deeper way. I wish Blender&#39;s interface had more debug views like Meemoo. You can drag any of the tweens to scrub the values, or leave it looping and tweak stuff as you go. You can do some of that in Blender, but the debug views are limited, and the node view is mostly static.&lt;/p&gt;
 &lt;p&gt;I remember @Barrett&#39;s reply to the Webflow build, something like &amp;quot;jeez man.&amp;quot;&lt;/p&gt;
 &lt;p&gt;I agree.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Week 01. Project Management</title>
-    <link href="https://forresto.com/fab-academy/01-project-management.html" />
-    <updated>2025-01-22T00:00:00Z</updated>
-    <id>https://forresto.com/fab-academy/01-project-management.html</id>
-    <content type="html">&lt;p&gt;&lt;a href=&quot;https://fabacademy.org/2025/nueval/principles_and_practices,_project_management.html&quot;&gt;This week&#39;s goals&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;principles-and-practices&quot; tabindex=&quot;-1&quot;&gt;Principles and Practices&lt;/h1&gt;
-&lt;ul class=&quot;task-list&quot;&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_0&quot; checked=&quot;true&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_0&quot;&gt; Plan and sketch a &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final-project.html&quot;&gt;potential final project&lt;/a&gt;&lt;/label&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;project-management&quot; tabindex=&quot;-1&quot;&gt;Project Management&lt;/h1&gt;
-&lt;ul class=&quot;task-list&quot;&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_1&quot; checked=&quot;true&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_1&quot;&gt; Read, sign (add your name to) the student agreement and commit it to your repo&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_2&quot; checked=&quot;true&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_2&quot;&gt; Work through a git tutorial.&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_3&quot; checked=&quot;true&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_3&quot;&gt; Build a personal website in the class archive describing yourself and your final project.&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_4&quot; checked=&quot;true&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_4&quot;&gt; Upload parts 1 and 2, to the class archive.&lt;/label&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I&#39;ve done enough git in &lt;a href=&quot;https://cuttle.xyz/about-us&quot;&gt;my day job&lt;/a&gt; to stay out of trouble. So I took this assignment as an opportunity to restructure my personal website, which I have neglected for some years.&lt;/p&gt;
-&lt;p&gt;I have a few concepts for how I&#39;d like this site to work.&lt;/p&gt;
-&lt;h2 id=&quot;file-layout&quot; tabindex=&quot;-1&quot;&gt;File Layout&lt;/h2&gt;
-&lt;p&gt;The source of the site has a simple directory structure, that gets directly translated to the built site&#39;s structure. Top level directories are collections, where each post can go. Media for related posts can be named with the same prefix. The prefix can be a number, date, or a bare name, depending on the kind of post.&lt;/p&gt;
-&lt;pre class=&quot;language-txt&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-txt&quot;&gt;|_ content/
-  |_ fab-academy/
-    |_ index.md
-    |_ 01-project-management.md
-    |_ 01-related-image.png
-    |_ 02-computer-aided-design.md
-    |_ ...
-  |_ meemoo/
-  |_ 2020s/
-  |_ ...&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Posts that don&#39;t have an obvious collection go in a &amp;quot;2020s&amp;quot; directory. I have old blog posts and letters back to the 90s that can fit with this structure.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://forresto.com/tags&quot;&gt;Tags&lt;/a&gt; bridge posts across collections.&lt;/p&gt;
-&lt;h2 id=&quot;copyright&quot; tabindex=&quot;-1&quot;&gt;Copyright&lt;/h2&gt;
-&lt;p&gt;Kris suggested that I look into&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Robots.txt&quot;&gt;robots.txt&lt;/a&gt; for search engines and web crawlers like the &lt;a href=&quot;https://web.archive.org/web/*/forresto.com&quot;&gt;Internet Archive&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/ai-robots-txt/ai.robots.txt&quot;&gt;AI list for robots.txt&lt;/a&gt; to prevent AI scraping and training&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://creativecommons.org/&quot;&gt;Creative Commons&lt;/a&gt; for choosing a license&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The lines between these are blurry to me. If my posts get scraped, archived, and trained on, is that not a (very fuzzy statistical) form of immortality? Can my weird ideas bend the weights of models that will be used to make decisions in the future?&lt;/p&gt;
-&lt;p&gt;I&#39;ve admired Creative Commons for a long time, and it would make me happy for humans to use and remix my work. I appreciate attribution, so encoding that into my copyright notice makes sense. If people or AI companies ignore that request, then there&#39;s not much I can do about it, other than not publish.&lt;/p&gt;
-&lt;h2 id=&quot;publishing&quot; tabindex=&quot;-1&quot;&gt;Publishing&lt;/h2&gt;
-&lt;p&gt;My plan is to copy the HTML output of my own site&#39;s &amp;quot;fab-academy&amp;quot; output directory to my Fab Academy repo. I can also simlink just this &lt;code&gt;/content/fab-academy&lt;/code&gt; directory, in order to build a partial version of the site with tweaks for Fab Academy.&lt;/p&gt;
-&lt;p&gt;The source of the full site and commits are visible on Github: &lt;a href=&quot;https://github.com/forresto/forresto.com&quot;&gt;forresto/forresto.com&lt;/a&gt;. I&#39;ll use Github Actions for building and gh-pages for hosting.&lt;/p&gt;
-&lt;h2 id=&quot;to-do&quot; tabindex=&quot;-1&quot;&gt;To do&lt;/h2&gt;
-&lt;ul class=&quot;task-list&quot;&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_5&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_5&quot;&gt; Move more recent projects to the personal site collections.&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_6&quot; disabled=&quot;true&quot;&gt;&lt;label for=&quot;cbx_6&quot;&gt; Render home and archive post lists with thumbnail images. Make it more visual.&lt;/label&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;credit&quot; tabindex=&quot;-1&quot;&gt;Credit&lt;/h1&gt;
-&lt;h2 id=&quot;eleventy-static-site-generator&quot; tabindex=&quot;-1&quot;&gt;Eleventy static site generator&lt;/h2&gt;
-&lt;p&gt;To build this new site, I started with the &lt;a href=&quot;https://github.com/11ty/eleventy-base-blog&quot;&gt;Eleventy Base Blog v9&lt;/a&gt;. I considered other static site generators, but I ended up having more opinions than the simpler &amp;quot;opinionated&amp;quot; options allow.&lt;/p&gt;
-&lt;p&gt;I like that the base blog comes with the &lt;a href=&quot;https://www.11ty.dev/docs/plugins/image/&quot;&gt;eleventy-img&lt;/a&gt; plugin set up and configured. With that my source Markdown can be simply:&lt;/p&gt;
-&lt;pre class=&quot;language-markdown&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token url&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;[&lt;span class=&quot;token content&quot;&gt;studio wall&lt;/span&gt;](&lt;span class=&quot;token url&quot;&gt;studio-wall.jpg&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Which becomes fancy HTML:&lt;/p&gt;
-&lt;pre class=&quot;language-html&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;picture&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;source&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;image/avif&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;srcset&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;studio-wall-1280-1100.avif&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;source&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;image/webp&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;srcset&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;studio-wall-1280-1100.webp&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;studio wall&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;loading&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;lazy&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;decoding&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;async&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;studio-wall-1280-1100.jpg&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;1280&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;1100&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;picture&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;While the site is building, the plugin measures the source image and makes variants with different file types. By including the &lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt; attributes, the layout will not shift as the page content loads. By including alternate file types, the browser can choose the best one for the user&#39;s device and network conditions.&lt;/p&gt;
-&lt;p&gt;This seems like a perfect division.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;the &amp;quot;source of truth&amp;quot; that I take care of&lt;/li&gt;
-&lt;li&gt;the &amp;quot;published artifact&amp;quot; that the build process takes care of&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I have not seen the same flow for videos, but it should be possible.&lt;/p&gt;
-&lt;p&gt;There was a bug with how I set up the &amp;quot;posts&amp;quot; collection, so &lt;a href=&quot;https://github.com/11ty/eleventy/issues/3630&quot;&gt;I reported the bug to Eleventy&lt;/a&gt;, and hopefully that will help, at least to clarify the docs as to what might be going on.&lt;/p&gt;
-&lt;h2 id=&quot;ai-use&quot; tabindex=&quot;-1&quot;&gt;AI Use&lt;/h2&gt;
-&lt;p&gt;I like that Fab Academy is stressing that use of AI should be documented. To give credit to the model and prompt that you use to generate work seems like a good practice.&lt;/p&gt;
-&lt;p&gt;I use &lt;a href=&quot;https://zed.dev&quot;&gt;Zed editor&lt;/a&gt; to write posts and hack on the site templates and configuration. It comes with a version of Claude 3.5 Sonnet that you can chat with. The user experience is between chat and collaborative document. You have to choose which open tabs go into the chat context. I like that the control that this gives, and I like that I can roll back in the chat and delete some back and forth if we&#39;re going off the rails.&lt;/p&gt;
-&lt;p&gt;And it does go off the rails. Hallucination is how it works, so the text that it generates can&#39;t ever be fully trusted. Eleventy is a long-lived project, which is good because Calude knows about it. It can also be annoying, when it repeats suggestions that I&#39;ve learned are from earlier versions, that can use broken or deprecated features.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;(I haven&#39;t tried downloading the &lt;a href=&quot;https://github.com/11ty/11ty-website/tree/main/src/docs&quot;&gt;Eleventy documentation source Markdown files&lt;/a&gt; for the version that I&#39;m using and putting that in the context. That might be too many tokens. Could be worth trying.)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Ultimately, I think it&#39;s a good &lt;a href=&quot;https://en.wikipedia.org/wiki/Rubber_duck_debugging&quot;&gt;rubber duck&lt;/a&gt; partner. Except a talkative BS-ing confident rubber duck. That can sometimes be helpful.&lt;/p&gt;
-&lt;p&gt;Here is an example of one of the prompts that I reused to provide context in several sessions.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;here is the structure of my 11ty site content:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;/dir-1/
-|_ index.md
-|_ post-1.md
-|_ post-2.md
-/dir-2/
-|_ post-3.md
-|_ post-4.md
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;On the &amp;quot;archive&amp;quot; page, I want a list of the directories, and count of posts per directory.&lt;/p&gt;
-&lt;p&gt;On each directory page, I want the content of index.md (optional) and a list of the posts.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;While writing this post, I noticed that the inline code completions know about Fab Academy&#39;s weeks.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.avif 765w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.webp 765w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/01-ai-knows-fab-academy.png-o-OZyJdOnz-765.png&quot; alt=&quot;code completion knows that week 3 is computer controlled cutting&quot; width=&quot;765&quot; height=&quot;275&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;Did it surmise this from the text checklist in &lt;a href=&quot;https://forresto.com/&quot;&gt;index.md&lt;/a&gt;? Either that or it knows this from training, which seems possible, given how much documentation exists over the years for Fab Academy.&lt;/p&gt;
-&lt;h1 id=&quot;documentation-feature-requests&quot; tabindex=&quot;-1&quot;&gt;Documentation feature requests&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;It would be nice to paste an image into a Markdown file in Zed. Now, I have to paste a screenshot into Preview.app, then name and save the image file, then make the Markdown image tag. Apparently that&#39;s a feature in VSCode now, so &lt;a href=&quot;https://github.com/zed-industries/zed/discussions/24073&quot;&gt;I made a Zed feature request&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Fab Academy requests relative links in our documentation site, and that goes against the grain of the static site builder that I decided to use. It took a while to find a plugin API to use that helped me solve the problem pretty well. I documented my &lt;a href=&quot;https://github.com/11ty/eleventy/discussions/2516#discussioncomment-11999750&quot;&gt;11ty relative links plugin on Github&lt;/a&gt; and &lt;a href=&quot;https://stackoverflow.com/questions/57370564/how-to-have-relative-paths-in-eleventy/79402772#79402772&quot;&gt;Stack Overflow&lt;/a&gt;, the top search results for &amp;quot;11ty relative links&amp;quot;, where there were only partial fixes posted before. I started a conversation with &lt;a href=&quot;https://xoxo.zone/@forresto/113913565699389935&quot;&gt;Eleventy on Mastodon&lt;/a&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;fab-academy-feedback&quot; tabindex=&quot;-1&quot;&gt;Fab Academy Feedback&lt;/h1&gt;
-&lt;p&gt;The importance of resizing images before committing has been stressed a bunch, taking up time in the lectures and spaces in the chat. But I think that concern is a bit outdated. If we have to decide between time spent documenting, and time spent wrangling media files... Let the machines do the media busy work!&lt;/p&gt;
-&lt;h1 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion&lt;/h1&gt;
-&lt;p&gt;My new website setup isn&#39;t ideal. There is more friction to doing documentation than my Notion &lt;a href=&quot;https://fopub.notion.site/2942db42f3d14348b382696c0296971d?v=ccfdc55d9fc347f4bf8661aa22f43c8c&quot;&gt;Blender Learning jounal&lt;/a&gt;. But I think it&#39;s a step in right direction that I only need to manage Markdown and media files, and the build process takes care of indexing and image sizing and formats. And the static HTML output loads and renders quickly. ⚡️&lt;/p&gt;
-&lt;p&gt;I&#39;ll keep tinkering with the site, but this setup is good enough for now. If I were designing a system for other people to use I could spend a long time filing off the rough edges. I like that Fab Academy doesn&#39;t tell people how to do the assignments, but presents lots of potential options. It will be interesting to see the many different ways that people solve the tasks.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>2023 Studio Wall (annotated)</title>
-    <link href="https://forresto.com/2020s/2023-studio-wall.html" />
-    <updated>2023-05-03T00:00:00Z</updated>
-    <id>https://forresto.com/2020s/2023-studio-wall.html</id>
-    <content type="html">&lt;p&gt;Before we moved, I captured the state of my corner &amp;quot;studio&amp;quot; wall. I had set it up with tape-backed steel strips to be able to attach things with magnets, which worked fairly well. It was full of paper art and experiments from me and other other folks.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/2020s/2023-studio-wall.jpg-98AX_o3E0x-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/2020s/2023-studio-wall.jpg-98AX_o3E0x-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/2020s/2023-studio-wall.jpg-98AX_o3E0x-1280.jpeg&quot; alt=&quot;studio wall&quot; width=&quot;1280&quot; height=&quot;1100&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;I then made an interactive version with videos, notes, and links.&lt;/p&gt;
-&lt;iframe src=&quot;https://www.tldraw.com/v/v6A_c_7v_-jVmHBfdM7qeoZeJR?d=v-1122.-737.3656.2689.BypPvkT29lod8hatRpQON&quot; width=&quot;1280&quot; height=&quot;720&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.tldraw.com/v/v6A_c_7v_-jVmHBfdM7qeoZeJR?d=v-1122.-737.3656.2689.BypPvkT29lod8hatRpQON&quot;&gt;Made with Tldraw&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Bring back image maps!&lt;/em&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
