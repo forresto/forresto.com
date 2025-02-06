@@ -1,6 +1,11 @@
 ---
 title: Cuttle.xyz evaluation
 date: 2025-02-05
+tags:
+  - cad
+  - 2d
+  - parametric
+  - cloud
 ---
 
 I'm on the small team building [Cuttle CAD for makers](https://cuttle.xyz). It is a browser-based 2D design app, with parametric and scripting features. Because of this, it is the parametric design workflow that I'm most comfortable with. This week I learned the basics of a handful of 3D CAD software, and I wanted to end the week with a [physical object](cardboard-aided-design.md).
@@ -14,6 +19,10 @@ Using parameters in Cuttle is different than the constraint-based modelling in [
 ![Cuttle interface with derived parameters labelled in pink.](02-cuttle-xyz-parameters.png)
 
 Cuttle pro tip: make any reused math expressions into parameters. This screenshot labels these derived parameters where they are used in the design.
+
+![Cuttle read me simplified view with download button and parameter inputs.](02-cuttle-xyz-simplified-published-view.png)
+
+Cuttle projects have a "read me" section where you can add documentation of your project, and embed certain components. The parameters list in this view is simplified; the derived parameters are hidden.
 
 # Result
 
