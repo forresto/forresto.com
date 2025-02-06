@@ -26,6 +26,12 @@ It's also easier to get feedback from friends and family with a physical object,
 
 When starting [CAD week](02-cad-comparison.md) I was excited to jump into 3d modeling, but perhaps I should have started with a quicker cardboard version of my sketches to validate the basic dimensions and feel.
 
-I felt strongly enough about this that I put my hand up in the weekly call to show my papercraft and encourage more crafty prototyping.
+I felt strongly enough about this that I put my hand up in the weekly call to show my papercraft and encourage more crafty prototyping. ✋
 
 Share your scrappy prototypes!
+
+# Read More
+
+* [Tips for prototyping with cardboard](https://sendcutsend.com/blog/5-tips-for-prototyping-from-cardboard-to-cad/) from SendCutSend.
+* Todepond's advocacy of ["sharing scrappy fiddles"](https://www.todepond.com/feed/?search=scrappy).
+* Bret Victor on [escaping pictures under glass](https://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/).
