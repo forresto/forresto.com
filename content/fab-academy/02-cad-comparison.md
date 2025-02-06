@@ -32,31 +32,36 @@ Sketching some views on paper seems like a good way to start the CAD process. �
 
 ![Zoo interface.](02-zoo-first-prompt-result.png)
 
-[Zoo Modeling App evaluation](02-zoo-modeling-app.md)
+[Zoo Modeling App evaluation](02-zoo-modeling-app.md) – interesting demo, but not ready for real-world use.
 
 ## picoCAD
 
 ![picoCAD interface.](02-picocad.png)
 
-[picoCAD evaluation](02-picocad.md)
+[picoCAD evaluation](02-picocad.md) – delightful retro "3D pixel art" CAD toy.
 
 ## SolveSpace
 
 ![SolveSpace interface.](02-solvespace-box.png)
 
-[SolveSpace evaluation](02-solvespace.md)
+[SolveSpace evaluation](02-solvespace.md) – steep learning curve, sleek app.
 
 ## FreeCAD
 
 ![FreeCAD interface with parameters.](02-freecad-interface.png)
 
-[FreeCAD evaluation](02-freecad.md)
+[FreeCAD evaluation](02-freecad.md) – steep learning curve, a bit clunky, but includes the kitchen sink.
 
 ## Cuttle.xyz
 
 ![Cuttle.xyz interface.](02-cuttle-xyz-interface.png)
 
-[Cuttle.xyz evaluation](02-cuttle-xyz.md)
+[Cuttle.xyz evaluation](02-cuttle-xyz.md) – browser-based 2D parametric. Subscription software, which pays my bills.
+
+# Other
+
+* Blender: Geometry Nodes and CAD Sketcher
+* Other commercial software. I might get around to evaluating more, but I feel like I have plenty of room to grow with the open source tools.
 
 # Result
 
