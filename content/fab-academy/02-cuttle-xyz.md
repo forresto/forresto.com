@@ -1,6 +1,6 @@
 ---
 title: Cuttle.xyz evaluation
-date: 2025-02-06
+date: 2025-02-05
 ---
 
 I'm on the small team building [Cuttle.xyz CAD for makers](https://cuttle.xyz). Because of this, it is the parametric design workflow that I'm most comfortable with. This week I learned to basics of a handful of 3D CAD software, and I wanted to end the week with a [physical object](cardboard-aided-design.md).
@@ -22,6 +22,8 @@ Cuttle pro tip: make any reused math expressions into parameters. This screensho
 Scale model, made with lasercut cardstock.
 
 <video src="cardboard-aided-design-player-token.mp4" autoplay muted loop>
+
+Design share: [Cuttle.xyz 2d remodel](https://cuttle.xyz/@forresto/Hexagon-Box-Parametric-65WPuv1YGPgR)
 
 See my quick [rant on physical prototyping](cardboard-aided-design.md).
 

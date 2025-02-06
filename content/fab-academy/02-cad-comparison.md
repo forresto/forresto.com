@@ -54,9 +54,9 @@ Sketching some views on paper seems like a good way to start the CAD process. âœ
 
 ## Cuttle.xyz
 
-...
+![Cuttle.xyz interface.](02-cuttle-xyz-interface.png)
 
-[Cuttle.xyz 2d remodel](https://cuttle.xyz/@forresto/Hexagon-Box-Parametric-65WPuv1YGPgR)
+[Cuttle.xyz evaluation](02-cuttle-xyz.md)
 
 # Result
 
