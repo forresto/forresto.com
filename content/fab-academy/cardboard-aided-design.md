@@ -14,7 +14,7 @@ The spiral design process encourages us to build on our ideas in cycles. Instead
 
 ![Hex box prototype.](cardboard-aided-design-player.jpg)
 
-Scale model of music player concept, made with lasercut cardstock.
+Scale [model of music player concept](02-cuttle-xyz.md), made with lasercut cardstock.
 
 Cardboard, paper, glue, clay... cheap and accessible materials are perfect for physical prototyping as part of this spiral design process. Because the materials are not precious, we can chop, hack, remold, and remake these models as often as needed.
 

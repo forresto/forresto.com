@@ -32,6 +32,11 @@ This section is mirrored from [my personal site](https://www.forresto.com/fab-ac
 - [ ] Week 17. Invention, intellectual property and income
 - [ ] Week 18. Project development
 
+# Extra
+
+- [Embedding 3D models on the web](model-viewer-web-3d.md) – your designs in your docs. 🌐
+- [Cardboard Aided Design](cardboard-aided-design.md) – get crafty as a regular part of your design process. 📦
+
 # Resources
 
 * [Google site: search](https://www.google.com/search?q=site%3Ahttps%3A%2F%2Ffabacademy.org)
