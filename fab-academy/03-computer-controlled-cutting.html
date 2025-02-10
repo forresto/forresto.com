@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Week 03. Computer Controlled Cutting (WIP)</title>
+    <meta property="og:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2Fforresto.com%2Ffab-academy%2F03-computer-controlled-cutting.html/opengraph/bigger/">
+
+		<link rel="alternate" href="../feed.xml" type="application/atom+xml" title="Forrest O. Interactive">
+
+		<meta name="generator" content="Eleventy v3.0.0">
+
+		<link rel="icon" type="image/png" href="../favicon.png">
+		
+		<link rel="stylesheet" href="../dist/pkEaAJEeF-.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="../" class="home-link">Forrest O. Interactive</a>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="../">Home</a></li>
+					<li class="nav-item"><a href="./">Fab</a></li>
+					<li class="nav-item"><a href="../archive.html">Archive</a></li>
+					<li class="nav-item"><a href="../about.html">About</a></li>
+					<li class="nav-item"><a href="../feeds.html">Feeds</a></li>
+				</ul>
+			</nav>
+
+			<theme-switch></theme-switch>
+		</header>
+
+		<main id="skip">
+			
+
+
+
+	<nav><a href="../archive.html">Archive</a> | <a href="./">fab-academy</a></nav>
+
+
+<h1>Week 03. Computer Controlled Cutting (WIP)</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2025-02-10">2025, February 10</time></li>
+</ul>
+
+<div class="columns">
+
+<aside>
+  <nav class="toc"><ul><li><a href="#group-work">Group work</a><ul><li><a href="#laser-speed-and-power-test-cut-matrix">Laser speed and power test cut matrix</a></li>
+<li><a href="#laser-testing">Laser testing</a></li>
+<li><a href="#tiny-fire">Tiny fire</a></li></ul></li></ul></nav>
+</aside>
+
+<article>
+	<h1 id="group-work" tabindex="-1">Group work</h1>
+<p>The group work for the week was to do some test cuts to characterize the realationship of the speed and power settings on the laser cutter. I'm a group of one, building on last year's group work.</p>
+<h2 id="laser-speed-and-power-test-cut-matrix" tabindex="-1">Laser speed and power test cut matrix</h2>
+<p><picture><source type="image/avif" srcset="./03-cuttle-parametric-colors.png-NS1jKzSGMO-1280.avif 1280w"><source type="image/webp" srcset="./03-cuttle-parametric-colors.png-NS1jKzSGMO-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-cuttle-parametric-colors.png-NS1jKzSGMO-1280.png" alt="Cuttle setup for parametric stroke colors" width="1280" height="696"></picture></p>
+<p>Parametric colors for the grid of rectangles.</p>
+<p><picture><source type="image/avif" srcset="./03-cuttle-parametric-labels.png-aKyVKAv2FW-1280.avif 1280w"><source type="image/webp" srcset="./03-cuttle-parametric-labels.png-aKyVKAv2FW-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-cuttle-parametric-labels.png-aKyVKAv2FW-1280.png" alt="Cuttle setup for parametric labels." width="1280" height="724"></picture></p>
+<p>By making the labels parametric, I was able to make testers for different materials without changing the design. I used a pattern with the paramters that each line of the text input becomes a label. Cuttle supports JavaScript in the parameters, so I made derived parameters like this:</p>
+<pre class="language-js" tabindex="0"><code class="language-js">_powers <span class="token operator">=</span> powers<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">)</span>
+_speeds <span class="token operator">=</span> speeds<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">)</span></code></pre>
+<p>This makes arrays of strings, one for each label. Then in the <strong>Linear Repeat</strong> modifier, I select &quot;customize each repetition&quot; which makes a <code>rep</code> index variable in the context of the repear modifier. In the label text I add the expression <code>_powers[rep]</code>.</p>
+<p>All of this scripting is hidden away in the packaged view, when I make the design public on Cuttle.xyz.</p>
+<p><picture><source type="image/avif" srcset="./03-cuttle-laser-tester.png-GFDGyJgVYj-1280.avif 1280w"><source type="image/webp" srcset="./03-cuttle-laser-tester.png-GFDGyJgVYj-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-cuttle-laser-tester.png-GFDGyJgVYj-1280.png" alt="Cuttle parametric test cut design." width="1280" height="580"></picture></p>
+<p>Design source: <a href="https://cuttle.xyz/@forresto/Laser-Tester-yTS7qaH2wYmv">Cuttle Parametric Laser Tester</a>.</p>
+<h2 id="laser-testing" tabindex="-1">Laser testing</h2>
+<p>Aalto Fablab's laser cutter is an Epilog Fusion Pro. It had some maintenance the day before. It is nominally 80w, but the tube is well-loved and according the the folks that did the maintenance it is closer to 35w now. So it is due for a tube replacement.</p>
+<p><picture><source type="image/avif" srcset="./03-laser-test-compare.jpg-8h0_1d2YZT-1280.avif 1280w"><source type="image/webp" srcset="./03-laser-test-compare.jpg-8h0_1d2YZT-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-laser-test-compare.jpg-8h0_1d2YZT-1280.jpeg" alt="2024 test results compared with 2025." width="1280" height="725"></picture></p>
+<p>Since the machine was recently serviced, it was interesting to compare to last year's test cuts. The results are very similar.</p>
+<p><picture><source type="image/avif" srcset="./03-laser-test-4mm-ply.jpg-_4TUOeVz2M-1280.avif 1280w"><source type="image/webp" srcset="./03-laser-test-4mm-ply.jpg-_4TUOeVz2M-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-laser-test-4mm-ply.jpg-_4TUOeVz2M-1280.jpeg" alt="Laser test cut with 4mm plywood. Speed 5 power 75 was the best." width="1280" height="570"></picture></p>
+<p>Note that my 4mm plywood had masking tape applied, so this photo doesn't show the smoke marks that would have been present. I have not been able to avoid charing and smoke marks while using this machine with plywood.</p>
+<p>When the tube is replaced I can redo these tests with the same parameters, and compare the results.</p>
+<h2 id="tiny-fire" tabindex="-1">Tiny fire</h2>
+<p>I made my first fire with the laser cutter. While doing the cardboard test cut, the rectangle with the least speed and most power had a small fire on the back of the material. It put itself out fast enough that it did not reach the front of the material, so I didn't notice until I removed it from the machine.</p>
+<p>Since cardboard cuts well at 20s 50p, there is no reason to use 5s 75p! ⚠️</p>
+
+</article>
+
+</div>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="./cardboard-aided-design.html">CAD – Cardboard Aided Design</a></li>
+</ul>
+
+		</main>
+
+		<footer>
+			<p>Forrest O. Interactive is my WIP web blog wiki garden, built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
+
+			<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless otherwise noted, <span property="dct:title">Forrest O. Interactive</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<picture><source type="image/avif" srcset="../img/cc.svg-FRC2GTPyJx-44.avif 44w"><source type="image/webp" srcset="../img/cc.svg-FRC2GTPyJx-44.webp 44w"><img loading="lazy" decoding="async" src="../img/cc.svg-FRC2GTPyJx-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture><picture><source type="image/avif" srcset="../img/by.svg-R3XBmYTpOG-44.avif 44w"><source type="image/webp" srcset="../img/by.svg-R3XBmYTpOG-44.webp 44w"><img loading="lazy" decoding="async" src="../img/by.svg-R3XBmYTpOG-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture></a></p>
+
+		</footer>
+
+		<script type="module" src="../dist/_t5XYB3gem.js"></script>
+	</body>
+</html>

@@ -5,11 +5,41 @@
   <subtitle>Forrest O.&#39;s web blog wiki garden home</subtitle>
   <link href="https://forresto.com/feed.xml" rel="self" />
   <link href="https://forresto.com/" />
-  <updated>2025-02-06T00:00:00Z</updated>
+  <updated>2025-02-10T00:00:00Z</updated>
   <id>https://forresto.com/</id>
   <author>
     <name>Forrest O.</name>
   </author>
+  <entry>
+    <title>Week 03. Computer Controlled Cutting (WIP)</title>
+    <link href="https://forresto.com/fab-academy/03-computer-controlled-cutting.html" />
+    <updated>2025-02-10T00:00:00Z</updated>
+    <id>https://forresto.com/fab-academy/03-computer-controlled-cutting.html</id>
+    <content type="html">&lt;h1 id=&quot;group-work&quot; tabindex=&quot;-1&quot;&gt;Group work&lt;/h1&gt;
+&lt;p&gt;The group work for the week was to do some test cuts to characterize the realationship of the speed and power settings on the laser cutter. I&#39;m a group of one, building on last year&#39;s group work.&lt;/p&gt;
+&lt;h2 id=&quot;laser-speed-and-power-test-cut-matrix&quot; tabindex=&quot;-1&quot;&gt;Laser speed and power test cut matrix&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/03-cuttle-parametric-colors.png-NS1jKzSGMO-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/03-cuttle-parametric-colors.png-NS1jKzSGMO-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/03-cuttle-parametric-colors.png-NS1jKzSGMO-1280.png&quot; alt=&quot;Cuttle setup for parametric stroke colors&quot; width=&quot;1280&quot; height=&quot;696&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;Parametric colors for the grid of rectangles.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/03-cuttle-parametric-labels.png-aKyVKAv2FW-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/03-cuttle-parametric-labels.png-aKyVKAv2FW-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/03-cuttle-parametric-labels.png-aKyVKAv2FW-1280.png&quot; alt=&quot;Cuttle setup for parametric labels.&quot; width=&quot;1280&quot; height=&quot;724&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;By making the labels parametric, I was able to make testers for different materials without changing the design. I used a pattern with the paramters that each line of the text input becomes a label. Cuttle supports JavaScript in the parameters, so I made derived parameters like this:&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;_powers &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; powers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&#92;n&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+_speeds &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; speeds&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&#92;n&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This makes arrays of strings, one for each label. Then in the &lt;strong&gt;Linear Repeat&lt;/strong&gt; modifier, I select &amp;quot;customize each repetition&amp;quot; which makes a &lt;code&gt;rep&lt;/code&gt; index variable in the context of the repear modifier. In the label text I add the expression &lt;code&gt;_powers[rep]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;All of this scripting is hidden away in the packaged view, when I make the design public on Cuttle.xyz.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/03-cuttle-laser-tester.png-GFDGyJgVYj-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/03-cuttle-laser-tester.png-GFDGyJgVYj-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/03-cuttle-laser-tester.png-GFDGyJgVYj-1280.png&quot; alt=&quot;Cuttle parametric test cut design.&quot; width=&quot;1280&quot; height=&quot;580&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;Design source: &lt;a href=&quot;https://cuttle.xyz/@forresto/Laser-Tester-yTS7qaH2wYmv&quot;&gt;Cuttle Parametric Laser Tester&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;laser-testing&quot; tabindex=&quot;-1&quot;&gt;Laser testing&lt;/h2&gt;
+&lt;p&gt;Aalto Fablab&#39;s laser cutter is an Epilog Fusion Pro. It had some maintenance the day before. It is nominally 80w, but the tube is well-loved and according the the folks that did the maintenance it is closer to 35w now. So it is due for a tube replacement.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/03-laser-test-compare.jpg-8h0_1d2YZT-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/03-laser-test-compare.jpg-8h0_1d2YZT-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/03-laser-test-compare.jpg-8h0_1d2YZT-1280.jpeg&quot; alt=&quot;2024 test results compared with 2025.&quot; width=&quot;1280&quot; height=&quot;725&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;Since the machine was recently serviced, it was interesting to compare to last year&#39;s test cuts. The results are very similar.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/fab-academy/03-laser-test-4mm-ply.jpg-_4TUOeVz2M-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/fab-academy/03-laser-test-4mm-ply.jpg-_4TUOeVz2M-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/fab-academy/03-laser-test-4mm-ply.jpg-_4TUOeVz2M-1280.jpeg&quot; alt=&quot;Laser test cut with 4mm plywood. Speed 5 power 75 was the best.&quot; width=&quot;1280&quot; height=&quot;570&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;Note that my 4mm plywood had masking tape applied, so this photo doesn&#39;t show the smoke marks that would have been present. I have not been able to avoid charing and smoke marks while using this machine with plywood.&lt;/p&gt;
+&lt;p&gt;When the tube is replaced I can redo these tests with the same parameters, and compare the results.&lt;/p&gt;
+&lt;h2 id=&quot;tiny-fire&quot; tabindex=&quot;-1&quot;&gt;Tiny fire&lt;/h2&gt;
+&lt;p&gt;I made my first fire with the laser cutter. While doing the cardboard test cut, the rectangle with the least speed and most power had a small fire on the back of the material. It put itself out fast enough that it did not reach the front of the material, so I didn&#39;t notice until I removed it from the machine.&lt;/p&gt;
+&lt;p&gt;Since cardboard cuts well at 20s 50p, there is no reason to use 5s 75p! ⚠️&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>CAD – Cardboard Aided Design</title>
     <link href="https://forresto.com/fab-academy/cardboard-aided-design.html" />
@@ -453,20 +483,6 @@ Sketch from &lt;a href=&quot;https://forresto.com/fab-academy/01-potential-final
 &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Active_shutter_3D_system&quot;&gt;Active shutter 3D glasses&lt;/a&gt; could be a source of &lt;em&gt;liquid crystal cell&lt;/em&gt; components, though smaller would be better to fit more.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://weldingpros.net/how-do-auto-darkening-welding-helmets-work/&quot;&gt;Auto Darkening Welding Helmet&lt;/a&gt; forehead-sized solar panel is enough to darken this style of welding mask, so I think it&#39;s feasible, if I can keep the electronics efficient enough.&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Meemoo Video Transition Loop</title>
-    <link href="https://forresto.com/meemoo/meemoo-video-transition-loop.html" />
-    <updated>2025-01-25T00:00:00Z</updated>
-    <id>https://forresto.com/meemoo/meemoo-video-transition-loop.html</id>
-    <content type="html">&lt;p&gt;Meemoo jam...&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://app.meemoo.org/#gist/35e3b45b5fb0ab1e0625c4410da84105&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop.png-JnK-o6CZ7Z-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop.png-JnK-o6CZ7Z-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/meemoo/2025-01-25-meemoo-video-transition-loop.png-JnK-o6CZ7Z-1280.png&quot; alt=&quot;Meemoo.org nodes and wires interface with tweens driving an endlessly looping video&quot; width=&quot;1280&quot; height=&quot;896&quot;&gt;&lt;/picture&gt; Meemoo app&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;(I should make an auto-embedder for Meemoo URLs.)&lt;/p&gt;
-&lt;p&gt;I made this in &amp;quot;IX2&amp;quot; the interaction system in Webflow, c. 2019. Today I remade the composition in Meemoo, and I liked tweaking the numbers like this, with stacked tweens. The video loop and the scale and translation loops are independent.&lt;/p&gt;
-&lt;p&gt;All of my recent practice in Blender Geometry Nodes has helped me to understand Meemoo&#39;s data flow in a deeper way. I wish Blender&#39;s interface had more debug views like Meemoo. You can drag any of the tweens to scrub the values, or leave it looping and tweak stuff as you go. You can do some of that in Blender, but the debug views are limited, and the node view is mostly static.&lt;/p&gt;
-&lt;p&gt;I remember @Barrett&#39;s reply to the Webflow build, something like &amp;quot;jeez man.&amp;quot;&lt;/p&gt;
-&lt;p&gt;I agree.&lt;/p&gt;
 </content>
   </entry>
 </feed>
