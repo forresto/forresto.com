@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Week 03. Computer Controlled Cutting (WIP)</title>
+		<title>Week 03. Computer Controlled Cutting</title>
     <meta property="og:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2Fforresto.com%2Ffab-academy%2F03-computer-controlled-cutting.html/opengraph/bigger/">
 
 		<link rel="alternate" href="../feed.xml" type="application/atom+xml" title="Forrest O. Interactive">
@@ -41,7 +41,7 @@
 	<nav><a href="../archive.html">Archive</a> | <a href="./">fab-academy</a></nav>
 
 
-<h1>Week 03. Computer Controlled Cutting (WIP)</h1>
+<h1>Week 03. Computer Controlled Cutting</h1>
 
 <ul class="post-metadata">
 	<li><time datetime="2025-02-10">2025, February 10</time></li>
@@ -50,8 +50,10 @@
 <div class="columns">
 
 <aside>
-  <nav class="toc"><ul><li><a href="#cnc-cutting">CNC Cutting</a></li>
-<li><a href="#construction-kit">Construction Kit</a><ul><li><a href="#design">Design</a></li></ul></li>
+  <nav class="toc"><ul><li><a href="#cnc-cutting">CNC Cutting</a><ul><li><a href="#sticker-design">Sticker Design</a></li>
+<li><a href="#sticker-cutting">Sticker Cutting</a></li>
+<li><a href="#open-questions">Open Questions</a></li></ul></li>
+<li><a href="#construction-kit">Construction Kit</a><ul><li><a href="#kit-design">Kit Design</a></li></ul></li>
 <li><a href="#group-work">Group work</a><ul><li><a href="#laser-speed-and-power-test-cut-matrix">Laser speed and power test cut matrix</a></li>
 <li><a href="#laser-testing">Laser testing</a></li>
 <li><a href="#tiny-fire">Tiny fire</a></li></ul></li></ul></nav>
@@ -59,22 +61,31 @@
 
 <article>
 	<h1 id="cnc-cutting" tabindex="-1">CNC Cutting</h1>
-<p>Stickers!</p>
-<p><picture><source type="image/avif" srcset="./03-roland-calibration-off.jpg-g1lxGqLkek-1280.avif 1280w"><source type="image/webp" srcset="./03-roland-calibration-off.jpg-g1lxGqLkek-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-roland-calibration-off.jpg-g1lxGqLkek-1280.jpeg" alt="alt text" width="1280" height="689"></picture></p>
-<p>Calibration off!</p>
-<p><picture><source type="image/avif" srcset="./03-roland-calibration-test.jpg-S4PHFGO8_P-1280.avif 1280w"><source type="image/webp" srcset="./03-roland-calibration-test.jpg-S4PHFGO8_P-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-roland-calibration-test.jpg-S4PHFGO8_P-1280.jpeg" alt="alt text" width="1280" height="1280"></picture></p>
-<p>Calibration fixer!</p>
-<p><picture><source type="image/avif" srcset="./03-roland-calibration-good.jpg-bMFw_wHVbw-1280.avif 1280w"><source type="image/webp" srcset="./03-roland-calibration-good.jpg-bMFw_wHVbw-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-roland-calibration-good.jpg-bMFw_wHVbw-1280.jpeg" alt="alt text" width="1280" height="960"></picture></p>
-<p>Calibration fixed!</p>
+<p><picture><source type="image/avif" srcset="./03-Roland-VersaSTUDIO-BN2-20A.jpg-2dGE_mxvNb-1280.avif 1280w"><source type="image/webp" srcset="./03-Roland-VersaSTUDIO-BN2-20A.jpg-2dGE_mxvNb-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-Roland-VersaSTUDIO-BN2-20A.jpg-2dGE_mxvNb-1280.jpeg" alt="Roland VersaSTUDIO BN2-20A." width="1280" height="834"></picture></p>
+<p>Roland VersaSTUDIO BN2-20A print and cut machine. This machine is new to me and Aalto Fablab, and I wanted to learn the basics of the print and cut workflow.</p>
+<h2 id="sticker-design" tabindex="-1">Sticker Design</h2>
+<p>The Sierpinksi curve is a shape that I've come back to many times, both analog and code. Here's <a href="https://observablehq.com/@forresto/sierpinski-curve-animation">an animated version</a>, and here's one made by <a href="https://www.youtube.com/watch?v=UCET30r5E2I">walking in the snow</a>.</p>
+<p><picture><source type="image/avif" srcset="./03-computer-controlled-cutting.md-image-2.png-h6rRFBI9XE-1280.avif 1280w"><source type="image/webp" srcset="./03-computer-controlled-cutting.md-image-2.png-h6rRFBI9XE-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-computer-controlled-cutting.md-image-2.png-h6rRFBI9XE-1280.png" alt="Cuttle interface showing parametric color and expand." width="1280" height="741"></picture></p>
+<p>In Cuttle, I started from <a href="https://cuttle.xyz/@forresto/Sierpinski-Curve-3zoTtoI5Ev8n">a code component</a> that creates the basic curve. Then I stacked modifiers to expand the curve by different amounts, and color the strokes.</p>
+<h2 id="sticker-cutting" tabindex="-1">Sticker Cutting</h2>
+<p><picture><source type="image/avif" srcset="./03-roland-calibration-off.jpg-g1lxGqLkek-1280.avif 1280w"><source type="image/webp" srcset="./03-roland-calibration-off.jpg-g1lxGqLkek-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-roland-calibration-off.jpg-g1lxGqLkek-1280.jpeg" alt="Sierpinski curve stickers with cut a little bit off." width="1280" height="689"></picture></p>
+<p>First cut looked OK, but the cut and print calibration was a little off.</p>
+<p><picture><source type="image/avif" srcset="./03-roland-calibration-test.jpg-S4PHFGO8_P-1280.avif 1280w"><source type="image/webp" srcset="./03-roland-calibration-test.jpg-S4PHFGO8_P-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-roland-calibration-test.jpg-S4PHFGO8_P-1280.jpeg" alt="Roland calibration tester." width="1280" height="1280"></picture></p>
+<p>Roland calibration tester. Vertical and horizontal gauges show how much to change.</p>
+<p><picture><source type="image/avif" srcset="./03-roland-calibration-good.jpg-bMFw_wHVbw-1280.avif 1280w"><source type="image/webp" srcset="./03-roland-calibration-good.jpg-bMFw_wHVbw-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-roland-calibration-good.jpg-bMFw_wHVbw-1280.jpeg" alt="Calibration fixed!" width="1280" height="960"></picture></p>
+<p>Second print showing that the print and cut calibration is fixed.</p>
+<h2 id="open-questions" tabindex="-1">Open Questions</h2>
+<p><picture><source type="image/avif" srcset="./03-stickers-by-kid.jpg-1f-UngXQ1M-1280.avif 1280w"><source type="image/webp" srcset="./03-stickers-by-kid.jpg-1f-UngXQ1M-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-stickers-by-kid.jpg-1f-UngXQ1M-1280.jpeg" alt="Stickers by kid." width="1280" height="960"></picture></p>
+<p>I was suprised that it printed the magenta of the cut lines. I couldn't find an option that would disable printing those cut lines. For the second design, I reduced the cut stroke width to 0.001pt, which mostly solved the issue.</p>
 <h1 id="construction-kit" tabindex="-1">Construction Kit</h1>
 <p>I made a modular origami part known as <em>Francis Ow's 60 Degree Unit</em>. These have ratios that make it easy enough to fold by hand, but by using Cricut to cut and score my material I saved some time, and ended up with very accurate parts.</p>
-<p><picture><source type="image/avif" srcset="./03-fit-kit-5.jpg-7fdiguDVgT-1280.avif 1280w"><source type="image/webp" srcset="./03-fit-kit-5.jpg-7fdiguDVgT-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-fit-kit-5.jpg-7fdiguDVgT-1280.jpeg" alt="alt text" width="1280" height="1706"></picture></p>
-<h2 id="design" tabindex="-1">Design</h2>
+<p><picture><source type="image/avif" srcset="./03-fit-kit-5.jpg-7fdiguDVgT-1280.avif 1280w"><source type="image/webp" srcset="./03-fit-kit-5.jpg-7fdiguDVgT-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-fit-kit-5.jpg-7fdiguDVgT-1280.jpeg" alt="Connecting modular paper parts." width="1280" height="1706"></picture></p>
+<h2 id="kit-design" tabindex="-1">Kit Design</h2>
 <p><picture><source type="image/avif" srcset="./03-computer-controlled-cutting.md-image-1.png-oGJm4C7bhg-1280.avif 1280w"><source type="image/webp" srcset="./03-computer-controlled-cutting.md-image-1.png-oGJm4C7bhg-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-computer-controlled-cutting.md-image-1.png-oGJm4C7bhg-1280.png" alt="Cuttle parametric design." width="1280" height="724"></picture></p>
 <p>I took advantage of Cuttle's parameters and modifiers to make the cut and score lines.</p>
 <p><picture><source type="image/avif" srcset="./03-computer-controlled-cutting.md-image.png-ol4tq4k2NI-1280.avif 1280w"><source type="image/webp" srcset="./03-computer-controlled-cutting.md-image.png-ol4tq4k2NI-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-computer-controlled-cutting.md-image.png-ol4tq4k2NI-1280.png" alt="Modular origami unit simulated folding in Origami Simulator." width="1280" height="746"></picture></p>
 <p>I also brought the design into <a href="https://origamisimulator.org">Origami Simulator</a> to check my angles, which helped me correct a trigonometry issue before cutting.</p>
-<p><picture><source type="image/avif" srcset="./03-fit-steps.jpg-UvCm4EX4ef-1280.avif 1280w"><source type="image/webp" srcset="./03-fit-steps.jpg-UvCm4EX4ef-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-fit-steps.jpg-UvCm4EX4ef-1280.jpeg" alt="alt text" width="1280" height="1280"></picture></p>
+<p><picture><source type="image/avif" srcset="./03-fit-steps.jpg-UvCm4EX4ef-1280.avif 1280w"><source type="image/webp" srcset="./03-fit-steps.jpg-UvCm4EX4ef-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-fit-steps.jpg-UvCm4EX4ef-1280.jpeg" alt="Folding the unit, one tetraheron, two intersecting tetrahedra, and three." width="1280" height="1280"></picture></p>
 <p>This is as far as I got with the <a href="http://origametry.net/fit.html">Five Intersecting Tetrahedra</a> construction. It is quite a puzzle!</p>
 <p>If I do this again I'll redesign the parts to be better for cardstock, or use lighter paper.</p>
 <h1 id="group-work" tabindex="-1">Group work</h1>
@@ -94,8 +105,8 @@ _speeds <span class="token operator">=</span> speeds<span class="token punctuati
 <p>Aalto Fablab's laser cutter is an Epilog Fusion Pro. It had some maintenance the day before. It is nominally 80w, but the tube is well-loved and according the the folks that did the maintenance it is closer to 35w now. So it is due for a tube replacement.</p>
 <p><picture><source type="image/avif" srcset="./03-laser-test-compare.jpg-8h0_1d2YZT-1280.avif 1280w"><source type="image/webp" srcset="./03-laser-test-compare.jpg-8h0_1d2YZT-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-laser-test-compare.jpg-8h0_1d2YZT-1280.jpeg" alt="2024 test results compared with 2025." width="1280" height="725"></picture></p>
 <p>Since the machine was recently serviced, it was interesting to compare to last year's test cuts. The results are very similar.</p>
-<p><img src="content/fab-academy/03-laser-test-4mm-ply.jpg" alt="Laser test cut with 4mm plywood. Speed 5 power 75 was the best."></p>
-<p>Note that my 4mm plywood had masking tape applied, so this photo doesn't show the smoke marks that would have been present. I have not been able to avoid charing and smoke marks while using this machine with plywood.</p>
+<p><picture><source type="image/avif" srcset="./03-laser-test.jpg-tAruPTQ5vc-1280.avif 1280w"><source type="image/webp" srcset="./03-laser-test.jpg-tAruPTQ5vc-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-laser-test.jpg-tAruPTQ5vc-1280.jpeg" alt="Laser test cut with 4mm plywood. Speed 5 power 75 was the best." width="1280" height="442"></picture></p>
+<p>Note that my 4mm plywood had masking tape applied, so this photo doesn't show the smoke marks that would have been present. I have not been able to avoid charing and smoke marks while using this machine with plywood. Do we need to tweak the air assist? When I sent stuff out to a professional shop, the edges look almost caramalized, as opposed to charred. That would be nice.</p>
 <p>When the tube is replaced I can redo these tests with the same parameters, and compare the results.</p>
 <h2 id="tiny-fire" tabindex="-1">Tiny fire</h2>
 <p><picture><source type="image/avif" srcset="./03-laser-test-fire.jpg-IcfKmp4A5_-1280.avif 1280w"><source type="image/webp" srcset="./03-laser-test-fire.jpg-IcfKmp4A5_-1280.webp 1280w"><img loading="lazy" decoding="async" src="./03-laser-test-fire.jpg-IcfKmp4A5_-1280.jpeg" alt="Back of cardboard laser test showing burnt spot." width="1280" height="960"></picture></p>
