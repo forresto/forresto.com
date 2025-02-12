@@ -15,7 +15,7 @@ This section is mirrored from [my personal site](https://www.forresto.com/fab-ac
 
 - [x] Week 01. [Project Management](/fab-academy/01-project-management.md), [Potential Final Project](/fab-academy/01-potential-final-project.md)
 - [x] Week 02. [Computer Aided Design](/fab-academy/02-cad-comparison.md)
-- [ ] Week 03. 👉 [Computer Controlled Cutting (WIP)](/fab-adademy/03-computer-controlled-cutting.md)
+- [ ] Week 03. 👉 [Computer Controlled Cutting](/fab-adademy/03-computer-controlled-cutting.md)
 - [ ] Week 04. Embedded programming
 - [ ] Week 05. 3D Scanning and printing
 - [ ] Week 06. Electronics design

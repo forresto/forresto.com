@@ -1,31 +1,49 @@
 ---
-title: Week 03. Computer Controlled Cutting (WIP)
+title: Week 03. Computer Controlled Cutting
 date: 2025-02-10
 ---
 
 # CNC Cutting
 
-Stickers!
+![Roland VersaSTUDIO BN2-20A.](03-Roland-VersaSTUDIO-BN2-20A.jpg)
 
-![alt text](03-roland-calibration-off.jpg)
+Roland VersaSTUDIO BN2-20A print and cut machine. This machine is new to me and Aalto Fablab, and I wanted to learn the basics of the print and cut workflow.
 
-Calibration off!
+## Sticker Design
 
-![alt text](03-roland-calibration-test.jpg)
+The Sierpinksi curve is a shape that I've come back to many times, both analog and code. Here's [an animated version](https://observablehq.com/@forresto/sierpinski-curve-animation), and here's one made by [walking in the snow](https://www.youtube.com/watch?v=UCET30r5E2I).
 
-Calibration fixer!
+![Cuttle interface showing parametric color and expand.](03-computer-controlled-cutting.md-image-2.png)
 
-![alt text](03-roland-calibration-good.jpg)
+In Cuttle, I started from [a code component](https://cuttle.xyz/@forresto/Sierpinski-Curve-3zoTtoI5Ev8n) that creates the basic curve. Then I stacked modifiers to expand the curve by different amounts, and color the strokes. 
 
-Calibration fixed!
+## Sticker Cutting
+
+![Sierpinski curve stickers with cut a little bit off.](03-roland-calibration-off.jpg)
+
+First cut looked OK, but the cut and print calibration was a little off.
+
+![Roland calibration tester.](03-roland-calibration-test.jpg)
+
+Roland calibration tester. Vertical and horizontal gauges show how much to change.
+
+![Calibration fixed!](03-roland-calibration-good.jpg)
+
+Second print showing that the print and cut calibration is fixed.
+
+## Open Questions
+
+![Stickers by kid.](03-stickers-by-kid.jpg)
+
+I was suprised that it printed the magenta of the cut lines. I couldn't find an option that would disable printing those cut lines. For the second design, I reduced the cut stroke width to 0.001pt, which mostly solved the issue.
 
 # Construction Kit
 
 I made a modular origami part known as _Francis Ow's 60 Degree Unit_. These have ratios that make it easy enough to fold by hand, but by using Cricut to cut and score my material I saved some time, and ended up with very accurate parts.
 
-![alt text](03-fit-kit-5.jpg)
+![Connecting modular paper parts.](03-fit-kit-5.jpg)
 
-## Design
+## Kit Design
 
 ![Cuttle parametric design.](03-computer-controlled-cutting.md-image-1.png)
 
@@ -35,7 +53,7 @@ I took advantage of Cuttle's parameters and modifiers to make the cut and score 
 
 I also brought the design into [Origami Simulator](https://origamisimulator.org) to check my angles, which helped me correct a trigonometry issue before cutting.
 
-![alt text](03-fit-steps.jpg)
+![Folding the unit, one tetraheron, two intersecting tetrahedra, and three.](03-fit-steps.jpg)
 
 This is as far as I got with the [Five Intersecting Tetrahedra](http://origametry.net/fit.html) construction. It is quite a puzzle! 
 
@@ -76,9 +94,9 @@ Aalto Fablab's laser cutter is an Epilog Fusion Pro. It had some maintenance the
 
 Since the machine was recently serviced, it was interesting to compare to last year's test cuts. The results are very similar.
 
-![Laser test cut with 4mm plywood. Speed 5 power 75 was the best.](03-laser-test-4mm-ply.jpg)
+![Laser test cut with 4mm plywood. Speed 5 power 75 was the best.](03-laser-test.jpg)
 
-Note that my 4mm plywood had masking tape applied, so this photo doesn't show the smoke marks that would have been present. I have not been able to avoid charing and smoke marks while using this machine with plywood. 
+Note that my 4mm plywood had masking tape applied, so this photo doesn't show the smoke marks that would have been present. I have not been able to avoid charing and smoke marks while using this machine with plywood. Do we need to tweak the air assist? When I sent stuff out to a professional shop, the edges look almost caramalized, as opposed to charred. That would be nice.
 
 When the tube is replaced I can redo these tests with the same parameters, and compare the results.
 
