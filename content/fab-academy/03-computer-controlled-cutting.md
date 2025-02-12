@@ -1,6 +1,12 @@
 ---
 title: Week 03. Computer Controlled Cutting
 date: 2025-02-10
+tags:
+  - sierpinski
+  - graphics
+  - print
+  - laser
+  - cuttle
 ---
 
 # CNC Cutting
@@ -35,7 +41,7 @@ Second print showing that the print and cut calibration is fixed.
 
 ![Stickers by kid.](03-stickers-by-kid.jpg)
 
-I was suprised that it printed the magenta of the cut lines. I couldn't find an option that would disable printing those cut lines. For the second design, I reduced the cut stroke width to 0.001pt, which mostly solved the issue.
+I was suprised that it printed the magenta of the cut lines. I couldn't find an option that would disable printing those cut lines. For the second design, I reduced the cut stroke width to 0.001pt, which mostly solved the issue. The same question [without a clear answer from r/CommercialPrinting](https://www.reddit.com/r/CommercialPrinting/comments/1bp5ude/need_help_making_versaworks_stop_printing_cut/).
 
 # Construction Kit
 
