@@ -58,7 +58,7 @@ This model was created in OpenSCAD, one of the CAD packages that I didn't [evalu
 
 ![OpenSCAD interface to model FIT.](fit/fit-openscad.png)
 
-Here's the code. This was made with help from [laude 3.5 Sonnet via Zed, and [took a lot of back and forth to get right](/oldsite/ai/fit-claude-chat.md).
+Here's the code. This was made with help from Claude 3.5 Sonnet via Zed, and [took a lot of back and forth to get right](/oldsite/ai/fit-claude-chat.md).
 
 <details><summary>OpenSCAD code to draw Five Intersecting Tetrahedra</summary>
 
