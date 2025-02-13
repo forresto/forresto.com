@@ -35,10 +35,15 @@
 &lt;h2 id=&quot;step-2&quot; tabindex=&quot;-1&quot;&gt;Step 2&lt;/h2&gt;
 &lt;model-viewer src=&quot;fit/fit-2.glb&quot; ar=&quot;&quot; ar-modes=&quot;webxr scene-viewer quick-look&quot; camera-controls=&quot;&quot; tone-mapping=&quot;neutral&quot; shadow-intensity=&quot;1&quot;&gt;
 &lt;/model-viewer&gt;
+&lt;p&gt;Spin this until you see something like a star of David. ✡&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The corner of the red tetrahedron is poking through a &amp;quot;hole&amp;quot; of the purple one, and vice-versa, the corner of the purple tetrahedron is poking throught a &amp;quot;hole&amp;quot; of the red one.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This relationship ends up being true of every pair of tetrahedra, once finished.&lt;/p&gt;
 &lt;h2 id=&quot;step-3&quot; tabindex=&quot;-1&quot;&gt;Step 3&lt;/h2&gt;
 &lt;model-viewer src=&quot;fit/fit-3.glb&quot; ar=&quot;&quot; ar-modes=&quot;webxr scene-viewer quick-look&quot; camera-controls=&quot;&quot; tone-mapping=&quot;neutral&quot; shadow-intensity=&quot;1&quot;&gt;
 &lt;/model-viewer&gt;
-&lt;p&gt;This one is key. Once you get this right, the next two tetrahedra fall into place.&lt;/p&gt;
+&lt;p&gt;This one is key. Once you get the third one integrated correctly, the next two are easier.&lt;/p&gt;
 &lt;h2 id=&quot;step-4&quot; tabindex=&quot;-1&quot;&gt;Step 4&lt;/h2&gt;
 &lt;model-viewer src=&quot;fit/fit-4.glb&quot; ar=&quot;&quot; ar-modes=&quot;webxr scene-viewer quick-look&quot; camera-controls=&quot;&quot; tone-mapping=&quot;neutral&quot; shadow-intensity=&quot;1&quot;&gt;
 &lt;/model-viewer&gt;
