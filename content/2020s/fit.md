@@ -37,12 +37,18 @@ You can drag to look around these models.
 <model-viewer src="fit/fit-2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="1">
 </model-viewer>
 
+Spin this until you see something like a star of David. ✡
+
+> The corner of the red tetrahedron is poking through a "hole" of the purple one, and vice-versa, the corner of the purple tetrahedron is poking throught a "hole" of the red one.
+
+This relationship ends up being true of every pair of tetrahedra, once finished.
+
 ## Step 3
 
 <model-viewer src="fit/fit-3.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="1">
 </model-viewer>
 
-This one is key. Once you get this right, the next two tetrahedra fall into place.
+This one is key. Once you get the third one integrated correctly, the next two are easier.
 
 ## Step 4
 
