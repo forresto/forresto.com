@@ -58,12 +58,12 @@
 <li><a href="#step-3">Step 3</a></li>
 <li><a href="#step-4">Step 4</a></li>
 <li><a href="#step-5">Step 5</a></li></ul></li>
-<li><a href="#openscad-modeling">OpenSCAD modeling</a></li>
-<li><a href="#conclusion%2C-3d-project-files">Conclusion, 3D project files</a></li></ul></nav>
+<li><a href="#openscad-modeling">OpenSCAD modeling</a><ul><li><a href="#blender-exporting">Blender exporting</a></li></ul></li>
+<li><a href="#conclusion%2C-files">Conclusion, files</a></li></ul></nav>
 </aside>
 
 <article>
-	<p>During <a href="../fab/">Fab Academy</a> I remembered the modular origami puzzle known as FIT, <em>Five Intersecting Tetrahedra</em>.</p>
+	<p>During <a href="../fab-academy/">Fab Academy</a> I remembered the modular origami puzzle known as FIT, <em>Five Intersecting Tetrahedra</em>.</p>
 <p><picture><source type="image/avif" srcset="./fit-2008.jpg-M_m6kEv6-x-966.avif 966w"><source type="image/webp" srcset="./fit-2008.jpg-M_m6kEv6-x-966.webp 966w"><img loading="lazy" decoding="async" src="./fit-2008.jpg-M_m6kEv6-x-966.jpeg" alt="Five Intersecting Tetrahedra folded with color paper, film photograph from 2008." width="966" height="995"></picture></p>
 <p>I made one <a href="https://flickr.com/photos/forresto/2647342483/in/album-191297">20 years ago</a>, and thought it would be fun to revisit. The directions that I found <a href="http://origametry.net/fit.html">from Thomas Hull</a> were the same ones that I used back then. They are a bit like</p>
 <ol>
@@ -93,7 +93,7 @@
 <model-viewer src="fit/fit-5.glb" ar="" ar-modes="webxr scene-viewer quick-look" camera-controls="" tone-mapping="neutral" shadow-intensity="1">
 </model-viewer>
 <h1 id="openscad-modeling" tabindex="-1">OpenSCAD modeling</h1>
-<p>This model was created in OpenSCAD, one of the CAD packages that I didn't <a href="../fab/02-cad-comparison.md">evaluate last week</a>.</p>
+<p>This model was created in OpenSCAD, one of the CAD packages that I didn't <a href="../fab-academy/02-cad-comparison.html">evaluate last week</a>.</p>
 <p><picture><source type="image/avif" srcset="./fit-openscad.png-_8IKW9tsyj-1280.avif 1280w"><source type="image/webp" srcset="./fit-openscad.png-_8IKW9tsyj-1280.webp 1280w"><img loading="lazy" decoding="async" src="./fit-openscad.png-_8IKW9tsyj-1280.png" alt="OpenSCAD interface to model FIT." width="1280" height="777"></picture></p>
 <p>Here's the code. This was made with help from [laude 3.5 Sonnet via Zed, and <a href="../oldsite/ai/fit-claude-chat.md">took a lot of back and forth to get right</a>.</p>
 <details><summary>OpenSCAD code to draw Five Intersecting Tetrahedra</summary>
@@ -170,16 +170,17 @@ tetrahedron_faces <span class="token operator">=</span> <span class="token punct
 <span class="token function">polyhedron</span><span class="token punctuation">(</span>points<span class="token operator">=</span>shape_vertices<span class="token punctuation">,</span> faces<span class="token operator">=</span>shape_faces<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <p>does not work as the base shape in the <code>difference</code> boolean. I had to wrap it with <code>hull</code> to repair something invisible.</p>
 </details>
+<h2 id="blender-exporting" tabindex="-1">Blender exporting</h2>
 <p><picture><source type="image/avif" srcset="./fit-blender.png-vxy64b_3Qk-1280.avif 1280w"><source type="image/webp" srcset="./fit-blender.png-vxy64b_3Qk-1280.webp 1280w"><img loading="lazy" decoding="async" src="./fit-blender.png-vxy64b_3Qk-1280.png" alt="Blender interface with my FIT model." width="1280" height="776"></picture></p>
 <p>I then exported STL from OpenSCAD, imported that into Blender, split the object into five objects, added color materials, and exported the five steps as GLB files. 😅</p>
 <p>The colors were chosen from <a href="https://stephango.com/flexoki">Steph Ango's Flexoki color scheme</a>.</p>
 <p>For another parametric model, see <a href="https://asahidari.hatenablog.com/entry/2020/11/28/231433">Kukan Kogei's effort with Blender Sverchok</a>.</p>
-<h1 id="conclusion%2C-3d-project-files" tabindex="-1">Conclusion, 3D project files</h1>
+<h1 id="conclusion%2C-files" tabindex="-1">Conclusion, files</h1>
 <ul>
 <li><a href="fit/fit-forresto-2025.scad">fit-forresto-2025.scad</a> – OpenSCAD file</li>
 <li><a href="fit/fit-forresto-2025.blend">fit-forresto-2025.blend</a> – Blender file</li>
 </ul>
-<p>I'm happy to have my own <code>fit.html</code> post on the WWW now, and maybe I'll find it in 20 years when I think about folding a FIT again.</p>
+<p>I'm happy to have my own <code>fit.html</code> post on the WWW. Maybe I'll find it in 20 years when I think about folding a FIT again.</p>
 
 </article>
 

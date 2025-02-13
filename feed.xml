@@ -15,7 +15,7 @@
     <link href="https://forresto.com/2020s/fit.html" />
     <updated>2025-02-13T00:00:00Z</updated>
     <id>https://forresto.com/2020s/fit.html</id>
-    <content type="html">&lt;p&gt;During &lt;a href=&quot;https://forresto.com/fab/&quot;&gt;Fab Academy&lt;/a&gt; I remembered the modular origami puzzle known as FIT, &lt;em&gt;Five Intersecting Tetrahedra&lt;/em&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;During &lt;a href=&quot;https://forresto.com/fab-academy/&quot;&gt;Fab Academy&lt;/a&gt; I remembered the modular origami puzzle known as FIT, &lt;em&gt;Five Intersecting Tetrahedra&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/2020s/fit-2008.jpg-M_m6kEv6-x-966.avif 966w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/2020s/fit-2008.jpg-M_m6kEv6-x-966.webp 966w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/2020s/fit-2008.jpg-M_m6kEv6-x-966.jpeg&quot; alt=&quot;Five Intersecting Tetrahedra folded with color paper, film photograph from 2008.&quot; width=&quot;966&quot; height=&quot;995&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;I made one &lt;a href=&quot;https://flickr.com/photos/forresto/2647342483/in/album-191297&quot;&gt;20 years ago&lt;/a&gt;, and thought it would be fun to revisit. The directions that I found &lt;a href=&quot;http://origametry.net/fit.html&quot;&gt;from Thomas Hull&lt;/a&gt; were the same ones that I used back then. They are a bit like&lt;/p&gt;
 &lt;ol&gt;
@@ -45,7 +45,7 @@
 &lt;model-viewer src=&quot;fit/fit-5.glb&quot; ar=&quot;&quot; ar-modes=&quot;webxr scene-viewer quick-look&quot; camera-controls=&quot;&quot; tone-mapping=&quot;neutral&quot; shadow-intensity=&quot;1&quot;&gt;
 &lt;/model-viewer&gt;
 &lt;h1 id=&quot;openscad-modeling&quot; tabindex=&quot;-1&quot;&gt;OpenSCAD modeling&lt;/h1&gt;
-&lt;p&gt;This model was created in OpenSCAD, one of the CAD packages that I didn&#39;t &lt;a href=&quot;https://forresto.com/fab/02-cad-comparison.md&quot;&gt;evaluate last week&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This model was created in OpenSCAD, one of the CAD packages that I didn&#39;t &lt;a href=&quot;https://forresto.com/fab-academy/02-cad-comparison.html&quot;&gt;evaluate last week&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/2020s/fit-openscad.png-_8IKW9tsyj-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/2020s/fit-openscad.png-_8IKW9tsyj-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/2020s/fit-openscad.png-_8IKW9tsyj-1280.png&quot; alt=&quot;OpenSCAD interface to model FIT.&quot; width=&quot;1280&quot; height=&quot;777&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;Here&#39;s the code. This was made with help from [laude 3.5 Sonnet via Zed, and &lt;a href=&quot;https://forresto.com/oldsite/ai/fit-claude-chat.md&quot;&gt;took a lot of back and forth to get right&lt;/a&gt;.&lt;/p&gt;
 &lt;details&gt;&lt;summary&gt;OpenSCAD code to draw Five Intersecting Tetrahedra&lt;/summary&gt;
@@ -122,16 +122,17 @@ tetrahedron_faces &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &l
 &lt;span class=&quot;token function&quot;&gt;polyhedron&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;points&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;shape_vertices&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; faces&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;shape_faces&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;does not work as the base shape in the &lt;code&gt;difference&lt;/code&gt; boolean. I had to wrap it with &lt;code&gt;hull&lt;/code&gt; to repair something invisible.&lt;/p&gt;
 &lt;/details&gt;
+&lt;h2 id=&quot;blender-exporting&quot; tabindex=&quot;-1&quot;&gt;Blender exporting&lt;/h2&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/2020s/fit-blender.png-vxy64b_3Qk-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/2020s/fit-blender.png-vxy64b_3Qk-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/2020s/fit-blender.png-vxy64b_3Qk-1280.png&quot; alt=&quot;Blender interface with my FIT model.&quot; width=&quot;1280&quot; height=&quot;776&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;I then exported STL from OpenSCAD, imported that into Blender, split the object into five objects, added color materials, and exported the five steps as GLB files. 😅&lt;/p&gt;
 &lt;p&gt;The colors were chosen from &lt;a href=&quot;https://stephango.com/flexoki&quot;&gt;Steph Ango&#39;s Flexoki color scheme&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;For another parametric model, see &lt;a href=&quot;https://asahidari.hatenablog.com/entry/2020/11/28/231433&quot;&gt;Kukan Kogei&#39;s effort with Blender Sverchok&lt;/a&gt;.&lt;/p&gt;
-&lt;h1 id=&quot;conclusion%2C-3d-project-files&quot; tabindex=&quot;-1&quot;&gt;Conclusion, 3D project files&lt;/h1&gt;
+&lt;h1 id=&quot;conclusion%2C-files&quot; tabindex=&quot;-1&quot;&gt;Conclusion, files&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://forresto.com/2020s/fit/fit-forresto-2025.scad&quot;&gt;fit-forresto-2025.scad&lt;/a&gt; – OpenSCAD file&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://forresto.com/2020s/fit/fit-forresto-2025.blend&quot;&gt;fit-forresto-2025.blend&lt;/a&gt; – Blender file&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I&#39;m happy to have my own &lt;code&gt;fit.html&lt;/code&gt; post on the WWW now, and maybe I&#39;ll find it in 20 years when I think about folding a FIT again.&lt;/p&gt;
+&lt;p&gt;I&#39;m happy to have my own &lt;code&gt;fit.html&lt;/code&gt; post on the WWW. Maybe I&#39;ll find it in 20 years when I think about folding a FIT again.&lt;/p&gt;
 </content>
   </entry>
   <entry>
