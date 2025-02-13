@@ -65,6 +65,8 @@ This is as far as I got with the [Five Intersecting Tetrahedra](http://origametr
 
 If I do this again I'll redesign the parts to be better for cardstock, or use lighter paper.
 
+> Side quest: [modeling FIT in OpenSCAD, with 3D steps](https://www.forresto.com/2020s/fit.html).
+
 # Group work
 
 The group work for the week was to do some test cuts to characterize the realationship of the speed and power settings on the laser cutter. I'm a group of one, building on last year's group work.

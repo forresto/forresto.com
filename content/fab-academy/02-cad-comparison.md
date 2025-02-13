@@ -61,6 +61,7 @@ Sketching some views on paper seems like a good way to start the CAD process. âœ
 # Other
 
 * Blender: Geometry Nodes and CAD Sketcher
+* [OpenSCAD: modeling a modular origami creation](https://www.forresto.com/2020s/fit.html)
 * Other commercial software. I might get around to evaluating more, but I feel like I have plenty of room to grow with the open source tools.
 
 # Result
