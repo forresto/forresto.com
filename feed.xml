@@ -38,6 +38,7 @@
 &lt;h2 id=&quot;step-3&quot; tabindex=&quot;-1&quot;&gt;Step 3&lt;/h2&gt;
 &lt;model-viewer src=&quot;fit/fit-3.glb&quot; ar=&quot;&quot; ar-modes=&quot;webxr scene-viewer quick-look&quot; camera-controls=&quot;&quot; tone-mapping=&quot;neutral&quot; shadow-intensity=&quot;1&quot;&gt;
 &lt;/model-viewer&gt;
+&lt;p&gt;This one is key. Once you get this right, the next two tetrahedra fall into place.&lt;/p&gt;
 &lt;h2 id=&quot;step-4&quot; tabindex=&quot;-1&quot;&gt;Step 4&lt;/h2&gt;
 &lt;model-viewer src=&quot;fit/fit-4.glb&quot; ar=&quot;&quot; ar-modes=&quot;webxr scene-viewer quick-look&quot; camera-controls=&quot;&quot; tone-mapping=&quot;neutral&quot; shadow-intensity=&quot;1&quot;&gt;
 &lt;/model-viewer&gt;
@@ -122,7 +123,7 @@ tetrahedron_faces &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &l
 &lt;span class=&quot;token function&quot;&gt;polyhedron&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;points&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;shape_vertices&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; faces&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;shape_faces&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;does not work as the base shape in the &lt;code&gt;difference&lt;/code&gt; boolean. I had to wrap it with &lt;code&gt;hull&lt;/code&gt; to repair something invisible.&lt;/p&gt;
 &lt;/details&gt;
-&lt;h2 id=&quot;blender-exporting&quot; tabindex=&quot;-1&quot;&gt;Blender exporting&lt;/h2&gt;
+&lt;h1 id=&quot;blender-exporting&quot; tabindex=&quot;-1&quot;&gt;Blender exporting&lt;/h1&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://forresto.com/2020s/fit-blender.png-vxy64b_3Qk-1280.avif 1280w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://forresto.com/2020s/fit-blender.png-vxy64b_3Qk-1280.webp 1280w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://forresto.com/2020s/fit-blender.png-vxy64b_3Qk-1280.png&quot; alt=&quot;Blender interface with my FIT model.&quot; width=&quot;1280&quot; height=&quot;776&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;I then exported STL from OpenSCAD, imported that into Blender, split the object into five objects, added color materials, and exported the five steps as GLB files. 😅&lt;/p&gt;
 &lt;p&gt;The colors were chosen from &lt;a href=&quot;https://stephango.com/flexoki&quot;&gt;Steph Ango&#39;s Flexoki color scheme&lt;/a&gt;.&lt;/p&gt;

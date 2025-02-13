@@ -58,7 +58,8 @@
 <li><a href="#step-3">Step 3</a></li>
 <li><a href="#step-4">Step 4</a></li>
 <li><a href="#step-5">Step 5</a></li></ul></li>
-<li><a href="#openscad-modeling">OpenSCAD modeling</a><ul><li><a href="#blender-exporting">Blender exporting</a></li></ul></li>
+<li><a href="#openscad-modeling">OpenSCAD modeling</a></li>
+<li><a href="#blender-exporting">Blender exporting</a></li>
 <li><a href="#conclusion%2C-files">Conclusion, files</a></li></ul></nav>
 </aside>
 
@@ -86,6 +87,7 @@
 <h2 id="step-3" tabindex="-1">Step 3</h2>
 <model-viewer src="fit/fit-3.glb" ar="" ar-modes="webxr scene-viewer quick-look" camera-controls="" tone-mapping="neutral" shadow-intensity="1">
 </model-viewer>
+<p>This one is key. Once you get this right, the next two tetrahedra fall into place.</p>
 <h2 id="step-4" tabindex="-1">Step 4</h2>
 <model-viewer src="fit/fit-4.glb" ar="" ar-modes="webxr scene-viewer quick-look" camera-controls="" tone-mapping="neutral" shadow-intensity="1">
 </model-viewer>
@@ -170,7 +172,7 @@ tetrahedron_faces <span class="token operator">=</span> <span class="token punct
 <span class="token function">polyhedron</span><span class="token punctuation">(</span>points<span class="token operator">=</span>shape_vertices<span class="token punctuation">,</span> faces<span class="token operator">=</span>shape_faces<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <p>does not work as the base shape in the <code>difference</code> boolean. I had to wrap it with <code>hull</code> to repair something invisible.</p>
 </details>
-<h2 id="blender-exporting" tabindex="-1">Blender exporting</h2>
+<h1 id="blender-exporting" tabindex="-1">Blender exporting</h1>
 <p><picture><source type="image/avif" srcset="./fit-blender.png-vxy64b_3Qk-1280.avif 1280w"><source type="image/webp" srcset="./fit-blender.png-vxy64b_3Qk-1280.webp 1280w"><img loading="lazy" decoding="async" src="./fit-blender.png-vxy64b_3Qk-1280.png" alt="Blender interface with my FIT model." width="1280" height="776"></picture></p>
 <p>I then exported STL from OpenSCAD, imported that into Blender, split the object into five objects, added color materials, and exported the five steps as GLB files. 😅</p>
 <p>The colors were chosen from <a href="https://stephango.com/flexoki">Steph Ango's Flexoki color scheme</a>.</p>
