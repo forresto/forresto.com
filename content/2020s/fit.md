@@ -42,6 +42,8 @@ You can drag to look around these models.
 <model-viewer src="fit/fit-3.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="1">
 </model-viewer>
 
+This one is key. Once you get this right, the next two tetrahedra fall into place.
+
 ## Step 4
 
 <model-viewer src="fit/fit-4.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="1">
@@ -144,7 +146,7 @@ does not work as the base shape in the `difference` boolean. I had to wrap it wi
 
 </details>
 
-## Blender exporting
+# Blender exporting
 
 ![Blender interface with my FIT model.](fit/fit-blender.png)
 
