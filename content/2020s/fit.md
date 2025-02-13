@@ -7,7 +7,7 @@ tags:
   - openscad
 ---
 
-During [Fab Academy](/fab/) I remembered the modular origami puzzle known as FIT, _Five Intersecting Tetrahedra_. 
+During [Fab Academy](/fab-academy/) I remembered the modular origami puzzle known as FIT, _Five Intersecting Tetrahedra_. 
 
 ![Five Intersecting Tetrahedra folded with color paper, film photograph from 2008.](fit/fit-2008.jpg)
 
@@ -54,7 +54,7 @@ You can drag to look around these models.
 
 # OpenSCAD modeling
 
-This model was created in OpenSCAD, one of the CAD packages that I didn't [evaluate last week](/fab/02-cad-comparison.md). 
+This model was created in OpenSCAD, one of the CAD packages that I didn't [evaluate last week](/fab-academy/02-cad-comparison.md). 
 
 ![OpenSCAD interface to model FIT.](fit/fit-openscad.png)
 
@@ -144,6 +144,8 @@ does not work as the base shape in the `difference` boolean. I had to wrap it wi
 
 </details>
 
+## Blender exporting
+
 ![Blender interface with my FIT model.](fit/fit-blender.png)
 
 I then exported STL from OpenSCAD, imported that into Blender, split the object into five objects, added color materials, and exported the five steps as GLB files. 😅
@@ -152,9 +154,9 @@ The colors were chosen from [Steph Ango's Flexoki color scheme](https://stephang
 
 For another parametric model, see [Kukan Kogei's effort with Blender Sverchok](https://asahidari.hatenablog.com/entry/2020/11/28/231433).
 
-# Conclusion, 3D project files
+# Conclusion, files
 
 * [fit-forresto-2025.scad](fit/fit-forresto-2025.scad) – OpenSCAD file
 * [fit-forresto-2025.blend](fit/fit-forresto-2025.blend) – Blender file
 
-I'm happy to have my own `fit.html` post on the WWW now, and maybe I'll find it in 20 years when I think about folding a FIT again.
+I'm happy to have my own `fit.html` post on the WWW. Maybe I'll find it in 20 years when I think about folding a FIT again.
