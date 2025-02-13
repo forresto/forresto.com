@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FIT: Five Intersecting Tetrahedra</title>
+    <meta property="og:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2Fforresto.com%2F2020s%2Ffit.html/opengraph/bigger/">
+
+		<link rel="alternate" href="../feed.xml" type="application/atom+xml" title="Forrest O. Interactive">
+
+		<meta name="generator" content="Eleventy v3.0.0">
+
+		<link rel="icon" type="image/png" href="../favicon.png">
+		
+		<link rel="stylesheet" href="../dist/pkEaAJEeF-.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="../" class="home-link">Forrest O. Interactive</a>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="../">Home</a></li>
+					<li class="nav-item"><a href="../fab-academy/">Fab</a></li>
+					<li class="nav-item"><a href="../archive.html">Archive</a></li>
+					<li class="nav-item"><a href="../about.html">About</a></li>
+					<li class="nav-item"><a href="../feeds.html">Feeds</a></li>
+				</ul>
+			</nav>
+
+			<theme-switch></theme-switch>
+		</header>
+
+		<main id="skip">
+			
+
+
+
+	<nav><a href="../archive.html">Archive</a> | <a href="./">2020s</a></nav>
+
+
+<h1>FIT: Five Intersecting Tetrahedra</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2025-02-13">2025, February 13</time></li>
+	<li><a href="../tags/origami.html" class="post-tag">origami</a>, </li>
+	<li><a href="../tags/3d.html" class="post-tag">3d</a>, </li>
+	<li><a href="../tags/openscad.html" class="post-tag">openscad</a></li>
+</ul>
+
+<div class="columns">
+
+<aside>
+  <nav class="toc"><ul><li><a href="#construction">Construction</a><ul><li><a href="#step-1">Step 1</a></li>
+<li><a href="#step-2">Step 2</a></li>
+<li><a href="#step-3">Step 3</a></li>
+<li><a href="#step-4">Step 4</a></li>
+<li><a href="#step-5">Step 5</a></li></ul></li>
+<li><a href="#openscad-modeling">OpenSCAD modeling</a></li>
+<li><a href="#conclusion%2C-3d-project-files">Conclusion, 3D project files</a></li></ul></nav>
+</aside>
+
+<article>
+	<p>During <a href="../fab/">Fab Academy</a> I remembered the modular origami puzzle known as FIT, <em>Five Intersecting Tetrahedra</em>.</p>
+<p><picture><source type="image/avif" srcset="./fit-2008.jpg-M_m6kEv6-x-966.avif 966w"><source type="image/webp" srcset="./fit-2008.jpg-M_m6kEv6-x-966.webp 966w"><img loading="lazy" decoding="async" src="./fit-2008.jpg-M_m6kEv6-x-966.jpeg" alt="Five Intersecting Tetrahedra folded with color paper, film photograph from 2008." width="966" height="995"></picture></p>
+<p>I made one <a href="https://flickr.com/photos/forresto/2647342483/in/album-191297">20 years ago</a>, and thought it would be fun to revisit. The directions that I found <a href="http://origametry.net/fit.html">from Thomas Hull</a> were the same ones that I used back then. They are a bit like</p>
+<ol>
+<li>Construct the first tetrahedron.</li>
+<li>Construct the second tetrahedron linked to the first.</li>
+<li>✨ <em>(Then a miracle occurs.)</em> ✨</li>
+<li>Now you have a FIT!</li>
+</ol>
+<p>I tease. It's a really hard puzzle to describe with words and 2D diagrams. <a href="https://www.origami.kosmulski.org/instructions/fit-five-intersecting-tetrahedra-tom-hull">Michał Kosmulski's FIT directions</a> add some helpful details.</p>
+<h1 id="construction" tabindex="-1">Construction</h1>
+<p>One thing that I thought would help future FIT folders is 3D diagrams of each step that can be rotated. So I made some.</p>
+<p>You can drag to look around these models.</p>
+<h2 id="step-1" tabindex="-1">Step 1</h2>
+<script type="module" src="../js/model-viewer.min.js"></script>
+<model-viewer src="fit/fit-1.glb" ar="" ar-modes="webxr scene-viewer quick-look" camera-controls="" tone-mapping="neutral" shadow-intensity="1">
+</model-viewer>
+<h2 id="step-2" tabindex="-1">Step 2</h2>
+<model-viewer src="fit/fit-2.glb" ar="" ar-modes="webxr scene-viewer quick-look" camera-controls="" tone-mapping="neutral" shadow-intensity="1">
+</model-viewer>
+<h2 id="step-3" tabindex="-1">Step 3</h2>
+<model-viewer src="fit/fit-3.glb" ar="" ar-modes="webxr scene-viewer quick-look" camera-controls="" tone-mapping="neutral" shadow-intensity="1">
+</model-viewer>
+<h2 id="step-4" tabindex="-1">Step 4</h2>
+<model-viewer src="fit/fit-4.glb" ar="" ar-modes="webxr scene-viewer quick-look" camera-controls="" tone-mapping="neutral" shadow-intensity="1">
+</model-viewer>
+<h2 id="step-5" tabindex="-1">Step 5</h2>
+<model-viewer src="fit/fit-5.glb" ar="" ar-modes="webxr scene-viewer quick-look" camera-controls="" tone-mapping="neutral" shadow-intensity="1">
+</model-viewer>
+<h1 id="openscad-modeling" tabindex="-1">OpenSCAD modeling</h1>
+<p>This model was created in OpenSCAD, one of the CAD packages that I didn't <a href="../fab/02-cad-comparison.md">evaluate last week</a>.</p>
+<p><picture><source type="image/avif" srcset="./fit-openscad.png-_8IKW9tsyj-1280.avif 1280w"><source type="image/webp" srcset="./fit-openscad.png-_8IKW9tsyj-1280.webp 1280w"><img loading="lazy" decoding="async" src="./fit-openscad.png-_8IKW9tsyj-1280.png" alt="OpenSCAD interface to model FIT." width="1280" height="777"></picture></p>
+<p>Here's the code. This was made with help from [laude 3.5 Sonnet via Zed, and <a href="../oldsite/ai/fit-claude-chat.md">took a lot of back and forth to get right</a>.</p>
+<details><summary>OpenSCAD code to draw Five Intersecting Tetrahedra</summary>
+<pre class="language-js" tabindex="0"><code class="language-js">module <span class="token function">hollow_poly</span><span class="token punctuation">(</span><span class="token parameter">shape_vertices<span class="token punctuation">,</span> shape_faces<span class="token punctuation">,</span> face_shrink<span class="token operator">=</span><span class="token number">0.8</span><span class="token punctuation">,</span> hole_grow <span class="token operator">=</span> <span class="token number">1.05</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Function to find center of a face</span>
+    <span class="token keyword">function</span> <span class="token function">face_center</span><span class="token punctuation">(</span><span class="token parameter">vertices<span class="token punctuation">,</span> face</span><span class="token punctuation">)</span> <span class="token operator">=</span> 
+        <span class="token keyword">let</span><span class="token punctuation">(</span>
+            points <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> face<span class="token punctuation">)</span> vertices<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            x <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token keyword">for</span><span class="token punctuation">(</span>p <span class="token operator">=</span> points<span class="token punctuation">)</span> p<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            y <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token keyword">for</span><span class="token punctuation">(</span>p <span class="token operator">=</span> points<span class="token punctuation">)</span> p<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            z <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token keyword">for</span><span class="token punctuation">(</span>p <span class="token operator">=</span> points<span class="token punctuation">)</span> p<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+        <span class="token punctuation">)</span>
+        <span class="token punctuation">[</span><span class="token punctuation">(</span>x<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+</span> x<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> x<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token function">len</span><span class="token punctuation">(</span>face<span class="token punctuation">)</span><span class="token punctuation">,</span> 
+         <span class="token punctuation">(</span>y<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+</span> y<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> y<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token function">len</span><span class="token punctuation">(</span>face<span class="token punctuation">)</span><span class="token punctuation">,</span> 
+         <span class="token punctuation">(</span>z<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+</span> z<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> z<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token function">len</span><span class="token punctuation">(</span>face<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    
+    <span class="token comment">// Function to shrink a face towards its center</span>
+    <span class="token keyword">function</span> <span class="token function">shrink_face</span><span class="token punctuation">(</span><span class="token parameter">vertices<span class="token punctuation">,</span> face<span class="token punctuation">,</span> shrink_factor</span><span class="token punctuation">)</span> <span class="token operator">=</span> 
+        <span class="token keyword">let</span><span class="token punctuation">(</span>
+            center <span class="token operator">=</span> <span class="token function">face_center</span><span class="token punctuation">(</span>vertices<span class="token punctuation">,</span> face<span class="token punctuation">)</span>
+        <span class="token punctuation">)</span>
+        <span class="token punctuation">[</span><span class="token keyword">for</span><span class="token punctuation">(</span>idx <span class="token operator">=</span> face<span class="token punctuation">)</span>
+            <span class="token keyword">let</span><span class="token punctuation">(</span>
+                point <span class="token operator">=</span> vertices<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">,</span>
+                vector <span class="token operator">=</span> point <span class="token operator">-</span> center
+            <span class="token punctuation">)</span>
+            center <span class="token operator">+</span> vector <span class="token operator">*</span> shrink_factor
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    
+    <span class="token comment">// Collect all shrunk faces into a single vertex list</span>
+    shrunk_vertices <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>face <span class="token operator">=</span> shape_faces<span class="token punctuation">)</span>
+        <span class="token keyword">let</span><span class="token punctuation">(</span>shrunk <span class="token operator">=</span> <span class="token function">shrink_face</span><span class="token punctuation">(</span>shape_vertices<span class="token punctuation">,</span> face<span class="token punctuation">,</span> face_shrink<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>v <span class="token operator">=</span> shrunk<span class="token punctuation">)</span> v
+    <span class="token punctuation">]</span><span class="token punctuation">;</span>
+        
+    <span class="token function">difference</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// polyhedron by itself isn't "water-tight" for difference o_O</span>
+        <span class="token function">hull</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">polyhedron</span><span class="token punctuation">(</span>points<span class="token operator">=</span>shape_vertices<span class="token punctuation">,</span> faces<span class="token operator">=</span>shape_faces<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token function">scale</span><span class="token punctuation">(</span>hole_grow<span class="token punctuation">)</span>
+        <span class="token function">hull</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">polyhedron</span><span class="token punctuation">(</span>
+                points<span class="token operator">=</span>shrunk_vertices<span class="token punctuation">,</span>
+                faces<span class="token operator">=</span><span class="token punctuation">[</span>
+                    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token operator">:</span><span class="token function">len</span><span class="token punctuation">(</span>shrunk_vertices<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">[</span>i<span class="token operator">*</span><span class="token number">3</span><span class="token punctuation">,</span> i<span class="token operator">*</span><span class="token number">3</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> i<span class="token operator">*</span><span class="token number">3</span><span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">]</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Tetrahedron basic def via https://github.com/benjamin-edward-morgan/openscad-polyhedra</span>
+tetrahedron_vertices <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">/</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+tetrahedron_faces <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+colors <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Red"</span><span class="token punctuation">,</span> <span class="token string">"Blue"</span><span class="token punctuation">,</span> <span class="token string">"Green"</span><span class="token punctuation">,</span> <span class="token string">"Yellow"</span><span class="token punctuation">,</span> <span class="token string">"Purple"</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">// The arcsin(1/3) angle properly aligns the tetrahedron with respect to icosahedral symmetry</span>
+initial_rot <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">31.717</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// arcsin(1/3) ≈ 31.717°</span>
+
+<span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token operator">:</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">color</span><span class="token punctuation">(</span>colors<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token function">rotate</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> i <span class="token operator">*</span> <span class="token number">360</span><span class="token operator">/</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token function">rotate</span><span class="token punctuation">(</span>initial_rot<span class="token punctuation">)</span>
+    <span class="token function">hollow_poly</span><span class="token punctuation">(</span>tetrahedron_vertices<span class="token punctuation">,</span> tetrahedron_faces<span class="token punctuation">,</span> face_shrink<span class="token operator">=</span><span class="token number">2</span><span class="token operator">/</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>One OpenSCAD gotcha took a while to figure out. The tetrahedron defined by</p>
+<pre class="language-js" tabindex="0"><code class="language-js">tetrahedron_vertices <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">/</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+tetrahedron_faces <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token function">polyhedron</span><span class="token punctuation">(</span>points<span class="token operator">=</span>shape_vertices<span class="token punctuation">,</span> faces<span class="token operator">=</span>shape_faces<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>does not work as the base shape in the <code>difference</code> boolean. I had to wrap it with <code>hull</code> to repair something invisible.</p>
+</details>
+<p><picture><source type="image/avif" srcset="./fit-blender.png-vxy64b_3Qk-1280.avif 1280w"><source type="image/webp" srcset="./fit-blender.png-vxy64b_3Qk-1280.webp 1280w"><img loading="lazy" decoding="async" src="./fit-blender.png-vxy64b_3Qk-1280.png" alt="Blender interface with my FIT model." width="1280" height="776"></picture></p>
+<p>I then exported STL from OpenSCAD, imported that into Blender, split the object into five objects, added color materials, and exported the five steps as GLB files. 😅</p>
+<p>The colors were chosen from <a href="https://stephango.com/flexoki">Steph Ango's Flexoki color scheme</a>.</p>
+<p>For another parametric model, see <a href="https://asahidari.hatenablog.com/entry/2020/11/28/231433">Kukan Kogei's effort with Blender Sverchok</a>.</p>
+<h1 id="conclusion%2C-3d-project-files" tabindex="-1">Conclusion, 3D project files</h1>
+<ul>
+<li><a href="fit/fit-forresto-2025.scad">fit-forresto-2025.scad</a> – OpenSCAD file</li>
+<li><a href="fit/fit-forresto-2025.blend">fit-forresto-2025.blend</a> – Blender file</li>
+</ul>
+<p>I'm happy to have my own <code>fit.html</code> post on the WWW now, and maybe I'll find it in 20 years when I think about folding a FIT again.</p>
+
+</article>
+
+</div>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="../fab-academy/03-computer-controlled-cutting.html">Week 03. Computer Controlled Cutting</a></li>
+</ul>
+
+		</main>
+
+		<footer>
+			<p>Forrest O. Interactive is my WIP web blog wiki garden, built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
+
+			<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Unless otherwise noted, <span property="dct:title">Forrest O. Interactive</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<picture><source type="image/avif" srcset="../img/cc.svg-FRC2GTPyJx-44.avif 44w"><source type="image/webp" srcset="../img/cc.svg-FRC2GTPyJx-44.webp 44w"><img loading="lazy" decoding="async" src="../img/cc.svg-FRC2GTPyJx-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture><picture><source type="image/avif" srcset="../img/by.svg-R3XBmYTpOG-44.avif 44w"><source type="image/webp" srcset="../img/by.svg-R3XBmYTpOG-44.webp 44w"><img loading="lazy" decoding="async" src="../img/by.svg-R3XBmYTpOG-64.svg" style="width:1.2em;height:1.2em;margin-left:3px;vertical-align:text-bottom;" alt="" width="64" height="64"></picture></a></p>
+
+		</footer>
+
+		<script type="module" src="../dist/_t5XYB3gem.js"></script>
+	</body>
+</html>
