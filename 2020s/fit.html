@@ -12,7 +12,7 @@
 
 		<link rel="icon" type="image/png" href="../favicon.png">
 		
-		<link rel="stylesheet" href="../dist/pkEaAJEeF-.css">
+		<link rel="stylesheet" href="../dist/6etL4_Rp5a.css">
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
@@ -102,9 +102,16 @@
 <h1 id="openscad-modeling" tabindex="-1">OpenSCAD modeling</h1>
 <p>This model was created in OpenSCAD, one of the CAD packages that I didn't <a href="../fab-academy/02-cad-comparison.html">evaluate last week</a>.</p>
 <p><picture><source type="image/avif" srcset="./fit-openscad.png-_8IKW9tsyj-1280.avif 1280w"><source type="image/webp" srcset="./fit-openscad.png-_8IKW9tsyj-1280.webp 1280w"><img loading="lazy" decoding="async" src="./fit-openscad.png-_8IKW9tsyj-1280.png" alt="OpenSCAD interface to model FIT." width="1280" height="777"></picture></p>
-<p>Here's the code. This was made with help from Claude 3.5 Sonnet via Zed, and <a href="../oldsite/ai/fit-claude-chat.md">took a lot of back and forth to get right</a>.</p>
+<p>Here's the code. This was made with help from Claude 3.5 Sonnet via Zed, and <a href="../oldsite/ai/fit-claude-chat.md">took a lot of back and forth to get right</a>. My original prompt had &quot;then subtract the original shape&quot; instead of &quot;then subtract it from the original shape&quot; which would have been more correct. Later it took several back-and-forths to convince it that the inner shape should be subtracted from the outer shape. OpenSCAD can output images from a CLI. I wonder if an agentic workflow with more iterations could have helped it. At least a few of the iterations I only copied an error message, and it usually could fix it based on that. At I high level, I was playing manager suggesting things to try, and it was the junior programmer making mistakes, but quickly. I did need to find a few of the key fixes on my own.</p>
 <details><summary>OpenSCAD code to draw Five Intersecting Tetrahedra</summary>
-<pre class="language-js" tabindex="0"><code class="language-js">module <span class="token function">hollow_poly</span><span class="token punctuation">(</span><span class="token parameter">shape_vertices<span class="token punctuation">,</span> shape_faces<span class="token punctuation">,</span> face_shrink<span class="token operator">=</span><span class="token number">0.8</span><span class="token punctuation">,</span> hole_grow <span class="token operator">=</span> <span class="token number">1.05</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token comment">/*
+    fit.scad
+    FIT: Five Intersecting Tetrahedra
+    Copyright © 2025 Forrest O. Interactive
+    Licensed under CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+*/</span>
+
+module <span class="token function">hollow_poly</span><span class="token punctuation">(</span><span class="token parameter">shape_vertices<span class="token punctuation">,</span> shape_faces<span class="token punctuation">,</span> face_shrink<span class="token operator">=</span><span class="token number">0.8</span><span class="token punctuation">,</span> hole_grow <span class="token operator">=</span> <span class="token number">1.05</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token comment">// Function to find center of a face</span>
     <span class="token keyword">function</span> <span class="token function">face_center</span><span class="token punctuation">(</span><span class="token parameter">vertices<span class="token punctuation">,</span> face</span><span class="token punctuation">)</span> <span class="token operator">=</span> 
         <span class="token keyword">let</span><span class="token punctuation">(</span>
