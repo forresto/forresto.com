@@ -1,3 +1,10 @@
+/*
+    fit.scad
+    FIT: Five Intersecting Tetrahedra
+    Copyright © 2025 Forrest O. Interactive
+    Licensed under CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+*/
+
 module hollow_poly(shape_vertices, shape_faces, face_shrink=0.8, hole_grow = 1.05) {
     // Function to find center of a face
     function face_center(vertices, face) = 

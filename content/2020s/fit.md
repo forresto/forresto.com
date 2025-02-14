@@ -66,11 +66,18 @@ This model was created in OpenSCAD, one of the CAD packages that I didn't [evalu
 
 ![OpenSCAD interface to model FIT.](fit/fit-openscad.png)
 
-Here's the code. This was made with help from Claude 3.5 Sonnet via Zed, and [took a lot of back and forth to get right](/oldsite/ai/fit-claude-chat.md).
+Here's the code. This was made with help from Claude 3.5 Sonnet via Zed, and [took a lot of back and forth to get right](/oldsite/ai/fit-claude-chat.md). My original prompt had "then subtract the original shape" instead of "then subtract it from the original shape" which would have been more correct. Later it took several back-and-forths to convince it that the inner shape should be subtracted from the outer shape. OpenSCAD can output images from a CLI. I wonder if an agentic workflow with more iterations could have helped it. At least a few of the iterations I only copied an error message, and it usually could fix it based on that. At I high level, I was playing manager suggesting things to try, and it was the junior programmer making mistakes, but quickly. I did need to find a few of the key fixes on my own.
 
 <details><summary>OpenSCAD code to draw Five Intersecting Tetrahedra</summary>
 
 ```js
+/*
+    fit.scad
+    FIT: Five Intersecting Tetrahedra
+    Copyright © 2025 Forrest O. Interactive
+    Licensed under CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+*/
+
 module hollow_poly(shape_vertices, shape_faces, face_shrink=0.8, hole_grow = 1.05) {
     // Function to find center of a face
     function face_center(vertices, face) = 
